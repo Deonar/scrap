@@ -37,6 +37,10 @@ body {
 }
 .mb-5{
   margin-bottom: 5px;
+.line-gray {
+  width: 100%;
+  display: block;
+  border: 1px solid rgba(229, 229, 229, 0.7);
 }
 .container {
   width: 100%;
@@ -56,11 +60,11 @@ body {
 
 .primary-title {
   width: 100%;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 40px;
   color: $text;
-  margin-bottom: 50px;
+  text-align: center;
 }
 
 .btn {
@@ -68,12 +72,11 @@ body {
   display: inline-block;
   text-align: center;
   color: $white;
-  // box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   font-size: 16px;
   font-weight: 500;
   width: 100%;
-  max-width: 290px;
+  max-width: 3000px;
   line-height: 30px;
   padding: 15px 30px;
   transition: all 0.3s ease;
@@ -82,7 +85,9 @@ body {
     background: #fff;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 30px transparent;
+  }
+  &:focus {
+    outline: none;
   }
 }
 .primary-btn {
@@ -127,7 +132,7 @@ body {
   }
 }
 .small-btn {
-  padding: 10px 30px;
+  padding: 9px 30px;
 }
 
 .socials__icon {
@@ -323,5 +328,168 @@ body {
   }
   &_off {
     background-image: url("../img/icons/rating-off.svg");
+//====== simple select
+.select {
+  position: relative;
+  &__label {
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  &__header {
+  }
+  &__current {
+    position: relative;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: $primary;
+    cursor: pointer;
+    &::after {
+      content: '';
+      display: inline-block;
+      position: relative;
+      top: 3px;
+      width: 20px;
+      height: 12px;
+      margin-left: 5px;
+      background: url('../img/icons/arrow-green.svg') center center no-repeat;
+      background-size: 70%;
+      transition: all 0.3s ease;
+    }
+  }
+  &__body {
+    position: absolute;
+    display: inline-block;
+    min-width: 210px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    background: #fff;
+    padding: 20px 10px 20px 20px;
+    margin-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
+  &__item {
+    opacity: 0.7;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &.is-active {
+    .select__body {
+      top: 100%;
+      left: 0;
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s ease;
+      z-index: 100;
+    }
+    .select__current::after {
+      transform: rotate(180deg);
+      transition: all 0.3s ease;
+    }
+  }
+}
+//====== select + border
+.select-dropdown {
+  display: inline-block;
+  min-width: 210px;
+  .select__header {
+  }
+  .select__label {
+    line-height: 16px;
+    color: $text-gray-light;
+    margin-bottom: 10px;
+  }
+  .select__current {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-gray-light;
+    border: 1px solid $border;
+    border-radius: 5px;
+    padding: 0px 35px 0 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    &::after {
+      position: absolute;
+      height: 20px;
+      right: 10px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+    &:hover {
+      color: $text;
+      border: 1px solid $primary;
+      transition: all 0.3s ease;
+    }
+  }
+  .select__body {
+  }
+  .select__item {
+  }
+  &.is-active {
+    .select__current {
+      color: $text;
+      border: 1px solid $primary;
+      transition: all 0.3s ease;
+    }
+    .select__current::after {
+      transform: translate(0, -50%) rotate(180deg);
+    }
+  }
+}
+
+.custom-input {
+  border: 1px solid $border;
+  border-radius: 5px;
+  height: 50px;
+  color: $text;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  padding: 0 20px;
+  &::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  &:hover {
+    border: 1px solid $primary;
+    transition: all 0.3s ease;
+  }
+  &:focus {
+    &::placeholder {
+      font-size: 0;
+    }
+    border: 1px solid $primary;
+    transition: all 0.3s ease;
+    outline: none;
+    color: $text;
+  }
+  &__wrapp {
+    display: inline-block;
+  }
+  &__label {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-gray-light;
+    margin-bottom: 10px;
   }
 }

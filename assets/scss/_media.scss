@@ -1,3 +1,46 @@
+@media (max-width: 959px) {
+  //======================= ALL PAGE
+  .aggregators-search {
+    &__tabs {
+      margin: 30px 0 20px 0;
+    }
+    &__retail {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__switch {
+      width: 100%;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    &__number {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__btn {
+      width: 100%;
+    }
+    &__dropdawn {
+      margin: auto;
+      .select {
+        &__header {
+          display: flex;
+        }
+        &__label {
+          margin-right: 10px;
+        }
+      }
+    }
+    &__btn {
+      max-width: 340px;
+    }
+  }
+  .number-bystate__number {
+    max-width: 340px;
+  }
+  //======================= ALL PAGE END
+}
 @media (max-width: 900px) {
   //====================== HEADER
   .header {
@@ -27,6 +70,53 @@
     }
   }
   //====================== OFFERS END
+  //======================= ALL PAGE
+  .material-oftype {
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    &__item {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    &__item-select {
+      max-width: 100%;
+      .select-dropdown {
+        width: 100%;
+      }
+    }
+    &__item-weight {
+      width: 100%;
+      max-width: 100%;
+      .custom-input__wrapp {
+        width: 100%;
+        .custom-input {
+          width: 100%;
+          text-align: left;
+          padding: 0 20px;
+        }
+      }
+    }
+    &__item-metal {
+      justify-content: space-between;
+      .custom-input__wrapp {
+        margin-right: 15px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      .custom-input {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    &__item-btn {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+  //======================= ALL PAGE AND
 }
 
 @media (max-width: 767px) {
@@ -39,9 +129,6 @@
   .btn {
     min-width: 100%;
     max-width: 100%;
-  }
-  .primary-title {
-    text-align: center;
   }
 
   //====================== HEADER
@@ -97,4 +184,90 @@
     }
   }
   //====================== OFFERS END
+  //======================= ALL PAGE
+  .aggregators-search__btn {
+    max-width: 340px;
+  }
+  .number-bymodel {
+    flex-direction: column;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    &__item {
+      margin-right: 0;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .select-dropdown {
+        min-width: 100%;
+      }
+      .custom-input {
+        width: 100%;
+        text-align: left;
+        padding: 0 20px;
+        &__wrapp {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .regulations {
+    padding: 60px 0 60px 0;
+    &__title {
+      margin-bottom: 40px;
+    }
+    &__items {
+      flex-direction: column;
+    }
+    &__item {
+      width: 100%;
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__item-img {
+      margin-right: 20px;
+      img {
+        height: 75px;
+      }
+    }
+    &__item-content {
+      max-width: 100%;
+    }
+  }
+
+  .auction-start {
+    &__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__img {
+      margin-right: 20px;
+      img {
+        height: 60px;
+      }
+    }
+    &__content {
+      max-width: 100%;
+    }
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__text {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    &__btn {
+      min-width: auto;
+      width: 100%;
+      max-width: 240px;
+    }
+  }
+
+  //======================= ALL PAGE END
 }
