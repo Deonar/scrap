@@ -9,11 +9,34 @@ body {
 .text-cente {
   text-align: center;
 }
+.text-bold{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+}
 .overflow-h {
   overflow: hidden !important;
 }
+.h-100p{
+  height: 100%;
+}
+.m-auto{
+  margin: auto;
+}
+.mt-auto{
+  margin-top: auto;
+}
+.mb-auto{
+  margin-bottom: auto;
+}
 .mb-20 {
   margin-bottom: 20px;
+}
+.mr-10{
+  margin-right: 10px;
+}
+.mb-5{
+  margin-bottom: 5px;
 }
 .container {
   width: 100%;
@@ -45,7 +68,7 @@ body {
   display: inline-block;
   text-align: center;
   color: $white;
-  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+  // box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   font-size: 16px;
   font-weight: 500;
@@ -97,7 +120,12 @@ body {
     color: $fail-btn;
   }
 }
-
+.dark-btn {
+  background: $dark-btn;
+  &:hover {
+    background: $dark-btn-hover;
+  }
+}
 .small-btn {
   padding: 10px 30px;
 }
@@ -198,5 +226,102 @@ body {
         }
       }
     }
+  }
+}
+
+.d-flex{
+  display: flex;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.align-items-center{
+  align-items: center;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.flex-direction-column{
+  flex-direction: column;
+}
+//Star
+.star-rating {
+  margin-bottom: 40px;
+  height: 26px;
+}
+.star-rating > fieldset {
+  border: none;
+  display: inline-block;
+}
+.star-rating > fieldset:not(:checked) > input {
+  position: absolute;
+  display: none;
+}
+
+.star-rating > fieldset:not(:checked) > label {
+  float: right;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.star-rating > fieldset:not(:checked) > label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/icons/rating-off.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.star-rating > fieldset:not(:checked) > label:hover:before,
+.star-rating > fieldset:not(:checked) > label:hover ~ label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/icons/rating-on.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.star-rating > fieldset > input:checked ~ label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/icons/rating-on.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.star-rating > fieldset > label:active {
+  position: relative;
+  opacity: 0.8;
+}
+
+.stars-rating {
+  &__number {
+    margin-right: 10px;
+  }
+  &__wrapper {
+    padding: 0;
+    margin: 0;
+  }
+  &__item {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &_on {
+    background-image: url("../img/icons/rating-on.svg");
+  }
+  &_off {
+    background-image: url("../img/icons/rating-off.svg");
   }
 }

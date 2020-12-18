@@ -6,6 +6,27 @@
     }
   }
   //====================== HEADER END
+
+  //====================== OFFERS
+  .offer {
+    &__top{
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+    &__wrapper{
+      flex-direction: column;
+    }
+    &__tell{
+      order: 1;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    .work-time{
+      font-size: 10px;
+        font-weight: 300;
+    }
+  }
+  //====================== OFFERS END
 }
 
 @media (max-width: 767px) {
@@ -64,4 +85,16 @@
     }
   }
   //====================== HEADER END
+
+  //====================== OFFERS
+  .offer {
+   
+    &__tell{
+      order: 1;
+      margin: inherit;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+  //====================== OFFERS END
 }
