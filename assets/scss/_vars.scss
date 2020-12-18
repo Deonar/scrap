@@ -3,6 +3,8 @@ $base-font: 'montserrat', sans-serif;
 
 //===================  colors-text
 $text: #34495e;
+$text-gray: #e5e5e5;
+$text-gray-light: #81909F;
 
 //===================  colors
 $white: #ffffff;
@@ -11,6 +13,7 @@ $dark: #000000;
 $danger: #ff4b55;
 $secondery: #cd3f36;
 
+
 //===================  colors-elements
 $bg-block: #f7f9fc;
 $border: #e5e5e5;
@@ -18,13 +21,6 @@ $icon: #81909f;
 
 //===================  colors btn
 $primary-btn: #51c569;
-$primary-btn-hover: #239e3c;
-
 $danger-btn: #cd3f36;
-$danger-btn-hover: #982e27;
-
 $secondery-btn: #81909f;
-$secondery-btn-hover: #636d77; 
-
 $fail-btn: #ff4b55;
-$fail-btn-hover: #cd3f36;
