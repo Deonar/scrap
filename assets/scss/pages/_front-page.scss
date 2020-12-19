@@ -291,6 +291,13 @@
       background-color: $bg-block;
       padding-top: 20px;
   }
+  &-items__btn-more{
+    max-width: 300px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 auto;
+    display: block;
+  }
   &__wrapper{
       width: 100%;
       max-width: 990px;

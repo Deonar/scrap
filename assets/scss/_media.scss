@@ -175,7 +175,14 @@
 
   //====================== OFFERS
   .offer {
-   
+    &-items__btn-more{
+      min-width: auto;
+      max-width: 250px;
+      font-size: 12px;
+      padding: 4px 20px;
+      margin: 0 auto;
+      display: block;
+    }
     &__tell{
       order: 1;
       margin: inherit;

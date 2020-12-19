@@ -1444,6 +1444,14 @@ body {
   padding-top: 20px;
 }
 
+.offer-items__btn-more {
+  max-width: 300px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 auto;
+  display: block;
+}
+
 .offer__wrapper {
   width: 100%;
   max-width: 990px;
@@ -1675,6 +1683,14 @@ body {
   }
   .header-phone__text {
     display: none;
+  }
+  .offer-items__btn-more {
+    min-width: auto;
+    max-width: 250px;
+    font-size: 12px;
+    padding: 4px 20px;
+    margin: 0 auto;
+    display: block;
   }
   .offer__tell {
     order: 1;
