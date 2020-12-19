@@ -1025,6 +1025,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  overflow: auto;
 }
 
 .navbar-head {
@@ -1439,6 +1440,10 @@ body {
   max-width: 240px;
 }
 
+.offer {
+  margin-bottom: 60px;
+}
+
 .offer__item {
   background-color: #f7f9fc;
   padding-top: 20px;
@@ -1637,12 +1642,6 @@ body {
 }
 
 @media (max-width: 767px) {
-  .container {
-    padding: 0 20px;
-  }
-  .container-fluid {
-    padding: 0 20px;
-  }
   .btn {
     min-width: 100%;
     max-width: 100%;
@@ -1683,6 +1682,9 @@ body {
   }
   .header-phone__text {
     display: none;
+  }
+  .offer {
+    margin-bottom: 30px;
   }
   .offer-items__btn-more {
     min-width: auto;
@@ -1773,9 +1775,28 @@ body {
     margin-bottom: 20px;
   }
   .auction-start__btn {
+    font-size: 14px;
     min-width: auto;
     width: 100%;
     max-width: 240px;
+  }
+  .auction-start__deal .auction-start__row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .auction-start__deal .auction-start__img {
+    margin-bottom: 30px;
+  }
+  .auction-start__deal .auction-start__title {
+    text-align: center;
+  }
+  .auction-start__deal .auction-start__text {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .auction-start__deal .auction-start__btn {
+    max-width: 340px;
   }
 }
 /*# sourceMappingURL=main.css.map */
