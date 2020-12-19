@@ -52,22 +52,22 @@
 
   //====================== OFFERS
   .offer {
-    &__top{
+    &__top {
       max-width: 100%;
       flex-wrap: wrap;
     }
-    &__wrapper{
+    &__wrapper {
       flex-direction: column;
     }
-    &__tell{
+    &__tell {
       order: 1;
       margin: auto;
       margin-bottom: 20px;
     }
-    .work-time{
+    .work-time {
       font-size: 10px;
-        font-weight: 300;
-      &:before{
+      font-weight: 300;
+      &:before {
         top: -2px;
       }
     }
@@ -173,7 +173,7 @@
   //====================== OFFERS
   .offer {
     margin-bottom: 30px;
-    &-items__btn-more{
+    &-items__btn-more {
       min-width: auto;
       max-width: 250px;
       font-size: 12px;
@@ -181,7 +181,7 @@
       margin: 0 auto;
       display: block;
     }
-    &__tell{
+    &__tell {
       order: 1;
       margin: inherit;
       margin-bottom: 20px;
@@ -273,7 +273,7 @@
       width: 100%;
       max-width: 240px;
     }
-    &__deal{
+    &__deal {
       .auction-start__row {
         flex-direction: column;
         justify-content: center;
@@ -292,6 +292,11 @@
       .auction-start__btn {
         max-width: 340px;
       }
+    }
+  }
+  .offer-dropdown {
+    .select-dropdown {
+      max-width: 475px;
     }
   }
 
