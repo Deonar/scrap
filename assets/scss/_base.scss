@@ -46,6 +46,14 @@ body {
 .mb-5 {
   margin-bottom: 5px;
 }
+
+.bg-green{
+  background-color: $bg-green;
+}
+.bg-red{
+  background-color: $bg-red;
+}
+
 .line-gray {
   width: 100%;
   display: block;
