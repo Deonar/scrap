@@ -317,6 +317,17 @@
       padding: 0 35px;
     }
   }
+  &-dropdown{
+    padding: 30px 0;
+    .select__header{
+      position: relative;
+      background: url('/assets/img/icons/icon-sort.svg') left center no-repeat;
+      background-position:  10px center;
+    }
+    .select__current{
+      padding: 0 35px;
+    }
+  }
   &__top {
     display: flex;
     align-items: center;
