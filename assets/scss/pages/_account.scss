@@ -40,3 +40,76 @@
     max-width: 210px;
   }
 }
+
+.material-price {
+  margin-bottom: 60px;
+  &__title {
+  }
+  &__tabs {
+  }
+  &__retail {
+  }
+  &__head-wrapp {
+    margin-bottom: 60px;
+  }
+  &__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__retail-items {
+    display: flex;
+    width: 100%;
+  }
+  &__retail-item {
+    margin-right: 30px;
+    width: 100%;
+    max-width: 240px;
+  }
+  &__btn {
+    max-width: 210px;
+  }
+  &__list {
+  }
+  &__list-head-wrapp {
+    margin-bottom: 24px;
+  }
+  &__list-head {
+    display: flex;
+    align-items: center;
+    color: #81909f;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 300;
+  }
+  &__col-num {
+    width: 80px;
+  }
+  &__col-brand {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 10px;
+    }
+  }
+  &__col-brand-price {
+    width: 50%;
+  }
+  &__row-wrapp {
+    background: $bg-block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    &.clear-info {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  &__wholesale {
+  }
+}

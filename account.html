@@ -172,48 +172,145 @@
       </section>
       <section class="material-price">
         <div class="container-fluid">
-          <div class="material-price__title">Стоимость сырья</div>
+          <div class="material-price__title primary-title">Стоимость сырья</div>
           <div class="material-price__tabs tabs-switch">
             <button class="tabs-btn retailTabJs active">Розница</button>
             <button class="tabs-btn wholesaleTabJs">Опт</button>
           </div>
-          <div class="material-price__retail retailJs">
-            <div class="material-price__head">
-              <div class="material-price__retail-items">
-                <div class="material-price__retail-item">
-                  <div class="select select-dropdown">
-                    <div class="select__header">
-                      <span class="select__current">Марка ТС</span>
+        </div>
+        <div class="material-price__retail retailJs">
+          <div class="material-price__head-wrapp">
+            <div class="container-fluid">
+              <div class="material-price__head">
+                <div class="material-price__retail-items">
+                  <div class="material-price__retail-item">
+                    <div class="select select-dropdown">
+                      <div class="select__header">
+                        <span class="select__current">Марка ТС</span>
+                      </div>
+                      <div class="select__body">
+                        <div class="select__item">Марка ТС 1</div>
+                        <div class="select__item">Марка ТС 2</div>
+                      </div>
                     </div>
-                    <div class="select__body">
-                      <div class="select__item">Марка ТС 1</div>
-                      <div class="select__item">Марка ТС 2</div>
+                  </div>
+                  <div class="material-price__retail-item">
+                    <div class="select select-dropdown">
+                      <div class="select__header">
+                        <span class="select__current">Цена по марке ТС</span>
+                      </div>
+                      <div class="select__body">
+                        <div class="select__item">Цена по марке ТС 1</div>
+                        <div class="select__item">Цена по марке ТС 2</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="material-price__retail-item">
-                  <div class="select select-dropdown">
-                    <div class="select__header">
-                      <span class="select__current">Цена по марке ТС</span>
-                    </div>
-                    <div class="select__body">
-                      <div class="select__item">Цена по марке ТС 1</div>
-                      <div class="select__item">Цена по марке ТС 2</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="material-price__btn btn primary-btn small-btn">Добавить цену</div>
-            </div>
-            <div class="material-price__list">
-              <div class="material-price__list-head">
-                <div class="material-price__col-num">№</div>
-                <div class="material-price__col-brand">Марка ТС</div>
-                <div class="material-price__col-brand-price">Цена по марке ТС</div>
+                <div class="material-price__btn btn primary-btn small-btn">Добавить цену</div>
               </div>
             </div>
           </div>
-          <div class="material-price__wholesale wholesaleJs"></div>
+          <div class="material-price__list">
+            <div class="material-price__list-head-wrapp">
+              <div class="container-fluid">
+                <div class="material-price__list-head">
+                  <div class="material-price__col-num">№</div>
+                  <div class="material-price__col-brand">Марка ТС</div>
+                  <div class="material-price__col-brand-price">Цена по марке ТС</div>
+                </div>
+              </div>
+            </div>
+            <div class="material-price__row-wrapp">
+              <div class="container-fluid">
+                <div class="material-price__row clear-info">нет информации</div>
+              </div>
+            </div>
+            <div class="material-price__row-wrapp">
+              <div class="container-fluid">
+                <div class="material-price__row">
+                  <div class="material-price__col-num">1</div>
+                  <div class="material-price__col-brand">
+                    <img src="assets/img/icons-model-car/wolksvagen.svg" alt="" />
+                    Volkswagen
+                  </div>
+                  <div class="material-price__col-brand-price">1 000 ₽ - 4 000₽</div>
+                </div>
+              </div>
+            </div>
+            <div class="material-price__row-wrapp">
+              <div class="container-fluid">
+                <div class="material-price__row">
+                  <div class="material-price__col-num">2</div>
+                  <div class="material-price__col-brand">
+                    <img src="assets/img/icons-model-car/audi.svg" alt="" />
+                    Audi
+                  </div>
+                  <div class="material-price__col-brand-price">1 000 ₽ - 4 000₽</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="material-price__wholesale wholesaleJs">
+          <div class="material-price__head-wrapp">
+            <div class="container-fluid">
+              <div class="material-price__head">
+                <div class="material-price__retail-items">
+                  <div class="material-price__retail-item">
+                    <div class="custom-input__wrapp">
+                      <input type="text" class="custom-input" placeholder="Вес" />
+                    </div>
+                  </div>
+                  <div class="material-price__retail-item">
+                    <div class="custom-input__wrapp">
+                      <input type="text" class="custom-input" placeholder="цена" />
+                    </div>
+                  </div>
+                </div>
+                <div class="material-price__btn btn primary-btn small-btn">Добавить цену</div>
+              </div>
+            </div>
+          </div>
+          <div class="material-price__list">
+            <div class="material-price__list-head-wrapp">
+              <div class="container-fluid">
+                <div class="material-price__list-head">
+                  <div class="material-price__col-num">№</div>
+                  <div class="material-price__col-brand">Марка ТС</div>
+                  <div class="material-price__col-brand-price">Цена по марке ТС</div>
+                </div>
+              </div>
+            </div>
+            <div class="material-price__row-wrapp">
+              <div class="container-fluid">
+                <div class="material-price__row clear-info">нет информации</div>
+              </div>
+            </div>
+            <div class="material-price__row-wrapp">
+              <div class="container-fluid">
+                <div class="material-price__row">
+                  <div class="material-price__col-num">1</div>
+                  <div class="material-price__col-brand">
+                    <img src="assets/img/icons-model-car/wolksvagen.svg" alt="" />
+                    Volkswagen
+                  </div>
+                  <div class="material-price__col-brand-price">1 000 ₽ - 4 000₽</div>
+                </div>
+              </div>
+            </div>
+            <div class="material-price__row-wrapp">
+              <div class="container-fluid">
+                <div class="material-price__row">
+                  <div class="material-price__col-num">2</div>
+                  <div class="material-price__col-brand">
+                    <img src="assets/img/icons-model-car/audi.svg" alt="" />
+                    Audi
+                  </div>
+                  <div class="material-price__col-brand-price">1 000 ₽ - 4 000₽</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

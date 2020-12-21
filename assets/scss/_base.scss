@@ -14,7 +14,7 @@ body {
   line-height: 1.4;
   color: $text;
 }
-.text-cente {
+.text-center {
   text-align: center;
 }
 .text-bold {
@@ -375,6 +375,7 @@ body {
   &__body {
     position: absolute;
     display: inline-block;
+    width: 100%;
     min-width: 210px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
@@ -419,8 +420,8 @@ body {
 }
 //====== select + border
 .select-dropdown {
-  display: inline-block;
-  min-width: 210px;
+  display: block;
+  width: 100%;
   .select__header {
   }
   .select__label {
@@ -436,6 +437,7 @@ body {
     border: 1px solid $border;
     border-radius: 5px;
     padding: 0px 35px 0 20px;
+    width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
@@ -477,6 +479,7 @@ body {
   transition: all 0.3s ease;
   font-size: 14px;
   padding: 0 20px;
+  width: 100%;
   &::placeholder {
     font-weight: 300;
     font-size: 14px;
@@ -497,7 +500,7 @@ body {
     }
   }
   &__wrapp {
-    display: inline-block;
+    display: block;
   }
   &__label {
     display: block;
