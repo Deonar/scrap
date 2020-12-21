@@ -1540,6 +1540,7 @@ body {
   width: 50%;
   display: flex;
   align-items: flex-start;
+  justify-content: center;
 }
 
 .regulations__item-img {
@@ -1645,6 +1646,7 @@ body {
 
 .offer-dropdown {
   padding: 30px 0;
+  max-width: 240px;
 }
 
 .offer-dropdown .select__header {

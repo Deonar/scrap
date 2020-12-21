@@ -197,6 +197,7 @@
     width: 50%;
     display: flex;
     align-items: flex-start;
+    justify-content: center;
   }
   &__item-img {
     margin-right: 40px;
@@ -286,6 +287,7 @@
   }
   &-dropdown {
     padding: 30px 0;
+    max-width: 240px;
     .select__header {
       position: relative;
       background: url('/assets/img/icons/icon-sort.svg') left center no-repeat;
