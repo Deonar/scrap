@@ -962,6 +962,9 @@ body {
 
 .popup-editing {
   max-width: 770px;
+}
+
+.popup-editing .popup__body {
   background: #f7f9fc;
 }
 
@@ -2243,6 +2246,16 @@ body {
 }
 
 @media (max-width: 550px) {
+  .mfp-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .white-popup {
+    margin: 0px auto;
+  }
+  .popup-editing {
+    height: 100vh;
+  }
   .popup-telephone__content {
     padding: 60px 25px 25px 25px;
   }

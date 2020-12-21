@@ -79,7 +79,10 @@
 
 .popup-editing {
   max-width: 770px;
-  background: #f7f9fc;
+
+  .popup__body {
+    background: #f7f9fc;
+  }
   &__content {
     padding: 40px 40px 70px 40px;
     display: flex;

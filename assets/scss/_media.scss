@@ -402,6 +402,16 @@
 }
 
 @media (max-width: 550px) {
+  .mfp-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .white-popup {
+    margin: 0px auto;
+  }
+  .popup-editing {
+    height: 100vh;
+  }
   //======================= ALL popups END
   .popup-telephone {
     &__content {
