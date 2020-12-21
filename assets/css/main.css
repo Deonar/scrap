@@ -341,15 +341,15 @@ body {
 
 .container {
   width: 100%;
-  max-width: 830px;
-  padding: 0 30px;
+  max-width: 1440px;
+  padding: 0 28px;
   margin: 0 auto;
 }
 
 .container-fluid {
   width: 100%;
-  max-width: 990px;
-  padding: 0 30px;
+  max-width: 1440px;
+  padding: 0 28px;
   margin: 0 auto;
 }
 
