@@ -17,17 +17,17 @@ jQuery(document).ready(function ($) {
   // });
 
   //======================== TABS
-  $('#retailTab').on('click', function (e) {
+  $('.retailTabJs').on('click', function (e) {
     $(this).addClass('active');
-    $('#wholesaleTab').removeClass('active');
-    $('#retail').show();
-    $('#wholesale').hide();
+    $('.wholesaleTabJs').removeClass('active');
+    $('.retailJs').show();
+    $('.wholesaleJs').hide();
   });
-  $('#wholesaleTab').on('click', function (e) {
+  $('.wholesaleTabJs').on('click', function (e) {
     $(this).addClass('active');
-    $('#retailTab').removeClass('active');
-    $('#wholesale').show();
-    $('#retail').hide();
+    $('.retailTabJs').removeClass('active');
+    $('.wholesaleJs').show();
+    $('.retailJs').hide();
   });
 
   //======================== ALL SELECTIZES
@@ -73,4 +73,50 @@ jQuery(document).ready(function ($) {
 
   select();
   //======================== ALL SELECTIZES AND
+
+  //======================== POPUPS
+  $('.popup-telephone__start').magnificPopup({
+    items: {
+      src: '#popup-telephone',
+      type: 'inline',
+    },
+    midClick: true,
+    mainClass: 'mfp-fade',
+  });
+
+  $('.popup-branch__delete').magnificPopup({
+    items: {
+      src: '#popup-branch-delete',
+      type: 'inline',
+    },
+    midClick: true,
+    mainClass: 'mfp-fade',
+  });
+
+  $('.popup-addbranch__start').magnificPopup({
+    items: {
+      src: '#popup-addbranch',
+      type: 'inline',
+    },
+    midClick: true,
+    mainClass: 'mfp-fade',
+  });
+  $('.popup-editinfo__start').magnificPopup({
+    items: {
+      src: '#popup-editinfo',
+      type: 'inline',
+    },
+    midClick: true,
+    mainClass: 'mfp-fade',
+    fixedContentPos: false,
+  });
+  $('.popup-editbranch__start').magnificPopup({
+    items: {
+      src: '#popup-editbranch',
+      type: 'inline',
+    },
+    midClick: true,
+    mainClass: 'mfp-fade',
+  });
+  //======================== POPUPS AND
 });

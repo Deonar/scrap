@@ -39,6 +39,11 @@
   .number-bystate__number {
     max-width: 340px;
   }
+  .addbranch {
+    &-item {
+      width: calc(50% - 30px);
+    }
+  }
   //======================= ALL PAGE END
 }
 @media (max-width: 900px) {
@@ -123,11 +128,6 @@
 }
 
 @media (max-width: 767px) {
-  .btn {
-    min-width: 100%;
-    max-width: 100%;
-  }
-
   //====================== HEADER
   .header {
     &-wrapp {
@@ -173,7 +173,7 @@
   //====================== OFFERS
   .offer {
     margin-bottom: 30px;
-    &-items__btn-more{
+    &-items__btn-more {
       min-width: auto;
       max-width: 250px;
       font-size: 12px;
@@ -273,7 +273,7 @@
       width: 100%;
       max-width: 240px;
     }
-    &__deal{
+    &__deal {
       .auction-start__row {
         flex-direction: column;
         justify-content: center;
@@ -299,6 +299,95 @@
       max-width: 475px;
     }
   }
-
+  .addbranch {
+    &-body {
+      flex-direction: column;
+    }
+    &-item {
+      width: calc(100% - 30px);
+      margin: 0 15px 15px 15px;
+    }
+    &-btn {
+      margin-top: 20px;
+      margin-left: 0px;
+      max-width: 100%;
+    }
+  }
   //======================= ALL PAGE END
+  //======================= ALL popups END
+  .popup-telephone {
+    &__content {
+      padding: 70px 20px;
+    }
+    &__btn {
+      max-width: 210px;
+    }
+  }
+  .popup-editing {
+    max-width: 550px;
+    &__item {
+      width: calc(50% - 30px);
+      margin: 0 15px 20px 15px;
+      display: flex;
+      justify-content: center;
+      .select-dropdown {
+        min-width: 100%;
+      }
+      .custom-input {
+        min-width: 100%;
+        &__wrapp {
+          width: 100%;
+        }
+      }
+    }
+    &__btn {
+      max-width: 210px;
+    }
+  }
+  .popup-branch__delete {
+    &-content {
+      padding: 60px 20px 60px 20px;
+    }
+    &-title {
+      margin-bottom: 40px;
+    }
+    &-btn {
+      max-width: 210px;
+    }
+  }
+  //======================= ALL popups END
+}
+
+@media (max-width: 550px) {
+  //======================= ALL popups END
+  .popup-telephone {
+    &__content {
+      padding: 60px 25px 25px 25px;
+    }
+    &__btn {
+      max-width: 100%;
+    }
+  }
+  .popup-editing {
+    max-width: 100%;
+    &__content {
+      padding: 60px 25px 25px 25px;
+    }
+    &__title {
+      &.small-title {
+        font-size: 18px;
+      }
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+    &__item {
+      width: calc(100% - 30px);
+      margin: 0 15px 15px 15px;
+    }
+    &__btn {
+      margin-top: 5px;
+      max-width: 100%;
+    }
+  }
+  //======================= ALL popups END
 }

@@ -3,10 +3,12 @@
 @import 'reset';
 @import 'typography';
 @import 'base';
+@import 'popups';
 
 @import 'header';
 @import 'pages/front-page';
 @import 'pages/error404';
+@import 'pages/account';
 @import 'footer';
 
 @import 'media';

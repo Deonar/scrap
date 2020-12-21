@@ -1,0 +1,42 @@
+.account-addbranch {
+  padding: 60px 0;
+}
+.addbranch {
+  &-title {
+    margin-bottom: 30px;
+  }
+  &-body {
+    display: flex;
+    align-items: flex-start;
+    &__wrapp {
+      padding: 30px 0;
+      background: $bg-block;
+    }
+  }
+  &-items {
+    width: calc(100% + 30px);
+    margin: 0 -15px -20px -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-item {
+    width: calc(33.3333% - 30px);
+    margin: 0 15px 20px 15px;
+    .custom-input {
+      background: $bg-block;
+      width: 100%;
+      &__wrapp {
+        display: block;
+      }
+    }
+    .select {
+      &-dropdown {
+        min-width: 100%;
+      }
+    }
+  }
+  &-btn {
+    margin-left: 30px;
+    max-width: 210px;
+  }
+}

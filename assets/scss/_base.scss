@@ -47,10 +47,10 @@ body {
   margin-bottom: 5px;
 }
 
-.bg-green{
+.bg-green {
   background-color: $bg-green;
 }
-.bg-red{
+.bg-red {
   background-color: $bg-red;
 }
 
@@ -90,7 +90,7 @@ body {
   text-align: center;
   color: $white;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   width: 100%;
   max-width: 3000px;
@@ -130,13 +130,7 @@ body {
   }
 }
 .fail-btn {
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 700;
-  padding: 20px 30px;
-  background: $fail-btn; 
-  border-radius: 0px;
-  box-shadow: none;
+  background: $fail-btn;
   &:hover {
     border: 1px solid $fail-btn;
     color: $fail-btn;
@@ -438,7 +432,7 @@ body {
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
-    color: $text-gray-light;
+    color: $text;
     border: 1px solid $border;
     border-radius: 5px;
     padding: 0px 35px 0 20px;
@@ -485,8 +479,9 @@ body {
   padding: 0 20px;
   &::placeholder {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 16px;
+    color: $text;
   }
   &:hover {
     border: 1px solid $primary;
@@ -511,5 +506,37 @@ body {
     line-height: 16px;
     color: $text-gray-light;
     margin-bottom: 10px;
+  }
+}
+
+.tabs {
+  &-switch {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+  }
+  &-btn {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 10px;
+    outline: none;
+    margin-right: 32px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: $text-gray;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $border;
+    transition: all 0.3s ease;
+    &:last-child {
+      margin: 0;
+    }
+    &.active {
+      font-weight: 600;
+      color: $text;
+      border-bottom: 2px solid $primary;
+      transition: all 0.3s ease;
+    }
   }
 }

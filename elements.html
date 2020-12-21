@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="assets/libs/slick/slick.css" />
-    <link
-      rel="stylesheet"
-      href="assets/libs/magnific-popup/magnific-popup.css"
-    />
+    <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
     <link rel="stylesheet" href="assets/libs/selectize/css/selectize.css" />
+    <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
 
     <title>SCRAP</title>
@@ -53,19 +51,15 @@
             <span class="select__current">гос.номеру</span>
           </div>
           <div class="select__body">
-            <div class="select__item">
-              гос.номеру
-            </div>
-            <div class="select__item">
-              марке и модели
-            </div>
+            <div class="select__item">гос.номеру</div>
+            <div class="select__item">марке и модели</div>
           </div>
         </div>
         <div class="mb-20"></div>
-        
+
         <div class="custom-input__wrapp">
           <label class="custom-input__label">Вес</label>
-          <input type="text" class="custom-input" placeholder="|" maxlength="5">
+          <input type="text" class="custom-input" placeholder="|" maxlength="5" />
         </div>
 
         <div class="mb-20"></div>
@@ -76,17 +70,225 @@
             <span class="select__current">Каталитическое</span>
           </div>
           <div class="select__body">
-            <div class="select__item">
-              Каталитическое
-            </div>
-            <div class="select__item">
-              Радиолом
-            </div>
+            <div class="select__item">Каталитическое</div>
+            <div class="select__item">Радиолом</div>
           </div>
         </div>
+        <div class="mb-20"></div>
 
+        <button class="popup-telephone__start btn primary-btn small-btn">пупап телефон</button>
+
+        <div class="mb-20"></div>
+
+        <button class="popup-branch__delete btn primary-btn small-btn">пупап Удалить филиал</button>
+
+        <div class="mb-20"></div>
+
+        <button class="popup-addbranch__start btn primary-btn small-btn">пупап Добавить филиал</button>
+
+        <div class="mb-20"></div>
+
+        <button class="popup-editinfo__start btn primary-btn small-btn">пупап Редактирование информации</button>
+
+        <div class="mb-20"></div>
+
+        <button class="popup-editbranch__start btn primary-btn small-btn">пупап Редактировать филиал</button>
+        
+        <div class="mb-20"></div>
       </section>
     </div>
+
+    <!-- Popups  -->
+    <div id="popup-telephone" class="popup-telephone white-popup mfp-hide">
+      <div class="popup__body">
+        <div class="popup-telephone__content">
+          <div class="primary-title popup-telephone__title">+7 (905) 250-25-48</div>
+          <a href="tel:+79052502548" class="popup-telephone__btn btn primary-btn small-btn">Позвонить</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup-branch-delete" class="white-popup mfp-hide">
+      <div class="popup__body">
+        <div class="popup-branch__delete-content">
+          <div class="primary-title popup-branch__delete-title">+7 (905) 250-25-48</div>
+          <button class="popup-branch__delete-btn btn fail-btn small-btn">Удалить</button>
+          <button class="popup-branch__delete-btn btn secondery-btn small-btn">Отменить</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup-addbranch" class="popup-editing white-popup mfp-hide">
+      <div class="popup__body">
+        <div class="popup-editing__content">
+          <div class="popup-editing__title primary-title">Добавить филиал</div>
+          <div class="popup-editing__items">
+            <div class="popup-editing__item">
+              <div class="custom-input__wrapp">
+                <input type="text" class="custom-input" placeholder="Название филиала" maxlength="100" />
+              </div>
+            </div>
+            <div class="popup-editing__item">
+              <div class="select select-dropdown">
+                <div class="select__header">
+                  <span class="select__current">Город</span>
+                </div>
+                <div class="select__body">
+                  <div class="select__item">Москва</div>
+                  <div class="select__item">Петербург</div>
+                </div>
+              </div>
+            </div>
+            <div class="popup-editing__item">
+              <div class="custom-input__wrapp">
+                <input type="text" class="custom-input" placeholder="Адрес" maxlength="100" />
+              </div>
+            </div>
+            <div class="popup-editing__item">
+              <div class="select select-dropdown">
+                <div class="select__header">
+                  <span class="select__current">Время работы</span>
+                </div>
+                <div class="select__body">
+                  <div class="select__item">с 08 00</div>
+                  <div class="select__item">с 16 00</div>
+                </div>
+              </div>
+            </div>
+            <div class="popup-editing__item">
+              <div class="custom-input__wrapp">
+                <input type="tell" class="custom-input" placeholder="Телефон" maxlength="100" />
+              </div>
+            </div>
+            <div class="popup-editing__item">
+              <div class="select select-dropdown">
+                <div class="select__header">
+                  <span class="select__current">Доп. сервис</span>
+                </div>
+                <div class="select__body">
+                  <div class="select__item">Доп. сервис 1</div>
+                  <div class="select__item">Доп. сервис 2</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="popup-editing__btn btn primary-btn small-btn">Добавить филиал</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup-editinfo" class="popup-editing white-popup mfp-hide">
+      <div class="popup__body">
+        <div class="popup-editing__content">
+          <div class="popup-editing__title primary-title small-title">Редактирование информации</div>
+          <div class="popup-editing__items">
+            <div class="popup-editing__item">
+              <div class="custom-input__wrapp">
+                <label class="custom-input__label">Название организации</label>
+                <input type="text" class="custom-input" value="Sdaykat" />
+              </div>
+            </div>
+            <div class="popup-editing__item">
+              <div class="select select-dropdown">
+                <div class="select__header">
+                  <label class="select__label">Форма работы</label>
+                  <span class="select__current">OOO</span>
+                </div>
+                <div class="select__body">
+                  <div class="select__item">OOO</div>
+                  <div class="select__item">ФОП</div>
+                </div>
+              </div>
+            </div>
+            <div class="popup-editing__item">
+              <div class="custom-input__wrapp">
+                <label class="custom-input__label">ИНН</label>
+                <input type="text" class="custom-input" value="7457864622" />
+              </div>
+            </div>
+            <div class="popup-editing__item">
+              <div class="custom-input__wrapp">
+                <label class="custom-input__label">КПП</label>
+                <input type="text" class="custom-input" value="56564841259" />
+              </div>
+            </div>
+            <div class="popup-editing__item">
+              <div class="custom-input__wrapp">
+                <label class="custom-input__label">ОГРН</label>
+                <input type="text" class="custom-input" value="7464304548903" />
+              </div>
+            </div>
+            <div class="popup-editing__item">
+              <div class="custom-input__wrapp">
+                <label class="custom-input__label">ФИО</label>
+                <input type="text" class="custom-input" value="Иванов Иван Иванович" />
+              </div>
+            </div>
+            <div class="popup-editing__item">
+              <div class="custom-input__wrapp">
+                <label class="custom-input__label">Телефон</label>
+                <input type="text" class="custom-input" value="+7 (951) 208-85-85" />
+              </div>
+            </div>
+          </div>
+          <button class="popup-editing__btn btn primary-btn small-btn">Сохранить</button>
+        </div>
+      </div>
+    </div>
+    <div id="popup-editbranch" class="popup-editing white-popup mfp-hide">
+      <div class="popup__body">
+        <div class="popup-editing__content">
+          <div class="popup-editing__title primary-title">Редактировать филиал</div>
+          <div class="popup-editing__items">
+            <div class="popup-editing__item">
+              <div class="custom-input__wrapp">
+                <input type="text" class="custom-input" value="Sdaykat |" />
+              </div>
+            </div>
+            <div class="popup-editing__item">
+              <div class="select select-dropdown">
+                <div class="select__header">
+                  <span class="select__current">Челябинск</span>
+                </div>
+                <div class="select__body">
+                  <div class="select__item">Москва</div>
+                  <div class="select__item">Петербург</div>
+                </div>
+              </div>
+            </div>
+            <div class="popup-editing__item">
+              <div class="custom-input__wrapp">
+                <input type="text" class="custom-input" value="Механическая 1/а" />
+              </div>
+            </div>
+            <div class="popup-editing__item">
+              <div class="custom-input__wrapp">
+                <input type="text" class="custom-input" value="с 9:00 до 16:00" />
+              </div>
+            </div>
+
+            <div class="popup-editing__item">
+              <div class="custom-input__wrapp">
+                <input type="tell" class="custom-input" value="+7 (951) 202-20-31" />
+              </div>
+            </div>
+            <div class="popup-editing__item">
+              <div class="select select-dropdown">
+                <div class="select__header">
+                  <span class="select__current">Доп. сервис</span>
+                </div>
+                <div class="select__body">
+                  <div class="select__item">Доп. сервис 1</div>
+                  <div class="select__item">Доп. сервис 2</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="popup-editing__btn btn primary-btn small-btn">Сохранить</button>
+        </div>
+      </div>
+    </div>
+    <!-- Popups end -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/libs/slick/slick.min.js"></script>

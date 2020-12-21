@@ -4,34 +4,8 @@
     width: 100%;
   }
   &__tabs {
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
     justify-content: center;
     margin: 20px 0 30px 0;
-  }
-  &__tab {
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 10px;
-    outline: none;
-    margin-right: 32px;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: $text-gray;
-    padding-bottom: 10px;
-    border-bottom: 2px solid $border;
-    transition: all 0.3s ease;
-    &:last-child {
-      margin: 0;
-    }
-    &.active {
-      font-weight: 600;
-      color: $text;
-      border-bottom: 2px solid $primary;
-      transition: all 0.3s ease;
-    }
   }
   &__retail {
     width: 100%;
@@ -244,7 +218,7 @@
 .auction-start {
   background: #f7f9fc;
   padding: 30px 0;
-  &__deal{
+  &__deal {
     background: #fff;
   }
   &__body {
@@ -306,25 +280,25 @@
     padding: 0 30px;
     margin: 0 auto;
   }
-  &-dropdown{
+  &-dropdown {
     padding: 30px 0;
-    .select__header{
+    .select__header {
       position: relative;
       background: url('/assets/img/icons/icon-sort.svg') left center no-repeat;
-      background-position:  10px center;
+      background-position: 10px center;
     }
-    .select__current{
+    .select__current {
       padding: 0 35px;
     }
   }
-  &-dropdown{
+  &-dropdown {
     padding: 30px 0;
-    .select__header{
+    .select__header {
       position: relative;
       background: url('/assets/img/icons/icon-sort.svg') left center no-repeat;
-      background-position:  10px center;
+      background-position: 10px center;
     }
-    .select__current{
+    .select__current {
       padding: 0 35px;
     }
   }
@@ -379,15 +353,15 @@
   &__profil_text {
     min-height: 55px;
   }
-  &__status{
+  &__status {
     font-weight: 500;
     font-size: 14px;
     line-height: 25px;
     color: #fff;
   }
-  .bg_status{
-    background-color: #E3EAF3;
-    .offer__bottom{
+  .bg_status {
+    background-color: #e3eaf3;
+    .offer__bottom {
       border-top: 1px solid #fff;
     }
   }
@@ -397,7 +371,7 @@
     font-size: 16px;
     font-weight: 500;
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0px;
       top: 2px;
