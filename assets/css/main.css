@@ -797,11 +797,11 @@ body {
   width: 100%;
 }
 
-.custom-input::placeholder {
+.custom-input::placeholder, .custom-input::-moz-placeholder, .custom-input::-webkit-input-placeholder {
   font-weight: 300;
   font-size: 14px;
-  line-height: 16px;
   color: #34495e;
+  opacity: 1;
 }
 
 .custom-input:hover {
@@ -1399,9 +1399,10 @@ body {
   border: none;
 }
 
-.number__left input::placeholder {
+.number__left input::placeholder, .number__left input::-moz-placeholder, .number__left input::-webkit-input-placeholder {
   color: #868686;
   font-weight: 500;
+  opacity: 1;
 }
 
 .number__field {
@@ -1430,9 +1431,10 @@ body {
   border: none;
 }
 
-.number__right input::placeholder {
+.number__right input::placeholder, .number__right input::-moz-placeholder, .number__right input::-webkit-input-placeholder {
   font-weight: 500;
   color: #868686;
+  opacity: 1;
 }
 
 .number__info {
@@ -1484,6 +1486,7 @@ body {
 
 .material-oftype__item-select {
   max-width: 210px;
+  width: 100%;
   margin-right: 30px;
 }
 

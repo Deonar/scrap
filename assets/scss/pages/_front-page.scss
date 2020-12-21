@@ -66,9 +66,12 @@
       color: $text;
       outline: none;
       border: none;
-      &::placeholder {
+      &::placeholder,
+      &::-moz-placeholder,
+      &::-webkit-input-placeholder {
         color: #868686;
         font-weight: 500;
+        opacity: 1;
       }
     }
   }
@@ -94,9 +97,12 @@
       font-weight: 500;
       outline: none;
       border: none;
-      &::placeholder {
+      &::placeholder,
+      &::-moz-placeholder,
+      &::-webkit-input-placeholder {
         font-weight: 500;
         color: #868686;
+        opacity: 1;
       }
     }
   }
@@ -148,6 +154,7 @@
   }
   &__item-select {
     max-width: 210px;
+    width: 100%;
     margin-right: 30px;
   }
   &__item-weight {

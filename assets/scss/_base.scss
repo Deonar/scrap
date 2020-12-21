@@ -480,11 +480,13 @@ body {
   font-size: 14px;
   padding: 0 20px;
   width: 100%;
-  &::placeholder {
+  &::placeholder,
+  &::-moz-placeholder,
+  &::-webkit-input-placeholder {
     font-weight: 300;
     font-size: 14px;
-    line-height: 16px;
     color: $text;
+    opacity: 1;
   }
   &:hover {
     border: 1px solid $primary;
