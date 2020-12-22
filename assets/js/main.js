@@ -44,6 +44,25 @@ jQuery(document).ready(function ($) {
     $('#exchange-rus').hide();
   });
 
+  // Mob Tabs
+  $('#account-tabs__info').on('click', function (e) {
+    $('.account-tabs__item').removeClass('active');
+    $('.account-content').hide();
+    $(this).addClass('active');
+    $('#account-info').show();
+  });
+  $('#account-tabs__exchange').on('click', function (e) {
+    $('.account-tabs__item').removeClass('active');
+    $('.account-content').hide();
+    $(this).addClass('active');
+    $('#account-exchange').show();
+  });
+  $('#account-tabs__balance').on('click', function (e) {
+    $('.account-tabs__item').removeClass('active');
+    $('.account-content').hide();
+    $(this).addClass('active');
+    $('#account-balance').show();
+  });
 
   //======================== ALL SELECTIZES
   $('.custom-select').selectize();

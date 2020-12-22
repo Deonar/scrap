@@ -5,6 +5,36 @@
   display: flex;
   margin: auto;
 }
+.account-tabs{
+  background-color: #F7F9FC;
+  display: none;
+  flex-wrap: wrap;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 30px 0;
+  &__item{
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    &.active{
+      background-color: #81909F;
+      color: #fff;
+      svg{
+        fill: #fff;
+      }
+    }
+  }
+  &__exchange{
+    border-right: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+  }
+}
 .account-info {
   font-weight: 400;
   font-size: 14px;
@@ -30,9 +60,6 @@
   width: 100%;
 }
 .account-balance{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: #f7f9fc;
   border-radius: 5px;
   padding: 15px 20px;

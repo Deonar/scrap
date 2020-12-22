@@ -66,6 +66,10 @@
       margin: auto;
       margin-bottom: 20px;
     }
+    &__controll {
+      order: 1;
+      margin-bottom: 20px;
+    }
     .work-time {
       font-size: 10px;
       font-weight: 300;
@@ -500,7 +504,26 @@
     }
   }
   //======================= ALL popups END
+  //======================= ACOUNT
 
+  .account-tabs{
+    display: flex;
+  }
+  .account-info, .account-balance, .exchange{
+    display: none;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .account-wrapper, .account-col_left{
+    padding: 0;
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+  //======================= END ACOUNT
   //======================= footer
   .footer {
     &-wrapper {
