@@ -301,7 +301,7 @@
     }
     .select__header {
       position: relative;
-      background: url('/assets/img/icons/icon-sort.svg') left center no-repeat;
+      background: url("/assets/img/icons/icon-sort.svg") left center no-repeat;
       background-position: 10px center;
     }
     .select__current {
@@ -312,7 +312,7 @@
     padding: 30px 0;
     .select__header {
       position: relative;
-      background: url('/assets/img/icons/icon-sort.svg') left center no-repeat;
+      background: url("/assets/img/icons/icon-sort.svg") left center no-repeat;
       background-position: 10px center;
     }
     .select__current {
@@ -367,6 +367,21 @@
     margin-left: auto;
     margin-bottom: 20px;
   }
+  &__controll {
+    margin-left: auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    .btn {
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      padding: 0;
+    }
+  }
   &__profil_text {
     min-height: 55px;
   }
@@ -388,7 +403,7 @@
     font-size: 16px;
     font-weight: 500;
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0px;
       top: 2px;
