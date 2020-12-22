@@ -136,7 +136,7 @@
       </div>
     </header>
 
-    <!-- <section class="page-layout partners">
+    <section class="page-layout partners">
       <div class="wrapper partners-wrapper">
         <h2 class="partners-title">Раздел партнёров</h2>
         <div class="partners-links">
@@ -144,9 +144,19 @@
           <a class="partners-link partners-link_active partners-link__reg">Регистрация</a>
         </div>
         <form action="#" class="partners-form">
-          <input type="text" name="company_name" class="custom-input" required="" placeholder="Название компании" value="" /><input type="text" name="name" class="custom-input" required="" placeholder="Имя парнера" value="" /><input type="phone" name="phone" class="custom-input" required="" placeholder="Номер телефона" />
+          <input type="text" name="company_name" class="custom-input" required="" placeholder="Название компании" value="" />
+          <input type="text" name="name" class="custom-input" required="" placeholder="Имя парнера" value="" />
+          <input type="phone" name="phone" class="custom-input" required="" placeholder="Номер телефона" />
           <div class="trigger-wrapper">
-            <div class="custom-select cities"><span class="custom-select__current-value">Конотоп</span></div>
+            <div class="select select-dropdown">
+              <div class="select__header">
+                <span class="select__current">Конотоп</span>
+              </div>
+              <div class="select__body">
+                <div class="select__item">Каталитическое</div>
+                <div class="select__item">Радиолом</div>
+              </div>
+            </div>
           </div>
           <div class="partners-options">
             <div class="partners-options__title">Возможности</div>
@@ -183,16 +193,17 @@
             <input id="policy" type="checkbox" required="" />
             <div class="custom-checkbox__value">
               <span class="custom-checkbox__icon"></span>
-              <span class="custom-checkbox__value-text"
-                >Я ознакомлен с <a target="_blank" href="/agreement">пользовательским соглашением</a>и
+              <span class="custom-checkbox__value-text">
+                Я ознакомлен с
+                <a target="_blank" href="/agreement">пользовательским соглашением и</a>
                 <a target="_blank" href="/policy">политикой конфиденциальности</a>
               </span>
             </div>
           </label>
-          <button class="button button_size_md button_theme_primary">Стать партнером</button>
+          <button class="btn primary-btn small-btn">Стать партнером</button>
         </form>
       </div>
-    </section> -->
+    </section>
 
     <footer class="footer">
       <div class="wrapper footer-wrapper">
