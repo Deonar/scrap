@@ -868,7 +868,7 @@ body {
 
 .white-popup {
   position: relative;
-  background: #fff;
+  background: #f7f9fc;
   border-radius: 5px;
   width: 100%;
   margin: 20px auto;
@@ -1376,6 +1376,7 @@ body {
 }
 
 .aggregators-search__switch {
+  min-width: 210px;
   width: 25%;
 }
 
@@ -1390,6 +1391,7 @@ body {
 }
 
 .aggregators-search__btn {
+  min-width: 210px;
   width: 25%;
   max-width: 210px;
 }

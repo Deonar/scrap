@@ -15,6 +15,7 @@
     justify-content: space-between;
   }
   &__switch {
+    min-width: 210px;
     width: 25%;
   }
 
@@ -27,6 +28,7 @@
     justify-content: center;
   }
   &__btn {
+    min-width: 210px;
     width: 25%;
     max-width: 210px;
   }
