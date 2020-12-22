@@ -136,77 +136,85 @@
       </div>
     </header>
 
-    <!-- <section class="page-layout partners">
+    <section class="page-layout partners">
       <div class="wrapper partners-wrapper">
         <h2 class="partners-title">Раздел партнёров</h2>
         <div class="partners-links">
-          <a class="partners-link false partners-link__enter">Авторизация</a>
-          <a class="partners-link partners-link_active partners-link__reg">Регистрация</a>
+          <div class="partners-link partners-link_active false partners-link__enter login-tab">Авторизация</div>
+          <div class="partners-link partners-link__reg reg-tab">Регистрация</div>
         </div>
-        <form action="#" class="partners-form">
-          <input type="text" name="company_name" class="custom-input" required="" placeholder="Название компании" value="" /><input type="text" name="name" class="custom-input" required="" placeholder="Имя парнера" value="" /><input type="phone" name="phone" class="custom-input" required="" placeholder="Номер телефона" />
+
+        <div class="partners-block partners-block_enter login-block">
+          <input type="phone" name="phone" class="custom-input mask-phone" required="" placeholder="Номер телефона *" />
+          <button class="btn primary-btn small-btn">Авторизоваться</button>
+          <a class="partners-companion"> Стать партнером</a>
+        </div>
+
+        <form action="#" class="partners-form reg-block" style="display: none">
+          <input type="text" name="company_name" class="custom-input" required="" placeholder="Название компании" value="" />
+          <input type="text" name="name" class="custom-input" required="" placeholder="Имя парнера" value="" />
+          <input type="phone" name="phone" class="custom-input" required="" placeholder="Номер телефона" />
           <div class="trigger-wrapper">
-            <div class="custom-select cities"><span class="custom-select__current-value">Конотоп</span></div>
+            <div class="select select-dropdown">
+              <div class="select__header">
+                <span class="select__current">Конотоп</span>
+              </div>
+              <div class="select__body">
+                <div class="select__item">Каталитическое</div>
+                <div class="select__item">Радиолом</div>
+              </div>
+            </div>
           </div>
           <div class="partners-options">
             <div class="partners-options__title">Возможности</div>
-            <label for="cashless" class="custom-checkbox custom-checkbox_size_lg">
-              <input id="cashless" type="checkbox" name="capabilities[1]" value="1" />
-              <div class="custom-checkbox__value">
-                <span class="custom-checkbox__icon"></span>
-                <span class="custom-checkbox__value-text">Прибор РФА Анализ</span>
-              </div>
-            </label>
-            <label for="cash" class="custom-checkbox custom-checkbox_size_lg">
-              <input id="cash" type="checkbox" name="capabilities[2]" value="2" />
-              <div class="custom-checkbox__value">
-                <span class="custom-checkbox__icon"></span>
-                <span class="custom-checkbox__value-text">Наличие офиса</span>
-              </div>
-            </label>
-            <label for="leave" class="custom-checkbox custom-checkbox_size_lg">
-              <input id="leave" type="checkbox" name="capabilities[3]" value="3" />
-              <div class="custom-checkbox__value">
-                <span class="custom-checkbox__icon"></span>
-                <span class="custom-checkbox__value-text">Помольное оборудование</span>
-              </div>
-            </label>
-            <label for="delete" class="custom-checkbox custom-checkbox_size_lg">
-              <input id="delete" type="checkbox" name="capabilities[4]" value="4" />
-              <div class="custom-checkbox__value">
-                <span class="custom-checkbox__icon"></span>
-                <span class="custom-checkbox__value-text">Спец. учет пробирной палаты</span>
-              </div>
+            <div class="partners-options__checkbox custom-checkbox">
+              <input type="checkbox" id="RFA" />
+              <label for="RFA">Прибор РФА Анализ</label>
+            </div>
+            <div class="partners-options__checkbox custom-checkbox">
+              <input type="checkbox" id="office" />
+              <label for="office">Наличие офиса</label>
+            </div>
+            <div class="partners-options__checkbox custom-checkbox">
+              <input type="checkbox" id="equipment" />
+              <label for="equipment">Помольное оборудование</label>
+            </div>
+            <div class="partners-options__checkbox custom-checkbox">
+              <input type="checkbox" id="accounting" />
+              <label for="accounting">Спец. учет пробирной палаты</label>
+            </div>
+          </div>
+          <div class="partners-options__policy custom-checkbox">
+            <input type="checkbox" id="policy" />
+            <label for="policy">
+              Я ознакомлен с
+              <a target="_blank" href="/agreement">пользовательским соглашением и</a>
+              <a target="_blank" href="/policy">политикой конфиденциальности</a>
             </label>
           </div>
-          <label for="policy" class="reg-policy custom-checkbox">
-            <input id="policy" type="checkbox" required="" />
-            <div class="custom-checkbox__value">
-              <span class="custom-checkbox__icon"></span>
-              <span class="custom-checkbox__value-text"
-                >Я ознакомлен с <a target="_blank" href="/agreement">пользовательским соглашением</a>и
-                <a target="_blank" href="/policy">политикой конфиденциальности</a>
-              </span>
-            </div>
-          </label>
-          <button class="button button_size_md button_theme_primary">Стать партнером</button>
+          <button class="btn primary-btn small-btn">Стать партнером</button>
         </form>
       </div>
-    </section> -->
+    </section>
 
     <footer class="footer">
       <div class="wrapper footer-wrapper">
-        <div class="footer-phone">
-          <a href="tel:88003006810" class="footer-phone__link">8 800 300-68-10</a>
-          <span class="footer-phone__text">звонок по России Бесплатный</span>
-        </div>
-        <div class="footer-socials">
-          <a href="https://www.instagram.com/scrap_center/" target="_blank" rel="noopener noreferrer" class="footer-socials__link"><img src="/static/media/instagram-mobile.6acbbc27.svg" alt="vk" class="img-icon" /></a><a href="https://vk.com/scrap.center" target="_blank" rel="noopener noreferrer" class="footer-socials__link"><img src="/static/media/vk-mobile.73d83475.svg" alt="instagram" class="img-icon" /></a>
-        </div>
-        <a class="footer-law">2020 © SCRAP.CENTER</a>
+        <ul class="footer-nav">
+          <li>
+            <a href="#" class="footer-nav__link">Главная</a>
+          </li>
+          <li>
+            <a href="#" class="footer-nav__link">Личный кабинет</a>
+          </li>
+        </ul>
+
         <div class="footer-text">
           <a href="/policy" class="footer-policy">Политика конфиденциальности</a>
           <a href="/agreement" class="footer-licence">Пользовательское соглашение</a>
+        </div>
+        <div class="footer-phone__list">
+          <a href="tel:88003006810" class="footer-phone__link">8 800 300-68-10</a>
+          <span class="footer-phone__text">звонок по России Бесплатный</span>
         </div>
       </div>
     </footer>

@@ -25,7 +25,7 @@ body {
 .overflow-h {
   overflow: hidden !important;
 }
-.text-link{
+.text-link {
   font-weight: 500;
   font-size: 14px;
   color: $text-green;
@@ -49,10 +49,10 @@ body {
 .mb-auto {
   margin-bottom: auto;
 }
-.mb-40{
+.mb-40 {
   margin-bottom: 40px;
 }
-.mb-30{
+.mb-30 {
   margin-bottom: 30px;
 }
 .mb-20 {
@@ -68,7 +68,7 @@ body {
   margin-bottom: 5px;
 }
 
-.text-muted{
+.text-muted {
   color: $text-gray-light;
 }
 
@@ -574,169 +574,213 @@ body {
 
 //addition service
 .select {
-	&__item-check {
-		position: relative;
-		padding-left: 35px;
-		&:before,
-		&:after {
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 50%;
-    		transform: translateY(-50%);
-			width: 25px;
-			height: 25px;
-			border-radius: 5px;
-		}
-		&:after {
-			border: 1px solid $text-gray;
-		}
-		&:before {
-			background: url(../img/icons/icon-check.svg) no-repeat 50% 50%;
-			opacity: 0;
-		}
-		&.active-check {
-			&:before {
-				background: url(../img/icons/icon-check.svg) no-repeat 50% 50%;
-				opacity: 1;
-			}
-			&:after {
-				border: 1px solid $primary;
-			}
-		}
-	}
-	&.service {
-		.select__body {
-			min-width: 257px ;
-		}
-		.select__item {
-			margin-bottom: 0;
-		}
-	}
+  &__item-check {
+    position: relative;
+    padding-left: 35px;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 25px;
+      height: 25px;
+      border-radius: 5px;
+    }
+    &:after {
+      border: 1px solid $text-gray;
+    }
+    &:before {
+      background: url(../img/icons/icon-check.svg) no-repeat 50% 50%;
+      opacity: 0;
+    }
+    &.active-check {
+      &:before {
+        background: url(../img/icons/icon-check.svg) no-repeat 50% 50%;
+        opacity: 1;
+      }
+      &:after {
+        border: 1px solid $primary;
+      }
+    }
+  }
+  &.service {
+    .select__body {
+      min-width: 257px;
+    }
+    .select__item {
+      margin-bottom: 0;
+    }
+  }
 }
 
 // Price and time work
 .select {
-	&__price-slider {
-		position: relative;
-	}
-	&__range {
-		position: relative;
-		width: 100%;
-		height: 4px;
-	 	border-radius: 50px;
-		background-color: $bg-block;
-	}
-	&__range-between {
-		background: $primary;
-		height: 100%;
-		display: block;
-	}
-	&__range-button1,
-	&__range-button2 {
-		touch-action: pan-x;
-		position: absolute;
-		appearance: none;
-			-moz-appearance: none;
-		-webkit-appearance: none;
-		top: 50%;
-		width: 15px;
-		height: 15px;
-		justify-content: center;
-		align-items: center;
-		background: $primary;
-		cursor: pointer;
-		transform: translateY(-50%);
-		border: none;
-		border-radius: 50%;
-	}
-	&__range-button1 {
-		span {
-			background: #52116A;
-		}
-	}
-	&__range-button2 {
-		span {
-		background: #A727F3;
-		}
-	}
-	&__range-input-wrapp {
-		justify-content: space-between;
-		align-items: center;
-		position: relative;
-		color: #5C5C5C;
-		margin-bottom: 35px;
-		.range_inpt1,
-		.range_inpt2 {
-			touch-action: pan-x;
-			appearance: none;
-			-moz-appearance: none;
-			-webkit-appearance: none;
-			width: 100px;
-			height: 40px;
-			border-radius: 5px;
-			border: 1px solid $border;
-			font-size: 14px;
-			color: #5C5C5C;
-			padding-left: 0px;
-			outline: none;
-			text-align: center;
-			display: block;
-			position: relative;
-		}
-	}
-	&.slider-num {
-		.select__body {
-			min-width: 320px;
-			padding: 20px 25px 35px 20px;
-		}
-	}
-	.input-price {
-		letter-spacing: 0.02em;
-	}
+  &__price-slider {
+    position: relative;
+  }
+  &__range {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    border-radius: 50px;
+    background-color: $bg-block;
+  }
+  &__range-between {
+    background: $primary;
+    height: 100%;
+    display: block;
+  }
+  &__range-button1,
+  &__range-button2 {
+    touch-action: pan-x;
+    position: absolute;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+    background: $primary;
+    cursor: pointer;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 50%;
+  }
+  &__range-button1 {
+    span {
+      background: #52116a;
+    }
+  }
+  &__range-button2 {
+    span {
+      background: #a727f3;
+    }
+  }
+  &__range-input-wrapp {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: #5c5c5c;
+    margin-bottom: 35px;
+    .range_inpt1,
+    .range_inpt2 {
+      touch-action: pan-x;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      width: 100px;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid $border;
+      font-size: 14px;
+      color: #5c5c5c;
+      padding-left: 0px;
+      outline: none;
+      text-align: center;
+      display: block;
+      position: relative;
+    }
+  }
+  &.slider-num {
+    .select__body {
+      min-width: 320px;
+      padding: 20px 25px 35px 20px;
+    }
+  }
+  .input-price {
+    letter-spacing: 0.02em;
+  }
 }
 
 // Searc city
 .select {
-	&__item-search {
-		opacity: 0.7;
-	    font-size: 14px;
-	    line-height: 15px;
-	    margin-bottom: 15px;
-	    transition: all 0.3s ease;
-		cursor: pointer;
-		&:hover {
-			text-shadow: 0 0 1px #34495E;
-		}
-		&.hide {
-			display: none;
-		}
-	}
-	&__body {
-		.scrollbar-inner {
-			max-height: 105px;
-		}
-	}
+  &__item-search {
+    opacity: 0.7;
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      text-shadow: 0 0 1px #34495e;
+    }
+    &.hide {
+      display: none;
+    }
+  }
+  &__body {
+    .scrollbar-inner {
+      max-height: 105px;
+    }
+  }
 
-	input::-webkit-calendar-picker-indicator {
-	 	 display: none;
-	}
-	.scrollbar-inner > .scroll-element.scroll-y {
-		width: 2px;
-	}
-	.scrollbar-inner > .scroll-element .scroll-bar {
-		background-color: $primary;
-	}
-	.mark-color {
-		text-shadow: 0 0 1px #34495E;
-		background: transparent;
-	}
-	&.geolocation {
-		input::placeholder  {
-			font-size: 14px;
-		}
-		.select__header-search {
-			color: $text-gray-light;
-		}
-	}
+  input::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  .scrollbar-inner > .scroll-element.scroll-y {
+    width: 2px;
+  }
+  .scrollbar-inner > .scroll-element .scroll-bar {
+    background-color: $primary;
+  }
+  .mark-color {
+    text-shadow: 0 0 1px #34495e;
+    background: transparent;
+  }
+  &.geolocation {
+    input::placeholder {
+      font-size: 14px;
+    }
+    .select__header-search {
+      color: $text-gray-light;
+    }
+  }
+}
+
+.custom-checkbox {
+  position: relative;
+  display: block;
+  padding-left: 50px;
+  margin-bottom: 15px;
+  input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  label {
+    cursor: pointer;
+    font-size: 14px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 25px;
+      height: 25px;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 5px;
+    }
+  }
+  input:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 5px;
+    background: url(../img/icons/icon-check.svg) no-repeat 50% 50%;
+    opacity: 1;
+  }
 }
