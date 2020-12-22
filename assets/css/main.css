@@ -342,14 +342,14 @@ body {
 .container {
   width: 100%;
   max-width: 1440px;
-  padding: 0 28px;
+  padding: 0 60px;
   margin: 0 auto;
 }
 
 .container-fluid {
   width: 100%;
   max-width: 1440px;
-  padding: 0 28px;
+  padding: 0 60px;
   margin: 0 auto;
 }
 
@@ -467,7 +467,7 @@ body {
 }
 
 .custom-select .selectize-input {
-  border: 1px solid #3daf54;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   background: #51c569;
   padding: 15px 10px 15px 22px;
@@ -519,7 +519,7 @@ body {
 }
 
 .custom-select .selectize-dropdown {
-  border: 1px solid #3daf54;
+  border: 1px solid #ffffff;
   border-top: 1px solid #51c569;
   background: #51c569;
   box-shadow: none;
@@ -1039,6 +1039,10 @@ body {
   max-width: 100%;
 }
 
+.header .container-fluid {
+  padding: 0 28px;
+}
+
 .header-wrapp {
   position: relative;
   padding: 24px 0 27px 0;
@@ -1050,7 +1054,7 @@ body {
 .header-burger {
   display: flex;
   align-items: center;
-  margin-right: 8%;
+  margin-right: 75px;
   cursor: pointer;
 }
 
@@ -1059,8 +1063,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 14px;
-  width: 30px;
+  height: 12px;
+  width: 25px;
 }
 
 .header-burger__bottom, .header-burger__top {
@@ -1160,9 +1164,9 @@ body {
 }
 
 .header-phone__svg--mob svg {
-  height: 22px;
-  width: 22px;
-  fill: #34495e;
+  height: 24px;
+  width: 23px;
+  fill: #51c569;
 }
 
 .header-phone__svg--mob:hover {
@@ -1219,14 +1223,14 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .navbar-body {
   position: relative;
   z-index: 1000;
   width: 100%;
-  max-width: 500px;
+  max-width: 505px;
   background: #51c569;
   padding: 40px 50px 40px 135px;
   display: flex;
@@ -1240,12 +1244,32 @@ body {
   margin-bottom: 80px;
 }
 
+.navbar-head .header-logo {
+  display: none;
+}
+
 .navbar-head .header-burger__bottom,
 .navbar-head .header-burger__top {
   background: #ffffff;
 }
 
 .navbar-head .header-burger__text {
+  color: #ffffff;
+}
+
+.navbar-location {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  display: none;
+}
+
+.navbar-location .header-city {
+  margin: 0;
+  display: flex;
+}
+
+.navbar-location .header-city__text {
   color: #ffffff;
 }
 
@@ -1268,6 +1292,7 @@ body {
 .navbar-menu__link {
   display: block;
   font-weight: 500;
+  font-size: 18px;
   color: #ffffff;
   padding: 20px 15px 20px 0px;
   transition: all 0.3s ease;
@@ -1290,13 +1315,21 @@ body {
   justify-content: space-between;
 }
 
+.navbar-option .header-phone__list {
+  display: none;
+}
+
 .navbar-policy {
   width: 100%;
-  max-width: 200px;
-  font-weight: 500;
+  margin-right: 5px;
+  font-weight: 400;
   font-size: 14px;
   text-decoration-line: underline;
   color: #ffffff;
+}
+
+.navbar-policy--mob {
+  display: none;
 }
 
 .navbar-socials {
@@ -1309,16 +1342,16 @@ body {
 }
 
 .navbar-socials .socials__icon svg {
-  stroke: #ffffff;
+  stroke: #f7f7f7;
 }
 
 .navbar-socials .socials__icon:hover {
-  border: 1px solid #81909f;
-  background: #81909f;
+  border: 1px solid #34495e;
+  background: #34495e;
 }
 
-.navbar-socials .socials__icon:hover svg {
-  fill: #ffffff;
+.navbar-socials .socials__icon:last-child {
+  margin-right: 0;
 }
 
 .aggregators-search {
@@ -1646,7 +1679,7 @@ body {
 .offer__wrapper {
   width: 100%;
   max-width: 1440px;
-  padding: 0 28px;
+  padding: 0 60px;
   margin: 0 auto;
 }
 
@@ -1895,6 +1928,9 @@ body {
 }
 
 @media (max-width: 959px) {
+  .header-burger {
+    margin-right: 15px;
+  }
   .aggregators-search__tabs {
     margin: 30px 0 20px 0;
   }
@@ -1936,9 +1972,6 @@ body {
 }
 
 @media (max-width: 900px) {
-  .header-burger {
-    margin-right: 30px;
-  }
   .offer__top {
     max-width: 100%;
     flex-wrap: wrap;
@@ -2006,6 +2039,12 @@ body {
 }
 
 @media (max-width: 767px) {
+  .container {
+    padding: 0 28px;
+  }
+  .container-fluid {
+    padding: 0 28px;
+  }
   .tabs-switch {
     justify-content: center;
     margin: 30px 0;
@@ -2016,6 +2055,12 @@ body {
   }
   .header-burger {
     margin-right: 0px;
+  }
+  .header-burger__lines {
+    width: 30px;
+  }
+  .header-burger__bottom {
+    width: 17px;
   }
   .header-burger__text {
     display: none;
@@ -2047,8 +2092,98 @@ body {
   .header-phone__text {
     display: none;
   }
+  .navbar-body {
+    max-width: 545px;
+    padding: 13px 0 0 0;
+  }
+  .navbar-head {
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar-head .header-phone__svg--mob svg {
+    fill: #fff;
+  }
+  .navbar-head .header-logo {
+    display: flex;
+    min-width: 150px;
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: translate(0%, 0%);
+  }
+  .navbar-head .header-logo__text {
+    color: #fff;
+  }
+  .navbar-location {
+    display: flex;
+  }
+  .navbar-location .header-city__image {
+    width: 14px;
+    height: 16px;
+  }
+  .navbar-location .header-city__image img {
+    width: 13px;
+    height: 14px;
+  }
+  .navbar-menu {
+    padding-left: 50px;
+    margin-bottom: 50px;
+  }
+  .navbar-select {
+    margin-left: 28px;
+    margin-right: 28px;
+    border-bottom: 0px;
+    max-width: 320px;
+  }
+  .navbar-option {
+    background: #fff;
+    padding-top: 22px;
+    padding-bottom: 45px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-option .header-phone__list {
+    display: block;
+  }
+  .navbar-option .header-phone__link {
+    color: #34495e;
+    font-size: 16px;
+    margin-bottom: 3px;
+    display: block;
+  }
+  .navbar-option .header-phone__text {
+    display: block;
+    font-size: 7px;
+    text-transform: uppercase;
+  }
+  .navbar-policy {
+    text-align: center;
+    color: #34495e;
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+  .navbar-policy--mob {
+    display: block;
+  }
+  .navbar-socials {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .navbar-socials .socials__icon {
+    border: 1px solid #34495e;
+  }
+  .navbar-socials .socials__icon svg {
+    stroke: #5f5d5d;
+  }
   .offer {
     margin-bottom: 30px;
+  }
+  .offer__wrapper {
+    padding: 0 28px;
   }
   .offer-items__btn-more {
     min-width: auto;

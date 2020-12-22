@@ -4,7 +4,9 @@
   // left: 0;
   width: 100%;
   max-width: 100%;
-
+  .container-fluid {
+    padding: 0 28px;
+  }
   &-wrapp {
     position: relative;
     padding: 24px 0 27px 0;
@@ -15,7 +17,7 @@
   &-burger {
     display: flex;
     align-items: center;
-    margin-right: 8%;
+    margin-right: 75px;
     cursor: pointer;
   }
   &-burger__lines {
@@ -23,8 +25,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 14px;
-    width: 30px;
+    height: 12px;
+    width: 25px;
   }
   &-burger__bottom,
   &-burger__top {
@@ -109,9 +111,9 @@
   &-phone__svg--mob {
     display: none;
     svg {
-      height: 22px;
-      width: 22px;
-      fill: #34495e;
+      height: 24px;
+      width: 23px;
+      fill: $primary;
     }
     &:hover {
       fill: $primary;
@@ -167,13 +169,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.1);
   }
   &-body {
     position: relative;
     z-index: 1000;
     width: 100%;
-    max-width: 500px;
+    max-width: 505px;
     background: $primary;
     padding: 40px 50px 40px 135px;
     display: flex;
@@ -184,12 +186,28 @@
   &-head {
     display: flex;
     margin-bottom: 80px;
+    .header-logo {
+      display: none;
+    }
     .header-burger__bottom,
     .header-burger__top {
       background: $white;
     }
     .header-burger__text {
       color: $white;
+    }
+  }
+  &-location {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    display: none;
+    .header-city {
+      margin: 0;
+      display: flex;
+      &__text {
+        color: #ffffff;
+      }
     }
   }
   &-menu {
@@ -207,6 +225,7 @@
   &-menu__link {
     display: block;
     font-weight: 500;
+    font-size: 18px;
     color: $white;
     padding: 20px 15px 20px 0px;
     transition: all 0.3s ease;
@@ -224,14 +243,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .header-phone__list {
+      display: none;
+    }
   }
   &-policy {
     width: 100%;
-    max-width: 200px;
-    font-weight: 500;
+    margin-right: 5px;
+    font-weight: 400;
     font-size: 14px;
     text-decoration-line: underline;
     color: #ffffff;
+    &--mob {
+      display: none;
+    }
   }
   &-socials {
     display: flex;
@@ -239,14 +264,14 @@
     .socials__icon {
       margin-right: 16px;
       svg {
-        stroke: $white;
+        stroke: #f7f7f7;
       }
       &:hover {
-        border: 1px solid $icon;
-        background: $icon;
-        svg {
-          fill: $white;
-        }
+        border: 1px solid $dark-btn;
+        background: $dark-btn;
+      }
+      &:last-child {
+        margin-right: 0;
       }
     }
   }

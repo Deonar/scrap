@@ -62,13 +62,13 @@ body {
 .container {
   width: 100%;
   max-width: 1440px;
-  padding: 0 28px;
+  padding: 0 60px;
   margin: 0 auto;
 }
 .container-fluid {
   width: 100%;
   max-width: 1440px;
-  padding: 0 28px;
+  padding: 0 60px;
   margin: 0 auto;
 }
 .section {
@@ -171,7 +171,7 @@ body {
 }
 .custom-select {
   .selectize-input {
-    border: 1px solid #3daf54;
+    border: 1px solid $white;
     border-radius: 5px;
     background: $primary;
     padding: 15px 10px 15px 22px;
@@ -216,7 +216,7 @@ body {
     }
   }
   .selectize-dropdown {
-    border: 1px solid #3daf54;
+    border: 1px solid $white;
     border-top: 1px solid $primary;
     background: $primary;
     box-shadow: none;
