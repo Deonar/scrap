@@ -1,4 +1,9 @@
 @media (max-width: 959px) {
+  .header {
+    &-burger {
+      margin-right: 15px;
+    }
+  }
   //======================= ALL PAGE
   .aggregators-search {
     &__tabs {
@@ -47,14 +52,6 @@
   //======================= ALL PAGE END
 }
 @media (max-width: 900px) {
-  //====================== HEADER
-  .header {
-    &-burger {
-      margin-right: 30px;
-    }
-  }
-  //====================== HEADER END
-
   //====================== OFFERS
   .offer {
     &__top {
@@ -128,6 +125,12 @@
 }
 
 @media (max-width: 767px) {
+  .container {
+    padding: 0 28px;
+  }
+  .container-fluid {
+    padding: 0 28px;
+  }
   .tabs-switch {
     justify-content: center;
     margin: 30px 0;
@@ -140,6 +143,12 @@
     }
     &-burger {
       margin-right: 0px;
+      &__lines {
+        width: 30px;
+      }
+      &__bottom {
+        width: 17px;
+      }
     }
     &-burger__text {
       display: none;
@@ -172,11 +181,103 @@
       display: none;
     }
   }
+  .navbar {
+    &-body {
+      max-width: 545px;
+      padding: 13px 0 0 0;
+    }
+    &-head {
+      padding-left: 28px;
+      padding-right: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .header-phone__svg--mob svg {
+        fill: #fff;
+      }
+      .header-logo {
+        display: flex;
+        min-width: 150px;
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: translate(0%, 0%);
+        &__text {
+          color: #fff;
+        }
+      }
+    }
+    &-location {
+      display: flex;
+      .header-city__image {
+        width: 14px;
+        height: 16px;
+        img {
+          width: 13px;
+          height: 14px;
+        }
+      }
+    }
+    &-menu {
+      padding-left: 50px;
+      margin-bottom: 50px;
+    }
+    &-select {
+      margin-left: 28px;
+      margin-right: 28px;
+      border-bottom: 0px;
+      max-width: 320px;
+    }
+    &-option {
+      background: #fff;
+      padding-top: 22px;
+      padding-bottom: 45px;
+      flex-direction: column;
+      align-items: center;
+      .header-phone__list {
+        display: block;
+      }
+      .header-phone__link {
+        color: $text;
+        font-size: 16px;
+        margin-bottom: 3px;
+        display: block;
+      }
+      .header-phone__text {
+        display: block;
+        font-size: 7px;
+        text-transform: uppercase;
+      }
+    }
+    &-policy {
+      text-align: center;
+      color: $text;
+      margin-bottom: 24px;
+      max-width: 100%;
+      &--mob {
+        display: block;
+      }
+    }
+    &-socials {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      .socials__icon {
+        border: 1px solid $dark-btn;
+        svg {
+          stroke: #5f5d5d;
+        }
+      }
+    }
+  }
   //====================== HEADER END
 
   //====================== OFFERS
   .offer {
     margin-bottom: 30px;
+    &__wrapper {
+      padding: 0 28px;
+    }
     &-items__btn-more {
       min-width: auto;
       max-width: 250px;
@@ -258,7 +359,7 @@
     &__img {
       margin-right: 20px;
       img {
-        height: 60px;
+        height: 75px;
       }
     }
     &__content {
@@ -399,6 +500,32 @@
     }
   }
   //======================= ALL popups END
+
+  //======================= footer
+  .footer {
+    &-wrapper {
+      padding: 0 28px;
+      padding-top: 20px;
+      padding-bottom: 35px;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-nav {
+      flex-direction: column;
+      margin-bottom: 30px;
+      li {
+        margin-right: 0px;
+        margin-bottom: 5px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &-text {
+      margin-bottom: 30px;
+    }
+  }
+  //======================= footer enf
 }
 
 @media (max-width: 550px) {
