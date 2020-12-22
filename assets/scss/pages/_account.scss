@@ -1,3 +1,118 @@
+.account-wrapper{
+  padding-top: 30px;
+  padding-bottom: 60px;
+  max-width: 1032px;
+  display: flex;
+  margin: auto;
+}
+.account-info {
+  font-weight: 400;
+  font-size: 14px;
+  max-width: 600px;
+  margin-right: 30px;
+  width: 100%;
+  li {
+    border-bottom: 1px solid #ededed;
+    padding: 14px 0;
+  }
+  &_h {
+    max-width: 200px;
+    width: 100%;
+    display: inline-block;
+    margin-right: 30px;
+  }
+}
+.account-col_left{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  max-width: 370px;
+  width: 100%;
+}
+.account-balance{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f9fc;
+  border-radius: 5px;
+  padding: 15px 20px;
+  width: 100%;
+  margin-bottom: auto;
+}
+.exchange {
+  background: #f7f9fc;
+  border-radius: 5px;
+  padding: 40px 50px;
+  width: 100%;
+  &-metal{
+    margin-bottom: 40px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    b {
+      font-weight: 600;
+    }
+  }
+  .exchange__icon {
+    width: 10px;
+    height: 8px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+  }
+  .exchange__value{
+    margin-left: auto;
+  }
+  &_up {
+    .exchange__icon {
+      background-image: url(../img/icons/curs-up.svg);
+    }
+    .exchange__value {
+      color: $text-green;
+    }
+  }
+  &_down {
+    .exchange__icon {
+      background-image: url(../img/icons/curs-down.svg);
+    }
+    .exchange__value {
+      color: #FF4B55;
+    }
+  }
+  &-btn {
+    display: flex;
+    &__item {
+      color: $secondery-btn;
+      border-radius: 30px;
+      border: 1px solid  #fff;
+      background: #fff;
+      height: 25px;
+      min-height: 25px;
+      padding: 0 15px;
+      margin-right: 10px;
+      outline: none;
+      cursor: pointer;
+      &:last-child {
+        margin-right: 0;
+      }
+      &.active {
+        color: #fff;
+        background: $secondery-btn;
+      }
+    }
+  }
+}
+
 .account-addbranch {
   padding: 60px 0;
 }
