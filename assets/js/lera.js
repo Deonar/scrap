@@ -197,6 +197,7 @@ jQuery(document).ready(function ($) {
     var in2 = $('#select-price .select__range-input-wrapp .range_inpt2').val();
     $('#select-price .select__current').html(`<p class="input-price"><span class="price-val1">${in1} ₽</span> - <span class="price-val2">${in2} ₽</span></p>`);
   });
+  
   $(document).on('click', '.graph .select__price-slider', function () {
     var in3 = $('.graph .select__range-input-wrapp .range_inpt1').val();
     var in4 = $('.graph .select__range-input-wrapp .range_inpt2').val();
