@@ -1173,7 +1173,7 @@ body {
   height: 25px;
   background: #fff;
   border-radius: 5px;
-  background: url(../img/icons/icon-check.svg) no-repeat 50% 50%;
+  background: url("../img/icons/icon-check.svg") no-repeat 50% 50%;
   opacity: 1;
 }
 
@@ -1397,17 +1397,20 @@ body {
 }
 
 .select__item-check:before {
-  background: url(../img/icons/check.png) no-repeat 50% 50%;
+  background: url("../img/icons/icon-check.svg") no-repeat 50% 50%;
   opacity: 0;
 }
 
 .select__item-check.active-check:before {
-  background: url(../img/icons/check.png) no-repeat 50% 50%;
+  background: url("../img/icons/icon-check.svg") no-repeat 50% 50%;
   opacity: 1;
+  z-index: 1;
 }
 
 .select__item-check.active-check:after {
   border: 1px solid #51c569;
+  background: transparent;
+  z-index: 2;
 }
 
 .select.service .select__body {
