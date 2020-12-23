@@ -572,13 +572,23 @@ body {
   }
 }
 
-//addition service
-.select {
-  &__item-check {
-    position: relative;
-    padding-left: 35px;
-    &:before,
-    &:after {
+.custom-checkbox {
+  position: relative;
+  display: block;
+  padding-left: 50px;
+  margin-bottom: 15px;
+  input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  label {
+    cursor: pointer;
+    font-size: 14px;
+    &:before {
       content: '';
       position: absolute;
       left: 0;
@@ -586,117 +596,64 @@ body {
       transform: translateY(-50%);
       width: 25px;
       height: 25px;
+      background: #fff;
+      border: 1px solid #e5e5e5;
       border-radius: 5px;
     }
-    &:after {
-      border: 1px solid $text-gray;
+  }
+  input:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 5px;
+    background: url(../img/icons/icon-check.svg) no-repeat 50% 50%;
+    opacity: 1;
+  }
+}
+
+// Рейтинг
+.select {
+  max-width: 100%;
+  &__rating {
+    margin-bottom: 5px;
+  }
+  &__rating-star {
+    &:not(:last-child) {
+      margin-right: 10px;
     }
-    &:before {
-      background: url(../img/icons/icon-check.svg) no-repeat 50% 50%;
-      opacity: 0;
-    }
-    &.active-check {
-      &:before {
-        background: url(../img/icons/icon-check.svg) no-repeat 50% 50%;
-        opacity: 1;
-      }
-      &:after {
-        border: 1px solid $primary;
-      }
+    &:first-child svg {
+      fill: $primary !important;
     }
   }
-  &.service {
+  &__rating-star svg {
+    max-width: 20px;
+    max-height: 20px;
+    fill: $text-gray;
+    transition: 0.2s ease;
+    cursor: pointer;
+    &.active-star {
+      fill: $primary;
+    }
+  }
+  &__rating-text .select__rating-value {
+    font-weight: 500;
+  }
+  &.rating {
     .select__body {
-      min-width: 257px;
+      transition: none;
     }
     .select__item {
-      margin-bottom: 0;
+      pointer-events: none;
     }
   }
 }
 
-// Price and time work
-.select {
-  &__price-slider {
-    position: relative;
-  }
-  &__range {
-    position: relative;
-    width: 100%;
-    height: 4px;
-    border-radius: 50px;
-    background-color: $bg-block;
-  }
-  &__range-between {
-    background: $primary;
-    height: 100%;
-    display: block;
-  }
-  &__range-button1,
-  &__range-button2 {
-    touch-action: pan-x;
-    position: absolute;
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    top: 50%;
-    width: 15px;
-    height: 15px;
-    justify-content: center;
-    align-items: center;
-    background: $primary;
-    cursor: pointer;
-    transform: translateY(-50%);
-    border: none;
-    border-radius: 50%;
-  }
-  &__range-button1 {
-    span {
-      background: #52116a;
-    }
-  }
-  &__range-button2 {
-    span {
-      background: #a727f3;
-    }
-  }
-  &__range-input-wrapp {
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    color: #5c5c5c;
-    margin-bottom: 35px;
-    .range_inpt1,
-    .range_inpt2 {
-      touch-action: pan-x;
-      appearance: none;
-      -moz-appearance: none;
-      -webkit-appearance: none;
-      width: 100px;
-      height: 40px;
-      border-radius: 5px;
-      border: 1px solid $border;
-      font-size: 14px;
-      color: #5c5c5c;
-      padding-left: 0px;
-      outline: none;
-      text-align: center;
-      display: block;
-      position: relative;
-    }
-  }
-  &.slider-num {
-    .select__body {
-      min-width: 320px;
-      padding: 20px 25px 35px 20px;
-    }
-  }
-  .input-price {
-    letter-spacing: 0.02em;
-  }
-}
-
-// Searc city
+// Геолокация
 .select {
   &__item-search {
     opacity: 0.7;
@@ -741,23 +698,97 @@ body {
   }
 }
 
-.custom-checkbox {
-  position: relative;
-  display: block;
-  padding-left: 50px;
-  margin-bottom: 15px;
-  input {
-    padding: 0;
-    height: initial;
-    width: initial;
-    margin-bottom: 0;
-    display: none;
-    cursor: pointer;
+// Цена и график работы
+.select {
+  .ui-widget.ui-widget-content {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    border-radius: 50px;
+    background-color: $bg-block;
+    border: none;
   }
-  label {
+  .ui-slider .ui-slider-range {
+    background: $primary;
+    height: 100%;
+    display: block;
+  }
+  .ui-state-default,
+  .ui-widget-content .ui-state-default,
+  .ui-widget-header .ui-state-default,
+  .ui-button,
+  html .ui-button.ui-state-disabled:hover,
+  html .ui-button.ui-state-disabled:active {
+    outline: none;
+    touch-action: pan-x;
+    position: absolute;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+    background: $primary !important;
+    border: none !important;
     cursor: pointer;
-    font-size: 14px;
-    &:before {
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 50%;
+  }
+  &__range-input-wrapp {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: #5c5c5c;
+    margin-bottom: 35px;
+    .range__input {
+      touch-action: pan-x;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      width: 100px;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid $border;
+      font-size: 14px;
+      color: #5c5c5c;
+      padding-left: 0px;
+      outline: none;
+      text-align: center;
+      display: block;
+      position: relative;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+      }
+    }
+  }
+  &.slider-num {
+    .select__body {
+      min-width: 320px;
+      padding: 20px 25px 35px 20px;
+    }
+  }
+  .input-price {
+    letter-spacing: 0.02em;
+  }
+  &__price {
+    padding: 20px 0;
+  }
+}
+
+.select {
+  &__item-check {
+    position: relative;
+    padding-left: 35px;
+    &:before,
+    &:after {
       content: '';
       position: absolute;
       left: 0;
@@ -765,22 +796,46 @@ body {
       transform: translateY(-50%);
       width: 25px;
       height: 25px;
-      background: #fff;
-      border: 1px solid #e5e5e5;
       border-radius: 5px;
     }
+    &:after {
+      border: 1px solid $text-gray;
+    }
+    &:before {
+      background: url(../img/icons/check.png) no-repeat 50% 50%;
+      opacity: 0;
+    }
+    &.active-check {
+      &:before {
+        background: url(../img/icons/check.png) no-repeat 50% 50%;
+        opacity: 1;
+      }
+      &:after {
+        border: 1px solid $primary;
+      }
+    }
   }
-  input:checked + label:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 25px;
-    height: 25px;
-    background: #fff;
-    border-radius: 5px;
-    background: url(../img/icons/icon-check.svg) no-repeat 50% 50%;
-    opacity: 1;
+  &.service {
+    .select__body {
+      min-width: 257px;
+    }
+    .custom-input {
+      max-width: 100%;
+      cursor: pointer;
+      border: none;
+      padding: 0;
+      height: 48px;
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+    .select__item-check {
+      cursor: pointer;
+      line-height: 30px;
+    }
   }
+}
+
+.con {
+  width: 210px;
 }

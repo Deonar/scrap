@@ -557,6 +557,29 @@
   //======================= footer enf
 }
 
+@media screen and (max-width: 576px) {
+  // Цена и график
+  .select {
+    &.slider-num {
+      .select__body {
+        min-width: 280px;
+        padding: 20px 20px 35px 15px;
+      }
+    }
+    &__range-input-wrapp {
+      .range_inpt1,
+      .range_inpt2 {
+        width: 85px;
+      }
+    }
+    &.service {
+      .select__body {
+        min-width: 257px;
+      }
+    }
+  }
+}
+
 @media (max-width: 550px) {
   .container-fluid {
     padding: 0 16px;

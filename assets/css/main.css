@@ -897,12 +897,28 @@ body {
   transition: all 0.3s ease;
 }
 
-.select__item-check {
+.custom-checkbox {
   position: relative;
-  padding-left: 35px;
+  display: block;
+  padding-left: 50px;
+  margin-bottom: 15px;
 }
 
-.select__item-check:before, .select__item-check:after {
+.custom-checkbox input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.custom-checkbox label {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.custom-checkbox label:before {
   content: '';
   position: absolute;
   left: 0;
@@ -910,113 +926,63 @@ body {
   transform: translateY(-50%);
   width: 25px;
   height: 25px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
   border-radius: 5px;
 }
 
-.select__item-check:after {
-  border: 1px solid #e5e5e5;
-}
-
-.select__item-check:before {
-  background: url(../img/icons/icon-check.svg) no-repeat 50% 50%;
-  opacity: 0;
-}
-
-.select__item-check.active-check:before {
+.custom-checkbox input:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 5px;
   background: url(../img/icons/icon-check.svg) no-repeat 50% 50%;
   opacity: 1;
 }
 
-.select__item-check.active-check:after {
-  border: 1px solid #51c569;
+.select {
+  max-width: 100%;
 }
 
-.select.service .select__body {
-  min-width: 257px;
+.select__rating {
+  margin-bottom: 5px;
 }
 
-.select.service .select__item {
-  margin-bottom: 0;
+.select__rating-star:not(:last-child) {
+  margin-right: 10px;
 }
 
-.select__price-slider {
-  position: relative;
+.select__rating-star:first-child svg {
+  fill: #51c569 !important;
 }
 
-.select__range {
-  position: relative;
-  width: 100%;
-  height: 4px;
-  border-radius: 50px;
-  background-color: #f7f9fc;
-}
-
-.select__range-between {
-  background: #51c569;
-  height: 100%;
-  display: block;
-}
-
-.select__range-button1, .select__range-button2 {
-  touch-action: pan-x;
-  position: absolute;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  top: 50%;
-  width: 15px;
-  height: 15px;
-  justify-content: center;
-  align-items: center;
-  background: #51c569;
+.select__rating-star svg {
+  max-width: 20px;
+  max-height: 20px;
+  fill: #e5e5e5;
+  transition: 0.2s ease;
   cursor: pointer;
-  transform: translateY(-50%);
-  border: none;
-  border-radius: 50%;
 }
 
-.select__range-button1 span {
-  background: #52116a;
+.select__rating-star svg.active-star {
+  fill: #51c569;
 }
 
-.select__range-button2 span {
-  background: #a727f3;
+.select__rating-text .select__rating-value {
+  font-weight: 500;
 }
 
-.select__range-input-wrapp {
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  color: #5c5c5c;
-  margin-bottom: 35px;
+.select.rating .select__body {
+  transition: none;
 }
 
-.select__range-input-wrapp .range_inpt1,
-.select__range-input-wrapp .range_inpt2 {
-  touch-action: pan-x;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  width: 100px;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid #e5e5e5;
-  font-size: 14px;
-  color: #5c5c5c;
-  padding-left: 0px;
-  outline: none;
-  text-align: center;
-  display: block;
-  position: relative;
-}
-
-.select.slider-num .select__body {
-  min-width: 320px;
-  padding: 20px 25px 35px 20px;
-}
-
-.select .input-price {
-  letter-spacing: 0.02em;
+.select.rating .select__item {
+  pointer-events: none;
 }
 
 .select__item-search {
@@ -1065,52 +1031,149 @@ body {
   color: #81909f;
 }
 
-.custom-checkbox {
+.select .ui-widget.ui-widget-content {
   position: relative;
+  width: 100%;
+  height: 4px;
+  border-radius: 50px;
+  background-color: #f7f9fc;
+  border: none;
+}
+
+.select .ui-slider .ui-slider-range {
+  background: #51c569;
+  height: 100%;
   display: block;
-  padding-left: 50px;
-  margin-bottom: 15px;
 }
 
-.custom-checkbox input {
+.select .ui-state-default,
+.select .ui-widget-content .ui-state-default,
+.select .ui-widget-header .ui-state-default,
+.select .ui-button,
+.select html .ui-button.ui-state-disabled:hover,
+.select html .ui-button.ui-state-disabled:active {
+  outline: none;
+  touch-action: pan-x;
+  position: absolute;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  justify-content: center;
+  align-items: center;
+  background: #51c569 !important;
+  border: none !important;
+  cursor: pointer;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 50%;
+}
+
+.select__range-input-wrapp {
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: #5c5c5c;
+  margin-bottom: 35px;
+}
+
+.select__range-input-wrapp .range__input {
+  touch-action: pan-x;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  font-size: 14px;
+  color: #5c5c5c;
+  padding-left: 0px;
+  outline: none;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+.select__range-input-wrapp .range__input::-webkit-outer-spin-button, .select__range-input-wrapp .range__input::-webkit-inner-spin-button, .select__range-input-wrapp .range__input::-webkit-outer-spin-button, .select__range-input-wrapp .range__input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.select.slider-num .select__body {
+  min-width: 320px;
+  padding: 20px 25px 35px 20px;
+}
+
+.select .input-price {
+  letter-spacing: 0.02em;
+}
+
+.select__price {
+  padding: 20px 0;
+}
+
+.select__item-check {
+  position: relative;
+  padding-left: 35px;
+}
+
+.select__item-check:before, .select__item-check:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.select__item-check:after {
+  border: 1px solid #e5e5e5;
+}
+
+.select__item-check:before {
+  background: url(../img/icons/check.png) no-repeat 50% 50%;
+  opacity: 0;
+}
+
+.select__item-check.active-check:before {
+  background: url(../img/icons/check.png) no-repeat 50% 50%;
+  opacity: 1;
+}
+
+.select__item-check.active-check:after {
+  border: 1px solid #51c569;
+}
+
+.select.service .select__body {
+  min-width: 257px;
+}
+
+.select.service .custom-input {
+  max-width: 100%;
+  cursor: pointer;
+  border: none;
   padding: 0;
-  height: initial;
-  width: initial;
-  margin-bottom: 0;
-  display: none;
-  cursor: pointer;
+  height: 48px;
 }
 
-.custom-checkbox label {
-  cursor: pointer;
+.select.service .custom-input::placeholder {
   font-size: 14px;
 }
 
-.custom-checkbox label:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 25px;
-  height: 25px;
-  background: #fff;
-  border: 1px solid #e5e5e5;
-  border-radius: 5px;
+.select.service .select__item-check {
+  cursor: pointer;
+  line-height: 30px;
 }
 
-.custom-checkbox input:checked + label:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 25px;
-  height: 25px;
-  background: #fff;
-  border-radius: 5px;
-  background: url(../img/icons/icon-check.svg) no-repeat 50% 50%;
-  opacity: 1;
+.con {
+  width: 210px;
 }
 
 .white-popup {
