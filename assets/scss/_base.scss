@@ -572,6 +572,25 @@ body {
   }
 }
 
+.scrollbar {
+  max-height: 300px !important;
+  height: auto;
+  overflow: hidden;
+  overflow-y: auto;
+  & > .scroll-element.scroll-y {
+    left: inherit;
+    right: 0;
+    z-index: 100;
+  }
+  & > .scroll-element .scroll-element_track {
+    background: #fff;
+  }
+  & > .scroll-element .scroll-bar {
+    background-color: $primary;
+  }
+}
+
+
 //addition service
 .select {
   &__item-check {
