@@ -37,10 +37,10 @@ body {
 .m-auto {
   margin: auto;
 }
-.ml-auto{
+.ml-auto {
   margin-left: auto;
 }
-.mr-auto{
+.mr-auto {
   margin-right: auto;
 }
 .mt-auto {
@@ -252,16 +252,16 @@ body {
     &-content {
       transition: all 0.3s ease;
       .option {
-        color: $white;
-        background: $primary;
+        color: $primary;
+        background: $white;
         padding: 15px 10px 15px 22px;
         transition: all 0.3s ease;
         &:last-child {
           padding-bottom: 25px;
         }
         &.active {
-          background: $primary;
-          color: $text;
+          background: $text-gray-light;
+          color: $white;
           cursor: pointer;
           transition: all 0.3s ease;
         }

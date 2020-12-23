@@ -1,4 +1,14 @@
 jQuery(document).ready(function ($) {
+  //wow init
+  new WOW().init();
+  // startAuction
+  $('#start-auction').on('click', function (e) {
+    $('#offer').show();
+    $('.auction-start').hide();
+    var wow = new WOW();
+    new WOW().init();
+  });
+
   //Mob-menu
   $('.burgerJs').on('click', function (e) {
     $(this).toggleClass('active');
@@ -315,14 +325,16 @@ jQuery(document).ready(function ($) {
     }
     const selectElement = document.querySelector('.ice-cream');
   }
-  // setTimeout(init2slider('p-bw', 'p-b', 'p-b1', 'p-b2', 'p-in1', 'p-in2'), 0);
+  setTimeout(init2slider('price-bw', 'price-b', 'price-b1', 'price-b2', 'price-in1', 'price-in2'), 0);
   setTimeout(init2slider('g-bw', 'g-b', 'g-b1', 'g-b2', 'g-in1', 'g-in2'), 0);
+  setTimeout(init2slider('g-bw23', 'g-b23', 'g-b123', 'g-b223', 'g-in123', 'g-in223'), 0);
+  setTimeout(init2slider('g-bw24', 'g-b24', 'g-b124', 'g-b224', 'g-in124', 'g-in224'), 0);
 
-  // $(document).on("click", ".price .select__price-slider", function () {
-  //   var in1 = $('.select__range-input-wrapp .range_inpt1').val();
-  //   var in2 = $('.select__range-input-wrapp .range_inpt2').val();
-  //   $('.price .select__current').html(`<p class="input-price"><span class="price-val1">${in1} ₽</span> - <span class="price-val2">${in2} ₽</span></p>`);
-  // })
+  $(document).on('click', '#select-price .select__price-slider', function () {
+    var in1 = $('#select-price .select__range-input-wrapp .range_inpt1').val();
+    var in2 = $('#select-price .select__range-input-wrapp .range_inpt2').val();
+    $('#select-price .select__current').html(`<p class="input-price"><span class="price-val1">${in1} ₽</span> - <span class="price-val2">${in2} ₽</span></p>`);
+  });
   $(document).on('click', '.graph .select__price-slider', function () {
     var in3 = $('.graph .select__range-input-wrapp .range_inpt1').val();
     var in4 = $('.graph .select__range-input-wrapp .range_inpt2').val();
@@ -341,6 +353,14 @@ jQuery(document).ready(function ($) {
       $('.service .select__item-check').not(this).removeClass('active-check');
     }
     $(this).addClass('active-check');
+    $('#service').val($(this).text().trim());
+  });
+
+  $(document).mouseup(function (e) {
+    var select = $('.select');
+    if (e.target != select[0] && select.has(e.target).length === 0) {
+      $('.select').removeClass('is-active');
+    }
   });
 
   //Search city

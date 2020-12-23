@@ -461,6 +461,9 @@
     &__wholesale {
     }
   }
+  .filial-button-add .btn {
+    max-width: 100%;
+  }
   //======================= ALL PAGE END
   //======================= ALL popups END
   .popup-telephone {
@@ -506,17 +509,20 @@
   //======================= ALL popups END
   //======================= ACOUNT
 
-  .account-tabs{
+  .account-tabs {
     display: flex;
   }
-  .account-info, .account-balance, .exchange{
+  .account-info,
+  .account-balance,
+  .exchange {
     display: none;
     width: 100%;
     max-width: 100%;
     margin: auto;
     margin-bottom: 30px;
   }
-  .account-wrapper, .account-col_left{
+  .account-wrapper,
+  .account-col_left {
     padding: 0;
     margin: auto;
     display: block;
@@ -552,6 +558,9 @@
 }
 
 @media (max-width: 550px) {
+  .container-fluid {
+    padding: 0 16px;
+  }
   .mfp-container {
     padding-left: 0px;
     padding-right: 0px;
@@ -561,6 +570,18 @@
   }
   .popup-editing {
     height: 100vh;
+  }
+  .exchange {
+    padding: 30px 20px;
+  }
+  .account-info_h {
+    max-width: 130px;
+  }
+  .account-info {
+    text-align: center;
+    ul {
+      text-align: left;
+    }
   }
   //======================= ALL popups END
   .popup-telephone {
@@ -592,6 +613,7 @@
       max-width: 100%;
     }
   }
+
   //======================= ALL popups END
 }
 

@@ -51,7 +51,7 @@
   &-inputs__wrapp {
     display: flex;
     align-items: center;
-    border: 1px solid #34495e;
+    border: 1px solid #e5e5e5;
     border-radius: 5px;
     overflow: hidden;
     height: 50px;
@@ -62,17 +62,22 @@
     align-items: center;
     justify-content: center;
     input {
-      font-size: 30px;
+      font-size: 20px;
       line-height: 16px;
       font-weight: 500;
       color: $text;
       outline: none;
       border: none;
-      &::placeholder,
+      &::placeholder {
+        color: #d0d0d0;
+        font-weight: 400;
+        opacity: 1;
+      }
       &::-moz-placeholder,
-      &::-webkit-input-placeholder {
-        color: #868686;
-        font-weight: 500;
+      &::-webkit-input-placeholder,
+      &:-ms-input-placeholder {
+        color: #d0d0d0;
+        font-weight: 400;
         opacity: 1;
       }
     }
@@ -88,22 +93,27 @@
   &__right {
     height: 97%;
     width: 95px;
-    border-left: 1px solid #868686;
+    border-left: 1px solid #e5e5e5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     input {
       color: $text;
-      font-size: 20px;
+      font-size: 16px;
       line-height: 16px;
       font-weight: 500;
       outline: none;
       border: none;
-      &::placeholder,
-      &::-moz-placeholder,
-      &::-webkit-input-placeholder {
+      &::placeholder {
+        color: #d0d0d0;
         font-weight: 500;
-        color: #868686;
+        opacity: 1;
+      }
+      &::-moz-placeholder,
+      &::-webkit-input-placeholder,
+      &:-ms-input-placeholder {
+        font-weight: 500;
+        color: #d0d0d0;
         opacity: 1;
       }
     }
@@ -221,7 +231,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   &__item-text {
     font-size: 14px;
@@ -290,8 +300,8 @@
   }
   &__wrapper {
     width: 100%;
-    max-width: 1440px;
-    padding: 0 60px;
+    max-width: 1088px;
+    padding: 0 28px;
     margin: 0 auto;
   }
   &-dropdown {
@@ -301,7 +311,7 @@
     }
     .select__header {
       position: relative;
-      background: url("/assets/img/icons/icon-sort.svg") left center no-repeat;
+      background: url('/assets/img/icons/icon-sort.svg') left center no-repeat;
       background-position: 10px center;
     }
     .select__current {
@@ -312,7 +322,7 @@
     padding: 30px 0;
     .select__header {
       position: relative;
-      background: url("/assets/img/icons/icon-sort.svg") left center no-repeat;
+      background: url('/assets/img/icons/icon-sort.svg') left center no-repeat;
       background-position: 10px center;
     }
     .select__current {
@@ -366,6 +376,10 @@
   &__tell {
     margin-left: auto;
     margin-bottom: 20px;
+    .btn {
+      min-width: 210px;
+      padding: 9px 30px;
+    }
   }
   &__controll {
     margin-left: auto;
@@ -403,7 +417,7 @@
     font-size: 16px;
     font-weight: 500;
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0px;
       top: 2px;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="assets/libs/slick/slick.css" />
+    <link rel="stylesheet" href="assets/libs/animate/animate.min.css" />
     <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
     <link rel="stylesheet" href="assets/libs/selectize/css/selectize.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -95,6 +96,9 @@
               </li>
               <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link">Аукцион</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="/login.html" class="navbar-menu__link">Стать партнером</a>
               </li>
               <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link">О сервисе</a>
@@ -208,7 +212,7 @@
                   <div class="number-bymodel__item number-bymodel__input-byyear">
                     <div class="custom-input__wrapp">
                       <label class="custom-input__label">Год</label>
-                      <input type="text" class="custom-input" placeholder="2014" maxlength="5" />
+                      <input class="custom-input" type="number" min="1900" max="2099" step="1" value="2016" maxlength="4" />
                     </div>
                   </div>
                 </div>
@@ -299,7 +303,8 @@
           </div>
         </div>
       </section>
-      <section class="offer" id="offer">
+      <section class="offer" id="offer" style="display: none">
+        <!-- Sort -->
         <div class="offer-dropdown">
           <div class="container-fluid">
             <div class="select select-dropdown">
@@ -313,6 +318,7 @@
             </div>
           </div>
         </div>
+        <!-- End Sort -->
         <div class="offer-items">
           <div class="offer__item mb-20">
             <div class="offer__wrapper d-flex flex-wrap">
@@ -347,7 +353,7 @@
                 </div>
               </div>
               <div class="offer__tell">
-                <a href="#" class="btn dark-btn">+7 (905) XXX-XX-XX</a>
+                <a href="#popup-telephone" class="btn dark-btn popup">+7 (905) XXX-XX-XX</a>
               </div>
               <div class="offer__bottom">
                 <div class="offer__bottom__item d-flex align-items-center">
@@ -412,7 +418,7 @@
                 </div>
               </div>
               <div class="offer__tell">
-                <a href="#" class="btn dark-btn">+7 (905) XXX-XX-XX</a>
+                <a href="#popup-telephone" class="btn dark-btn popup">+7 (905) XXX-XX-XX</a>
               </div>
               <div class="offer__bottom">
                 <div class="offer__bottom__item d-flex align-items-center">
@@ -480,7 +486,7 @@
                 </div>
               </div>
               <div class="offer__tell">
-                <a href="#" class="btn dark-btn">+7 (905) XXX-XX-XX</a>
+                <a href="#popup-telephone" class="btn dark-btn popup">+7 (905) XXX-XX-XX</a>
               </div>
               <div class="offer__bottom">
                 <div class="offer__bottom__item d-flex align-items-center">
@@ -544,7 +550,7 @@
                 </div>
               </div>
               <div class="offer__tell">
-                <a href="#" class="btn dark-btn">+7 (905) XXX-XX-XX</a>
+                <a href="#popup-telephone" class="btn dark-btn popup">+7 (905) XXX-XX-XX</a>
               </div>
               <div class="offer__bottom">
                 <div class="offer__bottom__item d-flex align-items-center">
@@ -609,7 +615,7 @@
                 </div>
               </div>
               <div class="offer__tell">
-                <a href="#" class="btn dark-btn">+7 (905) XXX-XX-XX</a>
+                <a href="#popup-telephone" class="btn dark-btn popup">+7 (905) XXX-XX-XX</a>
               </div>
               <div class="offer__bottom">
                 <div class="offer__bottom__item d-flex align-items-center">
@@ -677,7 +683,7 @@
                 </div>
               </div>
               <div class="offer__tell">
-                <a href="#" class="btn dark-btn">+7 (905) XXX-XX-XX</a>
+                <a href="#popup-telephone" class="btn dark-btn popup">+7 (905) XXX-XX-XX</a>
               </div>
               <div class="offer__bottom">
                 <div class="offer__bottom__item d-flex align-items-center">
@@ -751,9 +757,22 @@
         </div>
       </div>
     </footer>
+
+    <!-- Popup show nubmer -->
+    <div id="popup-telephone" class="popup-telephone white-popup mfp-hide">
+      <div class="popup__body">
+        <div class="popup-telephone__content">
+          <div class="primary-title popup-telephone__title">+7 (905) 250-25-48</div>
+          <a href="tel:+79052502548" class="popup-telephone__btn btn primary-btn small-btn">Позвонить</a>
+        </div>
+      </div>
+    </div>
+    <!-- Popup end-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/libs/slick/slick.min.js"></script>
+    <script src="assets/libs/wow/wow.min.js"></script>
     <script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/libs/jquery-mask/jquery.mask.min.js"></script>
     <script src="assets/libs/selectize/js/standalone/selectize.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
