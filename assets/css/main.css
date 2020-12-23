@@ -379,7 +379,7 @@ body {
 
 .container-fluid {
   width: 100%;
-  max-width: 1088px;
+  max-width: 1440px;
   padding: 0 28px;
   margin: 0 auto;
 }
@@ -1281,6 +1281,80 @@ body {
   margin-bottom: 0;
 }
 
+.popup-cities {
+  max-width: 600px;
+}
+
+.selectCity__input {
+  margin-bottom: 30px;
+}
+
+.selectCity__input input {
+  background: #ffffff;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 25px 40px;
+  padding-right: 50px;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.selectCity__list {
+  text-align: left;
+}
+
+.selectCity__item {
+  display: block;
+  color: #000;
+  padding-left: 50px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.selectCity__item:hover {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.selectCity__current {
+  font-weight: 600;
+}
+
+.selectRegion__item {
+  padding-left: 40px;
+  margin-top: 15px;
+}
+
+.selectRegion__item:first-child {
+  margin-top: 0;
+}
+
+#adress-cities-list .selectRegion__item {
+  padding-left: 25px;
+}
+
+.scrollbar {
+  max-height: 300px !important;
+  height: auto;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.scrollbar > .scroll-element.scroll-y {
+  left: inherit;
+  right: 0;
+  z-index: 100;
+}
+
+.scrollbar > .scroll-element .scroll-element_track {
+  background: #fff;
+}
+
+.scrollbar > .scroll-element .scroll-bar {
+  background-color: red;
+}
+
 .header {
   width: 100%;
   max-width: 100%;
@@ -1762,15 +1836,15 @@ body {
 }
 
 .number-bymodel__input-bybrand .select-dropdown {
-  min-width: 160px;
+  min-width: 210px;
 }
 
 .number-bymodel__input-bymodel .select-dropdown {
-  min-width: 160px;
+  min-width: 210px;
 }
 
 .number-bymodel__input-byyear .custom-input {
-  width: 70px;
+  width: 100px;
   padding: 0 10px;
   text-align: center;
 }
@@ -1786,13 +1860,13 @@ body {
 }
 
 .material-oftype__item-weight {
-  width: 70px;
-  max-width: 70px;
+  width: 100%;
+  max-width: 100px;
   margin-right: 30px;
 }
 
 .material-oftype__item-weight input {
-  width: 70px;
+  width: 100%;
   text-align: center;
   padding: 0 10px;
 }
@@ -1807,7 +1881,7 @@ body {
 }
 
 .material-oftype__item-metal input {
-  width: 70px;
+  width: 100px;
   text-align: center;
   padding: 0 10px;
 }
@@ -1887,7 +1961,7 @@ body {
 .auction-start__img {
   display: inline-block;
   margin-right: 30px;
-  padding-top: 5px;
+  padding-top: 15px;
 }
 
 .auction-start__img img {
@@ -1907,7 +1981,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .auction-start__text {
@@ -1940,7 +2014,7 @@ body {
 
 .offer__wrapper {
   width: 100%;
-  max-width: 1088px;
+  max-width: 1440px;
   padding: 0 28px;
   margin: 0 auto;
 }

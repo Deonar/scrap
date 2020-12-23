@@ -141,3 +141,70 @@
     }
   }
 }
+
+.popup-cities {
+  max-width: 600px;
+}
+
+.selectCity {
+  &__wrapper {
+  }
+  &__input {
+    margin-bottom: 30px;
+    input {
+      background: #ffffff;
+      border: none;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 25px 40px;
+      padding-right: 50px;
+      width: 100%;
+      transition: all 0.3s;
+    }
+  }
+  &__list {
+    // padding-left: 40px;
+    text-align: left;
+  }
+  &__item {
+    display: block;
+    color: #000;
+    padding-left: 50px;
+    margin-bottom: 0;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+  &__current {
+    font-weight: 600;
+  }
+}
+.selectRegion__item {
+  padding-left: 40px;
+  margin-top: 15px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+#adress-cities-list .selectRegion__item {
+  padding-left: 25px;
+}
+.scrollbar {
+  max-height: 300px !important;
+  height: auto;
+  overflow: hidden;
+  overflow-y: auto;
+  & > .scroll-element.scroll-y {
+    left: inherit;
+    right: 0;
+    z-index: 100;
+  }
+  & > .scroll-element .scroll-element_track {
+    background: #fff;
+  }
+  & > .scroll-element .scroll-bar {
+    background-color: red;
+  }
+}

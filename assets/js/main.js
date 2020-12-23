@@ -136,4 +136,23 @@ jQuery(document).ready(function ($) {
 
   //======================== MASK
   $('.mask-phone').mask('+7 (999) 999-99-99');
+
+  //Scrollbar
+  $('.scrollbar').scrollbar();
+
+  //popup city
+  $('#city-list').on('click', '.selectCity__item', function () {
+    city = $(this).data('city');
+    region = $(this).data('region');
+    $('.selectCity__item').removeClass('selectCity__current');
+    $(this).addClass('selectCity__current');
+    $('.header-cities .header-cities__link').text(city);
+    $('#geo-city').text(city);
+
+    document.cookie = 'user-city=' + city + '; path=/';
+    document.cookie = 'user-region=' + region + '; path=/';
+    $('#inputCity').val(city);
+
+    $.magnificPopup.close();
+  });
 });
