@@ -90,14 +90,14 @@ jQuery(document).ready(function ($) {
   //======================== MASK
   $('.mask-phone').mask('+7 (999) 999-99-99');
 
-  //Scrollbar
+  //======================== Scrollbar
   $('.scrollbar').scrollbar();
   //======================== ALL SELECTIZES
   $('.custom-select').selectize();
 
   let stateNumber = document.getElementById('state-number');
   let modelCar = document.getElementById('model-car');
-  //Configurate
+  
   let select = function () {
     let selectHeader = document.querySelectorAll('.select__header');
     let selectItem = document.querySelectorAll('.select__item');
