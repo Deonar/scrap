@@ -572,23 +572,31 @@ body {
   }
 }
 
-.custom-checkbox {
-  position: relative;
-  display: block;
-  padding-left: 50px;
-  margin-bottom: 15px;
-  input {
-    padding: 0;
-    height: initial;
-    width: initial;
-    margin-bottom: 0;
-    display: none;
-    cursor: pointer;
+.scrollbar {
+  max-height: 300px !important;
+  height: auto;
+  overflow: hidden;
+  overflow-y: auto;
+  & > .scroll-element.scroll-y {
+    left: inherit;
+    right: 0;
+    z-index: 100;
   }
-  label {
-    cursor: pointer;
-    font-size: 14px;
-    &:before {
+  & > .scroll-element .scroll-element_track {
+    background: #fff;
+  }
+  & > .scroll-element .scroll-bar {
+    background-color: $primary;
+  }
+}
+
+//addition service
+.select {
+  &__item-check {
+    position: relative;
+    padding-left: 35px;
+    &:before,
+    &:after {
       content: '';
       position: absolute;
       left: 0;
