@@ -68,6 +68,22 @@ body {
   margin-bottom: 5px;
 }
 
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+
 .text-muted {
   color: $text-gray-light;
 }
@@ -268,22 +284,6 @@ body {
       }
     }
   }
-}
-
-.d-flex {
-  display: flex;
-}
-.flex-wrap {
-  flex-wrap: wrap;
-}
-.align-items-center {
-  align-items: center;
-}
-.justify-content-center {
-  justify-content: center;
-}
-.flex-direction-column {
-  flex-direction: column;
 }
 
 //Star
@@ -619,7 +619,7 @@ body {
     height: 25px;
     background: #fff;
     border-radius: 5px;
-    background: url(../img/icons/icon-check.svg) no-repeat 50% 50%;
+    background: url('../img/icons/icon-check.svg') no-repeat 50% 50%;
     opacity: 1;
   }
 }
@@ -810,16 +810,19 @@ body {
       border: 1px solid $text-gray;
     }
     &:before {
-      background: url(../img/icons/check.png) no-repeat 50% 50%;
+      background: url('../img/icons/icon-check.svg') no-repeat 50% 50%;
       opacity: 0;
     }
     &.active-check {
       &:before {
-        background: url(../img/icons/check.png) no-repeat 50% 50%;
+        background: url('../img/icons/icon-check.svg') no-repeat 50% 50%;
         opacity: 1;
+        z-index: 1;
       }
       &:after {
         border: 1px solid $primary;
+        background: transparent;
+        z-index: 2;
       }
     }
   }
