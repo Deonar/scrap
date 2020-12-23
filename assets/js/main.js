@@ -184,7 +184,6 @@ jQuery(document).ready(function ($) {
     $(this).parent('.geolocation').addClass('is-active');
   });
   $('.select__item-search').on('click', function () {
-    $('input#geolocation-visible').val($(this).text().trim());
     $('input#geolocation').val($(this).text().trim());
     $('.geolocation').removeClass('is-active');
   });
@@ -272,8 +271,7 @@ jQuery(document).ready(function ($) {
       valueService = valueService + $(this).text().trim().toLowerCase() + ', ';
     });
     valueService = valueService.slice(0, -2);
-    $('#service').val(valueService);
-    $('#view-service').val(valueService.charAt(0).toUpperCase() + valueService.substr(1));
+    $('#service').val(valueService.charAt(0).toUpperCase() + valueService.substr(1));
   });
 
   $('.select').on('click', function () {

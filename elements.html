@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
     <link rel="stylesheet" href="assets/libs/selectize/css/selectize.css" />
     <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/libs/jquery-libs/jquery-ui.min.css" />
     <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
 
@@ -16,15 +17,7 @@
 
   <body>
     <div class="container">
-      <section class="section" style="max-width: 400px">
-        <div class="mb-20"></div>
-
-        <select class="custom-select" id="material" name="material">
-          <option value="0">Катализаторы</option>
-          <option value="1">Бытовая техника</option>
-          <option value="2">Радиолом</option>
-        </select>
-
+      <section class="section" style="max-width: 300px; margin: 0 auto;">
         <div class="mb-20"></div>
 
         <div class="select">
@@ -42,7 +35,7 @@
 
         <div class="custom-input__wrapp">
           <label class="custom-input__label">Вес</label>
-          <input type="text" class="custom-input" placeholder="|" maxlength="5" />
+          <input type="text" class="custom-input" placeholder="|" maxlength="5" autocomplete="off" />
         </div>
 
         <div class="mb-20"></div>
@@ -64,7 +57,7 @@
         <div class="select select-dropdown rating">
           <div class="select__header">
             <span class="select__current">Рейтинг</span>
-            <input type="hidden" id="rating" value="0" />
+            <input type="hidden" id="rating" value="0" autocomplete="off" />
           </div>
           <div class="select__body">
             <div class="select__rating">
@@ -106,8 +99,7 @@
 
         <div class="select select-dropdown geolocation">
           <div class="select__header-search">
-            <input type="text" class="custom-input" placeholder="Геолокация" id="geolocation-visible" />
-            <input type="hidden" id="geolocation" value="" />
+            <input type="text" class="custom-input" placeholder="Геолокация" id="geolocation"  autocomplete="off"/>
           </div>
 
           <div class="select__body">
@@ -119,81 +111,6 @@
               <div class="select__item-search">Белгород</div>
               <div class="select__item-search">Беломорск</div>
               <div class="select__item-search">Воронеж</div>
-              <div class="select__item-search">Выборг</div>
-              <div class="select__item-search">Галич</div>
-              <div class="select__item-search">Грозный</div>
-              <div class="select__item-search">Далматово</div>
-              <div class="select__item-search">Екатеринбург</div>
-              <div class="select__item-search">Ессентуки</div>
-              <div class="select__item-search">Жигулевск</div>
-              <div class="select__item-search">Звенигород</div>
-              <div class="select__item-search">Зеленоград</div>
-              <div class="select__item-search">Иваново</div>
-              <div class="select__item-search">Ижевск</div>
-              <div class="select__item-search">Иркутск</div>
-              <div class="select__item-search">Казань</div>
-              <div class="select__item-search">Калининград</div>
-              <div class="select__item-search">Камышин</div>
-              <div class="select__item-search">Кисловодск</div>
-              <div class="select__item-search">Кострома</div>
-              <div class="select__item-search">Красноярск</div>
-              <div class="select__item-search">Курск</div>
-              <div class="select__item-search">Липецк</div>
-              <div class="select__item-search">Любань</div>
-              <div class="select__item-search">Магадан</div>
-              <div class="select__item-search">Магнитогорск</div>
-              <div class="select__item-search">Мурманск</div>
-              <div class="select__item-search">Нальчик</div>
-              <div class="select__item-search">Находка</div>
-              <div class="select__item-search">Новороссийск</div>
-              <div class="select__item-search">Новосибирск</div>
-              <div class="select__item-search">Новый Оскол</div>
-              <div class="select__item-search">Норильск</div>
-              <div class="select__item-search">Одинцово</div>
-              <div class="select__item-search">Омск</div>
-              <div class="select__item-search">Орел</div>
-              <div class="select__item-search">Оренбург</div>
-              <div class="select__item-search">Охотск</div>
-              <div class="select__item-search">Пенза</div>
-              <div class="select__item-search">Псков</div>
-              <div class="select__item-search">Радужный</div>
-              <div class="select__item-search">Ржев</div>
-              <div class="select__item-search">Ростов-на-Дону</div>
-              <div class="select__item-search">Рязань</div>
-              <div class="select__item-search">Самара</div>
-              <div class="select__item-search">Санкт-Петербург</div>
-              <div class="select__item-search">Саратов</div>
-              <div class="select__item-search">Северо-Курильск</div>
-              <div class="select__item-search">Серпухов</div>
-              <div class="select__item-search">Сорочинск</div>
-              <div class="select__item-search">Старый Оскол</div>
-              <div class="select__item-search">Суздаль</div>
-              <div class="select__item-search">Сызрань</div>
-              <div class="select__item-search">Тамбов</div>
-              <div class="select__item-search">Тверь</div>
-              <div class="select__item-search">Тихвин</div>
-              <div class="select__item-search">Тольятти</div>
-              <div class="select__item-search">Томск</div>
-              <div class="select__item-search">Тула</div>
-              <div class="select__item-search">Тюмень</div>
-              <div class="select__item-search">Углегорск</div>
-              <div class="select__item-search">Ульяновск</div>
-              <div class="select__item-search">Уфа</div>
-              <div class="select__item-search">Фатеж</div>
-              <div class="select__item-search">Хабаровск</div>
-              <div class="select__item-search">Хасан</div>
-              <div class="select__item-search">Хужир</div>
-              <div class="select__item-search">Цимлянск</div>
-              <div class="select__item-search">Челюскин</div>
-              <div class="select__item-search">Челябинск</div>
-              <div class="select__item-search">Черемхово</div>
-              <div class="select__item-search">Чехов</div>
-              <div class="select__item-search">Чита</div>
-              <div class="select__item-search">Шадринск</div>
-              <div class="select__item-search">Шамары</div>
-              <div class="select__item-search">Шереметьево</div>
-              <div class="select__item-search">Шумиха</div>
-              <div class="select__item-search">Ярославль</div>
             </div>
           </div>
         </div>
@@ -234,13 +151,12 @@
 
         <div class="mb-20"></div>
 
-        <div class="con">
+        
           <div class="select select-dropdown service">
             <div class="select__header">
               <span class="select__current">
-                <input type="text" class="custom-input" placeholder="Доп. сервис" id="view-service" />
+                <input type="text" class="custom-input" placeholder="Доп. сервис" id="service" autocomplete="off"/>
               </span>
-              <input type="hidden" id="service" value="" />
             </div>
             <div class="select__body">
               <div class="select__item-check">Безналичный расчет</div>
@@ -248,6 +164,7 @@
               <div class="select__item-check">Выездная оценка</div>
               <div class="select__item-check">Удаление катализатора</div>
             </div>
+          </div>
           </div>
         </div>
       </section>
