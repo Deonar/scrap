@@ -95,9 +95,18 @@ jQuery(document).ready(function ($) {
   //======================== ALL SELECTIZES
   $('.custom-select').selectize();
 
-  let stateNumber = document.getElementById('state-number');
-  let modelCar = document.getElementById('model-car');
-  
+  $('#filter-toggle').on('click', '.select__item', function () {
+    let selectDataName = $(this).data('selectValue');
+
+    if (selectDataName == 'state-number') {
+      $('#state-number').css('display', 'block');
+      $('#model-car').css('display', 'none');
+    } else if (selectDataName == 'model-car') {
+      $('#state-number').css('display', 'none');
+      $('#model-car').css('display', 'flex');
+    }
+  });
+
   let select = function () {
     let selectHeader = document.querySelectorAll('.select__header');
     let selectItem = document.querySelectorAll('.select__item');
@@ -116,23 +125,18 @@ jQuery(document).ready(function ($) {
 
     function selectChoose() {
       let text = this.innerHTML,
-        select = this.closest('.select'),
-        selectDataName = this.dataset.tabName;
+        select = this.closest('.select-custom-js'),
+        selectDataValue = this.dataset.selectValue;
+      if (select) {
+        currentText = select.querySelector('.select__current');
+        currentInput = select.querySelector('input');
 
-      currentText = select.querySelector('.select__current');
-      currentText.innerHTML = text;
-      select.classList.remove('is-active');
-
-      if (selectDataName == 'state-number') {
-        stateNumber.style.display = 'block';
-        modelCar.style.display = 'none';
-      } else if (selectDataName == 'model-car') {
-        stateNumber.style.display = 'none';
-        modelCar.style.display = 'flex';
+        currentText.innerHTML = text;
+        currentInput.value = selectDataValue;
       }
+      select.classList.remove('is-active');
     }
   };
-
   select();
   //======================== ALL SELECTIZES AND
 
@@ -152,8 +156,8 @@ jQuery(document).ready(function ($) {
     val = $(this).attr('value');
   });
 
-  // Геолокация
-  document.querySelector('#geolocation').oninput = function () {
+  // GeoLocation
+  $('.input-search-js').on('input', function () {
     let val = this.value.toLowerCase().trim();
     let elasticItems = document.querySelectorAll('.select__body .select__item-search');
     if (val != '') {
@@ -173,7 +177,7 @@ jQuery(document).ready(function ($) {
         elem.innerHTML = elem.innerText;
       });
     }
-  };
+  });
 
   function insertMark(string, pos, len) {
     $('.scrollbar-inner').scrollbar();
@@ -181,11 +185,11 @@ jQuery(document).ready(function ($) {
   }
 
   $('.select__header-search').on('click', function () {
-    $(this).parent('.geolocation').addClass('is-active');
+    $(this).parent('.container-search-js').addClass('is-active');
   });
   $('.select__item-search').on('click', function () {
-    $('input#geolocation').val($(this).text().trim());
-    $('.geolocation').removeClass('is-active');
+    $(this).closest('.container-search-js').find('input.input-search-js').val($(this).text().trim());
+    $('.container-search-js').removeClass('is-active');
   });
 
   $('.scrollbar-inner').scrollbar();
@@ -228,50 +232,67 @@ jQuery(document).ready(function ($) {
 
   // ------------------------------------------------------------------------------------------------------
 
-  // Слайдер на график
-  $('#slider-range-graph').slider({
-    range: true,
-    min: 0,
-    max: 24,
-    values: [0, 24],
-    slide: function (event, ui) {
-      $('#graph').val(ui.values[0]);
-      $('#graph2').val(ui.values[1]);
-      $('.graph .select__current').html('<p class="input-price"><span class="price-val1">' + ui.values[0] + ':00</span> - <span class="price-val2">' + ui.values[1] + ':00</span></p>');
-    },
-  });
-  $('#graph').val($('#slider-range-graph').slider('values', 0));
-  $('#graph2').val($('#slider-range-graph').slider('values', 1));
+  // Time work
+  function initTimeWork(rangeTime, atTime, toTime) {
+    let rangeTimeWork = $('#' + rangeTime);
+    let atTimeWork = $('#' + atTime);
+    let toTimeWork = $('#' + toTime);
 
-  // При изминение инпута меняеться положение ползунка
-  $('#graph2').change(function () {
-    if (Number($(this).val()) > Number($('#graph').val())) {
-      $('#slider-range-graph').slider('values', 1, $(this).val());
-    } else {
-      $(this).val($('#slider-range-graph').slider('values', 1));
-    }
-  });
-  $('#graph').change(function () {
-    if (Number($(this).val()) < Number($('#graph2').val())) {
-      $('#slider-range-graph').slider('values', 0, $(this).val());
-    } else {
-      $(this).val($('#slider-range-graph').slider('values', 0));
-    }
-  });
+    rangeTimeWork.slider({
+      range: true,
+      min: 0,
+      max: 24,
+      values: [0, 24],
+      slide: function (event, ui) {
+        atTimeWork.val(ui.values[0]);
+        toTimeWork.val(ui.values[1]);
+        $('.graph .select__current').html('<p class="input-price"><span class="price-val1">' + ui.values[0] + ':00</span> - <span class="price-val2">' + ui.values[1] + ':00</span></p>');
+      },
+    });
+    atTimeWork.val(rangeTimeWork.slider('values', 0));
+    toTimeWork.val(rangeTimeWork.slider('values', 1));
 
-  $('.graph .range__input').change(function () {
-    $('.select__current-graph').html('<p class="input-graph"><span class="graph-val1">' + $('#slider-range-graph').slider('values', 0) + ':00</span> - <span class="graph-val2">' + $('#slider-range-graph').slider('values', 1) + ':00</span></p>');
-  });
+    // При изминение инпута меняеться положение ползунка
+    toTimeWork.change(function () {
+      if (Number($(this).val()) > Number(atTimeWork.val())) {
+        rangeTimeWork.slider('values', 1, $(this).val());
+      } else {
+        $(this).val(rangeTimeWork.slider('values', 1));
+      }
+    });
+    atTimeWork.change(function () {
+      if (Number($(this).val()) < Number(toTimeWork.val())) {
+        rangeTimeWork.slider('values', 0, $(this).val());
+      } else {
+        $(this).val(rangeTimeWork.slider('values', 0));
+      }
+    });
 
-  // доп. сервис
-  $('.select__item-check').on('click', function () {
+    $('.graph .range__input').change(function () {
+      $('.select__current-graph').html('<p class="input-graph"><span class="graph-val1">' + rangeTimeWork.slider('values', 0) + ':00</span> - <span class="graph-val2">' + rangeTimeWork.slider('values', 1) + ':00</span></p>');
+    });
+  }
+
+  // Time work in popup form
+  initTimeWork('rangeTimeWork', 'atTimeWork', 'toTimeWork');
+  initTimeWork('rangeTimeWork_edit_filial', 'atTimeWork_edit_filial', 'toTimeWork_edit_filial');
+  initTimeWork('rangeTimeWork_add_filial', 'atTimeWork_add_filial', 'toTimeWork_add_filial');
+
+  // Addition service
+  $('.select-checkbox-js').on('click', '.select__item-check', function () {
     var valueService = '';
     $(this).toggleClass('active-check');
-    $('.active-check').each(function (i) {
-      valueService = valueService + $(this).text().trim().toLowerCase() + ', ';
-    });
+    $(this)
+      .closest('.select-checkbox-js')
+      .find('.active-check')
+      .each(function (i) {
+        valueService = valueService + $(this).text().trim().toLowerCase() + ', ';
+      });
     valueService = valueService.slice(0, -2);
-    $('#service').val(valueService.charAt(0).toUpperCase() + valueService.substr(1));
+    $(this)
+      .closest('.select-checkbox-js')
+      .find('input')
+      .val(valueService.charAt(0).toUpperCase() + valueService.substr(1));
   });
 
   $('.select').on('click', function () {
@@ -285,5 +306,19 @@ jQuery(document).ready(function ($) {
     if (e.target != select[0] && select.has(e.target).length === 0) {
       $('.select').removeClass('is-active');
     }
+  });
+
+  // Select city
+  $('#city-list').on('click', '.selectCity__item', function () {
+    city = $(this).data('city');
+    region = $(this).data('region');
+    $('.selectCity__item').removeClass('selectCity__current');
+    $(this).addClass('selectCity__current');
+    $('.header-cities .header-cities__link').text(city);
+    $('#geo-city').text(city);
+
+    $('#inputCity').val(city);
+
+    $.magnificPopup.close();
   });
 });

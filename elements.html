@@ -20,14 +20,15 @@
       <section class="section" style="max-width: 300px; margin: 0 auto;">
         <div class="mb-20"></div>
 
-        <div class="select">
+        <div class="select select-custom-js" id="filter-toggle">
           <div class="select__header">
             <label class="select__label">Поиск по</label>
             <span class="select__current">гос.номеру</span>
+            <input type="hidden" name="search" />
           </div>
           <div class="select__body">
-            <div class="select__item">гос.номеру</div>
-            <div class="select__item">марке и модели</div>
+            <div class="select__item" data-select-value="state-number">гос.номеру</div>
+            <div class="select__item" data-select-value="model-car">марке и модели</div>
           </div>
         </div>
 
@@ -40,14 +41,14 @@
 
         <div class="mb-20"></div>
 
-        <div class="select select-dropdown">
+        <div class="select select-dropdown select-custom-js">
           <div class="select__header">
-            <label class="select__label">Тип сырья</label>
-            <span class="select__current">Каталитическое</span>
+            <span class="select__current">Марка ТС</span>
+            <input type="hidden" name="car_mark" />
           </div>
           <div class="select__body">
-            <div class="select__item">Каталитическое</div>
-            <div class="select__item">Радиолом</div>
+            <div class="select__item" data-select-value="1">Марка ТС 1</div>
+            <div class="select__item" data-select-value="2">Марка ТС 2</div>
           </div>
         </div>
 
@@ -97,9 +98,9 @@
 
         <div class="mb-20"></div>
 
-        <div class="select select-dropdown geolocation">
+        <div class="select select-dropdown container-search-js">
           <div class="select__header-search">
-            <input type="text" class="custom-input" placeholder="Геолокация" id="geolocation"  autocomplete="off"/>
+            <input type="text" class="custom-input input-search-js" placeholder="Геолокация" />
           </div>
 
           <div class="select__body">
@@ -111,9 +112,12 @@
               <div class="select__item-search">Белгород</div>
               <div class="select__item-search">Беломорск</div>
               <div class="select__item-search">Воронеж</div>
+              <div class="select__item-search">Выборг</div>
             </div>
           </div>
         </div>
+
+        
 
         <div class="mb-20"></div>
 
@@ -141,30 +145,30 @@
           <div class="select__body">
             <div class="select__range-input-wrapp d-flex">
               от
-              <input type="number" name="price" id="graph" class="range__input" />
+              <input type="number" name="price" id="atTimeWork" class="range__input" />
               до
-              <input type="number" name="price" id="graph2" class="range__input" />
+              <input type="number" name="price" id="toTimeWork" class="range__input" />
             </div>
-            <div class="select__price-slider" id="slider-range-graph"></div>
+            <div class="select__price-slider" id="rangeTimeWork"></div>
           </div>
         </div>
 
         <div class="mb-20"></div>
 
-        
-          <div class="select select-dropdown service">
-            <div class="select__header">
-              <span class="select__current">
-                <input type="text" class="custom-input" placeholder="Доп. сервис" id="service" autocomplete="off"/>
-              </span>
-            </div>
-            <div class="select__body">
-              <div class="select__item-check">Безналичный расчет</div>
-              <div class="select__item-check">Оплата на месте</div>
-              <div class="select__item-check">Выездная оценка</div>
-              <div class="select__item-check">Удаление катализатора</div>
-            </div>
+        <div class="select select-dropdown service select-checkbox-js">
+          <div class="select__header">
+            <span class="select__current">
+              <input type="text" class="custom-input" placeholder="Доп. сервис" autocomplete="off" />
+            </span>
           </div>
+          <div class="select__body">
+            <div class="select__item-check">Безналичный расчет</div>
+            <div class="select__item-check">Оплата на месте</div>
+            <div class="select__item-check">Выездная оценка</div>
+            <div class="select__item-check">Удаление катализатора</div>
+          </div>
+        </div>
+          
           </div>
         </div>
       </section>
@@ -179,7 +183,6 @@
     <script src="assets/libs/jquery-libs/jquery-ui.min.js"></script>
     <script src="assets/libs/jquery-libs/jquery.ui.touch-punch.min.js"></script>
 
-    <!-- <script src="assets/js/elements.js"></script> -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
