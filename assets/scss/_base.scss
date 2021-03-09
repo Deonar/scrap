@@ -47,15 +47,15 @@ body {
   margin-top: auto;
 }
 
-.mt-10{
+.mt-10 {
   margin-top: 10px;
 }
 
-.mt-20{
+.mt-20 {
   margin-top: 20px;
 }
 
-.mt-30{
+.mt-30 {
   margin-top: 30px;
 }
 
@@ -148,104 +148,104 @@ body {
   }
 }
 
-.btn_phone{
+.btn_phone {
   font-size: 14px;
   font-weight: 600;
-  background: #34495E;
+  background: #34495e;
   &:hover {
-    background: #27394B;
+    background: #27394b;
   }
   &:active {
-    background: #131E29;
-   }
-  &::before{
-    content: '';
+    background: #131e29;
+  }
+  &::before {
+    content: "";
     display: inline-block;
     margin-right: 12px;
     width: 12px;
     height: 12px;
-    background-image: url('../img/icons/icon_phone.svg');
+    background-image: url("../img/icons/icon_phone.svg");
   }
 }
 
-.btn_yellow{
+.btn_yellow {
   color: $text;
-  background: #F8D157;
+  background: #f8d157;
   &:hover {
-    color:#fff;
-    background: #ECC033;
+    color: #fff;
+    background: #ecc033;
   }
   &:active {
-    color:#fff;
-    background: #E2B011;
-   }
+    color: #fff;
+    background: #e2b011;
+  }
 }
 
-.btn_green{
-  background: #32AD13;
+.btn_green {
+  background: #32ad13;
   &:hover {
-    background: #299F0C;
+    background: #299f0c;
   }
   &:active {
-    background: #27910D;
-   }
+    background: #27910d;
+  }
 }
 
-.btn_blue{
-  background: #3485F1;
+.btn_blue {
+  background: #3485f1;
   &:hover {
-    background: #2175E7;
+    background: #2175e7;
   }
   &:active {
-    background: #1264D2;
-   }
+    background: #1264d2;
+  }
 }
 
-.btn_black{
-  background: #131E29;
+.btn_black {
+  background: #131e29;
   &:hover {
-    background: #0D151D;
+    background: #0d151d;
   }
   &:active {
     background: #010203;
-   }
+  }
 }
 
-.btn_red{
-  color: #E31823;
+.btn_red {
+  color: #e31823;
   background: transparent;
-  border: 1px solid #E31823;
+  border: 1px solid #e31823;
   &:hover {
     color: #fff;
-    background: #E31823;
+    background: #e31823;
   }
   &:active {
     color: #fff;
-    background: #CA040F;
-   }
+    background: #ca040f;
+  }
 }
 
-.btn_add-param{
+.btn_add-param {
   color: $text;
-  background: #E9EEF2;
+  background: #e9eef2;
   &:hover {
-    background: #DDE5ED;
+    background: #dde5ed;
   }
   &:active {
-    background: #C5D5E4;
-   }
+    background: #c5d5e4;
+  }
 }
 
-.btn_reset-param{
+.btn_reset-param {
   color: $text;
   background: transparent;
-  border: 1px solid #E9EEF2;
+  border: 1px solid #e9eef2;
   &:hover {
-    background: #E9EEF2;
+    background: #e9eef2;
   }
   &:active {
-    background: #DDE5ED;
-   }
+    background: #dde5ed;
+  }
 }
 
 .socials__icon {
@@ -264,6 +264,53 @@ body {
     height: 15px;
     fill: $white;
     transition: all 0.3s ease;
+  }
+}
+
+//Tabs
+.tab {
+  &__wrapper {
+    display: flex;
+    border-bottom: 1px solid #e9eef2;
+  }
+  &__item {
+    margin-right: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $text;
+    padding-bottom: 25px;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 3px;
+      width: 0%;
+      background: #32ad13;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      -webkit-transition: all 0.6s;
+      -o-transition: all 0.6s;
+      transition: all 0.6s;
+    }
+    &:hover::after {
+      opacity: 1;
+      width: 100%;
+    }
+    &.active::after {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  &__content {
+    display: none;
+    &.active {
+      display: block;
+    }
   }
 }
 
@@ -291,32 +338,32 @@ body {
 }
 
 .star-rating > fieldset:not(:checked) > label:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url('../img/icons/rating-off.svg');
+  background-image: url("../img/icons/rating-off.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .star-rating > fieldset:not(:checked) > label:hover:before,
 .star-rating > fieldset:not(:checked) > label:hover ~ label:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url('../img/icons/rating-on.svg');
+  background-image: url("../img/icons/rating-on.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .star-rating > fieldset > input:checked ~ label:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url('../img/icons/rating-on.svg');
+  background-image: url("../img/icons/rating-on.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -342,10 +389,10 @@ body {
     background-position: center;
   }
   &_on {
-    background-image: url('../img/icons/rating-on.svg');
+    background-image: url("../img/icons/rating-on.svg");
   }
   &_off {
-    background-image: url('../img/icons/rating-off.svg');
+    background-image: url("../img/icons/rating-off.svg");
   }
 }
 
@@ -366,4 +413,3 @@ body {
     background-color: $primary;
   }
 }
-

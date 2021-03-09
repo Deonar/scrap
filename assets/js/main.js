@@ -25,4 +25,15 @@ jQuery(document).ready(function ($) {
   //======================== Scrollbar
   $('.scrollbar').scrollbar();
  
+  //======================== Tabs 
+
+  $(".tab-js").on("click", ".tab__item", function(event) {
+    event.preventDefault();
+    var tab = $(this).attr("data-tab");
+    var wrapper = $(this).closest(".tab-js");
+    wrapper.find(".tab__item").removeClass("active");
+    $(this).addClass("active");
+    wrapper.find(".tab__content").hide();
+    wrapper.find(".tab__content[data-tab = " + tab + "]").show();
+});
 });
