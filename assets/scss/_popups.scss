@@ -141,3 +141,59 @@
     }
   }
 }
+
+.popup-cities {
+  max-width: 600px;
+}
+
+.select-city {
+  &__wrapper {
+  }
+  &__input {
+    margin-bottom: 30px;
+    input {
+      background: #ffffff;
+      border: none;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 25px 40px;
+      padding-right: 50px;
+      width: 100%;
+      transition: all 0.3s;
+    }
+  }
+  &__list {
+    text-align: left;
+  }
+  &__item {
+    display: block;
+    color: #000;
+    padding-left: 50px;
+    margin-bottom: 0;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+  &__current {
+    font-weight: 600;
+  }
+}
+.select-region__item {
+  padding-left: 40px;
+  margin-top: 15px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+#adress-cities-list .select-region__item {
+  padding-left: 25px;
+}
+
+.popup-cities{
+  &__body{
+    padding: 30px;
+    padding-top: 50px;
+  }
+}

@@ -1,3 +1,4 @@
+@import 'libs';
 @import 'fonts';
 @import 'vars';
 @import 'reset';
@@ -6,10 +7,7 @@
 @import 'popups';
 
 @import 'header';
-@import 'pages/front-page';
-@import 'pages/error404';
-@import 'pages/account';
-@import 'pages/login';
+@import 'pages/all-page';
 @import 'footer';
 
 @import 'media';

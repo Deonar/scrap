@@ -1,19 +1,12 @@
 .header {
-  // position: fixed;
-  // top: 0;
-  // left: 0;
   width: 100%;
   max-width: 100%;
-  .container-fluid {
-    max-width: 1440px;
-    padding: 0 28px;
-  }
+  border-bottom: 1px solid #ededed;
   &-wrapp {
     position: relative;
     padding: 24px 0 27px 0;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #ededed;
   }
   &-burger {
     display: flex;
@@ -132,8 +125,6 @@
     font-size: 9px;
     line-height: 16px;
   }
-  &-navbar {
-  }
 }
 
 .navbar {
@@ -178,7 +169,7 @@
     width: 100%;
     max-width: 505px;
     background: $primary;
-    padding: 40px 50px 40px 135px;
+    padding: 40px 50px 40px;
     display: flex;
     flex-direction: column;
     height: 100vh;

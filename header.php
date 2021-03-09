@@ -7,18 +7,19 @@
 
     <link rel="stylesheet" href="assets/libs/bootstrap-grid/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="assets/libs/slick/slick.css" />
-    <link rel="stylesheet" href="assets/libs/animate/animate.min.css" />
-    <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
     <link rel="stylesheet" href="assets/libs/selectize/css/selectize.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/libs/jquery-libs/jquery-ui.min.css" />
+    <link rel="stylesheet" href="assets/libs/scrollbar/jquery.scrollbar.css" />
+    <link rel="stylesheet" href="assets/css/main.css?v2" />
     <title>SCRAP</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="container-fluid">
+        <div class="container">
             <div class="header-wrapp">
-                <div class="header-burger burgerJs">
+                <div class="header-burger burger-js">
                     <div class="header-burger__lines">
                         <span class="header-burger__top"></span>
                         <span class="header-burger__bottom"></span>
@@ -30,7 +31,7 @@
                         <img class="img-icon" src="assets/img/icons/icon-location.svg" alt="" class="img-icon" />
                     </div>
                     <div class="header-city__text">
-                        <a href="#" class="header-select__link">Конотоп</a>
+                        <a href="#popup-cities" id="geo-city" class="header-select__link popup">Конотоп</a>
                     </div>
                 </div>
                 <a class="header-logo" href="/">
@@ -43,9 +44,6 @@
                     </span>
                 </a>
                 <div class="header-phone">
-                    <!-- <div class="header-phone__svg">
-              <img src="assets/img/icons/icon-bell.svg" alt="icon-bell" />
-            </div> -->
                     <a href="tel:88003006810" class="header-phone__svg--mob">
                         <svg>
                             <use xlink:href="assets/img/icons/icon-tell.svg#icon-tell"></use>
@@ -57,10 +55,10 @@
                     </div>
                 </div>
             </div>
-            <div id="headerNavbar" class="header-navbar navbar-header">
+            <div id="header-navbar" class="header-navbar navbar-header">
                 <div class="navbar-body">
                     <div class="navbar-head">
-                        <div class="header-burger burgerJs">
+                        <div class="header-burger burger-js">
                             <div class="header-burger__lines">
                                 <span class="header-burger__top"></span>
                                 <span class="header-burger__bottom"></span>
@@ -88,7 +86,7 @@
                                 <img class="img-icon" src="assets/img/icons/icon-location-white.svg" alt="" class="img-icon" />
                             </div>
                             <div class="header-city__text">
-                                <a href="#" class="header-select__link">Конотоп</a>
+                                <a href="#popup-cities" id="geo-city" class="header-select__link popup">Конотоп</a>
                             </div>
                         </div>
                     </div>
@@ -109,13 +107,6 @@
                             <a href="#" class="navbar-menu__link">Отзывы</a>
                         </li>
                     </ul>
-                    <div class="navbar-select">
-                        <select class="custom-select" id="material" name="material">
-                            <option value="0">Катализаторы</option>
-                            <option value="1">Бытовая техника</option>
-                            <option value="2">Радиолом</option>
-                        </select>
-                    </div>
                     <div class="navbar-option">
                         <a class="navbar-policy" href="#">Пользовательское соглашение</a>
                         <a class="navbar-policy navbar-policy--mob" href="#">Политика конфиденциальности</a>
@@ -137,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="closeNavbar" class="navbar-bg"></div>
+                <div id="close-navbar" class="navbar-bg"></div>
             </div>
         </div>
     </header>
