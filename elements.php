@@ -50,7 +50,7 @@
     </div>
 
     <div class="tab tab-js mb-20">
-        
+
         <div class="tab__wrapper">
             <div class="tab__item active" data-tab="1">
                 Основная информация
@@ -68,6 +68,7 @@
                 Content - 1
             </h2>
         </div>
+
         <div class="tab__content" data-tab="2">
             <h2>
                 Content - 2
@@ -75,6 +76,50 @@
         </div>
 
     </div>
+
+
+    <div class="form mb-20">
+
+        <div class="form-group">
+            <label class="form-input__label">Лейбл</label>
+            <div class="form-input__wrapp">
+                <input class="form-input" placeholder="Плейсхолдер">
+                <div class="form-input__line"></div>
+                <span class="form-input__error">Текст ошибки</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="form-input__label">Лейбл</label>
+            <div class="form-input__wrapp done">
+                <input class="form-input" placeholder="Плейсхолдер">
+                <div class="form-input__line"></div>
+                <span class="form-input__error">Текст ошибки</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="form-input__label">Лейбл</label>
+            <div class="form-input__wrapp error">
+                <input class="form-input" placeholder="Плейсхолдер">
+                <div class="form-input__line"></div>
+                <span class="form-input__error">Текст ошибки</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="form-input__label">Лейбл</label>
+            <div class="form-input__wrapp error">
+                <input class="form-input" placeholder="Плейсхолдер">
+                <div class="form-input__line"></div>
+                <span class="form-input__error">Текст ошибки</span>
+            </div>
+        </div>
+
+
+
+    </div>
+
 
 </div>
 

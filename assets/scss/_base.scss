@@ -314,6 +314,106 @@ body {
   }
 }
 
+//Forms input
+.form {
+  &-input {
+    border: 1px solid #e9eef2;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 20px 12px;
+    width: 100%;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    transition: all 0.3s ease;
+    &:focus + .form-input__line, &:active + .form-input__line{
+      background: #32AD13;
+      opacity: 1;
+      width: 100%;
+      transition: all 0.3s ease;
+    }
+    &__line {
+      position: absolute;
+      opacity: 0;
+      bottom: 1px;
+      height: 2px;
+      width: 0;
+      transition: all 0.3s ease;
+    }
+    &__label {
+    }
+    &__wrapp {
+      max-width: 510px;
+      position: relative;
+      &.done:after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        right: 20px;
+        bottom: 24px;
+        width: 8px;
+        height: 13px;
+        border: solid #2faa33;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      &.error {
+        margin-bottom: 20px;
+        position: relative;
+        .form-input{
+          background-color: #E4DADB;
+        }
+        .form-input__error {
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 20px;
+
+          color: #e31823;
+          right: 0;
+          bottom: -20px;
+          display: inline-block;
+        }
+        .form-input__line {
+          background: #e31823;
+          transition: all 0.3s ease;
+        }
+        &:before {
+          content: "";
+          top: 30px;
+          right: 20px;
+          transform: rotate(45deg);
+          position: absolute;
+          height: 2px;
+          width: 10px;
+          background: #e31823;
+          transition: 0.25s ease-in-out;
+        }
+        &:after {
+          content: "";
+          top: 30px;
+          right: 20px;
+          transform: rotate(-45deg);
+          position: absolute;
+          height: 2px;
+          width: 10px;
+          background: #e31823;
+          transition: 0.25s ease-in-out;
+        }
+      }
+    }
+    &__line {
+    }
+    &__error {
+      display: none;
+      position: absolute;
+    }
+  }
+}
+
 //Star
 .star-rating {
   margin-bottom: 40px;
