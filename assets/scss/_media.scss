@@ -4,14 +4,26 @@
       margin-right: 15px;
     }
   }
-  
 }
-@media (max-width: 900px) {
-
+@media (max-width: 992px) {
+  .main-tab .tab__item {
+    margin-right: 20px;
+  }
+  .card-company {
+    &__material-card {
+      width: calc(100% - 12px);
+    }
+    &__services-item {
+      width: calc(100% - 12px);
+    }
+    &__gallery-item {
+      width: calc(50% - 2px);
+      padding-top: 50%;
+    }
+  }
 }
 
 @media (max-width: 767px) {
-
   //====================== HEADER
   .header {
     &-wrapp {
@@ -148,6 +160,182 @@
     }
   }
   //====================== HEADER END
+  .main-tab {
+    .tab__wrapper {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      margin-bottom: 0;
+      width: 100%;
+      z-index: 900;
+      border-top: 1px solid #e9eef2;
+    }
+    .tab__item-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    .tab__item {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      color: $text;
+      text-align: center;
+      width: 33.33%;
+      padding: 0;
+      margin: 0;
+      padding: 11px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &.active {
+        background: $primary-1;
+        color: #fff;
+        .tab__item-icon {
+          transition: all 0.3s ease;
+          fill: #fff;
+        }
+      }
+      span {
+        display: none;
+      }
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .sidebar {
+    margin-bottom: 50px;
+    max-width: 100%;
+  }
+  .card-company {
+    &__sidebar-head {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+    &__logo-wrapp {
+      margin-right: 15px;
+      padding-top: 50px;
+      margin-bottom: 0;
+    }
+    &__logo {
+      width: 55px;
+      height: 55px;
+      min-width: 55px;
+      min-height: 55px;
+      &._premium:after {
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+        min-height: 16px;
+      }
+    }
+    &__logo-label-wrapp {
+      right: auto;
+      left: 0;
+    }
+    &__title-wrapp {
+      margin-bottom: 0px;
+      padding-top: 50px;
+    }
+    &__title {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 5px;
+    }
+    &__rating-block {
+      flex-direction: column;
+      .stars-rating__item {
+        width: 13px;
+        height: 13px;
+      }
+    }
+
+    &__material-title {
+      margin-bottom: 0;
+      &._mob {
+        display: block;
+      }
+    }
+    &__accordeon-title-mob {
+      display: block;
+    }
+    &__accordeon-mob {
+      border-radius: 3px;
+      border: 1px solid #e9eef2;
+      .accordeon-content-js {
+        display: none;
+      }
+      .accordeon-tab-js {
+        pointer-events: inherit;
+        font-size: 14px;
+        line-height: 17px;
+
+        // border-bottom-color: $primary-1;
+        padding: 20px 12px;
+        border-radius: 3px 3px 0 0;
+        position: relative;
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          right: 15px;
+          top: 23px;
+          border-bottom: 1px solid $primary-1;
+          border-left: 1px solid $primary-1;
+          transform: rotate(-135deg);
+          transition: all 0.3s ease;
+        }
+      }
+      .accordeon-wrapper-js {
+        border-bottom: 1px solid #e9eef2;
+        &:last-child {
+          border-bottom: none;
+        }
+        &.active .accordeon-tab-js:after {
+          transform: rotate(-45deg);
+          transition: all 0.3s ease;
+        }
+      }
+    }
+    &__table-title {
+      background: #fff;
+      padding: 0px 0px 12px 0px;
+    }
+    &__table {
+      padding: 0px;
+      margin: 0;
+    }
+    &__table-body {
+      padding: 30px 10px;
+      table {
+        thead {
+          th {
+            font-size: 10px;
+            padding: 10px 0 10px 5px;
+            &:first-child {
+              width: 42%;
+            }
+          }
+        }
+        tbody {
+          td {
+            font-size: 10px;
+            line-height: 14px;
+            padding: 10px 0 10px 5px;
+          }
+        }
+      }
+    }
+  }
 
   //======================= footer
   .footer {
@@ -174,12 +362,4 @@
     }
   }
   //======================= footer enf
-}
-
-@media (max-width: 550px) {
-  
-}
-
-@media (max-width: 340px) {
-  
 }
