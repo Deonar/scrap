@@ -47,6 +47,9 @@ jQuery(document).ready(function ($) {
     wrapper.find('.tab-content-js[data-tab = ' + tab + ']').show();
   });
 
+  //======================== Custom select
+  $('.custom-select_js').selectize();
+
   //accordeon
   $('.accordeon-tab-js').click(function (event) {
     event.stopPropagation();

@@ -322,7 +322,7 @@ body {
     outline: none;
     box-sizing: border-box;
     border-radius: 3px;
-    padding: 20px 12px;
+    padding: 18px 12px;
     width: 100%;
 
     font-weight: normal;
@@ -345,6 +345,8 @@ body {
       transition: all 0.3s ease;
     }
     &__label {
+      font-size: 14px;
+      font-weight: 600;
     }
     &__wrapp {
       max-width: 510px;
@@ -385,7 +387,7 @@ body {
         }
         &:before {
           content: '';
-          top: 30px;
+          top: 28px;
           right: 20px;
           transform: rotate(45deg);
           position: absolute;
@@ -396,7 +398,7 @@ body {
         }
         &:after {
           content: '';
-          top: 30px;
+          top: 28px;
           right: 20px;
           transform: rotate(-45deg);
           position: absolute;
@@ -412,6 +414,79 @@ body {
     &__error {
       display: none;
       position: absolute;
+    }
+  }
+}
+
+//Custom select
+.custom-select.selectize-control {
+  font-size: 14px;
+  font-weight: 400;
+  .selectize-input {
+    border: 1px solid #e9eef2;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 18px 12px;
+    width: 100%;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    transition: all 0.3s ease;
+    &:after {
+      content: '';
+      margin: auto;
+      position: absolute;
+      right: 25px;
+      top: 18px;
+      border: solid #32ad13;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    &.dropdown-active:after {
+      content: '';
+      margin: auto;
+      position: absolute;
+      right: 25px;
+      top: 22px;
+      border: solid #32ad13;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      transform: rotate(-135deg);
+    }
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 3px;
+      width: 0%;
+      background: #32ad13;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      -webkit-transition: all 0.6s;
+      transition: all 0.6s;
+    }
+    &.full {
+      position: relative;
+      &::before {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+  }
+  .selectize-dropdown-content {
+    border: 1px solid #e9eef2;
+    .option {
+      padding: 12px;
     }
   }
 }

@@ -66,7 +66,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="assets/libs/scrollbar/jquery.scrollbar.min.js"></script>
 <script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="assets/libs/selectize/js/standalone/selectize.min.js"></script>
+<script src="assets/libs/selectize/js/selectize.min.js"></script>
 <script src="assets/libs/jquery-mask/jquery.mask.min.js"></script>
 
 <script src="assets/libs/jquery-libs/jquery-ui.min.js"></script>
