@@ -30,7 +30,27 @@ jQuery(document).ready(function ($) {
   });
 
   //======================== MASK
-  $('.mask-phone').mask('+7 (999) 999-99-99');
+  // ======================== MASK
+  $('.mask-phone').mask('+7 ZZZ ZZZ-ZZ-ZZ', {
+    translation: {
+      Z: {
+        pattern: /[0-9]/,
+      },
+    },
+  });
+
+  $('.mask-phone').on('blur input', function () {
+    console.log($(this).val());
+    if($(this).val() == '+7 8'){
+      $(this).val('+7 '); 
+    }
+
+    if ($(this).val().length >= 16) {
+      $(this).closest('.form-input__wrapp').removeClass('error').addClass('done');
+    } else {
+      $(this).closest('.form-input__wrapp').addClass('error').removeClass('done');
+    }
+  });
 
   //======================== Scrollbar
   $('.scrollbar').scrollbar();

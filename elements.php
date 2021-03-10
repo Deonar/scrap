@@ -147,6 +147,62 @@
             </div>
         </div>
 
+        <div class="form-group row align-items-center mb-20">
+            <div class="col-lg-3">
+                <label class="form-input__label">Укажите<br> телефон</label>
+            </div>
+            <div class="col-lg-9">
+                <div class="form-input__wrapp form-input-phone">
+                    <input class="form-input mask-phone" placeholder="+7 999 999-99-99">
+                    <div class="form-input__line"></div>
+                    <span class="form-input__error">Некорректный номер</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row align-items-center mb-20">
+            <div class="col-lg-3">
+                <label class="form-input__label">Оцените сервис</label>
+            </div>
+            <div class="col-lg-9">
+                <div class="star-rating">
+                    <fieldset>
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Outstanding"></label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Very Good"></label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Good"></label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Poor"></label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Very Poor"></label>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row mb-20">
+            <div class="col-lg-3">
+                <label class="form-input__label">Оставьте отзыв</label>
+            </div>
+            <div class="col-lg-9">
+                <div class="form-input__wrapp">
+                    <textarea name="" class="form-input" cols="30" rows="5">
+
+                    </textarea>
+                </div>
+            </div>
+        </div>
+        <div class="mt-20 mb-20">
+            <a href="#" class="btn btn_yellow">
+                оставить отзыв
+            </a>
+        </div>
+
+        <div class="mb-20 mt-20">
+            <label class="custom-checkbox">
+                <input checked class="d-none" type="checkbox">
+                <span class="custom-checkbox__point"></span>
+                Я согласен с <a href="#" class="link">политикой конфиденциальности</a> 
+            </label>
+        </div>
+
     </div>
 
 
@@ -228,11 +284,6 @@
             <span class="custom-checkbox__point"></span>
             Выездная оценка
         </label>
-    </div>
-
-
-    <div class="mb-20 mt-20">
-        
     </div>
 
 </div>

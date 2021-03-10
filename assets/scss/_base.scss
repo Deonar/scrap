@@ -108,6 +108,10 @@ body {
   background-color: $bg-red;
 }
 
+.link{
+  color: $accent;
+}
+
 .line-gray {
   width: 100%;
   display: block;
@@ -417,7 +421,9 @@ body {
     }
   }
 }
-
+.form-input-phone{
+  max-width: 200px;
+}
 //Custom select
 .custom-select.selectize-control {
   font-size: 0;
@@ -560,8 +566,6 @@ body {
 
 //Star
 .star-rating {
-  margin-bottom: 40px;
-  height: 26px;
 }
 .star-rating > fieldset {
   border: none;
@@ -584,9 +588,10 @@ body {
 .star-rating > fieldset:not(:checked) > label:before {
   content: '';
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 32px;
+  height: 32px;
   background-image: url('../img/icons/rating-off.svg');
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -595,9 +600,10 @@ body {
 .star-rating > fieldset:not(:checked) > label:hover ~ label:before {
   content: '';
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 32px;
+  height: 32px;
   background-image: url('../img/icons/rating-on.svg');
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -605,9 +611,10 @@ body {
 .star-rating > fieldset > input:checked ~ label:before {
   content: '';
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 32px;
+  height: 32px;
   background-image: url('../img/icons/rating-on.svg');
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
