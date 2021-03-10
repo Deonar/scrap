@@ -74,8 +74,8 @@
 
 /*************** SIMPLE SCROLLBAR ***************/
 
-.scrollbar > .scroll-element,
-.scrollbar > .scroll-element div
+.scroll-wrapper > .scroll-element,
+.scroll-wrapper > .scroll-element div
 {
     border: none;
     margin: 0;
@@ -84,7 +84,7 @@
     z-index: 10;
 }
 
-.scrollbar > .scroll-element div {
+.scroll-wrapper > .scroll-element div {
     display: block;
     height: 100%;
     left: 0;
@@ -92,43 +92,43 @@
     width: 4px;
 }
 
-.scrollbar > .scroll-element.scroll-x {
+.scroll-wrapper > .scroll-element.scroll-x {
     bottom: 2px;
     height: 8px;
     left: 0;
     width: 100%;
 }
 
-.scrollbar > .scroll-element.scroll-y {
+.scroll-wrapper > .scroll-element.scroll-y {
     height: 100%;
     left: 2px;
     top: 0;
     width: 4px;
 }
 
-.scrollbar > .scroll-element .scroll-element_outer {
+.scroll-wrapper > .scroll-element .scroll-element_outer {
     overflow: hidden;
 }
 
-.scrollbar > .scroll-element .scroll-element_outer,
-.scrollbar > .scroll-element .scroll-element_track,
-.scrollbar > .scroll-element .scroll-bar {
+.scroll-wrapper > .scroll-element .scroll-element_outer,
+.scroll-wrapper > .scroll-element .scroll-element_track,
+.scroll-wrapper > .scroll-element .scroll-bar {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
 }
 
-.scrollbar > .scroll-element .scroll-element_track { background-color: #e0e0e0; }
-.scrollbar > .scroll-element .scroll-bar { background-color: #00efdf; width:3px; }
-.scrollbar > .scroll-element:hover .scroll-bar { background-color: #919191; }
-.scrollbar > .scroll-element.scroll-draggable .scroll-bar { background-color: #919191; }
+.scroll-wrapper > .scroll-element .scroll-element_track { background-color: #e0e0e0; }
+.scroll-wrapper > .scroll-element .scroll-bar { background-color: #00efdf; width:3px; }
+.scroll-wrapper > .scroll-element:hover .scroll-bar { background-color: #919191; }
+.scroll-wrapper > .scroll-element.scroll-draggable .scroll-bar { background-color: #919191; }
 
 
 /* update scrollbar offset if both scrolls are visible */
 
-.scrollbar > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track { left: -12px; }
-.scrollbar > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track { top: -12px; }
+.scroll-wrapper > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track { left: -12px; }
+.scroll-wrapper > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track { top: -12px; }
 
 
-.scrollbar > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -12px; }
-.scrollbar > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -12px; }
+.scroll-wrapper > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -12px; }
+.scroll-wrapper > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -12px; }

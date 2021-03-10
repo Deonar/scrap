@@ -25,6 +25,7 @@ jQuery(document).ready(function ($) {
   //======================== Scrollbar
   $('.scrollbar').scrollbar();
 
+ 
   //======================== Tabs 
   $(".tab-js").on("click", ".tab__item", function (event) {
     event.preventDefault();
@@ -38,5 +39,6 @@ jQuery(document).ready(function ($) {
 
   //======================== Custom select
   $(".custom-select_js").selectize();
-
+  $('.selectize-dropdown-content').scrollbar();
+  
 });

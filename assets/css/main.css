@@ -76,8 +76,8 @@
 }
 
 /*************** SIMPLE SCROLLBAR ***************/
-.scrollbar > .scroll-element,
-.scrollbar > .scroll-element div {
+.scroll-wrapper > .scroll-element,
+.scroll-wrapper > .scroll-element div {
   border: none;
   margin: 0;
   padding: 0;
@@ -85,7 +85,7 @@
   z-index: 10;
 }
 
-.scrollbar > .scroll-element div {
+.scroll-wrapper > .scroll-element div {
   display: block;
   height: 100%;
   left: 0;
@@ -93,61 +93,61 @@
   width: 4px;
 }
 
-.scrollbar > .scroll-element.scroll-x {
+.scroll-wrapper > .scroll-element.scroll-x {
   bottom: 2px;
   height: 8px;
   left: 0;
   width: 100%;
 }
 
-.scrollbar > .scroll-element.scroll-y {
+.scroll-wrapper > .scroll-element.scroll-y {
   height: 100%;
   left: 2px;
   top: 0;
   width: 4px;
 }
 
-.scrollbar > .scroll-element .scroll-element_outer {
+.scroll-wrapper > .scroll-element .scroll-element_outer {
   overflow: hidden;
 }
 
-.scrollbar > .scroll-element .scroll-element_outer,
-.scrollbar > .scroll-element .scroll-element_track,
-.scrollbar > .scroll-element .scroll-bar {
+.scroll-wrapper > .scroll-element .scroll-element_outer,
+.scroll-wrapper > .scroll-element .scroll-element_track,
+.scroll-wrapper > .scroll-element .scroll-bar {
   border-radius: 8px;
 }
 
-.scrollbar > .scroll-element .scroll-element_track {
+.scroll-wrapper > .scroll-element .scroll-element_track {
   background-color: #e0e0e0;
 }
 
-.scrollbar > .scroll-element .scroll-bar {
+.scroll-wrapper > .scroll-element .scroll-bar {
   background-color: #00efdf;
   width: 3px;
 }
 
-.scrollbar > .scroll-element:hover .scroll-bar {
+.scroll-wrapper > .scroll-element:hover .scroll-bar {
   background-color: #919191;
 }
 
-.scrollbar > .scroll-element.scroll-draggable .scroll-bar {
+.scroll-wrapper > .scroll-element.scroll-draggable .scroll-bar {
   background-color: #919191;
 }
 
 /* update scrollbar offset if both scrolls are visible */
-.scrollbar > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track {
+.scroll-wrapper > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track {
   left: -12px;
 }
 
-.scrollbar > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track {
+.scroll-wrapper > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track {
   top: -12px;
 }
 
-.scrollbar > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+.scroll-wrapper > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
   left: -12px;
 }
 
-.scrollbar > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+.scroll-wrapper > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
   top: -12px;
 }
 
@@ -918,12 +918,13 @@ body {
 }
 
 .custom-select.selectize-control {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 0;
 }
 
 .custom-select.selectize-control .selectize-input {
   border: 1px solid #e9eef2;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -932,6 +933,7 @@ body {
   width: 100%;
   font-weight: normal;
   font-size: 14px;
+  font-weight: 400;
   line-height: 17px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -996,6 +998,90 @@ body {
 
 .custom-select.selectize-control .selectize-dropdown-content .option {
   padding: 12px;
+}
+
+.search-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-input__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  max-width: 25%;
+  border: 1px solid #e9eef2;
+}
+
+.search-input__item .custom-select.selectize-control .selectize-input {
+  padding-top: 12px;
+  border: none;
+}
+
+.search-input__item .custom-select.selectize-control .selectize-input::after {
+  top: 10px;
+}
+
+.search-input__item .custom-select.selectize-control .selectize-input.dropdown-active:after {
+  top: 18px;
+}
+
+.search-input__label {
+  padding: 12px;
+  padding-bottom: 0;
+  font-size: 12px;
+  color: #959da4;
+}
+
+.custom-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.custom-checkbox input:checked + .custom-checkbox__point {
+  background-color: #32AD13;
+}
+
+.custom-checkbox input:checked + .custom-checkbox__point::before {
+  opacity: 1;
+}
+
+.custom-checkbox__point {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #32AD13;
+  border-radius: 3px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.custom-checkbox__point::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  top: 5px;
+  width: 6px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .star-rating {
@@ -1083,24 +1169,28 @@ body {
   background-image: url("../img/icons/rating-off.svg");
 }
 
-.scrollbar {
+.scrollbar,
+.selectize-dropdown-content {
   max-height: 300px !important;
   height: auto;
   overflow: hidden;
   overflow-y: auto;
 }
 
-.scrollbar > .scroll-element.scroll-y {
+.scrollbar > .scroll-element.scroll-y,
+.selectize-dropdown-content > .scroll-element.scroll-y {
   left: inherit;
   right: 0;
   z-index: 100;
 }
 
-.scrollbar > .scroll-element .scroll-element_track {
+.scrollbar > .scroll-element .scroll-element_track,
+.selectize-dropdown-content > .scroll-element .scroll-element_track {
   background: #fff;
 }
 
-.scrollbar > .scroll-element .scroll-bar {
+.scrollbar > .scroll-element .scroll-bar,
+.selectize-dropdown-content > .scroll-element .scroll-bar {
   background-color: #51c569;
 }
 

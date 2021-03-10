@@ -419,10 +419,10 @@ body {
 
 //Custom select
 .custom-select.selectize-control {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 0;
   .selectize-input {
     border: 1px solid #e9eef2;
+    box-shadow: none;
     outline: none;
     box-sizing: border-box;
     border-radius: 3px;
@@ -431,6 +431,7 @@ body {
 
     font-weight: normal;
     font-size: 14px;
+    font-weight: 400;
     line-height: 17px;
     transition: all 0.3s ease;
     &:after {
@@ -486,6 +487,72 @@ body {
     border: 1px solid #e9eef2;
     .option {
       padding: 12px;
+    }
+  }
+}
+
+.search-input {
+  display: flex;
+  &__item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    border: 1px solid #e9eef2;
+    .custom-select.selectize-control .selectize-input {
+      padding-top: 12px;
+      border: none;
+      &::after {
+        top: 10px;
+      }
+      &.dropdown-active:after {
+        top: 18px;
+      }
+    }
+  }
+  &__label {
+    padding: 12px;
+    padding-bottom: 0;
+    font-size: 12px;
+    color: #959da4;
+  }
+}
+
+//Custom Checkbox
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  input {
+    display: none;
+    &:checked + .custom-checkbox__point {
+      background-color: $accent;
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+  &__point {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid $accent;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 8px;
+      top: 5px;
+      width: 6px;
+      height: 10px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+
+      opacity: 0;
+      transition: all 0.2s;
     }
   }
 }
@@ -572,7 +639,8 @@ body {
   }
 }
 
-.scrollbar {
+.scrollbar,
+.selectize-dropdown-content {
   max-height: 300px !important;
   height: auto;
   overflow: hidden;
