@@ -24,10 +24,9 @@ jQuery(document).ready(function ($) {
 
   //======================== Scrollbar
   $('.scrollbar').scrollbar();
- 
-  //======================== Tabs 
 
-  $(".tab-js").on("click", ".tab__item", function(event) {
+  //======================== Tabs 
+  $(".tab-js").on("click", ".tab__item", function (event) {
     event.preventDefault();
     var tab = $(this).attr("data-tab");
     var wrapper = $(this).closest(".tab-js");
@@ -35,5 +34,9 @@ jQuery(document).ready(function ($) {
     $(this).addClass("active");
     wrapper.find(".tab__content").hide();
     wrapper.find(".tab__content[data-tab = " + tab + "]").show();
-});
+  });
+
+  //======================== Custom select
+  $(".custom-select_js").selectize();
+
 });

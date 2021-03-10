@@ -132,7 +132,20 @@
             </div>
         </div>
 
-
+        <div class="form-group row align-items-center mb-20">
+            <div class="col-lg-3">
+                <label class="form-input__label">Лейбл</label>
+            </div>
+            <div class="col-lg-9">
+                <div class="form-input__wrapp">
+                    <select class="custom-select custom-select_js">
+                        <option value="" disabled selected hidden>Выберите из списка</option>
+                        <option value="1">Пункт #1</option>
+                        <option value="0">Пункт #2</option>
+                    </select>
+                </div>
+            </div>
+        </div>
 
     </div>
 

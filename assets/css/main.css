@@ -620,7 +620,7 @@ body {
 }
 
 .btn_phone::before {
-  content: '';
+  content: "";
   display: inline-block;
   margin-right: 12px;
   width: 12px;
@@ -770,7 +770,7 @@ body {
 }
 
 .tab__item::after {
-  content: '';
+  content: "";
   display: inline-block;
   height: 3px;
   width: 0%;
@@ -807,7 +807,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
-  padding: 20px 12px;
+  padding: 18px 12px;
   width: 100%;
   font-weight: normal;
   font-size: 14px;
@@ -816,8 +816,9 @@ body {
   transition: all 0.3s ease;
 }
 
-.form-input:focus + .form-input__line, .form-input:active + .form-input__line {
-  background: #32AD13;
+.form-input:focus + .form-input__line,
+.form-input:active + .form-input__line {
+  background: #32ad13;
   opacity: 1;
   width: 100%;
   -webkit-transition: all 0.3s ease;
@@ -864,7 +865,7 @@ body {
 }
 
 .form-input__wrapp.error .form-input {
-  background-color: #E4DADB;
+  background-color: #e4dadb;
 }
 
 .form-input__wrapp.error .form-input__error {
@@ -885,7 +886,7 @@ body {
 
 .form-input__wrapp.error:before {
   content: "";
-  top: 30px;
+  top: 28px;
   right: 20px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -899,7 +900,7 @@ body {
 
 .form-input__wrapp.error:after {
   content: "";
-  top: 30px;
+  top: 28px;
   right: 20px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -914,6 +915,87 @@ body {
 .form-input__error {
   display: none;
   position: absolute;
+}
+
+.custom-select.selectize-control {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.custom-select.selectize-control .selectize-input {
+  border: 1px solid #e9eef2;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  padding: 18px 12px;
+  width: 100%;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.custom-select.selectize-control .selectize-input:after {
+  content: "";
+  margin: auto;
+  position: absolute;
+  right: 25px;
+  top: 18px;
+  border: solid #32ad13;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.custom-select.selectize-control .selectize-input.dropdown-active:after {
+  content: "";
+  margin: auto;
+  position: absolute;
+  right: 25px;
+  top: 22px;
+  border: solid #32ad13;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.custom-select.selectize-control .selectize-input::before {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 0%;
+  background: #32ad13;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.custom-select.selectize-control .selectize-input.full {
+  position: relative;
+}
+
+.custom-select.selectize-control .selectize-input.full::before {
+  width: 100%;
+  opacity: 1;
+}
+
+.custom-select.selectize-control .selectize-dropdown-content {
+  border: 1px solid #e9eef2;
+}
+
+.custom-select.selectize-control .selectize-dropdown-content .option {
+  padding: 12px;
 }
 
 .star-rating {
@@ -941,7 +1023,7 @@ body {
 }
 
 .star-rating > fieldset:not(:checked) > label:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -952,7 +1034,7 @@ body {
 
 .star-rating > fieldset:not(:checked) > label:hover:before,
 .star-rating > fieldset:not(:checked) > label:hover ~ label:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -962,7 +1044,7 @@ body {
 }
 
 .star-rating > fieldset > input:checked ~ label:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -1048,7 +1130,7 @@ body {
 
 .breadcrumbs__item:not(:last-child):after {
   display: block;
-  content: '/';
+  content: "/";
   color: #34495e;
   -webkit-transform: translateX(3px);
           transform: translateX(3px);
