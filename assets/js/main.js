@@ -29,7 +29,23 @@ jQuery(document).ready(function ($) {
     },
   });
 
-  //======================== MASK
+  //================ add new reviews
+  $('.add-reviews-js').on('click', function (e) {
+    $('.card-company__content .main-tab').addClass('hidden');
+    $('.new-reviews__wrapper').addClass('active');
+  });
+  //================ come back
+  $('.come-back-js').on('click', function (e) {
+    $('.card-company__content .main-tab').removeClass('hidden');
+    $('.new-reviews__wrapper').removeClass('active');
+    $('.thanks__for-reviews__wrapper').removeClass('active');
+  });
+  //=============== reviews-finish
+  $('.reviews-finish-js').on('click', function (e) {
+    $('.new-reviews__wrapper').removeClass('active');
+    $('.thanks__for-reviews__wrapper').addClass('active');
+  });
+
   // ======================== MASK
   $('.mask-phone').mask('+7 ZZZ ZZZ-ZZ-ZZ', {
     translation: {
@@ -41,14 +57,26 @@ jQuery(document).ready(function ($) {
 
   $('.mask-phone').on('blur input', function () {
     console.log($(this).val());
-    if($(this).val() == '+7 8'){
-      $(this).val('+7 '); 
+    if ($(this).val() == '+7 8') {
+      $(this).val('+7 ');
     }
 
     if ($(this).val().length >= 16) {
       $(this).closest('.form-input__wrapp').removeClass('error').addClass('done');
     } else {
       $(this).closest('.form-input__wrapp').addClass('error').removeClass('done');
+    }
+  });
+
+  // ===================== more btn
+  $('.more-list-js .more-item-js').hide();
+  $('.more-list-js .more-item-js').slice(0, 5).show();
+  $('#btn-more').click(function (e) {
+    e.preventDefault();
+    $('.more-list-js .more-item-js:hidden').slice(0, 5).fadeIn('slow');
+
+    if ($('.more-list-js .more-item-js:hidden').length == 0) {
+      $('#btn-more').fadeOut('slow');
     }
   });
 
@@ -67,7 +95,7 @@ jQuery(document).ready(function ($) {
   });
 
   //======================== Custom select
-  $(".custom-select_js").selectize();
+  $('.custom-select_js').selectize();
   $('.selectize-dropdown-content').scrollbar();
 
   //accordeon
@@ -82,5 +110,26 @@ jQuery(document).ready(function ($) {
       $(this).closest('.accordeon-wrapper-js').addClass('active');
       $(this).closest('.accordeon-wrapper-js').find('.accordeon-content-js').slideDown(300);
     }
+  });
+
+  //=================== scroll to page
+  $('.scrollto').on('click', function () {
+    let href = $(this).attr('href');
+
+    $('html, body').animate(
+      {
+        scrollTop: $(href).offset().top - 100,
+      },
+      {
+        duration: 300, // по умолчанию «400»
+        easing: 'linear', // по умолчанию «swing»
+      }
+    );
+    if ($(window).width() < 768) {
+      $('html, body').animate({
+        scrollTop: $(href).offset().top - 50,
+      });
+    }
+    return false;
   });
 });
