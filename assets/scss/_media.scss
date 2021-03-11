@@ -385,6 +385,12 @@
       line-height: 29px;
       max-width: 250px;
     }
+    &__wrapper {
+      transition: all 0s ease-in-out;
+      &.active {
+        transition: all 0s ease-in-out;
+      }
+    }
   }
   .map {
     margin: 0;
