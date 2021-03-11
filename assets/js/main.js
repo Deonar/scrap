@@ -33,6 +33,7 @@ jQuery(document).ready(function ($) {
   $('.add-reviews-js').on('click', function (e) {
     $('.card-company__content .main-tab').addClass('hidden');
     $('.new-reviews__wrapper').addClass('active');
+    $('.thanks__for-reviews__wrapper').removeClass('active');
   });
   //================ come back
   $('.come-back-js').on('click', function (e) {
