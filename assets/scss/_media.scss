@@ -1,11 +1,9 @@
-@media (max-width: 959px) {
+@media (max-width: 992px) {
   .header {
     &-burger {
       margin-right: 15px;
     }
   }
-}
-@media (max-width: 992px) {
   .main-tab .tab__item {
     margin-right: 20px;
   }
@@ -20,6 +18,10 @@
       width: calc(50% - 2px);
       padding-top: 50%;
     }
+  }
+  .form-input__label {
+    display: block;
+    margin-bottom: 6px;
   }
 }
 
@@ -209,6 +211,18 @@
     }
   }
 
+  .custom-checkbox {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .network-error {
+    padding: 20px;
+  }
+  .new-reviews {
+    padding: 0;
+    background: transparent;
+  }
   .sidebar {
     margin-bottom: 50px;
     max-width: 100%;
@@ -248,6 +262,11 @@
       font-size: 16px;
       line-height: 20px;
       margin-bottom: 5px;
+    }
+    &__section-title {
+      &._mob {
+        display: block;
+      }
     }
     &__rating-block {
       flex-direction: column;
@@ -337,6 +356,63 @@
     }
   }
 
+  .reviews {
+    &-item__top {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+    &-status {
+      margin-bottom: 25px;
+    }
+    &__no-reviews {
+      padding: 40px 25px;
+    }
+    &__no-reviews-content {
+      max-width: 290px;
+    }
+    &__no-reviews-title {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    &__no-reviews-btn {
+      max-width: 100%;
+    }
+  }
+  .thanks__for-reviews {
+    padding: 50px 25px;
+    &-title {
+      font-size: 24px;
+      line-height: 29px;
+      max-width: 250px;
+    }
+    &__wrapper {
+      transition: all 0s ease-in-out;
+      &.active {
+        transition: all 0s ease-in-out;
+      }
+    }
+  }
+  .map {
+    margin: 0;
+    &-body {
+      height: 0;
+    }
+    &-address__item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &-address__item-num {
+      margin-right: 0px;
+      margin-bottom: 12px;
+    }
+    &-address__item-text {
+      margin-bottom: 25px;
+    }
+    &-address__item-link {
+      margin-left: 0;
+    }
+  }
+
   //======================= footer
   .footer {
     &-wrapper {
@@ -362,4 +438,11 @@
     }
   }
   //======================= footer enf
+}
+
+@media (max-width: 360px) {
+  .custom-checkbox {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }

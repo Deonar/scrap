@@ -1,7 +1,18 @@
 .sidebar {
   max-width: 270px;
+  background: #fff;
+  position: relative;
+  z-index: 5;
 }
 .main-tab {
+  // position: absolute;
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  transition: all 0.5s, opacity 1.5s;
+  overflow: hidden;
   .tab__item-icon {
     display: none;
     fill: $text;
@@ -9,15 +20,86 @@
     max-height: 18px;
     max-width: 22px;
   }
+  &.hidden {
+    position: relative;
+    left: -1000px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: all 0.5s, opacity 0.2s;
+  }
 }
+.thanks__for-reviews {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 180px 0;
+  background: linear-gradient(102.13deg, #f7f9fc 0.51%, #faf6ec 100%);
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    width: 350px;
+    height: 230px;
+    background: url(../img/icons/star-bg.svg) center center no-repeat;
+    background-size: contain;
+  }
+  &-icon {
+    margin-bottom: 25px;
+  }
+  &-title {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    width: 100%;
+    max-width: 310px;
+    text-align: center;
+  }
+  &-text {
+    width: 100%;
+    max-width: 400px;
+    color: #959da4;
+    text-align: center;
+  }
+  &__wrapper {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 1000px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      left: 0;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
 .card-company {
+  position: relative;
+  z-index: 5;
+  background: #fff;
+  overflow: hidden;
   &__sidebar {
   }
   &__logo-wrapp {
     position: relative;
     margin-bottom: 20px;
   }
-
+  &__content {
+    position: relative;
+  }
   &__logo {
     position: relative;
     z-index: 5;
@@ -30,6 +112,19 @@
     justify-content: center;
     border-radius: 50%;
     background: #043598;
+    img {
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+    .img-plug {
+      padding: 15px;
+    }
     &._premium:after {
       content: "";
       position: absolute;
@@ -129,11 +224,6 @@
     }
   }
   &__street-link {
-    display: block;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
-    padding-left: 20px;
     margin-top: 12px;
     position: relative;
     color: $text-green-2;
@@ -225,6 +315,9 @@
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 25px;
+    &._mob {
+      display: none;
+    }
   }
   &__accordeon-title-mob {
     display: none;
@@ -512,5 +605,190 @@
         background-image: url("../img/icons/icon-rus.svg");
       }
     }
+  }
+}
+.reviews {
+  &-list {
+  }
+  &-item {
+    margin-bottom: 15px;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 25px;
+    border: 1px solid #e9eef2;
+    &._moderation {
+      background: #f7f9fc;
+      border: none;
+      .reviews-status {
+        padding-left: 30px;
+        &:after {
+          display: block;
+        }
+      }
+    }
+  }
+  &-item__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &-name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &-status {
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: $text-gray-2;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 5px;
+      width: 18px;
+      height: 18px;
+      background: url(../img/icons/clock.svg) center center no-repeat;
+      background-size: contain;
+      display: none;
+    }
+  }
+  &-item__info-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 350px;
+    margin-right: auto;
+    margin-bottom: 23px;
+  }
+  &-item__info {
+  }
+  &-item__title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $text-gray-2;
+  }
+  &-item__tell {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  &-rating {
+  }
+  &-item__text {
+  }
+  &__btn-more {
+    max-width: 180px;
+    padding: 16px 0;
+  }
+  &__no-reviews {
+    background: #f7f9fc;
+    border-radius: 3px;
+    padding: 100px 30px;
+  }
+  &__no-reviews-content {
+    width: 100%;
+    max-width: 310px;
+    margin: 0 auto;
+  }
+  &__no-reviews-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 12px;
+  }
+  &__no-reviews-sub-title {
+    text-align: center;
+    margin-bottom: 25px;
+    color: $text-gray-2;
+  }
+  &__no-reviews-btn {
+    display: block;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+.new-reviews {
+  padding: 40px;
+  background: #f7f9fc;
+  border-radius: 3px;
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    left: 1000px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      left: 0;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  .form-group {
+    margin-bottom: 12px;
+  }
+  .btn {
+    margin-bottom: 12px;
+  }
+}
+
+.map {
+  &-body {
+    height: 380px;
+    background: url(../img/map.jpg) center center no-repeat;
+  }
+  &-address__list {
+  }
+  &-address__item {
+    padding: 20px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    &:nth-child(odd) {
+      background: #f7f9fc;
+    }
+  }
+  &-address__item-num {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    display: block;
+    border-radius: 50%;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: $accent;
+  }
+  &-address__item-text {
+    margin-right: 20px;
+  }
+  &-address__item-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 8px;
+  }
+  &-address__item-sub-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  &-address__item-link {
+    margin-left: auto;
   }
 }

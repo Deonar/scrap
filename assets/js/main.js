@@ -29,6 +29,23 @@ jQuery(document).ready(function ($) {
     },
   });
 
+  //================ add new reviews
+  $('.add-reviews-js').on('click', function (e) {
+    $('.card-company__content .main-tab').addClass('hidden');
+    $('.new-reviews__wrapper').addClass('active');
+    $('.thanks__for-reviews__wrapper').removeClass('active');
+  });
+  //================ come back
+  $('.come-back-js').on('click', function (e) {
+    $('.card-company__content .main-tab').removeClass('hidden');
+    $('.new-reviews__wrapper').removeClass('active');
+    $('.thanks__for-reviews__wrapper').removeClass('active');
+  });
+  //=============== reviews-finish
+  $('.reviews-finish-js').on('click', function (e) {
+    $('.new-reviews__wrapper').removeClass('active');
+    $('.thanks__for-reviews__wrapper').addClass('active');
+  });
 
   // ======================== MASK
   $('.mask-phone').mask('+7 ZZZ ZZZ-ZZ-ZZ', {
@@ -52,6 +69,18 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  // ===================== more btn
+  $('.more-list-js .more-item-js').hide();
+  $('.more-list-js .more-item-js').slice(0, 5).show();
+  $('#btn-more').click(function (e) {
+    e.preventDefault();
+    $('.more-list-js .more-item-js:hidden').slice(0, 5).fadeIn('slow');
+
+    if ($('.more-list-js .more-item-js:hidden').length == 0) {
+      $('#btn-more').fadeOut('slow');
+    }
+  });
+
   //======================== Scrollbar
   $('.scrollbar').scrollbar();
 
@@ -67,14 +96,14 @@ jQuery(document).ready(function ($) {
   });
 
   //======================== Custom select
-  $(".custom-select_js").selectize();
+  $('.custom-select_js').selectize();
   $('.selectize-dropdown-content').scrollbar();
 
   $('#select-auto_search').on('change', function () {
-    if($('#select-auto_search').val() == 'number'){
+    if ($('#select-auto_search').val() == 'number') {
       $('#search-auto_mark').hide();
       $('#search-auto_number').show();
-    }else{
+    } else {
       $('#search-auto_mark').show();
       $('#search-auto_number').hide();
     }
@@ -92,4 +121,22 @@ jQuery(document).ready(function ($) {
       $(this).closest('.accordeon-wrapper-js').find('.accordeon-content-js').slideDown(300);
     }
   });
+});
+
+//=================== scroll to page
+$('.scrollto').on('click', function () {
+  let href = $(this).attr('href');
+
+  $('html, body').animate({
+    scrollTop: $(href).offset().top - 100,
+  }, {
+    duration: 300, // по умолчанию «400»
+    easing: 'linear', // по умолчанию «swing»
+  });
+  if ($(window).width() < 768) {
+    $('html, body').animate({
+      scrollTop: $(href).offset().top - 50,
+    });
+  }
+  return false;
 });

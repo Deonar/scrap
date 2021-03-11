@@ -108,8 +108,31 @@ body {
   background-color: $bg-red;
 }
 
-.link{
+.link {
   color: $accent;
+  &:hover {
+    text-decoration: underline;
+  }
+  &-location {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 20px;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 14px;
+      background: url(../img/icons/icon-location-2.svg) center center no-repeat;
+      background-size: contain;
+    }
+  }
 }
 
 .line-gray {
@@ -205,6 +228,19 @@ body {
   }
 }
 
+.btn_gray {
+  border: 1px solid #34495e;
+  color: $text;
+  &:hover {
+    background: #34495e;
+    color: #fff;
+  }
+  &:active {
+    background: #34495e;
+    color: #fff;
+  }
+}
+
 .btn_black {
   background: #131e29;
   &:hover {
@@ -249,6 +285,41 @@ body {
   }
   &:active {
     background: #dde5ed;
+  }
+}
+
+.btn-come__back {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 25px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 15px;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #34495e;
+  }
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    border-bottom: 1px solid #34495e;
+    border-left: 1px solid #34495e;
   }
 }
 
@@ -421,9 +492,22 @@ body {
     }
   }
 }
-.form-input-phone{
+.form-input-phone {
   max-width: 200px;
 }
+.network-error {
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 20px 135px 20px 20px;
+  margin-bottom: 25px;
+  color: #e31823;
+  background: url(../img/network-error.svg) center right no-repeat;
+  background-position-x: 98%;
+  background-color: RGBA(227, 24, 35, 0.05);
+}
+
 //Custom select
 .custom-select.selectize-control {
   font-size: 0;
@@ -528,7 +612,7 @@ body {
     margin-right: 10px;
     cursor: pointer;
     &::before {
-      content: "";
+      content: '';
       display: inline-block;
       position: absolute;
       left: 8px;
