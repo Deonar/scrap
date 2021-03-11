@@ -490,6 +490,11 @@ body {
       }
     }
   }
+  &.input_no-line{
+    .selectize-input::before  {
+      background-color: transparent;
+    }
+  }
   .selectize-dropdown-content {
     border: 1px solid #e9eef2;
     .option {
@@ -498,30 +503,6 @@ body {
   }
 }
 
-.search-input {
-  display: flex;
-  &__item {
-    flex: 0 0 25%;
-    max-width: 25%;
-    border: 1px solid #e9eef2;
-    .custom-select.selectize-control .selectize-input {
-      padding-top: 12px;
-      border: none;
-      &::after {
-        top: 10px;
-      }
-      &.dropdown-active:after {
-        top: 18px;
-      }
-    }
-  }
-  &__label {
-    padding: 12px;
-    padding-bottom: 0;
-    font-size: 12px;
-    color: #959da4;
-  }
-}
 
 //Custom Checkbox
 .custom-checkbox {

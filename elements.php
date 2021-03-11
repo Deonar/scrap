@@ -199,29 +199,29 @@
             <label class="custom-checkbox">
                 <input checked class="d-none" type="checkbox">
                 <span class="custom-checkbox__point"></span>
-                Я согласен с <a href="#" class="link">политикой конфиденциальности</a> 
+                Я согласен с <a href="#" class="link">политикой конфиденциальности</a>
             </label>
         </div>
 
     </div>
 
-
     <div class="search-wrapper mb-20 mt-20">
-        <div class="search-input">
-            <div class="search-input__item">
-                <div class="search-input__label">
-                    Тип поиска
-                </div>
-                <select class="custom-select custom-select_js">
-                    <option value="1">По марке авто</option>
-                    <option value="0">По гос. номеру</option>
-                </select>
+        <div class="search-input__item">
+            <div class="search-input__label">
+                Тип поиска
             </div>
+            <select class="custom-select custom-select_js" id="select-auto_search">
+                <option value="mark">По марке авто</option>
+                <option value="number">По гос. номеру</option>
+            </select>
+        </div>
+
+        <form action="#" class="search-input search-input_mark" id="search-auto_mark">
             <div class="search-input__item">
                 <div class="search-input__label">
                     Марка авто
                 </div>
-                <select class="custom-select custom-select_js">
+                <select class="custom-select custom-select_js input_no-line">
                     <option value="" disabled selected hidden>Выберите из списка</option>
                     <option value="1">Пункт #1</option>
                     <option value="0">Пункт #2</option>
@@ -231,7 +231,7 @@
                 <div class="search-input__label">
                     Модель авто
                 </div>
-                <select class="custom-select custom-select_js" placeholder="Выберите из списка">
+                <select class="custom-select custom-select_js input_no-line" placeholder="Выберите из списка">
                     <option value="1">Пункт #1</option>
                     <option value="0">Пункт #2</option>
                 </select>
@@ -240,7 +240,7 @@
                 <div class="search-input__label">
                     Год выпуска
                 </div>
-                <select class="custom-select custom-select_js" placeholder="Выберите из списка">
+                <select class="custom-select custom-select_js input_no-line" placeholder="Выберите из списка">
                     <option value="1990">1990</option>
                     <option value="1991">1991</option>
                     <option value="1992">1992</option>
@@ -267,7 +267,35 @@
                     <option value="2013">2013</option>
                 </select>
             </div>
-        </div>
+            <button href="#" class="btn btn_green btn_search">
+                Найти
+            </button>
+        </form>
+
+        <form action="#" class="search-input" id="search-auto_number" style="display: none;">
+            <div class="search-input__item search-input_number">
+                <div class="search-input__label">
+                    Гос. номер
+                </div>
+                <div class="form-input__wrapp">
+                    <input class="form-input" name="number" placeholder="А 999 АА" maxlength="6">
+                </div>
+            </div>
+            <div class="search-input__item search-input_region">
+                <div class="search-input__label">
+                    Регион
+                </div>
+                <div class="form-input__wrapp">
+                    <input class="form-input" name="region" placeholder="777" maxlength="3">
+                    <span class="region_icon">
+                        РУС
+                    </span>
+                </div>
+            </div>
+            <button href="#" class="btn btn_green btn_search">
+                Найти
+            </button>
+        </form>
     </div>
 
     <div class="mb-20 mt-20">

@@ -31,7 +31,7 @@
     border-radius: 50%;
     background: #043598;
     &._premium:after {
-      content: '';
+      content: "";
       position: absolute;
       right: 0;
       bottom: 0;
@@ -138,7 +138,7 @@
     position: relative;
     color: $text-green-2;
     &:before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       left: 0;
@@ -161,7 +161,7 @@
     line-height: 20px;
     position: relative;
     &:before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       left: 8px;
@@ -182,7 +182,7 @@
       transform: rotate(45deg);
     }
     &._close:after {
-      content: '';
+      content: "";
       top: 9px;
       left: 8px;
       transform: rotate(-45deg);
@@ -388,7 +388,7 @@
       top: 50%;
       transform: translate(-50%, -50%);
       &:after {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         width: 100%;
@@ -401,7 +401,7 @@
         transition: all 0.3s ease;
       }
       &:before {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         width: 18px;
@@ -432,6 +432,85 @@
       top: 50%;
       transform: translate(-50%, -50%);
       object-fit: cover;
+    }
+  }
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+
+  .search-input {
+    max-width: 100%;
+    width: 100%;
+  }
+  .btn_search {
+    max-width: 100px;
+    width: 100%;
+    margin-left: 10px;
+    line-height: 75px;
+    padding: 0 30px;
+  }
+}
+
+.search-input {
+  display: flex;
+  &__item {
+    max-width: 270px;
+    width: 100%;
+    border: 1px solid #e9eef2;
+    .custom-select.selectize-control .selectize-input {
+      padding-top: 12px;
+      border: none;
+      &::after {
+        top: 10px;
+      }
+      &.dropdown-active:after {
+        top: 18px;
+      }
+    }
+    .form-input {
+      padding-top: 12px;
+    }
+  }
+  &__label {
+    padding: 12px;
+    padding-bottom: 0;
+    font-size: 12px;
+    color: #959da4;
+  }
+  &_number {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    .form-input {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      border: none;
+    }
+  }
+  &_region {
+    .form-input {
+      border: none;
+    }
+    .region_icon {
+      position: absolute;
+      right: 15px;
+      bottom: 20px;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 600;
+      display: inline-block;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../img/icons/icon-rus.svg");
+      }
     }
   }
 }

@@ -29,7 +29,7 @@ jQuery(document).ready(function ($) {
     },
   });
 
-  //======================== MASK
+
   // ======================== MASK
   $('.mask-phone').mask('+7 ZZZ ZZZ-ZZ-ZZ', {
     translation: {
@@ -41,8 +41,8 @@ jQuery(document).ready(function ($) {
 
   $('.mask-phone').on('blur input', function () {
     console.log($(this).val());
-    if($(this).val() == '+7 8'){
-      $(this).val('+7 '); 
+    if ($(this).val() == '+7 8') {
+      $(this).val('+7 ');
     }
 
     if ($(this).val().length >= 16) {
@@ -70,6 +70,15 @@ jQuery(document).ready(function ($) {
   $(".custom-select_js").selectize();
   $('.selectize-dropdown-content').scrollbar();
 
+  $('#select-auto_search').on('change', function () {
+    if($('#select-auto_search').val() == 'number'){
+      $('#search-auto_mark').hide();
+      $('#search-auto_number').show();
+    }else{
+      $('#search-auto_mark').show();
+      $('#search-auto_number').hide();
+    }
+  });
   //accordeon
   $('.accordeon-tab-js').click(function (event) {
     event.stopPropagation();
