@@ -410,12 +410,32 @@ h6 {
   color: #34495e;
 }
 
+.title {
+  margin-bottom: 40px;
+}
+
+.h1 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+}
+
 .fz-16 {
   font-size: 16px;
 }
 
 .fz-12 {
   font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  .title {
+    margin-bottom: 30px;
+  }
+  .h1 {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 
 *,
@@ -850,7 +870,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #34495e;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   position: relative;
   cursor: pointer;
 }
@@ -862,7 +882,7 @@ body {
   width: 0%;
   background: #32ad13;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   opacity: 0;
   -webkit-transition: all 0.6s;
@@ -1764,6 +1784,10 @@ body {
 
 .navbar-socials .socials__icon:last-child {
   margin-right: 0;
+}
+
+.aggregator__page {
+  padding: 40px 0 50px;
 }
 
 .sidebar {
@@ -2871,6 +2895,54 @@ body {
     display: block;
     margin-bottom: 6px;
   }
+  .search-wrapper {
+    display: block;
+  }
+  .search-wrapper .btn_search {
+    line-height: inherit;
+    width: 100%;
+    max-width: 100%;
+    padding: 16px 30px;
+    margin: auto;
+  }
+  .search-input {
+    display: block;
+  }
+  .search-input__label {
+    max-width: 100%;
+    width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0;
+    margin-bottom: 5px;
+    color: #34495e;
+  }
+  .search-input__item {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+  }
+  .search-input__item .custom-select.selectize-control .selectize-input {
+    padding: 20px;
+    padding-left: 12px;
+    border: 1px solid #e9eef2;
+  }
+  .search-input__item .custom-select.selectize-control .selectize-input::after {
+    top: 20px;
+  }
+  .search-input__item .custom-select.selectize-control .selectize-input.dropdown-active:after {
+    top: 28px;
+  }
+  .search-input_number, .search-input_region {
+    text-align: left;
+  }
+  .search-input_number .form-input, .search-input_region .form-input {
+    text-align: left;
+    padding: 20px;
+    padding-left: 12px;
+    border: 1px solid #e9eef2;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3175,7 +3247,7 @@ body {
     position: relative;
   }
   .card-company__accordeon-mob .accordeon-tab-js::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 10px;
