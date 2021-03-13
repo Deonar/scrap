@@ -115,28 +115,52 @@ jQuery(document).ready(function ($) {
       $(this).closest('.accordeon-wrapper-js').removeClass('active');
       $(this).closest('.accordeon-wrapper-js').find('.accordeon-content-js').slideUp(300);
     } else {
-      $('.accordeon-wrapper-js').removeClass('active');
-      $('.accordeon-content-js').slideUp(300);
-      $(this).closest('.accordeon-wrapper-js').addClass('active');
+      // $('.accordeon-wrapper-js').removeClass('active');
+      // $('.accordeon-content-js').slideUp(300);
+      $(this).closest('.accordeon-wrapper-js').toggleClass('active');
       $(this).closest('.accordeon-wrapper-js').find('.accordeon-content-js').slideDown(300);
     }
   });
-});
 
-//=================== scroll to page
-$('.scrollto').on('click', function () {
-  let href = $(this).attr('href');
-
-  $('html, body').animate({
-    scrollTop: $(href).offset().top - 100,
-  }, {
-    duration: 300, // по умолчанию «400»
-    easing: 'linear', // по умолчанию «swing»
+  //accordeon-content more
+  $('.button-more-js').click(function (event) {
+    event.stopPropagation();
+    if ($(this).closest('.content-wrapper-js').hasClass('active')) {
+      $(this).closest('.content-wrapper-js').removeClass('active');
+      $(this).closest('.content-wrapper-js').find('.content-js').slideUp(300);
+      $(this).text('Подробнее');
+    } else {
+      $('.content-wrapper-js').removeClass('active');
+      $('.content-js').slideUp(300);
+      $(this).closest('.content-wrapper-js').addClass('active');
+      $(this).closest('.content-wrapper-js').find('.content-js').slideDown(300);
+      $('.button-more-js').text('Подробнее');
+      $(this).text('Скрыть');
+    }
   });
-  if ($(window).width() < 768) {
-    $('html, body').animate({
-      scrollTop: $(href).offset().top - 50,
-    });
-  }
-  return false;
+
+  //=================== scroll to page
+  $('.scrollto').on('click', function () {
+    let href = $(this).attr('href');
+
+    $('html, body').animate(
+      {
+        scrollTop: $(href).offset().top - 100,
+      },
+      {
+        duration: 300, // по умолчанию «400»
+        easing: 'linear', // по умолчанию «swing»
+      }
+    );
+    if ($(window).width() < 768) {
+      $('html, body').animate({
+        scrollTop: $(href).offset().top - 50,
+      });
+    }
+    return false;
+  });
+
+  // ============
+  // ====end=====
+  // ============
 });
