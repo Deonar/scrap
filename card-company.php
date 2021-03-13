@@ -71,27 +71,28 @@
               </div>
               <div class="tab__item tab-item-js" data-tab="2">
                 <svg class="tab__item-icon">
-                  <use xlink:href="assets/img/icons/icon-location-3.svg#tab-location"></use>
+                  <use xlink:href="assets/img/icons/star.svg#tab-star"></use>
                 </svg>
                 Отзывы
               </div>
               <div class="tab__item tab-item-js" data-tab="3">
                 <svg class="tab__item-icon">
-                  <use xlink:href="assets/img/icons/star.svg#tab-star"></use>
+                  <use xlink:href="assets/img/icons/icon-location-3.svg#tab-location"></use>
                 </svg>
                 Адреса
               </div>
             </div>
 
+            <!------- prices ------->
             <div class="tab__content tab-content-js active" data-tab="1">
               <div class="card-company__section">
                 <h4 class="card-company__section-title">Принимаемое сырьё и цены</h4>
 
                 <div class="card-company__accordeon-title-mob">Тип сырья</div>
                 <ul class="card-company__accordeon-mob">
-                  <li class="accordeon-wrapper-js card-company__table">
-                    <div class="card-company__table-title accordeon-tab-js">Керамический материал</div>
-                    <div class="card-company__table-body accordeon-content-js">
+                  <li class="accordeon-wrapper accordeon-wrapper-js card-company__table">
+                    <div class="card-company__table-title accordeon-tab accordeon-tab-js">Керамический материал</div>
+                    <div class="card-company__table-body accordeon-content accordeon-content-js">
                       <table>
                         <thead>
                           <tr>
@@ -142,9 +143,9 @@
                       </table>
                     </div>
                   </li>
-                  <li class="accordeon-wrapper-js">
-                    <div class="card-company__material-title accordeon-tab-js _mob">Металлически материал</div>
-                    <ul class="card-company__material-cards accordeon-content-js">
+                  <li class="accordeon-wrapper accordeon-wrapper-js">
+                    <div class="card-company__material-title accordeon-tab accordeon-tab-js _mob">Металлически материал</div>
+                    <ul class="card-company__material-cards accordeon-content accordeon-content-js">
                       <li class="card-company__material-card">
                         <div class="card-company__material-title">Металлический материал</div>
                         <div class="card-company__material-sub-title">Импорт</div>
@@ -253,7 +254,7 @@
                 </ul>
               </div>
             </div>
-
+            <!------- reviews ------->
             <div class="tab__content tab-content-js" data-tab="2">
               <div class="card-company__section">
                 <h4 class="card-company__section-title">Отзывы</h4>
@@ -465,7 +466,7 @@
                 </div>
               </div>
             </div>
-
+            <!------- address ------->
             <div class="tab__content tab-content-js" data-tab="3">
               <div class="card-company__section map">
                 <div class="map-body"></div>
@@ -517,6 +518,7 @@
               </div>
             </div>
           </div>
+
           <div class="new-reviews__wrapper">
             <button class="btn-come__back come-back-js">Назад</button>
             <div class="new-reviews">

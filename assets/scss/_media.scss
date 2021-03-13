@@ -1,3 +1,8 @@
+@media (max-width: 1200px) {
+  .rating-top {
+    background-size: 40%;
+  }
+}
 @media (max-width: 992px) {
   .header {
     &-burger {
@@ -6,6 +11,7 @@
   }
   .main-tab .tab__item {
     margin-right: 20px;
+    font-size: 12px;
   }
   .card-company {
     &__material-card {
@@ -162,6 +168,29 @@
     }
   }
   //====================== HEADER END
+
+  .h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .accordeon-tab {
+    font-size: 14px;
+  }
+  .rating-top {
+    background: url(../img/icons/top-star.png) bottom center no-repeat;
+    background-position-x: center;
+    background-size: 250px 150px;
+    padding-bottom: 175px;
+    padding-top: 25px;
+    background-color: #f7f9fc;
+    &__title {
+      max-width: 100%;
+    }
+    &__text {
+      max-width: 100%;
+    }
+  }
+
   .main-tab {
     .tab__wrapper {
       position: fixed;
@@ -195,7 +224,7 @@
       align-items: center;
       justify-content: center;
       &.active {
-        background: $primary-1;
+        background: $accent;
         color: #fff;
         .tab__item-icon {
           transition: all 0.3s ease;
@@ -288,38 +317,25 @@
     &__accordeon-mob {
       border-radius: 3px;
       border: 1px solid #e9eef2;
-      .accordeon-content-js {
+      .accordeon-content {
         display: none;
       }
-      .accordeon-tab-js {
+      .accordeon-tab {
+        padding: 20px 12px;
+        display: block;
         pointer-events: inherit;
         font-size: 14px;
         line-height: 17px;
-
-        // border-bottom-color: $primary-1;
-        padding: 20px 12px;
-        border-radius: 3px 3px 0 0;
-        position: relative;
-        &::after {
-          content: '';
+        &:after {
           display: block;
-          position: absolute;
-          width: 10px;
-          height: 10px;
-          right: 15px;
-          top: 23px;
-          border-bottom: 1px solid $primary-1;
-          border-left: 1px solid $primary-1;
-          transform: rotate(-135deg);
-          transition: all 0.3s ease;
         }
       }
-      .accordeon-wrapper-js {
+      .accordeon-wrapper {
         border-bottom: 1px solid #e9eef2;
         &:last-child {
           border-bottom: none;
         }
-        &.active .accordeon-tab-js:after {
+        &.active .accordeon-tab:after {
           transform: rotate(-45deg);
           transition: all 0.3s ease;
         }
@@ -334,6 +350,7 @@
       margin: 0;
     }
     &__table-body {
+      overflow-x: scroll;
       padding: 30px 10px;
       table {
         thead {
@@ -353,6 +370,43 @@
           }
         }
       }
+    }
+  }
+  .cabinet__content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .company {
+    &-section {
+      padding: 20px;
+    }
+    &-section__bottom {
+      display: none;
+    }
+    &-info__row {
+      flex-direction: column;
+      .company-info__block {
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+    &-accordeon {
+      .card-company__material-cards {
+        padding: 0px;
+      }
+      .card-company__material-card {
+        padding: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    // &-accordeon .card-company__table-body {
+    //   padding: 0px 0px 20px 0px;
+    // }
+
+    &__btn-more {
+      display: block;
     }
   }
 
@@ -444,5 +498,25 @@
   .custom-checkbox {
     font-size: 10px;
     line-height: 14px;
+  }
+  .accordeon-tab {
+    font-size: 12px;
+  }
+  .main-tab .tab__item {
+    font-size: 10px;
+    padding: 10px 5px;
+  }
+  .card-company__material-price {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .company-accordeon .card-company__table-body {
+    padding: 0px 0px 20px 0px;
+  }
+  .company-accordeon .accordeon-tab {
+    padding: 20px 10px;
+  }
+  .company-section {
+    padding: 15px;
   }
 }

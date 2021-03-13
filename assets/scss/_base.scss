@@ -153,6 +153,13 @@ body {
   text-align: center;
 }
 
+.h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: $text;
+}
+
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -215,6 +222,61 @@ body {
   }
   &:active {
     background: #27910d;
+  }
+}
+
+.btn_price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 15px;
+  b {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    margin-left: 30px;
+  }
+  span:after,
+  span:before {
+    content: '';
+    display: block;
+    background: #fff;
+    position: absolute;
+  }
+  span:after {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    height: 2px;
+  }
+  span:before {
+    width: 2px;
+    height: 100%;
+    top: 0;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}
+
+.btn_exit {
+  span {
+    display: inline-block;
+    padding-left: 25px;
+    color: $accent;
+    background: url(../img/icons/exit.svg) left center no-repeat;
+  }
+  &:hover {
+    border-color: #299f0c;
+  }
+  &:active {
+    border-color: #27910d;
   }
 }
 
@@ -322,7 +384,17 @@ body {
     border-left: 1px solid #34495e;
   }
 }
-
+.btn_add-filial {
+  width: auto;
+  color: $accent;
+  background: RGBA(50, 173, 19, 0.1);
+  &:hover {
+    background: RGBA(50, 173, 19, 0.2);
+  }
+  &:active {
+    background: RGBA(50, 173, 19, 0.2);
+  }
+}
 .socials__icon {
   display: block;
   width: 30px;
@@ -386,6 +458,35 @@ body {
     display: none;
     &.active {
       display: block;
+    }
+  }
+}
+
+//Accordeon
+.accordeon {
+  &-wrapper-js {
+    &.active .accordeon-tab-js:after {
+      transform: rotate(-45deg);
+      transition: all 0.3s ease;
+    }
+  }
+  &-tab {
+    padding: 20px 12px;
+    border-radius: 3px 3px 0 0;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      right: 15px;
+      top: 23px;
+      border-bottom: 1px solid $accent;
+      border-left: 1px solid $accent;
+      transform: rotate(-135deg);
+      transition: all 0.3s ease;
     }
   }
 }
@@ -574,8 +675,8 @@ body {
       }
     }
   }
-  &.input_no-line{
-    .selectize-input::before  {
+  &.input_no-line {
+    .selectize-input::before {
       background-color: transparent;
     }
   }
@@ -586,7 +687,6 @@ body {
     }
   }
 }
-
 
 //Custom Checkbox
 .custom-checkbox {
