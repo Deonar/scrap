@@ -9,7 +9,7 @@
           <div class="card-company__sidebar-head">
             <div class="card-company__logo-wrapp">
               <div class="card-company__logo _premium">
-                <img src="assets/img/icons/arrow-round.svg" class="img-plug" alt="" />
+                <!-- <img src="assets/img/gallery-company/gallery-company-1.jpg" alt="" /> -->
               </div>
               <div class="card-company__logo-label-wrapp">
                 <div class="card-company__logo-label _blue">реклама</div>

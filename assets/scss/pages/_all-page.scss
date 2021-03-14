@@ -1,5 +1,5 @@
-.aggregator{
-  &__page{
+.aggregator {
+  &__page {
     padding: 40px 0 50px;
   }
 }
@@ -122,6 +122,9 @@
     justify-content: center;
     border-radius: 50%;
     background: #043598;
+    background: url(../img/icons/company-logo-plug.svg) center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
     img {
       position: absolute;
       display: block;
@@ -131,9 +134,11 @@
       top: 50%;
       transform: translate(-50%, -50%);
       object-fit: cover;
+      z-index: 6;
     }
-    .img-plug {
-      padding: 15px;
+    &._img-edit {
+      cursor: pointer;
+      background: url(../img/icons/img-download.svg) center center no-repeat;
     }
     &._premium:after {
       content: '';
@@ -913,6 +918,15 @@
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    span {
+      display: block;
+      margin-left: auto;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+    }
   }
   &-label__list {
     display: flex;
@@ -1040,5 +1054,85 @@
       margin-right: 10px;
       margin-bottom: 10px;
     }
+  }
+}
+
+.working {
+  &-btns {
+    display: flex;
+    width: 100%;
+    max-width: 390px;
+    justify-content: space-between;
+  }
+  &-btn {
+    position: relative;
+    width: 14%;
+    padding-top: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #e9eef2;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    outline: none;
+    cursor: pointer;
+    span {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:hover {
+      transition: all 0.3s ease;
+      background: #3ccc18;
+      border: 1px solid #3ccc18;
+      outline: none;
+      color: #fff;
+    }
+
+    &.active {
+      transition: all 0.3s ease;
+      border: 1px solid $accent;
+      background: $accent;
+      color: #fff;
+      &:hover {
+        transition: all 0.3s ease;
+        border: 1px solid $accent;
+        background: $accent;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.edit-company {
+  &__section {
+    margin-bottom: 40px;
+  }
+  &__wrapp {
+    .form-input__remark {
+      margin-left: 25px;
+      max-width: 250px;
+    }
+    .form-input-phone {
+      min-width: 200px;
+    }
+  }
+  &__form {
+    width: 100%;
+    max-width: 570px;
+  }
+  &__btns {
+    .btn {
+      width: auto;
+    }
+  }
+  &__logo-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: $text-gray-2;
   }
 }

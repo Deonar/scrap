@@ -27,7 +27,7 @@
   }
   .form-input__label {
     display: block;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
   }
 
   .search {
@@ -69,7 +69,8 @@
           }
         }
       }
-      &_number, &_region {
+      &_number,
+      &_region {
         text-align: left;
         .form-input {
           text-align: left;
@@ -83,7 +84,6 @@
 }
 
 @media (max-width: 767px) {
-
   //====================== HEADER
   .header {
     &-wrapp {
@@ -308,6 +308,25 @@
     margin-bottom: 50px;
     max-width: 100%;
   }
+  .working-btn {
+    &:hover {
+      background: #fff;
+      border: 1px solid #e9eef2;
+      color: $text;
+    }
+  }
+  .form {
+    &-input__remark-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &-input__remark {
+      margin-top: 15px;
+    }
+    &-input__wrapp {
+      max-width: 100%;
+    }
+  }
   .card-company {
     &__sidebar-head {
       display: flex;
@@ -384,7 +403,7 @@
         border-radius: 3px 3px 0 0;
         position: relative;
         &:after {
-          content: "";
+          content: '';
           display: block;
         }
       }
@@ -437,6 +456,14 @@
   .company {
     &-section {
       padding: 20px;
+    }
+    &-section__title {
+      flex-direction: column;
+      align-items: flex-start;
+      span {
+        margin-top: 15px;
+        margin-left: 0;
+      }
     }
     &-section__bottom {
       display: none;
@@ -524,6 +551,26 @@
       margin-left: 0;
     }
   }
+  .edit-company {
+    &__section {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    &__wrapp {
+      .form-input-phone {
+        min-width: 100%;
+      }
+      .card-company__logo {
+        width: 80px;
+        height: 80px;
+        min-width: 80px;
+        min-height: 80px;
+      }
+      .form-input__remark {
+        margin-left: 0;
+      }
+    }
+  }
 
   //======================= footer
   .footer {
@@ -553,6 +600,9 @@
 }
 
 @media (max-width: 360px) {
+  .btn {
+    padding: 16px 15px;
+  }
   .custom-checkbox {
     font-size: 10px;
     line-height: 14px;
@@ -576,5 +626,14 @@
   }
   .company-section {
     padding: 15px;
+  }
+  .form-input__time {
+    max-width: 110px;
+    .form-input {
+      padding: 17px 5px 17px 40px;
+    }
+    &:after {
+      right: 8px;
+    }
   }
 }

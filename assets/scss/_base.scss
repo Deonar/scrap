@@ -71,14 +71,20 @@ body {
 .mb-20 {
   margin-bottom: 20px;
 }
-.mr-20 {
-  margin-right: 20px;
-}
-.mr-10 {
-  margin-right: 10px;
+.mb-15 {
+  margin-bottom: 15px;
 }
 .mb-5 {
   margin-bottom: 5px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mr-15 {
+  margin-right: 15px;
+}
+.mr-10 {
+  margin-right: 10px;
 }
 
 .d-flex {
@@ -524,6 +530,24 @@ body {
       font-size: 14px;
       font-weight: 600;
     }
+    &__label-text {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $text-gray-2;
+    }
+    &__remark-row {
+      display: flex;
+      align-items: center;
+    }
+
+    &__remark {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: $text-gray-2;
+    }
     &__wrapp {
       max-width: 510px;
       position: relative;
@@ -587,14 +611,123 @@ body {
     }
     &__line {
     }
+    &__time {
+      width: 100%;
+      max-width: 130px;
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+      .form-input {
+        padding: 17px 12px 17px 40px;
+        line-height: 22px;
+        color: $text-gray-2;
+        &::placeholder {
+          color: $text-gray-2;
+        }
+      }
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        background: url(../img/icons/time.svg) center center no-repeat;
+        background-size: contain;
+        background-color: #fff;
+      }
+    }
     &__error {
       display: none;
       position: absolute;
     }
   }
+  &-radio__group {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .form-input-phone {
   max-width: 200px;
+}
+
+//======= radio button
+.form-radio__group .form-radio__input[type='radio'] {
+  display: none;
+}
+.form-radio__group .form-radio__label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 25px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 0px 0px 0px 30px;
+  cursor: pointer;
+}
+.form-radio__group .form-radio__label::before,
+.form-radio__group .form-radio__label::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.form-radio__group .form-radio__label::before {
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  border: 2px solid $accent;
+}
+.form-radio__group .form-radio__label:hover::before {
+}
+.form-radio__group .form-radio__label::after {
+  opacity: 0;
+  left: 0px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border: 6px solid $accent;
+  transform: scale(1.5);
+}
+.form-radio__group .form-radio__input[type='radio']:checked + .form-radio__label::before {
+  border: 2px solid $accent;
+}
+.form-radio__group .form-radio__input[type='radio']:checked + .form-radio__label::after {
+  opacity: 1;
+  transform: scale(1);
+}
+// radio button end
+
+.passport-download {
+  cursor: pointer;
+  width: 180px;
+  height: 110px;
+  min-width: 180px;
+  min-height: 110px;
+  background: url(../img/icons/download-arrow.svg) center center no-repeat;
+  background-color: rgba(50, 173, 19, 0.1);
+  border: 1px dashed $accent;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+  img {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 6;
+  }
 }
 .network-error {
   border-radius: 3px;
@@ -692,6 +825,9 @@ body {
 .custom-checkbox {
   display: flex;
   align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
   cursor: pointer;
   input {
     display: none;
@@ -705,8 +841,11 @@ body {
   &__point {
     position: relative;
     display: inline-block;
+
     width: 24px;
     height: 24px;
+    min-width: 24px;
+    min-height: 24px;
     border: 1px solid $accent;
     border-radius: 3px;
     margin-right: 10px;
@@ -725,6 +864,15 @@ body {
 
       opacity: 0;
       transition: all 0.2s;
+    }
+  }
+  &__wrapp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    .custom-checkbox {
+      width: 48%;
     }
   }
 }

@@ -160,6 +160,11 @@ jQuery(document).ready(function ($) {
     return false;
   });
 
+  // working-btns
+  $('#working-btns .working-btn').on('click', function () {
+    $(this).toggleClass('active');
+  });
+
   // ============
   // ====end=====
   // ============
