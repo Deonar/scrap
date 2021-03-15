@@ -165,6 +165,33 @@ jQuery(document).ready(function ($) {
     $(this).toggleClass('active');
   });
 
+  //====== registration show stage
+
+  function showStage(hiddenId, activeId) {
+    $(hiddenId).addClass('hidden');
+    $(activeId).removeClass('hidden');
+  }
+
+  $('#to-stage-2').on('click', function () {
+    showStage('#stage-1', '#stage-2');
+  });
+  $('#to-stage-3').on('click', function () {
+    showStage('#stage-2', '#stage-3');
+  });
+  $('#to-stage-finish').on('click', function () {
+    showStage('#stage-3', '#stage-finish');
+  });
+
+  $('#back-stage-1').on('click', function () {
+    showStage('#stage-2', '#stage-1');
+  });
+  $('#back-stage-2').on('click', function () {
+    showStage('#stage-3', '#stage-2');
+  });
+  $('#back-stage-3').on('click', function () {
+    showStage('#stage-finish', '#stage-3');
+  });
+
   // ============
   // ====end=====
   // ============

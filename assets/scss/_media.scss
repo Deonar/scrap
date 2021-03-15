@@ -2,6 +2,19 @@
   .rating-top {
     background-size: 40%;
   }
+  .edit-company__btns {
+    flex-wrap: wrap;
+    width: 100%;
+    .custom-checkbox {
+      width: 100%;
+      order: 1;
+      margin-bottom: 25px;
+      margin-left: 0;
+    }
+    .btn {
+      order: 2;
+    }
+  }
 }
 @media (max-width: 992px) {
   .header {
@@ -227,6 +240,9 @@
   }
   .accordeon-tab {
     font-size: 14px;
+  }
+  .sidebar__registration {
+    display: none;
   }
   .rating-top {
     background: url(../img/icons/top-star.png) bottom center no-repeat;
@@ -556,7 +572,7 @@
       margin-left: -15px;
       margin-right: -15px;
     }
-    &__wrapp {
+    &__form {
       .form-input-phone {
         min-width: 100%;
       }
@@ -627,13 +643,16 @@
   .company-section {
     padding: 15px;
   }
-  .form-input__time {
+  .form-input__range {
     max-width: 110px;
     .form-input {
       padding: 17px 5px 17px 40px;
     }
-    &:after {
+    &-value {
       right: 8px;
     }
+  }
+  .form-input__label {
+    font-size: 12px;
   }
 }

@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-sm-12 col-md-4">
         <div class="sidebar card-company__sidebar">
-          <h2 class="sidebar-title h2">Личный кабинет</h2>
+          <h2 class="sidebar-title page-title">Личный кабинет</h2>
           <div class="card-company__sidebar-head">
             <div class="card-company__logo-wrapp">
               <div class="card-company__logo _premium">
@@ -39,7 +39,7 @@
       <div class="col-sm-12 col-md-8">
         <div id="card-company-content" class="page-content cabinet__content">
           <div class="rating-top">
-            <h2 class="rating-top__title h2">Выведи компанию в ТОП!</h2>
+            <h2 class="rating-top__title page-title">Выведи компанию в ТОП!</h2>
             <div class="rating-top__text">Выделение одной компании и всех филиалов в одной категории агрегатора для увеличения количества клиентов!</div>
             <a href="#" class="rating-top__btn btn btn_blue">Вывести в топ за 990 ₽/мес</a>
           </div>
@@ -74,7 +74,7 @@
             <!------- company ------->
             <div class="tab__content tab-content-js active" data-tab="1">
               <div class="card-company__section-row mb-20">
-                <h4 class="card-company__section-title">Компании</h4>
+                <h4 class="primary-title mb-20">Компании</h4>
                 <a href="#" class="btn btn_add-filial">Добавить филиал</a>
               </div>
 
@@ -387,7 +387,7 @@
             <!------- reviews ------->
             <div class="tab__content tab-content-js" data-tab="2">
               <div class="card-company__section">
-                <h4 class="card-company__section-title">Отзывы</h4>
+                <h4 class="primary-title mb-20">Отзывы</h4>
                 <ul class="card-company__reviews-list reviews-list more-list-js">
                   <li class="reviews-item _moderation more-item-js">
                     <div class="reviews-item__top">
@@ -591,9 +591,9 @@
             </div>
             <!------- main info ------->
             <div class="tab__content tab-content-js" data-tab="3">
-              <h4 class="card-company__section-title">Основная информация</h4>
+              <h4 class="primary-title mb-20">Основная информация</h4>
               <div class="company-section">
-                <div class="company-section__title">Личная информация</div>
+                <div class="company-section__title mb-25">Личная информация</div>
                 <div class="company-info__row">
                   <div class="company-info__block">
                     <div class="company-info__block-title">фио</div>
@@ -607,7 +607,7 @@
                 <a href="#" class="company__edit-btn btn btn_add-param">Редактировать</a>
               </div>
               <div class="company-section">
-                <div class="company-section__title">Юридическая информация</div>
+                <div class="company-section__title mb-25">Юридическая информация</div>
                 <div class="card-company__table-body table-price" style="padding: 0 0 25px 0">
                   <table>
                     <tbody>
@@ -645,7 +645,7 @@
             </div>
             <!------- photo ------->
             <div class="tab__content tab-content-js" data-tab="4">
-              <h4 class="card-company__section-title">Фотографии</h4>
+              <h4 class="primary-title mb-20">Фотографии</h4>
               <div class="card-company__section-sub-title">Загрузите не более 10 фотографии вашей компании. Размер одной фотографии не должен превышать 5 MB.</div>
               <ul class="card-company__gallery-list card-company__gallery-download">
                 <li class="card-company__gallery-item">
@@ -669,7 +669,7 @@
         <div class="edit-company__wrapp">
           <button class="btn-come__back come-back-js">Назад</button>
           <div class="company-section edit-company__section">
-            <div class="company-section__title">Информация о компании <span>Заполните все поля</span></div>
+            <div class="company-section__title mb-25">Информация о компании <span>Заполните все поля</span></div>
             <div class="edit-company__form">
               <div class="edit-company__logo row align-items-center mb-20">
                 <div class="col-4 col-lg-3">
@@ -767,78 +767,102 @@
                   </div>
                 </div>
               </div>
-              <div class="form-group form-group__time row align-items-center mb-15">
+              <div class="form-group form-group__range row align-items-center mb-15">
                 <div class="col-2 col-lg-3">
                   <label class="form-input__label">ПН</label>
                 </div>
                 <div class="col-10 col-lg-9">
-                  <div class="form-input__time-row d-flex">
-                    <div class="form-input__wrapp form-input__time">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">с</span>
                       <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
                       <div class="form-input__line"></div>
+                      <div class="form-input__range-value">
+                        <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
                     </div>
-                    <div class="form-input__wrapp form-input__time">
+                    <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
                       <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
                       <div class="form-input__line"></div>
+                      <div class="form-input__range-value">
+                        <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="form-group form-group__time row align-items-center mb-15">
+              <div class="form-group form-group__range row align-items-center mb-15">
                 <div class="col-2 col-lg-3">
                   <label class="form-input__label">ВТ</label>
                 </div>
                 <div class="col-10 col-lg-9">
-                  <div class="form-input__time-row d-flex">
-                    <div class="form-input__wrapp form-input__time">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">с</span>
                       <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
                       <div class="form-input__line"></div>
+                      <div class="form-input__range-value">
+                        <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
                     </div>
-                    <div class="form-input__wrapp form-input__time">
+                    <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
                       <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
                       <div class="form-input__line"></div>
+                      <div class="form-input__range-value">
+                        <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="form-group form-group__time row align-items-center mb-15">
+              <div class="form-group form-group__range row align-items-center mb-15">
                 <div class="col-2 col-lg-3">
                   <label class="form-input__label">СР</label>
                 </div>
                 <div class="col-10 col-lg-9">
-                  <div class="form-input__time-row d-flex">
-                    <div class="form-input__wrapp form-input__time">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">с</span>
                       <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
                       <div class="form-input__line"></div>
+                      <div class="form-input__range-value">
+                        <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
                     </div>
-                    <div class="form-input__wrapp form-input__time">
+                    <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
                       <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
                       <div class="form-input__line"></div>
+                      <div class="form-input__range-value">
+                        <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="form-group form-group__time row align-items-center mb-15">
+              <div class="form-group form-group__range row align-items-center mb-15">
                 <div class="col-2 col-lg-3">
                   <label class="form-input__label">ЧТ</label>
                 </div>
                 <div class="col-10 col-lg-9">
-                  <div class="form-input__time-row d-flex">
-                    <div class="form-input__wrapp form-input__time">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">с</span>
                       <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
                       <div class="form-input__line"></div>
+                      <div class="form-input__range-value">
+                        <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
                     </div>
-                    <div class="form-input__wrapp form-input__time">
+                    <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
                       <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
                       <div class="form-input__line"></div>
+                      <div class="form-input__range-value">
+                        <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -898,7 +922,7 @@
         <div class="edit-company__wrapp">
           <button class="btn-come__back come-back-js">Назад</button>
           <div class="company-section edit-company__section">
-            <div class="company-section__title">Информация о филиале <span>Заполните все поля</span></div>
+            <div class="company-section__title mb-25">Информация о филиале <span>Заполните все поля</span></div>
             <div class="edit-company__form">
               <div class="form-group row align-items-center mb-15">
                 <div class="col-lg-3">
@@ -986,78 +1010,102 @@
                   </div>
                 </div>
               </div>
-              <div class="form-group form-group__time row align-items-center mb-15">
+              <div class="form-group form-group__range row align-items-center mb-15">
                 <div class="col-2 col-lg-3">
                   <label class="form-input__label">ПН</label>
                 </div>
                 <div class="col-10 col-lg-9">
-                  <div class="form-input__time-row d-flex">
-                    <div class="form-input__wrapp form-input__time">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">с</span>
                       <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
                       <div class="form-input__line"></div>
+                      <div class="form-input__range-value">
+                        <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
                     </div>
-                    <div class="form-input__wrapp form-input__time">
+                    <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
                       <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
                       <div class="form-input__line"></div>
+                      <div class="form-input__range-value">
+                        <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="form-group form-group__time row align-items-center mb-15">
+              <div class="form-group form-group__range row align-items-center mb-15">
                 <div class="col-2 col-lg-3">
                   <label class="form-input__label">ВТ</label>
                 </div>
                 <div class="col-10 col-lg-9">
-                  <div class="form-input__time-row d-flex">
-                    <div class="form-input__wrapp form-input__time">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">с</span>
                       <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
                       <div class="form-input__line"></div>
+                      <div class="form-input__range-value">
+                        <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
                     </div>
-                    <div class="form-input__wrapp form-input__time">
+                    <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
                       <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
                       <div class="form-input__line"></div>
+                      <div class="form-input__range-value">
+                        <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="form-group form-group__time row align-items-center mb-15">
+              <div class="form-group form-group__range row align-items-center mb-15">
                 <div class="col-2 col-lg-3">
                   <label class="form-input__label">СР</label>
                 </div>
                 <div class="col-10 col-lg-9">
-                  <div class="form-input__time-row d-flex">
-                    <div class="form-input__wrapp form-input__time">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">с</span>
                       <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
                       <div class="form-input__line"></div>
+                      <div class="form-input__range-value">
+                        <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
                     </div>
-                    <div class="form-input__wrapp form-input__time">
+                    <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
                       <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
                       <div class="form-input__line"></div>
+                      <div class="form-input__range-value">
+                        <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="form-group form-group__time row align-items-center mb-15">
+              <div class="form-group form-group__range row align-items-center mb-15">
                 <div class="col-2 col-lg-3">
                   <label class="form-input__label">ЧТ</label>
                 </div>
                 <div class="col-10 col-lg-9">
-                  <div class="form-input__time-row d-flex">
-                    <div class="form-input__wrapp form-input__time">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">с</span>
                       <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
                       <div class="form-input__line"></div>
+                      <div class="form-input__range-value">
+                        <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
                     </div>
-                    <div class="form-input__wrapp form-input__time">
+                    <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
                       <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
                       <div class="form-input__line"></div>
+                      <div class="form-input__range-value">
+                        <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1117,7 +1165,7 @@
         <div class="edit-company__wrapp">
           <button class="btn-come__back come-back-js">Назад</button>
           <div class="company-section edit-company__section">
-            <div class="company-section__title">Личная информация</div>
+            <div class="company-section__title mb-25">Личная информация</div>
             <div class="edit-company__form mb-30">
               <div class="form-group row align-items-center mb-15">
                 <div class="col-sm-3 col-lg-4">
@@ -1154,13 +1202,13 @@
         <div class="edit-company__wrapp">
           <button class="btn-come__back come-back-js">Назад</button>
           <div class="company-section edit-company__section">
-            <div class="company-section__title">Юридическая информация</div>
+            <div class="company-section__title mb-25">Юридическая информация</div>
             <div class="edit-company__form mb-30">
               <div class="form-group row align-items-center mb-15">
-                <div class="col-3 col-lg-3">
+                <div class=" col-lg-3">
                   <label class="form-input__label">Название организации</label>
                 </div>
-                <div class="col-9 col-lg-9">
+                <div class="col-lg-9">
                   <div class="form-input__wrapp">
                     <input class="form-input" placeholder="ООО Выкуп катализаторов" />
                     <div class="form-input__line"></div>
@@ -1168,10 +1216,10 @@
                 </div>
               </div>
               <div class="form-group row mb-15">
-                <div class="col-3 col-lg-3">
+                <div class=" col-lg-3">
                   <label class="form-input__label">Форма работы</label>
                 </div>
-                <div class="col-9 col-lg-9">
+                <div class="col-lg-9">
                   <div class="form-radio__group">
                     <input class="form-radio__input" type="radio" id="form-yp" name="forms-of-work" checked />
                     <label class="form-radio__label" for="form-yp">ИП</label>
@@ -1181,10 +1229,10 @@
                 </div>
               </div>
               <div class="form-group row align-items-center mb-15">
-                <div class="col-3 col-lg-3">
+                <div class="col-lg-3">
                   <label class="form-input__label">ИНН</label>
                 </div>
-                <div class="col-9 col-lg-9">
+                <div class=" col-lg-9">
                   <div class="form-input__wrapp">
                     <input class="form-input" placeholder="1234422144" />
                     <div class="form-input__line"></div>
@@ -1192,10 +1240,10 @@
                 </div>
               </div>
               <div class="form-group row align-items-center mb-15">
-                <div class="col-3 col-lg-3">
+                <div class="col-lg-3">
                   <label class="form-input__label">КПП</label>
                 </div>
-                <div class="col-9 col-lg-9">
+                <div class="col-lg-9">
                   <div class="form-input__wrapp">
                     <input class="form-input" placeholder="1234422144" />
                     <div class="form-input__line"></div>
@@ -1203,10 +1251,10 @@
                 </div>
               </div>
               <div class="form-group row align-items-center mb-15">
-                <div class="col-3 col-lg-3">
+                <div class=" col-lg-3">
                   <label class="form-input__label">ОГРН</label>
                 </div>
-                <div class="col-9 col-lg-9">
+                <div class=" col-lg-9">
                   <div class="form-input__wrapp">
                     <input class="form-input" placeholder="1234422144" />
                     <div class="form-input__line"></div>
@@ -1214,19 +1262,18 @@
                 </div>
               </div>
               <div class="form-group row align-items-center mb-15">
-                <div class="col-3 col-lg-3">
+                <div class="col-lg-3">
                   <label class="form-input__label">Фото документов</label>
                 </div>
-                <div class="col-9 col-lg-9">
-                  <div class="form-input__remark ml-auto" style="max-width: 100%">Загрузите фотографии документов. Размер одной 
-                    фотографии не должен превышать 5 MB.</div>
+                <div class=" col-lg-9">
+                  <div class="form-input__remark ml-auto" style="max-width: 100%">Загрузите фотографии документов. Размер одной фотографии не должен превышать 5 MB.</div>
                 </div>
               </div>
               <div class="form-group row align-items-center mb-15">
-                <div class="col-3 col-lg-3">
+                <div class="col-lg-3">
                   <label class="form-input__label">Паспорт</label>
                 </div>
-                <div class="col-9 col-lg-9">
+                <div class=" col-lg-9">
                   <div class="passport-download">
                     <!-- <img src="assets/img/passport.jpg" alt=""> -->
                   </div>
@@ -1237,6 +1284,305 @@
               <a href="#" class="btn btn_reset-param">Отменить</a>
               <a href="#" class="btn btn_black">Сохранить изменения</a>
             </div>
+          </div>
+        </div>
+
+        <!-- ======= Edit info of material ======== -->
+        <div class="edit-company__wrapp">
+          <button class="btn-come__back come-back-js">Назад</button>
+          <div class="company-section edit-company__section">
+            <div class="company-section__title mb-25">Керамический материал</div>
+            <div class="edit-company__form mb-30">
+              <div class="form-group__title mb-20">Весовая категория #1</div>
+              <div class="form-group form-group__range row align-items-center mb-15">
+                <div class="col-12 col-lg-3">
+                  <label class="form-input__label">Весовая категория</label>
+                </div>
+                <div class="col-12 col-lg-9">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text">от</span>
+                      <input class="form-input form-input__range-body" required type="number" value="0.1" maxlength="3" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">кг</div>
+                    </div>
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text">до</span>
+                      <input class="form-input form-input__range-body" required type="number" value="1" maxlength="3" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">кг</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group form-group__range row align-items-center mb-15">
+                <div class="col-12 col-lg-3">
+                  <label class="form-input__label">% выплат по LME</label>
+                </div>
+                <div class="col-12 col-lg-9">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text _bold">Pt</span>
+                      <input class="form-input form-input__range-body" required type="number" value="1" maxlength="3" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">%</div>
+                    </div>
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text _bold">Pd</span>
+                      <input class="form-input form-input__range-body" required type="number" value="1" maxlength="3" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">%</div>
+                    </div>
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text _bold">Rh</span>
+                      <input class="form-input form-input__range-body" required type="number" value="1" maxlength="3" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group__title mb-20">Весовая категория #2</div>
+              <div class="form-group form-group__range row align-items-center mb-15">
+                <div class="col-12 col-lg-3">
+                  <label class="form-input__label">Весовая категория</label>
+                </div>
+                <div class="col-12 col-lg-9">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text">от</span>
+                      <input class="form-input form-input__range-body" required type="number" value="0.1" maxlength="3" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">кг</div>
+                    </div>
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text _bold">до</span>
+                      <input class="form-input form-input__range-body" required type="number" value="1" maxlength="3" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">кг</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group form-group__range row align-items-center mb-15">
+                <div class="col-12 col-lg-3">
+                  <label class="form-input__label">% выплат по LME</label>
+                </div>
+                <div class="col-12 col-lg-9">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text _bold">Pt</span>
+                      <input class="form-input form-input__range-body" required type="number" value="1" maxlength="3" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">%</div>
+                    </div>
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text _bold">Pd</span>
+                      <input class="form-input form-input__range-body" required type="number" value="1" maxlength="3" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">%</div>
+                    </div>
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text _bold">Rh</span>
+                      <input class="form-input form-input__range-body" required type="number" value="1" maxlength="3" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="link">Добавить весовую категорию</button>
+          </div>
+          <div class="company-section edit-company__section">
+            <div class="company-section__title mb-25">Металлический материал (импорт)</div>
+            <div class="edit-company__form">
+              <div class="form-group form-group__range row align-items-center">
+                <div class="col-12 col-lg-3">
+                  <label class="form-input__label">Цена за кг</label>
+                </div>
+                <div class="col-12 col-lg-9">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text">от</span>
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">₽</div>
+                    </div>
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text">до</span>
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="company-section edit-company__section">
+            <div class="company-section__title mb-25">Металлический материал (отеч.)</div>
+            <div class="edit-company__form"> 
+              <div class="form-group form-group__range row align-items-center">
+                <div class="col-12 col-lg-3">
+                  <label class="form-input__label">Цена за кг</label>
+                </div>
+                <div class="col-12 col-lg-9">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text">от</span>
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">₽</div>
+                    </div>
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text">до</span>
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edit-company__btns d-flex justify-content-between">
+            <a href="#" class="btn btn_reset-param">Отменить</a>
+            <label class="custom-checkbox">
+              <input checked="" class="d-none" type="checkbox" />
+              <span class="custom-checkbox__point"></span>
+              Применить цены ко всем филиалам
+            </label>
+            <a href="#" class="btn btn_black">Сохранить изменения</a>
+          </div>
+        </div>
+        <!-- ======= Edit info of appliances ======== -->
+        <div class="edit-company__wrapp">
+          <button class="btn-come__back come-back-js">Назад</button>
+          <div class="company-section edit-company__section">
+            <div class="company-section__title mb-25">Бытовая техника</div>
+            <div class="edit-company__form mb-30">
+              <div class="form-group row align-items-center mb-20">
+                <div class="col-lg-3">
+                  <label class="form-input__label">Вид техники</label>
+                </div>
+                <div class="col-lg-9">
+                  <div class="form-input__wrapp">
+                    <select class="custom-select custom-select_js">
+                      <option value="" disabled selected hidden>Выберите из списка</option>
+                      <option value="1">Холодильники</option>
+                      <option value="0">СВЧ печи</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group form-group__range row align-items-center">
+                <div class="col-12 col-lg-3">
+                  <label class="form-input__label">Цена за кг</label>
+                </div>
+                <div class="col-12 col-lg-9">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text">от</span>
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">₽</div>
+                    </div>
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text">до</span>
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edit-company__form mb-30">
+              <div class="form-group row align-items-center mb-20">
+                <div class="col-lg-3">
+                  <label class="form-input__label">Вид техники</label>
+                </div>
+                <div class="col-lg-9">
+                  <div class="form-input__wrapp">
+                    <select class="custom-select custom-select_js">
+                      <option value="" disabled selected hidden>Выберите из списка</option>
+                      <option value="1">Холодильники</option>
+                      <option value="0">СВЧ печи</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group form-group__range row align-items-center">
+                <div class="col-12 col-lg-3">
+                  <label class="form-input__label">Цена за кг</label>
+                </div>
+                <div class="col-12 col-lg-9">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text">от</span>
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">₽</div>
+                    </div>
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text">до</span>
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edit-company__form mb-30">
+              <div class="form-group row align-items-center mb-20">
+                <div class="col-lg-3">
+                  <label class="form-input__label">Вид техники</label>
+                </div>
+                <div class="col-lg-9">
+                  <div class="form-input__wrapp">
+                    <select class="custom-select custom-select_js">
+                      <option value="" disabled selected hidden>Выберите из списка</option>
+                      <option value="1">Холодильники</option>
+                      <option value="0">СВЧ печи</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group form-group__range row align-items-center">
+                <div class="col-12 col-lg-3">
+                  <label class="form-input__label">Цена за кг</label>
+                </div>
+                <div class="col-12 col-lg-9">
+                  <div class="form-input__range-row d-flex">
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text">от</span>
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">₽</div>
+                    </div>
+                    <div class="form-input__wrapp form-input__range">
+                      <span class="form-input__label-text">до</span>
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                      <div class="form-input__line"></div>
+                      <div class="form-input__range-value">₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="link">Добавить вид техники</button>
+          </div>
+
+          <div class="edit-company__btns d-flex justify-content-between">
+            <a href="#" class="btn btn_reset-param">Отменить</a>
+            <label class="custom-checkbox">
+              <input checked="" class="d-none" type="checkbox" />
+              <span class="custom-checkbox__point"></span>
+              Применить цены ко всем филиалам
+            </label>
+            <a href="#" class="btn btn_black">Сохранить изменения</a>
           </div>
         </div>
       </div>
