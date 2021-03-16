@@ -16,11 +16,10 @@ jQuery(document).ready(function ($) {
     $('.burger-js').removeClass('active');
   });
   //======================== POPUPS
-  $('.popup').magnificPopup({
-  });
+  $('.popup').magnificPopup({});
 
   $('.popup-settings').magnificPopup({
-    alignTop : true,
+    alignTop: true,
   });
 
   $('.popup-gallery').magnificPopup({
@@ -165,7 +164,7 @@ jQuery(document).ready(function ($) {
         scrollTop: $(href).offset().top - 100,
       },
       {
-        duration: 300, // по умолчанию «400»
+        duration: 600, // по умолчанию «400»
         easing: 'linear', // по умолчанию «swing»
       }
     );
@@ -266,18 +265,16 @@ jQuery(document).ready(function ($) {
   // ====end=====
   // ============
 
-
-  //========= Displaying 
+  //========= Displaying
   $('.displaying-row-js').on('click', function () {
     $('.displaying-row-js').addClass('active');
     $('.displaying-grid-js').removeClass('active');
-    $(".offer").removeClass('offer_grid').addClass('offer_row');
+    $('.offer').removeClass('offer_grid').addClass('offer_row');
   });
 
   $('.displaying-grid-js').on('click', function () {
     $('.displaying-grid-js').addClass('active');
     $('.displaying-row-js').removeClass('active');
-    $(".offer").removeClass('offer_row').addClass('offer_grid')
+    $('.offer').removeClass('offer_row').addClass('offer_grid');
   });
-
 });
