@@ -15,6 +15,13 @@
       order: 2;
     }
   }
+  .offer {
+    &.offer_row .card-company__logo-label-wrapp {
+      left: 200px;
+      right: inherit;
+      top: 40px;
+    }
+  }
 }
 @media (max-width: 992px) {
   .header {
@@ -286,17 +293,34 @@
   .accordeon-tab {
     font-size: 14px;
   }
-
+  .displaying{
+    display: none;
+  }
+  .filter{
+    display: block;
+    .btn_add-param{
+      max-width: 400px;
+    }
+  }
+  
   .offer {
     &.offer_grid {
       .offer__item {
         flex: 0 0 100%;
         max-width: 100%;
       }
+      .card-company__logo-label-wrapp {
+        position: static;
+        margin-bottom: 20px;
+      }
     }
     &.offer_row {
       .offer__top {
         display: block;
+        margin-bottom: 20px;
+      }
+      .card-company__logo-label-wrapp {
+        position: static;
         margin-bottom: 20px;
       }
       .offer__profil {
@@ -515,7 +539,7 @@
         border-radius: 3px 3px 0 0;
         position: relative;
         &:after {
-          content: '';
+          content: "";
           display: block;
         }
       }

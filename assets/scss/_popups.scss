@@ -26,7 +26,7 @@
   font-family: $base-font;
   font-weight: 300;
   color: $primary;
-  font-size: 30px;
+  font-size: 40px;
   right: 20px;
   top: 20px;
 }
@@ -52,4 +52,44 @@
 }
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
+}
+
+.mfp-inline-holder .mfp-content,
+.mfp-ajax-holder .mfp-content {
+  width: auto;
+}
+.offer-popup {
+  &__body {
+    background-color: #fff;
+    padding: 40px;
+  }
+  .card-company__table-body {
+    padding: 0;
+    tr {
+      border-radius: 3px;
+      overflow: hidden;
+      th:last-child,
+      td:last-child {
+        padding-right: 20px;
+        text-align: right;
+      }
+    }
+  }
+  &_retail {
+    .card-company__table-body {
+      tr {
+        th:last-child,
+        td:last-child {
+          text-align: right;
+        }
+      }
+      table tbody td:first-child {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
