@@ -29,22 +29,105 @@ jQuery(document).ready(function ($) {
     },
   });
 
+  //====== registration show stage
+
+  function showStage(hiddenId, activeId) {
+    $(hiddenId).addClass('hidden');
+    $(activeId).removeClass('hidden');
+  }
+
+  $('#to-stage-2').on('click', function () {
+    showStage('#stage-1', '#stage-2');
+    let progressPercent = '15';
+    $('#progress-circle').attr('data-progress', progressPercent);
+    $('#progress-percent').text(progressPercent);
+  });
+  $('#to-stage-3').on('click', function () {
+    showStage('#stage-2', '#stage-3');
+    let progressPercent = '70';
+    $('#progress-circle').attr('data-progress', progressPercent);
+    $('#progress-percent').text(progressPercent);
+  });
+  $('#to-stage-finish').on('click', function () {
+    showStage('#stage-3', '#stage-finish');
+    let progressPercent = '85';
+    $('#progress-circle').attr('data-progress', progressPercent);
+    $('#progress-percent').text(progressPercent);
+  });
+
+  $('#back-stage-1').on('click', function () {
+    showStage('#stage-2', '#stage-1');
+    let progressPercent = '0';
+    $('#progress-circle').attr('data-progress', progressPercent);
+    $('#progress-percent').text(progressPercent);
+  });
+  $('#back-stage-2').on('click', function () {
+    showStage('#stage-3', '#stage-2');
+    let progressPercent = '15';
+    $('#progress-circle').attr('data-progress', progressPercent);
+    $('#progress-percent').text(progressPercent);
+  });
+  $('#back-stage-3').on('click', function () {
+    showStage('#stage-finish', '#stage-3');
+    let progressPercent = '70';
+    $('#progress-circle').attr('data-progress', progressPercent);
+    $('#progress-percent').text(progressPercent);
+  });
+
   //================ add new reviews
   $('.add-reviews-js').on('click', function (e) {
-    $('.card-company__content .main-tab').addClass('hidden');
+    $('#card-company-content .main-tab').addClass('hidden');
     $('.new-reviews__wrapper').addClass('active');
     $('.thanks__for-reviews__wrapper').removeClass('active');
   });
   //================ come back
   $('.come-back-js').on('click', function (e) {
-    $('.card-company__content .main-tab').removeClass('hidden');
+    $('#card-company-content .main-tab').removeClass('hidden');
     $('.new-reviews__wrapper').removeClass('active');
     $('.thanks__for-reviews__wrapper').removeClass('active');
+    $('.edit-company__wrapp').addClass('hidden');
   });
   //=============== reviews-finish
   $('.reviews-finish-js').on('click', function (e) {
     $('.new-reviews__wrapper').removeClass('active');
     $('.thanks__for-reviews__wrapper').addClass('active');
+  });
+
+  //====== edit stage show
+
+  $('#btn-edit-info-allcompany').on('click', function (e) {
+    $('#card-company-content .main-tab').addClass('hidden');
+    $('#edit-info-allcompany').removeClass('hidden');
+  });
+
+  $('#btn-edit-info-material').on('click', function (e) {
+    $('#card-company-content .main-tab').addClass('hidden');
+    $('#edit-info-material').removeClass('hidden');
+  });
+
+  $('#btn-edit-info-filialcompany').on('click', function (e) {
+    $('#card-company-content .main-tab').addClass('hidden');
+    $('#edit-info-filialcompany').removeClass('hidden');
+  });
+
+  $('#btn-edit-info-appliances').on('click', function (e) {
+    $('#card-company-content .main-tab').addClass('hidden');
+    $('#edit-info-appliances').removeClass('hidden');
+  });
+
+  $('#btn-edit-info-personal').on('click', function (e) {
+    $('#card-company-content .main-tab').addClass('hidden');
+    $('#edit-info-personal').removeClass('hidden');
+  });
+
+  $('#btn-edit-info-legal').on('click', function (e) {
+    $('#card-company-content .main-tab').addClass('hidden');
+    $('#edit-info-legal').removeClass('hidden');
+  });
+
+  $('#btn-add-filialcompany').on('click', function (e) {
+    $('#card-company-content .main-tab').addClass('hidden');
+    $('#edit-info-filialcompany').removeClass('hidden');
   });
 
   // ======================== MASK
@@ -68,7 +151,26 @@ jQuery(document).ready(function ($) {
       $(this).closest('.form-input__wrapp').addClass('error').removeClass('done');
     }
   });
+  //=================== scroll to page
+  $('.scrollto').on('click', function () {
+    let href = $(this).attr('href');
 
+    $('html, body').animate(
+      {
+        scrollTop: $(href).offset().top - 100,
+      },
+      {
+        duration: 300, // по умолчанию «400»
+        easing: 'linear', // по умолчанию «swing»
+      }
+    );
+    if ($(window).width() < 768) {
+      $('html, body').animate({
+        scrollTop: $(href).offset().top - 50,
+      });
+    }
+    return false;
+  });
   // ===================== more btn
   $('.more-list-js .more-item-js').hide();
   $('.more-list-js .more-item-js').slice(0, 5).show();
@@ -150,57 +252,9 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  //=================== scroll to page
-  $('.scrollto').on('click', function () {
-    let href = $(this).attr('href');
-
-    $('html, body').animate(
-      {
-        scrollTop: $(href).offset().top - 100,
-      },
-      {
-        duration: 300, // по умолчанию «400»
-        easing: 'linear', // по умолчанию «swing»
-      }
-    );
-    if ($(window).width() < 768) {
-      $('html, body').animate({
-        scrollTop: $(href).offset().top - 50,
-      });
-    }
-    return false;
-  });
-
   // working-btns
   $('#working-btns .working-btn').on('click', function () {
     $(this).toggleClass('active');
-  });
-
-  //====== registration show stage
-
-  function showStage(hiddenId, activeId) {
-    $(hiddenId).addClass('hidden');
-    $(activeId).removeClass('hidden');
-  }
-
-  $('#to-stage-2').on('click', function () {
-    showStage('#stage-1', '#stage-2');
-  });
-  $('#to-stage-3').on('click', function () {
-    showStage('#stage-2', '#stage-3');
-  });
-  $('#to-stage-finish').on('click', function () {
-    showStage('#stage-3', '#stage-finish');
-  });
-
-  $('#back-stage-1').on('click', function () {
-    showStage('#stage-2', '#stage-1');
-  });
-  $('#back-stage-2').on('click', function () {
-    showStage('#stage-3', '#stage-2');
-  });
-  $('#back-stage-3').on('click', function () {
-    showStage('#stage-finish', '#stage-3');
   });
 
   // ============

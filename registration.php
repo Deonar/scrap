@@ -124,7 +124,7 @@
                 <a href="#stage-2" id="to-stage-2" class="btn btn_black ml-auto scrollto">Сохранить и продолжить</a>
               </div>
             </li>
-            <li id="stage-2" class="registration__stage-item hidden" >
+            <li id="stage-2" class="registration__stage-item hidden">
               <h4 class="primary-title mb-20">Компания</h4>
               <div class="company-section edit-company__section">
                 <div class="company-section__title mb-25">Информация о компании <span>Заполните все поля</span></div>
@@ -376,7 +376,7 @@
                 <a href="#stage-3" id="to-stage-3" class="btn btn_black scrollto">Сохранить и продолжить</a>
               </div>
             </li>
-            <li id="stage-3" class="registration__stage-item hidden" >
+            <li id="stage-3" class="registration__stage-item hidden">
               <h4 class="primary-title mb-10">Виды и цены каталитического сырья</h4>
               <div class="page-sub-title mb-25">Заполните данные профиля, чтобы воспользоваться всеми возможностями площадки.</div>
               <div class="company-section edit-company__section">
@@ -545,7 +545,7 @@
                 <a href="#stage-finish" id="to-stage-finish" class="btn btn_black ml-auto scrollto">Сохранить и продолжить</a>
               </div>
             </li>
-            <li id="stage-finish" class="registration__stage-item hidden" >
+            <li id="stage-finish" class="registration__stage-item hidden">
               <h4 class="primary-title mb-10">Виды и цены сырья бытовой техники</h4>
               <div class="page-sub-title mb-25">Необходимо указать расценки хотя бы для одного вида сырья</div>
               <div class="company-section edit-company__section">
@@ -679,7 +679,28 @@
       <div class="col-sm-12 col-md-4 sidebar__registration">
         <div class="sidebar mt-45">
           <div class="sidebar__registration-content">
-            <img src="assets/img/registration-bar.png" style="width: 100%; height: auto" alt="" />
+            <div id="progress-circle" class="ko-progress-circle" data-progress="0">
+              <div class="ko-circle">
+                <div class="full ko-progress-circle__slice">
+                  <div class="ko-progress-circle__fill"></div>
+                </div>
+                <div class="ko-progress-circle__slice">
+                  <div class="ko-progress-circle__fill"></div>
+                  <div class="ko-progress-circle__fill ko-progress-circle__bar"></div>
+                </div>
+              </div>
+              <div class="ko-progress-circle__overlay"></div>
+              <div class="ko-progress-content">
+                <div class="ko-progress-percent-wrapp">
+                  <div id="progress-percent" class="ko-progress-percent">0</div>
+                  <div class="ko-progress-percent-val">%</div>
+                </div>
+                <div class="ko-progress-text">
+                  процент заполнения <br />
+                  профиля
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

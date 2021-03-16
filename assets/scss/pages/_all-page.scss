@@ -13,7 +13,7 @@
     position: relative;
     margin-bottom: 30px;
     &::after {
-      content: "";
+      content: '';
       width: 140px;
       height: 140px;
       display: inline-block;
@@ -24,13 +24,13 @@
     &_1 {
       background: linear-gradient(102.13deg, #f7f9fc 0.51%, #eef7ec 100%);
       &::after {
-        background-image: url("../img/icons/regulation-profile.svg");
+        background-image: url('../img/icons/regulation-profile.svg');
       }
     }
     &_2 {
       background: linear-gradient(102.13deg, #f7f9fc 0.51%, #faf6ec 100%);
       &::after {
-        background-image: url("../img/icons/regulation-star.svg");
+        background-image: url('../img/icons/regulation-star.svg');
       }
     }
   }
@@ -216,7 +216,7 @@
     width: 100%;
     margin-right: 10px;
     &::before {
-      content: "";
+      content: '';
       display: inline-block;
       position: relative;
       top: 3px;
@@ -393,7 +393,8 @@
     max-width: 22px;
   }
   &.hidden {
-    position: relative;
+    position: absolute;
+    top: 0;
     left: -1000px;
     opacity: 0;
     visibility: hidden;
@@ -413,7 +414,7 @@
   overflow: hidden;
   position: relative;
   &:after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     right: 20px;
@@ -450,6 +451,8 @@
     visibility: hidden;
     transition: all 0.2s ease-in-out;
     &.active {
+      position: relative;
+      top: 0;
       opacity: 1;
       visibility: visible;
       left: 0;
@@ -486,10 +489,10 @@
     background: #043598;
     background: url(../img/icons/company-logo-plug.svg) center center no-repeat;
     background-size: contain;
-    overflow: hidden;
     img {
       position: absolute;
       display: block;
+      border-radius: 50%;
       height: 100%;
       width: 100%;
       left: 50%;
@@ -503,7 +506,7 @@
       background: url(../img/icons/img-download.svg) center center no-repeat;
     }
     &._premium:after {
-      content: "";
+      content: '';
       position: absolute;
       right: 0;
       bottom: 0;
@@ -515,6 +518,7 @@
       border-radius: 50%;
       background: url(../img/icons/crown.svg) center center no-repeat;
       background-color: #f8d157;
+      z-index: 7;
     }
   }
   &__logo-label-wrapp {
@@ -602,7 +606,7 @@
     position: relative;
     color: $text-green-2;
     &:before {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       left: 0;
@@ -625,7 +629,7 @@
     line-height: 20px;
     position: relative;
     &:before {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       left: 8px;
@@ -646,7 +650,7 @@
       transform: rotate(45deg);
     }
     &._close:after {
-      content: "";
+      content: '';
       top: 9px;
       left: 8px;
       transform: rotate(-45deg);
@@ -929,7 +933,7 @@
       top: 50%;
       transform: translate(-50%, -50%);
       &:after {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         width: 100%;
@@ -942,7 +946,7 @@
         transition: all 0.3s ease;
       }
       &:before {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         width: 18px;
@@ -1058,13 +1062,13 @@
       font-weight: 600;
       display: inline-block;
       &::before {
-        content: "";
+        content: '';
         display: inline-block;
         width: 16px;
         height: 10px;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url("../img/icons/icon-rus.svg");
+        background-image: url('../img/icons/icon-rus.svg');
       }
     }
   }
@@ -1108,7 +1112,7 @@
 
     color: $text-gray-2;
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -1192,6 +1196,8 @@
     visibility: hidden;
     transition: all 0.2s ease-in-out;
     &.active {
+      position: relative;
+      top: 0;
       opacity: 1;
       visibility: visible;
       left: 0;
@@ -1489,6 +1495,21 @@
 }
 
 .edit-company {
+  &__wrapp {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    transition: all 0.5s, opacity 1.8s;
+    &.hidden {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      left: 2000px;
+      transition: all 0.5s, opacity 0.2s;
+    }
+  }
   &__section {
     margin-bottom: 40px;
   }
