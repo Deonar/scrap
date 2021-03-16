@@ -13,6 +13,18 @@
     margin-right: 20px;
     font-size: 12px;
   }
+
+  .regulations {
+    &__item {
+      display: block;
+    }
+    &__item-title {
+      font-size: 18px;
+    }
+    &__item-text {
+    }
+  }
+
   .card-company {
     &__material-card {
       width: calc(100% - 12px);
@@ -58,7 +70,7 @@
         margin-bottom: 10px;
         border: none;
         .custom-select.selectize-control .selectize-input {
-          padding: 20px;
+          padding: 18px;
           padding-left: 12px;
           border: 1px solid #e9eef2;
           &::after {
@@ -69,13 +81,47 @@
           }
         }
       }
-      &_number, &_region {
+      &_number,
+      &_region {
         text-align: left;
         .form-input {
           text-align: left;
-          padding: 20px;
+          padding: 18px;
           padding-left: 12px;
           border: 1px solid #e9eef2;
+        }
+      }
+      .form-input {
+        padding: 18px;
+        padding-left: 12px;
+        border: 1px solid #e9eef2;
+      }
+    }
+  }
+
+  .offer {
+    &.offer_grid {
+      .offer__item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+    &.offer_row {
+      .offer__bottom {
+        margin-bottom: 25px;
+      }
+      .offer__buttons {
+        justify-content: center;
+        position: static;
+      }
+      .service__icon {
+        width: 40px;
+        height: 40px;
+        img {
+          max-width: 20px;
         }
       }
     }
@@ -83,7 +129,6 @@
 }
 
 @media (max-width: 767px) {
-
   //====================== HEADER
   .header {
     &-wrapp {
@@ -228,6 +273,57 @@
   .accordeon-tab {
     font-size: 14px;
   }
+
+  .offer {
+    &.offer_grid {
+      .offer__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+    &.offer_row {
+      .offer__top {
+        display: block;
+        margin-bottom: 20px;
+      }
+      .offer__profil {
+        margin: 0;
+        margin-bottom: 20px;
+      }
+      .offer__bottom {
+        display: block;
+        margin-bottom: 25px;
+      }
+      .offer-address__wrap {
+        margin: 0;
+        margin-bottom: 20px;
+      }
+      .offer__buttons {
+        display: block;
+        position: static;
+        text-align: center;
+        .btn_phone {
+          max-width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .show-more {
+      display: block;
+    }
+    &.offer_grid,
+    &.offer_row {
+      .offer__bottom {
+        display: none;
+      }
+      .offer__item:first-child {
+        .offer__bottom {
+          display: block;
+        }
+      }
+    }
+  }
+
   .rating-top {
     background: url(../img/icons/top-star.png) bottom center no-repeat;
     background-position-x: center;
@@ -576,5 +672,13 @@
   }
   .company-section {
     padding: 15px;
+  }
+}
+
+@media (max-width: 340px) {
+  .regulations {
+    &__item {
+      padding: 30px 25px;
+    }
   }
 }

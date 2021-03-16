@@ -39,7 +39,7 @@
               <div class="card-company__block-title">Адрес</div>
             </div>
             <div class="card-company__street">
-              Комсомольск-на-Амуре
+              Комсомольск-на-Амуре<br>
               <span>ул. Сталеваров-Строителей, 27б, к1, с3</span>
             </div>
             <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>

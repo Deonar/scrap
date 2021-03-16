@@ -108,6 +108,17 @@ jQuery(document).ready(function ($) {
       $('#search-auto_number').hide();
     }
   });
+
+  $('#select-metal_search').on('change', function () {
+    if ($('#select-metal_search').val() == 'metal') {
+      $('#search-form_metal').show();
+      $('#search-form_ceramic').hide();
+    } else {
+      $('#search-form_metal').hide();
+      $('#search-form_ceramic').show();
+    }
+  });
+
   //accordeon
   $('.accordeon-tab-js').click(function (event) {
     event.stopPropagation();
@@ -126,13 +137,13 @@ jQuery(document).ready(function ($) {
   $('.button-more-js').click(function (event) {
     event.stopPropagation();
     if ($(this).closest('.content-wrapper-js').hasClass('active')) {
-      $(this).closest('.content-wrapper-js').removeClass('active');
+      $(this).closest('.content-wrapper-js').removeClass('active open');
       $(this).closest('.content-wrapper-js').find('.content-js').slideUp(300);
       $(this).text('Подробнее');
     } else {
-      $('.content-wrapper-js').removeClass('active');
+      $('.content-wrapper-js').removeClass('active open');
       $('.content-js').slideUp(300);
-      $(this).closest('.content-wrapper-js').addClass('active');
+      $(this).closest('.content-wrapper-js').addClass('active open');
       $(this).closest('.content-wrapper-js').find('.content-js').slideDown(300);
       $('.button-more-js').text('Подробнее');
       $(this).text('Скрыть');

@@ -112,15 +112,793 @@
                         </button>
                     </form>
                 </div>
+
             </div>
 
             <div class="tab__content tab-content-js" data-tab="2">
-                <h2>
-                    Content - 2
-                </h2>
+
+                <div class="search-wrapper">
+                    <div class="search-input__item">
+                        <div class="search-input__label">
+                            Тип поиска
+                        </div>
+                        <select class="custom-select custom-select_js" id="select-metal_search">
+                            <option value="metal">Металлический материал</option>
+                            <option value="ceramic">Керамический</option>
+                        </select>
+                    </div>
+
+                    <form action="#" class="search-input" id="search-form_metal">
+
+                        <div class="search-input__item">
+                            <div class="search-input__label">
+                                Вес
+                            </div>
+                            <div class="form-input__wrapp">
+                                <input class="form-input" name="metal_weight" placeholder="0">
+                                <span class="form-input_sub-label">
+                                    кг
+                                </span>
+                            </div>
+                        </div>
+                        <div class="search-input__item">
+                            <div class="search-input__label">
+                                Pt (Платина)
+                            </div>
+                            <div class="form-input__wrapp">
+                                <input class="form-input" name="metal_platinum" placeholder="0">
+                                <span class="form-input_sub-label">
+                                    г/кг
+                                </span>
+                            </div>
+                        </div>
+                        <div class="search-input__item">
+                            <div class="search-input__label">
+                                Pd (Палладий)
+                            </div>
+                            <div class="form-input__wrapp">
+                                <input class="form-input" name="metal_palladium" placeholder="0">
+                                <span class="form-input_sub-label">
+                                    г/кг
+                                </span>
+                            </div>
+                        </div>
+                        <div class="search-input__item">
+                            <div class="search-input__label">
+                                Rh (Родий)
+                            </div>
+                            <div class="form-input__wrapp">
+                                <input class="form-input" name="metal_rhodium" placeholder="0">
+                                <span class="form-input_sub-label">
+                                    г/кг
+                                </span>
+                            </div>
+                        </div>
+
+                        <button href="#" class="btn btn_green btn_search">
+                            Найти
+                        </button>
+                    </form>
+
+                    <form action="#" class="search-input" id="search-form_ceramic" style="display: none;">
+                        <div class="search-input__item">
+                            <div class="search-input__label">
+                                Вес
+                            </div>
+                            <div class="form-input__wrapp">
+                                <input class="form-input" name="ceramic_weight" placeholder="0">
+                                <span class="form-input_sub-label">
+                                    кг
+                                </span>
+                            </div>
+                        </div>
+                        <div class="search-input__item">
+                            <div class="search-input__label">
+                                Pt (Платина)
+                            </div>
+                            <div class="form-input__wrapp">
+                                <input class="form-input" name="ceramic_platinum" placeholder="0">
+                                <span class="form-input_sub-label">
+                                    г/кг
+                                </span>
+                            </div>
+                        </div>
+                        <div class="search-input__item">
+                            <div class="search-input__label">
+                                Pd (Палладий)
+                            </div>
+                            <div class="form-input__wrapp">
+                                <input class="form-input" name="ceramic_palladium" placeholder="0">
+                                <span class="form-input_sub-label">
+                                    г/кг
+                                </span>
+                            </div>
+                        </div>
+                        <div class="search-input__item">
+                            <div class="search-input__label">
+                                Rh (Родий)
+                            </div>
+                            <div class="form-input__wrapp">
+                                <input class="form-input" name="ceramic_rhodium" placeholder="0">
+                                <span class="form-input_sub-label">
+                                    г/кг
+                                </span>
+                            </div>
+                        </div>
+                        <button href="#" class="btn btn_green btn_search">
+                            Найти
+                        </button>
+                    </form>
+                </div>
+
             </div>
 
         </div>
+
+        <div class="regulations">
+            <div class="regulations__items row">
+                <div class="col-12 col-md-6">
+                    <div class="regulations__item regulations__item_1">
+                        <div class="regulations__item-img">
+                            <img src="assets/img/icons/regulations-1.svg" alt="">
+                        </div>
+                        <div class="regulations__item-content">
+                            <div class="regulations__item-title">Актуальная<br>информация в профиле</div>
+                            <div class="regulations__item-text">Каждый участник указывает достоверную информацию о своих условиях</div>
+                            <div class="regulations__item-tag">
+                                #правила_агрегатора
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="regulations__item regulations__item_2">
+                        <div class="regulations__item-img">
+                            <img src="assets/img/icons/regulations-2.svg" alt="">
+                        </div>
+                        <div class="regulations__item-content">
+                            <div class="regulations__item-title">Пользовательский<br>рейтинг</div>
+                            <div class="regulations__item-text">Каждый человек может<br>оставить оценку.</div>
+                            <div class="regulations__item-tag">
+                                #правила_агрегатора
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter">
+            <a class="btn btn_add-param">
+                Все параметры поиска
+            </a>
+            <div class="sort">
+                <div class="form-input__wrapp">
+                    <select class="custom-select input_no-line custom-select_js" placeholder="Сортировка">
+                        <option value="" disabled selected hidden>Сортировка</option>
+                        <option value="1">По цене</option>
+                        <option value="0">По дате</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="displaying">
+                Отображение
+                <div class="displaying__row active">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="displaying__grid">
+                    <div class="displaying__grid_row">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="displaying__grid_row">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="displaying__grid_row">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offer offer_grid mb-40">
+
+            <div class="offer__item offer_status">
+                <div class="offer__item_wrap content-wrapper-js active open">
+                    <div class="offer__top">
+                        <div class="d-flex align-items-center offer__profil">
+                            <div class="offer__avatar mr-10">
+                                <img src="assets/img/avatar.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="offer__name">Sdaykat</div>
+                                <div class="offer-reviews">
+                                    <ul class="stars-rating__wrapper">
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_off"></li>
+                                    </ul>
+                                    <div class="offer-reviews__text">
+                                        1 отзыв
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="offer__sub-title">
+                                цена за кг
+                            </div>
+                            <div class="offer__price">
+                                4 000 ₽ – 15 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-more mb-20 button-more-js">Скрыть</div>
+                    <div class="offer__bottom content-js">
+                        <div class="offer-address__wrap">
+                            <div class="card-company__block-schedule-label _open mb-10">открыто</div>
+                            <div class="card-company__street">
+                                г. Челябинск<br>
+                                <span>ул.Механическая 1\а</span>
+                            </div>
+                            <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                        </div>
+                        <div class="offer-service">
+                            <div class="offer__sub-title">
+                                дополнительный сервис
+                            </div>
+                            <ul class="service__list">
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/credit-card-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/arrows-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/pistol-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/exhaust-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/garanty-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/arrow-credit-card.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/location-green.svg" alt="">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="offer__buttons">
+                        <a class="offer__tell btn btn_phone">
+                            Позвонить
+                        </a>
+                        <a href="#" class="link">
+                            Узнать больше
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offer__item">
+                <div class="offer__item_wrap content-wrapper-js ">
+                    <div class="offer__top">
+                        <div class="d-flex align-items-center offer__profil">
+                            <div class="offer__avatar mr-10">
+                                <img src="assets/img/avatar.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="offer__name">Sdaykat</div>
+                                <div class="offer-reviews">
+                                    <ul class="stars-rating__wrapper">
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_off"></li>
+                                    </ul>
+                                    <div class="offer-reviews__text">
+                                        1 отзыв
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="offer__sub-title">
+                                цена за кг
+                            </div>
+                            <div class="offer__price">
+                                4 000 ₽ – 15 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-more mb-20 button-more-js">Подробнее</div>
+                    <div class="offer__bottom content-js">
+                        <div class="offer-address__wrap">
+                            <div class="card-company__block-schedule-label _open mb-10">открыто</div>
+                            <div class="card-company__street">
+                                г. Челябинск<br>
+                                <span>ул.Механическая 1\а</span>
+                            </div>
+                            <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                        </div>
+                        <div class="offer-service">
+                            <div class="offer__sub-title">
+                                дополнительный сервис
+                            </div>
+                            <ul class="service__list">
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/credit-card-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/arrows-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/pistol-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/exhaust-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/garanty-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/arrow-credit-card.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/location-green.svg" alt="">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="offer__buttons">
+                        <a class="offer__tell btn btn_phone">
+                            Позвонить
+                        </a>
+                        <a href="#" class="link">
+                            Узнать больше
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offer__item offer_status">
+                <div class="offer__item_wrap content-wrapper-js ">
+                    <div class="offer__top">
+                        <div class="d-flex align-items-center offer__profil">
+                            <div class="offer__avatar mr-10">
+                                <img src="assets/img/avatar.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="offer__name">Sdaykat</div>
+                                <div class="offer-reviews">
+                                    <ul class="stars-rating__wrapper">
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_off"></li>
+                                    </ul>
+                                    <div class="offer-reviews__text">
+                                        1 отзыв
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="offer__sub-title">
+                                цена за кг
+                            </div>
+                            <div class="offer__price">
+                                4 000 ₽ – 15 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-more mb-20 button-more-js">Подробнее</div>
+                    <div class="offer__bottom content-js">
+                        <div class="offer-address__wrap">
+                            <div class="card-company__block-schedule-label _open mb-10">открыто</div>
+                            <div class="card-company__street">
+                                г. Челябинск<br>
+                                <span>ул.Механическая 1\а</span>
+                            </div>
+                            <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                        </div>
+                        <div class="offer-service">
+                            <div class="offer__sub-title">
+                                дополнительный сервис
+                            </div>
+                            <ul class="service__list">
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/credit-card-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/arrows-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/pistol-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/exhaust-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/garanty-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/arrow-credit-card.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/location-green.svg" alt="">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="offer__buttons">
+                        <a class="offer__tell btn btn_phone">
+                            Позвонить
+                        </a>
+                        <a href="#" class="link">
+                            Узнать больше
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="offer offer_row mb-40">
+
+            <div class="offer__item offer_status">
+                <div class="offer__item_wrap content-wrapper-js ">
+                    <div class="offer__top">
+                        <div class="d-flex align-items-center offer__profil">
+                            <div class="offer__avatar mr-10">
+                                <img src="assets/img/avatar.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="offer__name">Sdaykat</div>
+                                <div class="offer-reviews">
+                                    <ul class="stars-rating__wrapper">
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_off"></li>
+                                    </ul>
+                                    <div class="offer-reviews__text">
+                                        1 отзыв
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="offer__sub-title">
+                                цена за кг
+                            </div>
+                            <div class="offer__price">
+                                4 000 ₽ – 15 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-more mb-20 button-more-js">Подробнее</div>
+                    <div class="offer__bottom content-js">
+                        <div class="offer-address__wrap">
+                            <div class="card-company__block-schedule-label _open mb-10">открыто</div>
+                            <div class="card-company__street">
+                                г. Челябинск<br>
+                                <span>ул.Механическая 1\а</span>
+                            </div>
+                            <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                        </div>
+                        <div class="offer-service">
+                            <div class="offer__sub-title">
+                                дополнительный сервис
+                            </div>
+                            <ul class="service__list">
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/credit-card-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/arrows-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/pistol-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/exhaust-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/garanty-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/arrow-credit-card.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/location-green.svg" alt="">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="offer__buttons">
+                        <a class="offer__tell btn btn_phone">
+                            Позвонить
+                        </a>
+                        <a href="#" class="link">
+                            Узнать больше
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offer__item">
+                <div class="offer__item_wrap content-wrapper-js ">
+                    <div class="offer__top">
+                        <div class="d-flex align-items-center offer__profil">
+                            <div class="offer__avatar mr-10">
+                                <img src="assets/img/avatar.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="offer__name">Sdaykat</div>
+                                <div class="offer-reviews">
+                                    <ul class="stars-rating__wrapper">
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_off"></li>
+                                    </ul>
+                                    <div class="offer-reviews__text">
+                                        1 отзыв
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="offer__sub-title">
+                                цена за кг
+                            </div>
+                            <div class="offer__price">
+                                4 000 ₽ – 15 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-more mb-20 button-more-js">Подробнее</div>
+                    <div class="offer__bottom content-js">
+                        <div class="offer-address__wrap">
+                            <div class="card-company__block-schedule-label _open mb-10">открыто</div>
+                            <div class="card-company__street">
+                                г. Челябинск<br>
+                                <span>ул.Механическая 1\а</span>
+                            </div>
+                            <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                        </div>
+                        <div class="offer-service">
+                            <div class="offer__sub-title">
+                                дополнительный сервис
+                            </div>
+                            <ul class="service__list">
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/credit-card-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/arrows-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/pistol-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/exhaust-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/garanty-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/arrow-credit-card.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/location-green.svg" alt="">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="offer__buttons">
+                        <a class="offer__tell btn btn_phone">
+                            Позвонить
+                        </a>
+                        <a href="#" class="link">
+                            Узнать больше
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offer__item offer_status">
+                <div class="offer__item_wrap content-wrapper-js ">
+                    <div class="offer__top">
+                        <div class="d-flex align-items-center offer__profil">
+                            <div class="offer__avatar mr-10">
+                                <img src="assets/img/avatar.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="offer__name">Sdaykat</div>
+                                <div class="offer-reviews">
+                                    <ul class="stars-rating__wrapper">
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_on"></li>
+                                        <li class="stars-rating__item stars-rating_off"></li>
+                                    </ul>
+                                    <div class="offer-reviews__text">
+                                        1 отзыв
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="offer__sub-title">
+                                цена за кг
+                            </div>
+                            <div class="offer__price">
+                                4 000 ₽ – 15 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-more mb-20 button-more-js">Подробнее</div>
+                    <div class="offer__bottom content-js">
+                        <div class="offer-address__wrap">
+                            <div class="card-company__block-schedule-label _open mb-10">открыто</div>
+                            <div class="card-company__street">
+                                г. Челябинск<br>
+                                <span>ул.Механическая 1\а</span>
+                            </div>
+                            <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                        </div>
+                        <div class="offer-service">
+                            <div class="offer__sub-title">
+                                дополнительный сервис
+                            </div>
+                            <ul class="service__list">
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/credit-card-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/arrows-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/pistol-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/exhaust-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/garanty-green.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/arrow-credit-card.svg" alt="">
+                                    </span>
+                                </li>
+                                <li class="service__item">
+                                    <span class="service__icon">
+                                        <img src="assets/img/icons/location-green.svg" alt="">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="offer__buttons">
+                        <a class="offer__tell btn btn_phone">
+                            Позвонить
+                        </a>
+                        <a href="#" class="link">
+                            Узнать больше
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </div>
 </div>
