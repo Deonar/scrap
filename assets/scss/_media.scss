@@ -20,10 +20,34 @@
       left: 200px;
       right: inherit;
       top: 40px;
+  .all-company .edit-company__btns {
+    .btn {
+      margin-bottom: 10px;
     }
   }
 }
 @media (max-width: 992px) {
+  .ko-progress-circle {
+    width: 200px;
+    height: 200px;
+    .ko-progress-circle__slice,
+    .ko-progress-circle__fill {
+      width: 200px;
+      height: 200px;
+    }
+    .ko-progress-circle__slice {
+      clip: rect(0px, 200px, 200px, (200px/2));
+      .ko-progress-circle__fill {
+        clip: rect(0px, (200px/2), 200px, 0px);
+      }
+    }
+    .ko-progress-circle__overlay {
+      width: 190px;
+      height: 190px;
+      margin-left: (200px - 190px)/2;
+      margin-top: (200px - 190px)/2;
+    }
+  }
   .header {
     &-burger {
       margin-right: 15px;
@@ -33,7 +57,15 @@
     margin-right: 20px;
     font-size: 12px;
   }
-
+  .all-company .edit-company__btns {
+    .btn {
+      margin-left: 0;
+      width: 100%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
   .regulations {
     &__item {
       display: block;

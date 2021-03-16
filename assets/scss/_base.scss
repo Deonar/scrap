@@ -43,6 +43,12 @@ body {
 .ml-20 {
   margin-left: 20px;
 }
+.ml-10 {
+  margin-left: 10px;
+}
+.ml-0 {
+  margin-left: 0px;
+}
 .mr-auto {
   margin-right: auto;
 }
@@ -142,7 +148,7 @@ body {
     padding-left: 20px;
     position: relative;
     &:before {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       left: 0;
@@ -161,7 +167,7 @@ body {
   cursor: pointer;
   color: $accent;
   &:after {
-    content: "";
+    content: '';
     border: solid $accent;
     position: relative;
     top: -2px;
@@ -176,7 +182,7 @@ body {
 .open.active {
   .show-more {
     &:after {
-      content: "";
+      content: '';
       border: solid $accent;
       position: relative;
       top: 3px;
@@ -253,12 +259,12 @@ body {
     background: #131e29;
   }
   &::before {
-    content: "";
+    content: '';
     display: inline-block;
     margin-right: 12px;
     width: 12px;
     height: 12px;
-    background-image: url("../img/icons/icon_phone.svg");
+    background-image: url('../img/icons/icon_phone.svg');
   }
 }
 
@@ -304,7 +310,7 @@ body {
   }
   span:after,
   span:before {
-    content: "";
+    content: '';
     display: block;
     background: #fff;
     position: absolute;
@@ -421,7 +427,7 @@ body {
   outline: none;
   position: relative;
   &::after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     height: 1px;
@@ -432,7 +438,7 @@ body {
     background: #34495e;
   }
   &::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     height: 7px;
@@ -492,7 +498,7 @@ body {
     position: relative;
     cursor: pointer;
     &::after {
-      content: "";
+      content: '';
       display: inline-block;
       height: 3px;
       width: 0%;
@@ -536,7 +542,7 @@ body {
     position: relative;
     cursor: pointer;
     &::after {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       width: 10px;
@@ -618,7 +624,7 @@ body {
       max-width: 510px;
       position: relative;
       &.done:after {
-        content: "";
+        content: '';
         position: absolute;
         display: inline-block;
         right: 20px;
@@ -652,7 +658,7 @@ body {
           transition: all 0.3s ease;
         }
         &:before {
-          content: "";
+          content: '';
           top: 28px;
           right: 20px;
           transform: rotate(45deg);
@@ -663,7 +669,7 @@ body {
           transition: 0.25s ease-in-out;
         }
         &:after {
-          content: "";
+          content: '';
           top: 28px;
           right: 20px;
           transform: rotate(-45deg);
@@ -833,7 +839,7 @@ body {
     line-height: 17px;
     transition: all 0.3s ease;
     &:after {
-      content: "";
+      content: '';
       margin: auto;
       position: absolute;
       right: 25px;
@@ -848,7 +854,7 @@ body {
       transform: rotate(45deg);
     }
     &.dropdown-active:after {
-      content: "";
+      content: '';
       margin: auto;
       position: absolute;
       right: 25px;
@@ -861,7 +867,7 @@ body {
       transform: rotate(-135deg);
     }
     &::before {
-      content: "";
+      content: '';
       display: inline-block;
       height: 3px;
       width: 0%;
@@ -924,7 +930,7 @@ body {
     margin-right: 10px;
     cursor: pointer;
     &::before {
-      content: "";
+      content: '';
       display: inline-block;
       position: absolute;
       left: 8px;
@@ -972,11 +978,11 @@ body {
 }
 
 .star-rating > fieldset:not(:checked) > label:before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 32px;
   height: 32px;
-  background-image: url("../img/icons/rating-off.svg");
+  background-image: url('../img/icons/rating-off.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -984,22 +990,22 @@ body {
 
 .star-rating > fieldset:not(:checked) > label:hover:before,
 .star-rating > fieldset:not(:checked) > label:hover ~ label:before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 32px;
   height: 32px;
-  background-image: url("../img/icons/rating-on.svg");
+  background-image: url('../img/icons/rating-on.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .star-rating > fieldset > input:checked ~ label:before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 32px;
   height: 32px;
-  background-image: url("../img/icons/rating-on.svg");
+  background-image: url('../img/icons/rating-on.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1026,10 +1032,10 @@ body {
     background-position: center;
   }
   &_on {
-    background-image: url("../img/icons/rating-on.svg");
+    background-image: url('../img/icons/rating-on.svg');
   }
   &_off {
-    background-image: url("../img/icons/rating-off.svg");
+    background-image: url('../img/icons/rating-off.svg');
   }
 }
 
@@ -1067,7 +1073,7 @@ body {
     }
     &:not(:last-child):after {
       display: block;
-      content: "/";
+      content: '/';
       color: $text;
       transform: translateX(3px);
     }
@@ -1089,3 +1095,103 @@ body {
     }
   }
 }
+
+// ============ progres bar
+
+$circle-size: 270px;
+$circle-background: #f7f9fc;
+$circle-color: $accent;
+$inset-size: 250px;
+$inset-color: #fff;
+$transition-length: 1s;
+
+.ko-progress-circle {
+  position: relative;
+  margin: 0px auto;
+  width: $circle-size;
+  height: $circle-size;
+
+  background-color: $circle-background;
+  border-radius: 50%;
+  .ko-progress-circle__slice,
+  .ko-progress-circle__fill {
+    width: $circle-size;
+    height: $circle-size;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    transition: transform $transition-length;
+    border-radius: 50%;
+  }
+  .ko-progress-circle__slice {
+    clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+    .ko-progress-circle__fill {
+      clip: rect(0px, $circle-size/2, $circle-size, 0px);
+      background-color: $circle-color;
+    }
+  }
+  .ko-progress-circle__overlay {
+    width: $inset-size;
+    height: $inset-size;
+    position: absolute;
+    margin-left: ($circle-size - $inset-size)/2;
+    margin-top: ($circle-size - $inset-size)/2;
+
+    background-color: $inset-color;
+    border-radius: 50%;
+  }
+
+  .ko-progress-content {
+    position: absolute;
+    width: 100%;
+    max-width: 160px;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+  }
+  .ko-progress-percent {
+    font-size: 64px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding-left: 20px;
+  }
+  .ko-progress-percent-wrapp {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  .ko-progress-percent-val {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-left: 5px;
+  }
+  .ko-progress-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $text-gray-2;
+    text-align: center;
+  }
+
+  $i: 0;
+  $increment: 180deg / 100;
+  @while $i <= 100 {
+    &[data-progress='#{$i}'] {
+      .ko-progress-circle__slice.full,
+      .ko-progress-circle__fill {
+        transform: rotate($increment * $i);
+      }
+      .ko-progress-circle__fill.ko-progress-circle__bar {
+        transform: rotate($increment * $i * 2);
+      }
+      $i: $i + 1;
+    }
+  }
+}
+// ============ progres bar end
