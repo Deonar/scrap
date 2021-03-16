@@ -9,7 +9,7 @@
           <div class="card-company__sidebar-head">
             <div class="card-company__logo-wrapp">
               <div class="card-company__logo _premium">
-                <img src="assets/img/icons/arrow-round.svg" class="img-plug" alt="" />
+                <!-- <img src="assets/img/gallery-company/gallery-company-1.jpg" alt="" /> -->
               </div>
               <div class="card-company__logo-label-wrapp">
                 <div class="card-company__logo-label _blue">реклама</div>
@@ -144,7 +144,8 @@
                     </div>
                   </li>
                   <li class="accordeon-wrapper accordeon-wrapper-js">
-                    <div class="card-company__material-title accordeon-tab accordeon-tab-js _mob">Металлически материал</div>
+                    <div class="card-company__material-title accordeon-tab accordeon-tab-js _mob">Металлически материал
+                    </div>
                     <ul class="card-company__material-cards accordeon-content accordeon-content-js">
                       <li class="card-company__material-card">
                         <div class="card-company__material-title">Металлический материал</div>
@@ -284,7 +285,8 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
+                        прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -312,7 +314,8 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
+                        прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -340,7 +343,8 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
+                        прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -368,7 +372,8 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
+                        прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -396,7 +401,8 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
+                        прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -424,7 +430,8 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
+                        прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -452,7 +459,8 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
+                        прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <button id="btn-more" class="reviews__btn-more btn btn_gray">Показать ещё 5 отзывов</button>
@@ -461,8 +469,10 @@
               <div class="card-company__section reviews__no-reviews">
                 <div class="reviews__no-reviews-content">
                   <div class="reviews__no-reviews-title">У этой компании пока нет отзывов</div>
-                  <div class="reviews__no-reviews-sub-title">Будьте первым! Оставьте свой отзыв, если уже сотрудничали с этой компанией.</div>
-                  <a href="#card-company-content" class="reviews__no-reviews-btn btn btn_yellow add-reviews-js scrollto">Оставить отзыв</a>
+                  <div class="reviews__no-reviews-sub-title">Будьте первым! Оставьте свой отзыв, если уже сотрудничали с
+                    этой компанией.</div>
+                  <a href="#card-company-content"
+                    class="reviews__no-reviews-btn btn btn_yellow add-reviews-js scrollto">Оставить отзыв</a>
                 </div>
               </div>
             </div>
@@ -538,10 +548,8 @@
                 </div>
                 <div class="form-group row">
                   <div class="col-lg-3">
-                    <label class="form-input__label"
-                      >Укажите<br />
-                      телефон</label
-                    >
+                    <label class="form-input__label">Укажите<br />
+                      телефон</label>
                   </div>
                   <div class="col-lg-9">
                     <div class="form-input__wrapp form-input-phone done">
@@ -582,8 +590,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="network-error">Не удалось отправить отзыв. Произошла ошибка на сервере. Обновите страницу или попробуйте отправить отзыв позже.</div>
-                <a href="#card-company-content" class="form-submit btn btn_yellow reviews-finish-js scrollto">оставить отзыв</a>
+                <div class="network-error">Не удалось отправить отзыв. Произошла ошибка на сервере. Обновите страницу
+                  или попробуйте отправить отзыв позже.</div>
+                <a href="#card-company-content" class="form-submit btn btn_yellow reviews-finish-js scrollto">оставить
+                  отзыв</a>
                 <label class="custom-checkbox">
                   <input checked="" class="d-none" type="checkbox" />
                   <span class="custom-checkbox__point"></span>Я согласен с
@@ -597,7 +607,8 @@
             <div class="thanks__for-reviews">
               <img src="assets/img/icons/hand-star.svg" alt="" class="thanks__for-reviews-icon" />
               <div class="thanks__for-reviews-title">Спасибо за обратную связь!</div>
-              <div class="thanks__for-reviews-text">Ваш отзыв отправлен на модерацию. В течение 24 часов ваш отзыв будет опубликован в случае успешно пройденной модерации.</div>
+              <div class="thanks__for-reviews-text">Ваш отзыв отправлен на модерацию. В течение 24 часов ваш отзыв будет
+                опубликован в случае успешно пройденной модерации.</div>
             </div>
           </div>
         </div>
