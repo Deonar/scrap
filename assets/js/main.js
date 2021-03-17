@@ -19,7 +19,12 @@ jQuery(document).ready(function ($) {
   $('.popup').magnificPopup({});
 
   $('.popup-param').magnificPopup({
-    alignTop: true,
+    removalDelay: 500, //delay removal by X to allow out-animation
+    callbacks: {
+      beforeOpen: function () {
+        this.st.mainClass = 'mfp-move-from-top';
+      }
+    },
   });
 
   $('.popup-gallery').magnificPopup({
@@ -149,7 +154,7 @@ jQuery(document).ready(function ($) {
         pattern: /[0-9]/,
       },
       Z: {
-        pattern: /[A-Za-z]/,
+        pattern: /[A-Za-z-А-Яа-я]/,
       },
     },
   });
@@ -213,6 +218,12 @@ jQuery(document).ready(function ($) {
 
   //======================== Custom select
   $('.custom-select_js').selectize();
+
+  $('.custom-search-select_js').selectize({
+    persist: false,
+  });
+
+
   $('.selectize-dropdown-content').scrollbar();
 
   $('#select-auto_search').on('change', function () {
@@ -295,7 +306,7 @@ jQuery(document).ready(function ($) {
 
   $('#param-add').on('click', function () {
     let dasd = $('#param-form').serializeArray();
-    
+
     $('.tag-list').show();
     $('.search-result').show();
     $.magnificPopup.close();
@@ -312,4 +323,8 @@ jQuery(document).ready(function ($) {
     $(this).closest('.regulations-js').removeClass("active");
   });
 
+  //  Tooltips 
+  tippy('[data-tippy-content]', {
+    theme: 'custom',
+  });
 });

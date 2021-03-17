@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="assets/libs/selectize/css/selectize.css" />
     <link rel="stylesheet" href="assets/libs/magnific-popup/magnific-popup.css" />
     <link rel="stylesheet" href="assets/libs/jquery-libs/jquery-ui.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    
     <link rel="stylesheet" href="assets/css/main.css?v2" />
     <title>SCRAP</title>
 </head>

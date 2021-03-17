@@ -560,7 +560,7 @@ body {
         position: absolute;
         height: 2px;
         width: 10px;
-        background: #959DA4;
+        background: #959da4;
       }
       &:before {
         content: "";
@@ -570,7 +570,7 @@ body {
         top: 10px;
         height: 2px;
         width: 10px;
-        background: #959DA4;
+        background: #959da4;
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
       }
@@ -947,6 +947,14 @@ body {
     .option {
       padding: 12px;
     }
+  }
+}
+.custom-select-search.selectize-control {
+  .selectize-input.dropdown-active:after {
+    display: none;
+  }
+  .selectize-input::after {
+    display: none;
   }
 }
 

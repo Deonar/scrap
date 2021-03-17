@@ -63,6 +63,7 @@
     </div>
 </div>
 <!-- Popup end-->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="assets/libs/scrollbar/jquery.scrollbar.min.js"></script>
 <script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
@@ -71,6 +72,10 @@
 
 <script src="assets/libs/jquery-libs/jquery-ui.min.js"></script>
 <script src="assets/libs/jquery-libs/jquery.ui.touch-punch.min.js"></script>
+
+<!-- Tooltips -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
 
 <script src="assets/js/main.js?v2"></script>
 </body>

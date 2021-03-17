@@ -36,10 +36,20 @@
                             <div class="search-input__label">
                                 Марка авто
                             </div>
-                            <select class="custom-select custom-select_js input_no-line">
-                                <option value="" disabled selected hidden>Выберите из списка</option>
-                                <option value="1">Пункт #1</option>
-                                <option value="0">Пункт #2</option>
+                            <select class="custom-select custom-select-search custom-search-select_js input_no-line">
+                                <option value="" disabled selected hidden>Укажите или выберите из списка</option>
+                                <option value="Hyundai">Hyundai</option>
+                                <option value="Renault">Renault</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Chevrolet">Chevrolet</option>
+                                <option value="Infiniti">Infiniti</option>
+                                <option value="Mitsubishi">Mitsubishi</option>
+                                <option value="Peugeot">Peugeot</option>
+                                <option value="Land Rover">Land Rover</option>
+                                <option value="Lada">Lada</option>
+                                <option value="Audi">Audi</option>
+
                             </select>
                         </div>
                         <div class="search-input__item">
@@ -47,8 +57,9 @@
                                 Модель авто
                             </div>
                             <select class="custom-select custom-select_js input_no-line" placeholder="Выберите из списка">
-                                <option value="1">Пункт #1</option>
-                                <option value="0">Пункт #2</option>
+                                <option value="" disabled selected hidden>Выберите из списка</option>
+                                <option value="1">Марка 1</option>
+                                <option value="2">Марка 2</option>
                             </select>
                         </div>
                         <div class="search-input__item">
@@ -56,6 +67,7 @@
                                 Год выпуска
                             </div>
                             <select class="custom-select custom-select_js input_no-line" placeholder="Выберите из списка">
+                                <option value="" disabled selected hidden>Выберите из списка</option>
                                 <option value="1990">1990</option>
                                 <option value="1991">1991</option>
                                 <option value="1992">1992</option>
@@ -269,37 +281,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -366,37 +378,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -466,37 +478,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -563,37 +575,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -664,37 +676,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -757,37 +769,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -858,37 +870,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -955,37 +967,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -1052,37 +1064,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -1353,37 +1365,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -1450,37 +1462,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -1550,37 +1562,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -1647,37 +1659,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -1748,37 +1760,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -1841,37 +1853,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -1942,37 +1954,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -2039,37 +2051,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -2136,37 +2148,37 @@
                                         дополнительный сервис
                                     </div>
                                     <ul class="service__list">
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Безналичный расчет">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item">
+                                        <li class="service__item" data-tippy-content="Выездная оценка">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -2189,6 +2201,20 @@
                 <button class="offer__btn-more btn btn_gray">Показать ещё 5 предложений</button>
             </div>
 
+        </div>
+
+        <div class="start-auction">
+            <div class="start-auction__wrap">
+                <h2 class="h2 start-auction__title">
+                    Безопасная сделка
+                </h2>
+                <p class="start-auction__text">
+                    Запустите аукцион и получите лучшие предложения от наших партнёров! Сделки между физлицами под защитой: деньги придут, когда услуга будет оказана.
+                </p>
+                <a href="#" class="btn btn_green start-auction__btn">
+                    Запустить аукцион
+                </a>
+            </div>
         </div>
 
     </div>
@@ -2349,7 +2375,7 @@
 <!-- Popup offer-opt end-->
 
 <!-- Popup param-->
-<div id="popup-param" class="param-popup mfp-hide">
+<div id="popup-param" class="param-popup mfp-hide mfp-with-anim">
     <div class="param-popup__body">
         <div class="container">
             <h3 class="h3 param__title">

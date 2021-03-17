@@ -180,6 +180,25 @@
       }
     }
   }
+
+  .start-auction{
+    display: block;
+    padding: 40px;
+    padding-bottom: 250px;
+    background-size: 230px;
+    background-position: left 40px bottom;
+    &__wrap {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+    &__title {
+    }
+    &__text {
+    }
+    &__btn {
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -516,9 +535,16 @@
       margin-top: 15px;
     }
     &-input__wrapp {
+
       max-width: 100%;
     }
   }
+
+  .search-wrapper .form-input__wrapp{
+    max-height: inherit;
+    overflow: auto;
+  }
+
   .card-company {
     &__sidebar-head {
       display: flex;
@@ -805,7 +831,7 @@
 }
 @media (max-width: 360px) {
   .btn {
-    padding: 16px 15px;
+    padding: 16px 10px;
   }
   .custom-checkbox {
     font-size: 10px;
@@ -842,6 +868,11 @@
   }
   .form-input__label {
     font-size: 12px;
+  }
+  .start-auction{
+    padding: 25px;
+    padding-bottom: 250px;
+    background-position: center bottom;
   }
 }
 
