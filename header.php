@@ -91,13 +91,13 @@
                     </div>
                     <ul class="navbar-menu">
                         <li class="navbar-menu__item">
-                            <a href="#" class="navbar-menu__link">Главная</a>
+                            <a href="/" class="navbar-menu__link">Главная</a>
                         </li>
                         <li class="navbar-menu__item">
-                            <a href="#" class="navbar-menu__link">Аукцион</a>
+                            <a href="/" class="navbar-menu__link">Аукцион</a>
                         </li>
                         <li class="navbar-menu__item">
-                            <a href="/login.html" class="navbar-menu__link">Стать партнером</a>
+                            <a href="registration.php" class="navbar-menu__link">Стать партнером</a>
                         </li>
                         <li class="navbar-menu__item">
                             <a href="#" class="navbar-menu__link">О сервисе</a>

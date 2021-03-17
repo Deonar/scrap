@@ -93,7 +93,7 @@
                                 Гос. номер
                             </div>
                             <div class="form-input__wrapp">
-                                <input class="form-input" name="number" placeholder="А 999 АА" maxlength="6">
+                                <input class="form-input mask-car-number" name="number" placeholder="А 999 АА" maxlength="6">
                             </div>
                         </div>
                         <div class="search-input__item search-input_region">
@@ -101,7 +101,7 @@
                                 Регион
                             </div>
                             <div class="form-input__wrapp">
-                                <input class="form-input" name="region" placeholder="777" maxlength="3">
+                                <input class="form-input mask-car-region" type="text" name="region" placeholder="777" maxlength="3">
                                 <span class="region_icon">
                                     РУС
                                 </span>
@@ -112,40 +112,58 @@
                         </button>
                     </form>
                 </div>
-                <div class="regulations">
-                    <div class="regulations__items row">
-                        <div class="col-12 col-md-6">
-                            <div class="regulations__item regulations__item_1">
-                                <div class="regulations__item-img">
-                                    <img src="assets/img/icons/regulations-1.svg" alt="">
-                                </div>
-                                <div class="regulations__item-content">
-                                    <div class="regulations__item-title">Актуальная<br>информация в профиле</div>
-                                    <div class="regulations__item-text">Каждый участник указывает достоверную информацию о своих условиях</div>
-                                    <div class="regulations__item-tag">
-                                        #правила_агрегатора
+
+                <div class="regulations regulations-js">
+                    <div class="link regulations__link regulation-link-js">
+                        Правила агрегатора
+                    </div>
+                    <div class="regulations__items">
+                        <button class="btn-come__back come-back-js">Назад</button>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="regulations__item regulations__item_1">
+                                    <div class="regulations__item-img">
+                                        <img src="assets/img/icons/regulations-1.svg" alt="">
+                                    </div>
+                                    <div class="regulations__item-content">
+                                        <div class="regulations__item-title">Актуальная<br>информация в профиле</div>
+                                        <div class="regulations__item-text">Каждый участник указывает достоверную информацию о своих условиях</div>
+                                        <div class="regulations__item-tag">
+                                            #правила_агрегатора
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="regulations__item regulations__item_2">
-                                <div class="regulations__item-img">
-                                    <img src="assets/img/icons/regulations-2.svg" alt="">
-                                </div>
-                                <div class="regulations__item-content">
-                                    <div class="regulations__item-title">Пользовательский<br>рейтинг</div>
-                                    <div class="regulations__item-text">Каждый человек может<br>оставить оценку.</div>
-                                    <div class="regulations__item-tag">
-                                        #правила_агрегатора
+                            <div class="col-12 col-md-6">
+                                <div class="regulations__item regulations__item_2">
+                                    <div class="regulations__item-img">
+                                        <img src="assets/img/icons/regulations-2.svg" alt="">
+                                    </div>
+                                    <div class="regulations__item-content">
+                                        <div class="regulations__item-title">Пользовательский<br>рейтинг</div>
+                                        <div class="regulations__item-text">Каждый человек может<br>оставить оценку.</div>
+                                        <div class="regulations__item-tag">
+                                            #правила_агрегатора
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
+
+                <div class="search-result mb-30" style="display: none;">
+                    <h3 class="h3 search-result__title">
+                        Результат поиска
+                    </h3>
+                    <p class="search-result__text">
+                        Найдено 117 предложений
+                    </p>
+                </div>
+
                 <div class="filter">
-                    <a class="btn btn_add-param">
+                    <a href="#popup-param" class="btn btn_add-param popup-param">
                         Все параметры поиска
                     </a>
                     <div class="sort">
@@ -183,6 +201,18 @@
                                 <span></span>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="tag-list" style="display: none;">
+                    <div class="tag__item">
+                        Дополнительный сервис <span></span>
+                    </div>
+                    <div class="tag__item">
+                        Типы сырья <span></span>
+                    </div>
+                    <div class="tag__item">
+                        Время работы <span></span>
                     </div>
                 </div>
 
@@ -1077,7 +1107,6 @@
             </div>
 
             <div class="tab__content tab-content-js" data-tab="2">
-
                 <div class="search-wrapper">
                     <div class="search-input__item">
                         <div class="search-input__label">
@@ -1191,40 +1220,47 @@
                         </button>
                     </form>
                 </div>
-                <div class="regulations">
-                    <div class="regulations__items row">
-                        <div class="col-12 col-md-6">
-                            <div class="regulations__item regulations__item_1">
-                                <div class="regulations__item-img">
-                                    <img src="assets/img/icons/regulations-1.svg" alt="">
-                                </div>
-                                <div class="regulations__item-content">
-                                    <div class="regulations__item-title">Актуальная<br>информация в профиле</div>
-                                    <div class="regulations__item-text">Каждый участник указывает достоверную информацию о своих условиях</div>
-                                    <div class="regulations__item-tag">
-                                        #правила_агрегатора
+                <div class="regulations regulations-js">
+                    <div class="link regulations__link regulation-link-js">
+                        Правила агрегатора
+                    </div>
+                    <div class="regulations__items">
+                        <button class="btn-come__back come-back-js">Назад</button>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="regulations__item regulations__item_1">
+                                    <div class="regulations__item-img">
+                                        <img src="assets/img/icons/regulations-1.svg" alt="">
+                                    </div>
+                                    <div class="regulations__item-content">
+                                        <div class="regulations__item-title">Актуальная<br>информация в профиле</div>
+                                        <div class="regulations__item-text">Каждый участник указывает достоверную информацию о своих условиях</div>
+                                        <div class="regulations__item-tag">
+                                            #правила_агрегатора
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="regulations__item regulations__item_2">
-                                <div class="regulations__item-img">
-                                    <img src="assets/img/icons/regulations-2.svg" alt="">
-                                </div>
-                                <div class="regulations__item-content">
-                                    <div class="regulations__item-title">Пользовательский<br>рейтинг</div>
-                                    <div class="regulations__item-text">Каждый человек может<br>оставить оценку.</div>
-                                    <div class="regulations__item-tag">
-                                        #правила_агрегатора
+                            <div class="col-12 col-md-6">
+                                <div class="regulations__item regulations__item_2">
+                                    <div class="regulations__item-img">
+                                        <img src="assets/img/icons/regulations-2.svg" alt="">
+                                    </div>
+                                    <div class="regulations__item-content">
+                                        <div class="regulations__item-title">Пользовательский<br>рейтинг</div>
+                                        <div class="regulations__item-text">Каждый человек может<br>оставить оценку.</div>
+                                        <div class="regulations__item-tag">
+                                            #правила_агрегатора
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="filter">
-                    <a class="btn btn_add-param">
+                    <a href="#popup-param" class="btn btn_add-param popup-param">
                         Все параметры поиска
                     </a>
                     <div class="sort">
@@ -2220,7 +2256,7 @@
 <!-- Popup offer-retail end-->
 
 <!-- Popup offer-opt-->
-<div id="popup-offer-opt" class="offer-popup mfp-hide">
+<div id="popup-offer-opt" class="offer-popup offer-popup_opt mfp-hide">
     <div class="offer-popup__body">
         <div class="d-flex align-items-center offer__profil mb-30">
             <div class="offer__avatar mr-10 _premium">
@@ -2312,7 +2348,100 @@
 </div>
 <!-- Popup offer-opt end-->
 
-
+<!-- Popup param-->
+<div id="popup-param" class="param-popup mfp-hide">
+    <div class="param-popup__body">
+        <div class="container">
+            <h3 class="h3 param__title">
+                Параметры поиска
+            </h3>
+            <form action="#" class="params" id="param-form">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h4 class="h4 param__sub-title">
+                            Дополнительный сервис
+                        </h4>
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-30">
+                                <label class="param__checkbox custom-checkbox">
+                                    <input checked="" class="d-none" name='param-1' type="checkbox" value="Безналичный расчет">
+                                    <span class="custom-checkbox__point"></span>
+                                    Безналичный расчет
+                                </label>
+                                <label class="param__checkbox custom-checkbox">
+                                    <input checked="" class="d-none" name='param-2' type="checkbox" value="Выездная оценка">
+                                    <span class="custom-checkbox__point"></span>
+                                    Выездная оценка
+                                </label>
+                                <label class="param__checkbox custom-checkbox">
+                                    <input class="d-none" name='param-3' type="checkbox" value="Гарантия цены">
+                                    <span class="custom-checkbox__point"></span>
+                                    Гарантия цены
+                                </label>
+                                <label class="param__checkbox custom-checkbox">
+                                    <input checked="" class="d-none" name='param-4' type="checkbox" value="Оплата на месте">
+                                    <span class="custom-checkbox__point"></span>
+                                    Оплата на месте
+                                </label>
+                            </div>
+                            <div class="col-12 col-md-6 mb-30">
+                                <label class="param__checkbox custom-checkbox">
+                                    <input class="d-none" type="checkbox" name='param-5' value="Помол сырья">
+                                    <span class="custom-checkbox__point"></span>
+                                    Помол сырья
+                                </label>
+                                <label class="param__checkbox custom-checkbox">
+                                    <input checked="" class="d-none" name='param-6' type="checkbox" value="Удаление катализатора">
+                                    <span class="custom-checkbox__point"></span>
+                                    Удаление катализатора
+                                </label>
+                                <label class="param__checkbox custom-checkbox">
+                                    <input class="d-none" name='param-7' type="checkbox" value="Доплата после анализа">
+                                    <span class="custom-checkbox__point"></span>
+                                    Доплата после анализа
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 mb-30">
+                        <h4 class="h4 param__sub-title">
+                            Типы сырья
+                        </h4>
+                        <label class="param__checkbox custom-checkbox">
+                            <input checked="" class="d-none" name='param-8' type="checkbox" value="Керамический материал">
+                            <span class="custom-checkbox__point"></span>
+                            Керамический материал
+                        </label>
+                        <label class="param__checkbox custom-checkbox">
+                            <input checked="" class="d-none" name='param-9' type="checkbox" value="Металлический материал">
+                            <span class="custom-checkbox__point"></span>
+                            Металлический материал
+                        </label>
+                    </div>
+                    <div class="col-12 col-md-3 mb-30">
+                        <h4 class="h4 param__sub-title">
+                            Время работы
+                        </h4>
+                        <label class="param__checkbox custom-checkbox">
+                            <input checked="" class="d-none" name='param-10' type="checkbox" name='' value="Работает сейчас">
+                            <span class="custom-checkbox__point"></span>
+                            Работает сейчас
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <div class="param__buttons">
+                <button class="btn btn_add-param" id="param-add">
+                    Применить параметры
+                </button>
+                <button class="btn btn_reset-param" id="param-reset">
+                    Сбросить параметры
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Popup param end-->
 
 
 <?php include("footer.php"); ?>

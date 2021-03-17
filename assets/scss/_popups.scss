@@ -53,10 +53,12 @@
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
 }
-
+.mfp-container {
+  padding: 0;
+}
 .mfp-inline-holder .mfp-content,
 .mfp-ajax-holder .mfp-content {
-  width: auto;
+  width: 100%;
 }
 .offer-popup {
   &__body {
@@ -76,6 +78,9 @@
     }
   }
   &_retail {
+    max-width: 470px;
+    margin: auto;
+    position: relative;
     .card-company__table-body {
       tr {
         th:last-child,
@@ -90,6 +95,36 @@
         letter-spacing: 0.02em;
         text-transform: uppercase;
       }
+    }
+  }
+  &_opt {
+    max-width: 730px;
+    margin: auto;
+    position: relative;
+  }
+}
+
+.param-popup {
+  &__body {
+    background-color: #fff;
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .mfp-container {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .mfp-inline-holder .mfp-content,
+  .mfp-ajax-holder .mfp-content {
+    height: 100%;
+  }
+  .offer-popup {
+    // height: 100%;
+    &__body {
+      // height: 100%;
+      padding: 40px 20px;
     }
   }
 }

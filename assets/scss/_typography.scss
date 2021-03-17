@@ -14,7 +14,7 @@ h6 {
   color: $text;
 }
 
-.title{
+.title {
   margin-bottom: 40px;
 }
 
@@ -22,6 +22,18 @@ h6 {
   font-weight: 600;
   font-size: 30px;
   line-height: 37px;
+}
+
+.h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.h4 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .h2,
@@ -59,12 +71,11 @@ a {
   font-size: 12px;
 }
 
-
 @media (max-width: 767px) {
-  .title{
+  .title {
     margin-bottom: 30px;
   }
-  .h1{
+  .h1 {
     font-size: 24px;
     line-height: 29px;
   }

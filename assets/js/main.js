@@ -18,7 +18,7 @@ jQuery(document).ready(function ($) {
   //======================== POPUPS
   $('.popup').magnificPopup({});
 
-  $('.popup-settings').magnificPopup({
+  $('.popup-param').magnificPopup({
     alignTop: true,
   });
 
@@ -143,6 +143,19 @@ jQuery(document).ready(function ($) {
     },
   });
 
+  $('.mask-car-number').mask('Z BBB ZZ', {
+    translation: {
+      B: {
+        pattern: /[0-9]/,
+      },
+      Z: {
+        pattern: /[A-Za-z]/,
+      },
+    },
+  });
+
+  $('.mask-car-region').mask('999');
+
   $('.mask-phone').on('blur input', function () {
     console.log($(this).val());
     if ($(this).val() == '+7 8') {
@@ -159,15 +172,12 @@ jQuery(document).ready(function ($) {
   $('.scrollto').on('click', function () {
     let href = $(this).attr('href');
 
-    $('html, body').animate(
-      {
-        scrollTop: $(href).offset().top - 100,
-      },
-      {
-        duration: 600, // по умолчанию «400»
-        easing: 'linear', // по умолчанию «swing»
-      }
-    );
+    $('html, body').animate({
+      scrollTop: $(href).offset().top - 100,
+    }, {
+      duration: 600, // по умолчанию «400»
+      easing: 'linear', // по умолчанию «swing»
+    });
     if ($(window).width() < 768) {
       $('html, body').animate({
         scrollTop: $(href).offset().top - 50,
@@ -277,4 +287,29 @@ jQuery(document).ready(function ($) {
     $('.displaying-row-js').removeClass('active');
     $('.offer').removeClass('offer_row').addClass('offer_grid');
   });
+
+  // Params 
+  $('#param-reset').on('click', function () {
+    $('#param-form input:checkbox').removeAttr('checked');
+  })
+
+  $('#param-add').on('click', function () {
+    let dasd = $('#param-form').serializeArray();
+    
+    $('.tag-list').show();
+    $('.search-result').show();
+    $.magnificPopup.close();
+  })
+
+
+  // Regulation
+  $(".regulation-link-js").on("click", function (e) {
+    $("body").addClass("overflow-h");
+    $(this).closest('.regulations-js').addClass("active");
+  });
+  $(".regulations-js .btn-come__back").on("click", function (e) {
+    $("body").removeClass("overflow-h");
+    $(this).closest('.regulations-js').removeClass("active");
+  });
+
 });

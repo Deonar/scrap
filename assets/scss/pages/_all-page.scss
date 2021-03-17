@@ -5,6 +5,13 @@
 }
 .regulations {
   padding-top: 30px;
+  &__link {
+    display: none;
+    margin-bottom: 20px;
+  }
+  .btn-come__back{
+    display: none;
+  }
   &__item {
     padding: 40px;
     border-radius: 3px;
@@ -13,7 +20,7 @@
     position: relative;
     margin-bottom: 30px;
     &::after {
-      content: '';
+      content: "";
       width: 140px;
       height: 140px;
       display: inline-block;
@@ -24,13 +31,13 @@
     &_1 {
       background: linear-gradient(102.13deg, #f7f9fc 0.51%, #eef7ec 100%);
       &::after {
-        background-image: url('../img/icons/regulation-profile.svg');
+        background-image: url("../img/icons/regulation-profile.svg");
       }
     }
     &_2 {
       background: linear-gradient(102.13deg, #f7f9fc 0.51%, #faf6ec 100%);
       &::after {
-        background-image: url('../img/icons/regulation-star.svg');
+        background-image: url("../img/icons/regulation-star.svg");
       }
     }
   }
@@ -180,7 +187,7 @@
       overflow: hidden;
     }
     &._premium:after {
-      content: '';
+      content: "";
       position: absolute;
       right: 0;
       bottom: 0;
@@ -246,7 +253,7 @@
     width: 100%;
     margin-right: 10px;
     &::before {
-      content: '';
+      content: "";
       display: inline-block;
       position: relative;
       top: 3px;
@@ -256,6 +263,40 @@
       background-image: url(../img/icons/icon-param.svg);
       background-position: center;
       background-repeat: no-repeat;
+    }
+  }
+}
+.search-result {
+  &__title {
+    margin-bottom: 5px;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #959DA4;
+  }
+}
+.param {
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__sub-title {
+    margin-bottom: 20px;
+  }
+  &__checkbox {
+    margin-bottom: 10px;
+  }
+  &__buttons {
+    .btn {
+      display: inline-block;
+      padding: 16px 10px;
+      width: 100%;
+      max-width: 195px;
+      margin-bottom: 5px;
+      &:first-child {
+        margin-right: 5px;
+      }
     }
   }
 }
@@ -447,7 +488,7 @@
   overflow: hidden;
   position: relative;
   &:after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     right: 20px;
@@ -540,7 +581,7 @@
       background: url(../img/icons/img-download.svg) center center no-repeat;
     }
     &._premium:after {
-      content: '';
+      content: "";
       position: absolute;
       right: 0;
       bottom: 0;
@@ -643,7 +684,7 @@
     position: relative;
     color: $text-green-2;
     &:before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       left: 0;
@@ -666,7 +707,7 @@
     line-height: 20px;
     position: relative;
     &:before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       left: 8px;
@@ -687,7 +728,7 @@
       transform: rotate(45deg);
     }
     &._close:after {
-      content: '';
+      content: "";
       top: 9px;
       left: 8px;
       transform: rotate(-45deg);
@@ -970,7 +1011,7 @@
       top: 50%;
       transform: translate(-50%, -50%);
       &:after {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         width: 100%;
@@ -983,7 +1024,7 @@
         transition: all 0.3s ease;
       }
       &:before {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         width: 18px;
@@ -1081,6 +1122,7 @@
     text-align: center;
     .form-input {
       max-width: 600px;
+      text-transform: uppercase;
       width: 100%;
       text-align: center;
       border: none;
@@ -1099,13 +1141,13 @@
       font-weight: 600;
       display: inline-block;
       &::before {
-        content: '';
+        content: "";
         display: inline-block;
         width: 16px;
         height: 10px;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url('../img/icons/icon-rus.svg');
+        background-image: url("../img/icons/icon-rus.svg");
       }
     }
   }
@@ -1149,7 +1191,7 @@
 
     color: $text-gray-2;
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -1372,6 +1414,7 @@
     &._filial {
       margin-left: auto;
       background: #959da4;
+      color: #fff;
     }
   }
   &-info__row {

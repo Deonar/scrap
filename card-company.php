@@ -48,7 +48,7 @@
             <div class="card-company__block-head">
               <div class="card-company__block-title">Время работы</div>
               <div class="card-company__block-schedule-label _open">открыто</div>
-              <div class="card-company__block-schedule-label _close">закрыто</div>
+              <!-- <div class="card-company__block-schedule-label _close">закрыто</div> -->
             </div>
             <div class="card-company__block-schedule">
               <ul>
@@ -144,7 +144,7 @@
                     </div>
                   </li>
                   <li class="accordeon-wrapper accordeon-wrapper-js">
-                    <div class="card-company__material-title accordeon-tab accordeon-tab-js _mob">Металлически материал
+                    <div class="card-company__table-title accordeon-tab accordeon-tab-js _mob">Металлически материал
                     </div>
                     <ul class="card-company__material-cards accordeon-content accordeon-content-js">
                       <li class="card-company__material-card">

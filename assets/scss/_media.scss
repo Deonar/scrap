@@ -337,6 +337,28 @@
     }
   }
 
+  .regulations{
+    &__link, .btn-come__back{
+      display: block;
+    }
+    &__items{
+      position: fixed;
+      width: 100%;
+      padding: 20px;
+      background: #ffff;
+      display: block;
+      height: 100%;
+      width: 100%;
+      z-index: 900;
+      top: 0;
+      left: -100%;
+      overflow: auto;
+    }
+    &.active .regulations__items{
+      left: 0;
+    }
+  }
+
   .offer {
     &.offer_grid {
       .offer__item {
@@ -547,7 +569,6 @@
     }
 
     &__material-title {
-      margin-bottom: 0;
       &._mob {
         display: block;
       }
@@ -769,6 +790,19 @@
   //======================= footer enf
 }
 
+@media (max-width: 540px) {
+.param {
+  &__buttons {
+    .btn {
+      width: 100%;
+      max-width: 100%;
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+}
 @media (max-width: 360px) {
   .btn {
     padding: 16px 15px;

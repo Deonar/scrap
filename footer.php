@@ -2,10 +2,10 @@
     <div class="footer-wrapper container">
         <ul class="footer-nav">
             <li>
-                <a href="#" class="footer-nav__link">Главная</a>
+                <a href="/" class="footer-nav__link">Главная</a>
             </li>
             <li>
-                <a href="#" class="footer-nav__link">Личный кабинет</a>
+                <a href="/cabinet.php" class="footer-nav__link">Личный кабинет</a>
             </li>
         </ul>
 
