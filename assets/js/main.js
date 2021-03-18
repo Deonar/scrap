@@ -299,20 +299,6 @@ jQuery(document).ready(function ($) {
     $('.offer').removeClass('offer_row').addClass('offer_grid');
   });
 
-  // Params 
-  $('#param-reset').on('click', function () {
-    $('#param-form input:checkbox').removeAttr('checked');
-  })
-
-  $('#param-add').on('click', function () {
-    let dasd = $('#param-form').serializeArray();
-
-    $('.tag-list').show();
-    $('.search-result').show();
-    $.magnificPopup.close();
-  })
-
-
   // Regulation
   $(".regulation-link-js").on("click", function (e) {
     $("body").addClass("overflow-h");
@@ -327,4 +313,30 @@ jQuery(document).ready(function ($) {
   tippy('[data-tippy-content]', {
     theme: 'custom',
   });
+
+
+
+
+  //Demonstration js
+  $('#param-reset').on('click', function () {
+    $('#param-form input:checkbox').removeAttr('checked');
+  })
+
+  $('#param-add').on('click', function () {
+    // $('#param-form').serializeArray();
+
+    $('.tag-list').show();
+    $('.search-result').show();
+    $.magnificPopup.close();
+  })
+
+
+  $('form.search-input').on('submit', function(e){
+    e.preventDefault();
+    $('.tag-list').show();
+    $('.search-result').show();
+  })
+
+
+
 });

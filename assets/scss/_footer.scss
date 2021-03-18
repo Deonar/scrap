@@ -43,7 +43,9 @@
   }
   &-licence,
   &-policy {
-    text-decoration: underline;
+    &:hover{
+      text-decoration: underline;
+    }
   }
   &-phone__list {
     text-align: right;

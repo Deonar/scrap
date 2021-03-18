@@ -1271,6 +1271,14 @@
                     </div>
 
                 </div>
+                <div class="search-result mb-30" style="display: none;">
+                    <h3 class="h3 search-result__title">
+                        Результат поиска
+                    </h3>
+                    <p class="search-result__text">
+                        Найдено 117 предложений
+                    </p>
+                </div>
                 <div class="filter">
                     <a href="#popup-param" class="btn btn_add-param popup-param">
                         Все параметры поиска
@@ -1310,6 +1318,17 @@
                                 <span></span>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="tag-list" style="display: none;">
+                    <div class="tag__item">
+                        Дополнительный сервис <span></span>
+                    </div>
+                    <div class="tag__item">
+                        Типы сырья <span></span>
+                    </div>
+                    <div class="tag__item">
+                        Время работы <span></span>
                     </div>
                 </div>
                 <div class="offer offer_row" id="offer-opt">
