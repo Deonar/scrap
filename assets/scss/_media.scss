@@ -181,7 +181,7 @@
     }
   }
 
-  .start-auction{
+  .start-auction {
     display: block;
     padding: 40px;
     padding-bottom: 250px;
@@ -356,11 +356,12 @@
     }
   }
 
-  .regulations{
-    &__link, .btn-come__back{
+  .regulations {
+    &__link,
+    .btn-come__back {
       display: block;
     }
-    &__items{
+    &__items {
       position: fixed;
       width: 100%;
       padding: 20px;
@@ -373,7 +374,7 @@
       left: -100%;
       overflow: auto;
     }
-    &.active .regulations__items{
+    &.active .regulations__items {
       left: 0;
     }
   }
@@ -535,12 +536,11 @@
       margin-top: 15px;
     }
     &-input__wrapp {
-
       max-width: 100%;
     }
   }
 
-  .search-wrapper .form-input__wrapp{
+  .search-wrapper .form-input__wrapp {
     max-height: inherit;
     overflow: auto;
   }
@@ -638,6 +638,9 @@
     &__table-title {
       background: #fff;
       padding: 0px 0px 12px 0px;
+      &._mob {
+        display: block;
+      }
     }
     &__table {
       padding: 0px;
@@ -817,17 +820,17 @@
 }
 
 @media (max-width: 540px) {
-.param {
-  &__buttons {
-    .btn {
-      width: 100%;
-      max-width: 100%;
-      &:first-child {
-        margin-right: 0;
+  .param {
+    &__buttons {
+      .btn {
+        width: 100%;
+        max-width: 100%;
+        &:first-child {
+          margin-right: 0;
+        }
       }
     }
   }
-}
 }
 @media (max-width: 360px) {
   .btn {
@@ -869,7 +872,7 @@
   .form-input__label {
     font-size: 12px;
   }
-  .start-auction{
+  .start-auction {
     padding: 25px;
     padding-bottom: 250px;
     background-position: center bottom;

@@ -20,7 +20,7 @@
     position: relative;
     margin-bottom: 30px;
     &::after {
-      content: "";
+      content: '';
       width: 140px;
       height: 140px;
       display: inline-block;
@@ -31,13 +31,13 @@
     &_1 {
       background: linear-gradient(102.13deg, #f7f9fc 0.51%, #eef7ec 100%);
       &::after {
-        background-image: url("../img/icons/regulation-profile.svg");
+        background-image: url('../img/icons/regulation-profile.svg');
       }
     }
     &_2 {
       background: linear-gradient(102.13deg, #f7f9fc 0.51%, #faf6ec 100%);
       &::after {
-        background-image: url("../img/icons/regulation-star.svg");
+        background-image: url('../img/icons/regulation-star.svg');
       }
     }
   }
@@ -187,7 +187,7 @@
       overflow: hidden;
     }
     &._premium:after {
-      content: "";
+      content: '';
       position: absolute;
       right: 0;
       bottom: 0;
@@ -253,7 +253,7 @@
     width: 100%;
     margin-right: 10px;
     &::before {
-      content: "";
+      content: '';
       display: inline-block;
       position: relative;
       top: 3px;
@@ -522,7 +522,7 @@
   overflow: hidden;
   position: relative;
   &:after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     right: 20px;
@@ -615,7 +615,7 @@
       background: url(../img/icons/img-download.svg) center center no-repeat;
     }
     &._premium:after {
-      content: "";
+      content: '';
       position: absolute;
       right: 0;
       bottom: 0;
@@ -718,7 +718,7 @@
     position: relative;
     color: $text-green-2;
     &:before {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       left: 0;
@@ -741,7 +741,7 @@
     line-height: 20px;
     position: relative;
     &:before {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       left: 8px;
@@ -762,7 +762,7 @@
       transform: rotate(45deg);
     }
     &._close:after {
-      content: "";
+      content: '';
       top: 9px;
       left: 8px;
       transform: rotate(-45deg);
@@ -838,6 +838,9 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
+    &._mob {
+      display: none;
+    }
   }
   &__table-body {
     background: #f7f9fc;
@@ -1045,7 +1048,7 @@
       top: 50%;
       transform: translate(-50%, -50%);
       &:after {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         width: 100%;
@@ -1058,7 +1061,7 @@
         transition: all 0.3s ease;
       }
       &:before {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         width: 18px;
@@ -1177,13 +1180,13 @@
       font-weight: 600;
       display: inline-block;
       &::before {
-        content: "";
+        content: '';
         display: inline-block;
         width: 16px;
         height: 10px;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url("../img/icons/icon-rus.svg");
+        background-image: url('../img/icons/icon-rus.svg');
       }
     }
   }
@@ -1227,7 +1230,7 @@
 
     color: $text-gray-2;
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -1660,19 +1663,19 @@
 }
 
 //Tooltip
-.tippy-box[data-theme~="custom"] {
-  background-color: #34495E;
-  color: #FFFFFF;
+.tippy-box[data-theme~='custom'] {
+  background-color: #34495e;
+  color: #ffffff;
 }
-.tippy-box[data-theme~="custom"][data-placement^="top"] > .tippy-arrow::before {
-  border-top-color: #34495E;
+.tippy-box[data-theme~='custom'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: #34495e;
 }
-.tippy-box[data-theme~="custom"][data-placement^="bottom"] > .tippy-arrow::before {
-  border-bottom-color: #34495E;
+.tippy-box[data-theme~='custom'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: #34495e;
 }
-.tippy-box[data-theme~="custom"][data-placement^="left"] > .tippy-arrow::before {
-  border-left-color: #34495E;
+.tippy-box[data-theme~='custom'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: #34495e;
 }
-.tippy-box[data-theme~="custom"][data-placement^="right"] > .tippy-arrow::before {
-  border-right-color: #34495E;
+.tippy-box[data-theme~='custom'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: #34495e;
 }
