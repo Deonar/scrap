@@ -343,6 +343,18 @@
     font-size: 24px;
     line-height: 30px;
   }
+  .page-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .primary-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .company-section__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
   .accordeon-tab {
     font-size: 14px;
   }
@@ -544,8 +556,11 @@
     max-height: inherit;
     overflow: auto;
   }
-
+  .page-content {
+    overflow: visible;
+  }
   .card-company {
+    overflow: hidden;
     &__sidebar-head {
       display: flex;
       align-items: center;
@@ -791,7 +806,9 @@
       }
     }
   }
-
+  .registration__stage-list {
+    overflow: visible;
+  }
   //======================= footer
   .footer {
     &-wrapper {

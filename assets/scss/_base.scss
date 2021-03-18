@@ -148,7 +148,7 @@ body {
     padding-left: 20px;
     position: relative;
     &:before {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       left: 0;
@@ -167,7 +167,7 @@ body {
   cursor: pointer;
   color: $accent;
   &:after {
-    content: "";
+    content: '';
     border: solid $accent;
     position: relative;
     top: -2px;
@@ -182,7 +182,7 @@ body {
 .open.active {
   .show-more {
     &:after {
-      content: "";
+      content: '';
       border: solid $accent;
       position: relative;
       top: 3px;
@@ -210,7 +210,9 @@ body {
   font-size: 24px;
   line-height: 29px;
 }
-
+.page-content {
+  overflow: hidden;
+}
 .page-title {
   font-weight: 600;
   font-size: 30px;
@@ -259,12 +261,12 @@ body {
     background: #131e29;
   }
   &::before {
-    content: "";
+    content: '';
     display: inline-block;
     margin-right: 12px;
     width: 12px;
     height: 12px;
-    background-image: url("../img/icons/icon_phone.svg");
+    background-image: url('../img/icons/icon_phone.svg');
   }
 }
 
@@ -310,7 +312,7 @@ body {
   }
   span:after,
   span:before {
-    content: "";
+    content: '';
     display: block;
     background: #fff;
     position: absolute;
@@ -427,7 +429,7 @@ body {
   outline: none;
   position: relative;
   &::after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     height: 1px;
@@ -438,7 +440,7 @@ body {
     background: #34495e;
   }
   &::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     height: 7px;
@@ -498,7 +500,7 @@ body {
     position: relative;
     cursor: pointer;
     &::after {
-      content: "";
+      content: '';
       display: inline-block;
       height: 3px;
       width: 0%;
@@ -552,7 +554,7 @@ body {
       margin-left: 5px;
       cursor: pointer;
       &:after {
-        content: "";
+        content: '';
         left: 0;
         top: 10px;
         -webkit-transform: rotate(-45deg);
@@ -563,7 +565,7 @@ body {
         background: #959da4;
       }
       &:before {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         left: 0;
@@ -592,7 +594,7 @@ body {
     position: relative;
     cursor: pointer;
     &::after {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       width: 10px;
@@ -674,7 +676,7 @@ body {
       max-width: 510px;
       position: relative;
       &.done:after {
-        content: "";
+        content: '';
         position: absolute;
         display: inline-block;
         right: 20px;
@@ -708,7 +710,7 @@ body {
           transition: all 0.3s ease;
         }
         &:before {
-          content: "";
+          content: '';
           top: 28px;
           right: 20px;
           transform: rotate(45deg);
@@ -719,7 +721,7 @@ body {
           transition: 0.25s ease-in-out;
         }
         &:after {
-          content: "";
+          content: '';
           top: 28px;
           right: 20px;
           transform: rotate(-45deg);
@@ -784,7 +786,7 @@ body {
 }
 
 //======= radio button
-.form-radio__group .form-radio__input[type="radio"] {
+.form-radio__group .form-radio__input[type='radio'] {
   display: none;
 }
 .form-radio__group .form-radio__label {
@@ -800,7 +802,7 @@ body {
 .form-radio__group .form-radio__label::before,
 .form-radio__group .form-radio__label::after {
   position: absolute;
-  content: "";
+  content: '';
   top: 50%;
   border-radius: 100%;
   -webkit-transition: all 0.2s;
@@ -824,10 +826,10 @@ body {
   border: 6px solid $accent;
   transform: scale(1.5);
 }
-.form-radio__group .form-radio__input[type="radio"]:checked + .form-radio__label::before {
+.form-radio__group .form-radio__input[type='radio']:checked + .form-radio__label::before {
   border: 2px solid $accent;
 }
-.form-radio__group .form-radio__input[type="radio"]:checked + .form-radio__label::after {
+.form-radio__group .form-radio__input[type='radio']:checked + .form-radio__label::after {
   opacity: 1;
   transform: scale(1);
 }
@@ -889,7 +891,7 @@ body {
     line-height: 17px;
     transition: all 0.3s ease;
     &:after {
-      content: "";
+      content: '';
       margin: auto;
       position: absolute;
       right: 25px;
@@ -904,7 +906,7 @@ body {
       transform: rotate(45deg);
     }
     &.dropdown-active:after {
-      content: "";
+      content: '';
       margin: auto;
       position: absolute;
       right: 25px;
@@ -917,7 +919,7 @@ body {
       transform: rotate(-135deg);
     }
     &::before {
-      content: "";
+      content: '';
       display: inline-block;
       height: 3px;
       width: 0%;
@@ -988,7 +990,7 @@ body {
     margin-right: 10px;
     cursor: pointer;
     &::before {
-      content: "";
+      content: '';
       display: inline-block;
       position: absolute;
       left: 8px;
@@ -1036,11 +1038,11 @@ body {
 }
 
 .star-rating > fieldset:not(:checked) > label:before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 32px;
   height: 32px;
-  background-image: url("../img/icons/rating-off.svg");
+  background-image: url('../img/icons/rating-off.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1048,22 +1050,22 @@ body {
 
 .star-rating > fieldset:not(:checked) > label:hover:before,
 .star-rating > fieldset:not(:checked) > label:hover ~ label:before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 32px;
   height: 32px;
-  background-image: url("../img/icons/rating-on.svg");
+  background-image: url('../img/icons/rating-on.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .star-rating > fieldset > input:checked ~ label:before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 32px;
   height: 32px;
-  background-image: url("../img/icons/rating-on.svg");
+  background-image: url('../img/icons/rating-on.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1090,10 +1092,10 @@ body {
     background-position: center;
   }
   &_on {
-    background-image: url("../img/icons/rating-on.svg");
+    background-image: url('../img/icons/rating-on.svg');
   }
   &_off {
-    background-image: url("../img/icons/rating-off.svg");
+    background-image: url('../img/icons/rating-off.svg');
   }
 }
 
@@ -1131,7 +1133,7 @@ body {
     }
     &:not(:last-child):after {
       display: block;
-      content: "/";
+      content: '/';
       color: $text;
       transform: translateX(3px);
     }
@@ -1240,7 +1242,7 @@ $transition-length: 1s;
   $i: 0;
   $increment: 180deg / 100;
   @while $i <= 100 {
-    &[data-progress="#{$i}"] {
+    &[data-progress='#{$i}'] {
       .ko-progress-circle__slice.full,
       .ko-progress-circle__fill {
         transform: rotate($increment * $i);

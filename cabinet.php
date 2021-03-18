@@ -36,8 +36,8 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-8">
-        <div id="card-company-content" class="page-content cabinet__content">
+      <div class="col-sm-12 col-md-8 page-content">
+        <div id="card-company-content" class=" cabinet__content">
           <div class="rating-top">
             <h2 class="rating-top__title page-title">Выведи компанию в ТОП!</h2>
             <div class="rating-top__text">Выделение одной компании и всех филиалов в одной категории агрегатора для
