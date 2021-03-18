@@ -251,9 +251,9 @@
                                                 <li class="stars-rating__item stars-rating_on"></li>
                                                 <li class="stars-rating__item stars-rating_off"></li>
                                             </ul>
-                                            <div class="offer-reviews__text">
+                                            <a href="/card-company.php#reviews" class="offer-reviews__text">
                                                 26 отзывов
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -274,7 +274,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -348,9 +348,9 @@
                                                 <li class="stars-rating__item stars-rating_on"></li>
                                                 <li class="stars-rating__item stars-rating_off"></li>
                                             </ul>
-                                            <div class="offer-reviews__text">
+                                            <a href="/card-company.php#reviews" class="offer-reviews__text">
                                                 1 отзыв
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -371,7 +371,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -448,9 +448,9 @@
                                                 <li class="stars-rating__item stars-rating_on"></li>
                                                 <li class="stars-rating__item stars-rating_off"></li>
                                             </ul>
-                                            <div class="offer-reviews__text">
+                                            <a href="/card-company.php#reviews" class="offer-reviews__text">
                                                 1 отзыв
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -471,7 +471,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -545,9 +545,9 @@
                                                 <li class="stars-rating__item stars-rating_on"></li>
                                                 <li class="stars-rating__item stars-rating_off"></li>
                                             </ul>
-                                            <div class="offer-reviews__text">
+                                            <a href="/card-company.php#reviews" class="offer-reviews__text">
                                                 1 отзыв
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -568,7 +568,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -646,9 +646,9 @@
                                                 <li class="stars-rating__item stars-rating_on"></li>
                                                 <li class="stars-rating__item stars-rating_off"></li>
                                             </ul>
-                                            <div class="offer-reviews__text">
+                                            <a href="/card-company.php#reviews" class="offer-reviews__text">
                                                 1 отзыв
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -669,7 +669,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -762,7 +762,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -840,9 +840,9 @@
                                                 <li class="stars-rating__item stars-rating_on"></li>
                                                 <li class="stars-rating__item stars-rating_off"></li>
                                             </ul>
-                                            <div class="offer-reviews__text">
+                                            <a href="/card-company.php#reviews" class="offer-reviews__text">
                                                 1 отзыв
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -863,7 +863,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -937,9 +937,9 @@
                                                 <li class="stars-rating__item stars-rating_on"></li>
                                                 <li class="stars-rating__item stars-rating_off"></li>
                                             </ul>
-                                            <div class="offer-reviews__text">
+                                            <a href="/card-company.php#reviews" class="offer-reviews__text">
                                                 1 отзыв
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -960,7 +960,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -1034,9 +1034,9 @@
                                                 <li class="stars-rating__item stars-rating_on"></li>
                                                 <li class="stars-rating__item stars-rating_off"></li>
                                             </ul>
-                                            <div class="offer-reviews__text">
+                                            <a href="/card-company.php#reviews" class="offer-reviews__text">
                                                 1 отзыв
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1057,7 +1057,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -1377,7 +1377,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -1451,9 +1451,9 @@
                                                 <li class="stars-rating__item stars-rating_on"></li>
                                                 <li class="stars-rating__item stars-rating_off"></li>
                                             </ul>
-                                            <div class="offer-reviews__text">
+                                            <a href="/card-company.php#reviews" class="offer-reviews__text">
                                                 1 отзыв
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1474,7 +1474,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -1551,9 +1551,9 @@
                                                 <li class="stars-rating__item stars-rating_on"></li>
                                                 <li class="stars-rating__item stars-rating_off"></li>
                                             </ul>
-                                            <div class="offer-reviews__text">
+                                            <a href="/card-company.php#reviews" class="offer-reviews__text">
                                                 1 отзыв
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1574,7 +1574,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -1648,9 +1648,9 @@
                                                 <li class="stars-rating__item stars-rating_on"></li>
                                                 <li class="stars-rating__item stars-rating_off"></li>
                                             </ul>
-                                            <div class="offer-reviews__text">
+                                            <a href="/card-company.php#reviews" class="offer-reviews__text">
                                                 1 отзыв
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1671,7 +1671,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -1749,9 +1749,9 @@
                                                 <li class="stars-rating__item stars-rating_on"></li>
                                                 <li class="stars-rating__item stars-rating_off"></li>
                                             </ul>
-                                            <div class="offer-reviews__text">
+                                            <a href="/card-company.php#reviews" class="offer-reviews__text">
                                                 1 отзыв
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1772,7 +1772,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -1865,7 +1865,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -1943,9 +1943,9 @@
                                                 <li class="stars-rating__item stars-rating_on"></li>
                                                 <li class="stars-rating__item stars-rating_off"></li>
                                             </ul>
-                                            <div class="offer-reviews__text">
+                                            <a href="/card-company.php#reviews" class="offer-reviews__text">
                                                 1 отзыв
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1966,7 +1966,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -2040,9 +2040,9 @@
                                                 <li class="stars-rating__item stars-rating_on"></li>
                                                 <li class="stars-rating__item stars-rating_off"></li>
                                             </ul>
-                                            <div class="offer-reviews__text">
+                                            <a href="/card-company.php#reviews" class="offer-reviews__text">
                                                 1 отзыв
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2063,7 +2063,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -2137,9 +2137,9 @@
                                                 <li class="stars-rating__item stars-rating_on"></li>
                                                 <li class="stars-rating__item stars-rating_off"></li>
                                             </ul>
-                                            <div class="offer-reviews__text">
+                                            <a href="/card-company.php#reviews" class="offer-reviews__text">
                                                 1 отзыв
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2160,7 +2160,7 @@
                                         г. Челябинск<br>
                                         <span>ул.Механическая 1\а</span>
                                     </div>
-                                    <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+                                    <a href="/card-company.php#address" class="card-company__street-link link link-location">Ещё 4 адреса</a>
                                 </div>
                                 <div class="offer-service">
                                     <div class="offer__sub-title">
@@ -2256,9 +2256,9 @@
                         <li class="stars-rating__item stars-rating_on"></li>
                         <li class="stars-rating__item stars-rating_off"></li>
                     </ul>
-                    <div class="offer-reviews__text">
+                    <a href="/card-company.php#reviews" class="offer-reviews__text">
                         26 отзывов
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -2317,9 +2317,9 @@
                         <li class="stars-rating__item stars-rating_on"></li>
                         <li class="stars-rating__item stars-rating_off"></li>
                     </ul>
-                    <div class="offer-reviews__text">
+                    <a href="/card-company.php#reviews" class="offer-reviews__text">
                         26 отзывов
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
