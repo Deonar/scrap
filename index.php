@@ -286,7 +286,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -296,22 +296,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -383,7 +383,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -393,22 +393,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -483,7 +483,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -493,22 +493,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -580,7 +580,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -590,22 +590,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -681,7 +681,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -691,22 +691,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -774,7 +774,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -784,22 +784,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -875,7 +875,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -885,22 +885,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -972,7 +972,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -982,22 +982,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -1069,7 +1069,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -1079,22 +1079,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -1389,7 +1389,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -1399,22 +1399,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -1486,7 +1486,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -1496,22 +1496,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -1586,7 +1586,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -1596,22 +1596,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -1683,7 +1683,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -1693,22 +1693,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -1784,7 +1784,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -1794,22 +1794,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -1877,7 +1877,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -1887,22 +1887,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -1978,7 +1978,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -1988,22 +1988,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -2075,7 +2075,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -2085,22 +2085,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
@@ -2172,7 +2172,7 @@
                                                 <img src="assets/img/icons/credit-card-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Помол сырья">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrows-green.svg" alt="">
                                             </span>
@@ -2182,22 +2182,22 @@
                                                 <img src="assets/img/icons/pistol-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Удаление катализатора">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/exhaust-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Гарантия цены">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/garanty-green.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Доплата после анализа">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/arrow-credit-card.svg" alt="">
                                             </span>
                                         </li>
-                                        <li class="service__item" data-tippy-content="Выездная оценка">
+                                        <li class="service__item" data-tippy-content="Оплата на месте">
                                             <span class="service__icon">
                                                 <img src="assets/img/icons/location-green.svg" alt="">
                                             </span>
