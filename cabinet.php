@@ -37,11 +37,10 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-8 page-content">
-        <div id="card-company-content" class=" cabinet__content">
+        <div id="card-company-content" class="cabinet__content">
           <div class="rating-top">
             <h2 class="rating-top__title page-title">Выведи компанию в ТОП!</h2>
-            <div class="rating-top__text">Выделение одной компании и всех филиалов в одной категории агрегатора для
-              увеличения количества клиентов!</div>
+            <div class="rating-top__text">Выделение одной компании и всех филиалов в одной категории агрегатора для увеличения количества клиентов!</div>
             <a href="#" class="rating-top__btn btn btn_blue">Вывести в топ за 990 ₽/мес</a>
           </div>
           <div class="main-tab tab tab-js">
@@ -76,8 +75,7 @@
             <div class="tab__content all-company tab-content-js active" data-tab="1">
               <div class="card-company__section-row mb-20">
                 <h4 class="primary-title mb-20">Компании</h4>
-                <a href="#edit-info-filialcompany" id="btn-add-filialcompany"
-                  class="btn btn_add-filial scrollto">Добавить филиал</a>
+                <a href="#edit-info-filialcompany" id="btn-add-filialcompany" class="btn btn_add-filial scrollto">Добавить филиал</a>
               </div>
 
               <div class="company-section content-wrapper-js">
@@ -230,11 +228,9 @@
                     </li>
                   </ul>
                   <div class="edit-company__btns d-flex justify-content-between mt-10">
-                    <a href="#edit-info-allcompany" id="btn-edit-info-allcompany"
-                      class="btn btn_reset-param edit-info-company-js scrollto">Редактировать информацию</a>
-                    <a href="#edit-info-material" id="btn-edit-info-material"
-                      class="btn btn_reset-param ml-10 mr-auto scrollto">Редактирование цен</a>
-                    <a href="#" id="" class="btn btn_black btn_red scrollto">Удалить</a>
+                    <a href="#edit-info-allcompany" id="btn-edit-info-allcompany" class="btn btn_reset-param edit-info-company-js scrollto">Редактировать информацию</a>
+                    <a href="#edit-info-material" id="btn-edit-info-material" class="btn btn_reset-param ml-10 mr-auto scrollto">Редактирование цен</a>
+                    <a href="#delete-branch-popup" class="btn btn_black btn_red scrollto popup">Удалить</a>
                   </div>
                 </div>
                 <button class="company__btn-more btn btn_add-param button-more-js">Подробнее</button>
@@ -391,11 +387,9 @@
                     </li>
                   </ul>
                   <div class="edit-company__btns d-flex justify-content-between mt-10">
-                    <a href="#edit-info-filialcompany" id="btn-edit-info-filialcompany"
-                      class="btn btn_reset-param scrollto">Редактировать информацию</a>
-                    <a href="#edit-info-appliances" id="btn-edit-info-appliances"
-                      class="btn btn_reset-param ml-10 mr-auto scrollto">Редактирование цен</a>
-                    <a href="#" id="" class="btn btn_black btn_red scrollto">Удалить</a>
+                    <a href="#edit-info-filialcompany" id="btn-edit-info-filialcompany" class="btn btn_reset-param scrollto">Редактировать информацию</a>
+                    <a href="#edit-info-appliances" id="btn-edit-info-appliances" class="btn btn_reset-param ml-10 mr-auto scrollto">Редактирование цен</a>
+                    <a href="#delete-branch-popup" class="btn btn_black btn_red scrollto popup">Удалить</a>
                   </div>
                 </div>
                 <button class="company__btn-more btn btn_add-param button-more-js">Подробнее</button>
@@ -431,8 +425,7 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
-                        прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -460,8 +453,7 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
-                        прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -489,8 +481,7 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
-                        прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -518,8 +509,7 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
-                        прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -547,8 +537,7 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
-                        прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -576,8 +565,7 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
-                        прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -605,8 +593,7 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
-                        прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <button id="btn-more" class="reviews__btn-more btn btn_gray">Показать ещё 5 отзывов</button>
@@ -628,8 +615,7 @@
                     <a href="tel:+79999999999" class="company-info__tell">+7 999 999-99-99</a>
                   </div>
                 </div>
-                <a href="#edit-info-personal" id="btn-edit-info-personal"
-                  class="company__edit-btn btn btn_add-param scrollto">Редактировать</a>
+                <a href="#edit-info-personal" id="btn-edit-info-personal" class="company__edit-btn btn btn_add-param scrollto">Редактировать</a>
               </div>
               <div class="company-section">
                 <div class="company-section__title mb-25">Юридическая информация</div>
@@ -665,15 +651,13 @@
                     <img src="assets/img/passport.jpg" alt="" />
                   </div>
                 </div>
-                <a href="#edit-info-legal" id="btn-edit-info-legal"
-                  class="company__edit-btn btn btn_add-param scrollto">Редактировать</a>
+                <a href="#edit-info-legal" id="btn-edit-info-legal" class="company__edit-btn btn btn_add-param scrollto">Редактировать</a>
               </div>
             </div>
             <!------- photo ------->
             <div class="tab__content tab-content-js" data-tab="4">
               <h4 class="primary-title mb-20">Фотографии</h4>
-              <div class="card-company__section-sub-title">Загрузите не более 10 фотографии вашей компании. Размер одной
-                фотографии не должен превышать 5 MB.</div>
+              <div class="card-company__section-sub-title">Загрузите не более 10 фотографии вашей компании. Размер одной фотографии не должен превышать 5 MB.</div>
               <ul class="card-company__gallery-list card-company__gallery-download">
                 <li class="card-company__gallery-item">
                   <span class="delete-btn"></span>
@@ -705,8 +689,7 @@
                   </div>
                 </div>
                 <div class="col-8 col-lg-9">
-                  <div class="edit-company__logo-text">Загрузите логотип вашей компании или фотографию цеха снаружи.
-                    Размер изображение не должен превышать 2 MB.</div>
+                  <div class="edit-company__logo-text">Загрузите логотип вашей компании или фотографию цеха снаружи. Размер изображение не должен превышать 2 MB.</div>
                 </div>
               </div>
               <div class="form-group row align-items-center mb-15">
@@ -803,8 +786,7 @@
                   <div class="form-input__range-row d-flex">
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">с</span>
-                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from"
-                        value="11:00" />
+                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">
                         <img src="assets/img/icons/time.svg" alt="" />
@@ -812,8 +794,7 @@
                     </div>
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
-                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to"
-                        value="11:00" />
+                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">
                         <img src="assets/img/icons/time.svg" alt="" />
@@ -830,8 +811,7 @@
                   <div class="form-input__range-row d-flex">
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">с</span>
-                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from"
-                        value="11:00" />
+                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">
                         <img src="assets/img/icons/time.svg" alt="" />
@@ -839,8 +819,7 @@
                     </div>
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
-                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to"
-                        value="11:00" />
+                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">
                         <img src="assets/img/icons/time.svg" alt="" />
@@ -857,8 +836,7 @@
                   <div class="form-input__range-row d-flex">
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">с</span>
-                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from"
-                        value="11:00" />
+                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">
                         <img src="assets/img/icons/time.svg" alt="" />
@@ -866,8 +844,7 @@
                     </div>
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
-                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to"
-                        value="11:00" />
+                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">
                         <img src="assets/img/icons/time.svg" alt="" />
@@ -884,8 +861,7 @@
                   <div class="form-input__range-row d-flex">
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">с</span>
-                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from"
-                        value="11:00" />
+                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">
                         <img src="assets/img/icons/time.svg" alt="" />
@@ -893,8 +869,7 @@
                     </div>
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
-                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to"
-                        value="11:00" />
+                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">
                         <img src="assets/img/icons/time.svg" alt="" />
@@ -1054,8 +1029,7 @@
                   <div class="form-input__range-row d-flex">
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">с</span>
-                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from"
-                        value="11:00" />
+                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">
                         <img src="assets/img/icons/time.svg" alt="" />
@@ -1063,8 +1037,7 @@
                     </div>
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
-                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to"
-                        value="11:00" />
+                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">
                         <img src="assets/img/icons/time.svg" alt="" />
@@ -1081,8 +1054,7 @@
                   <div class="form-input__range-row d-flex">
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">с</span>
-                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from"
-                        value="11:00" />
+                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">
                         <img src="assets/img/icons/time.svg" alt="" />
@@ -1090,8 +1062,7 @@
                     </div>
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
-                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to"
-                        value="11:00" />
+                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">
                         <img src="assets/img/icons/time.svg" alt="" />
@@ -1108,8 +1079,7 @@
                   <div class="form-input__range-row d-flex">
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">с</span>
-                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from"
-                        value="11:00" />
+                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">
                         <img src="assets/img/icons/time.svg" alt="" />
@@ -1117,8 +1087,7 @@
                     </div>
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
-                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to"
-                        value="11:00" />
+                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">
                         <img src="assets/img/icons/time.svg" alt="" />
@@ -1135,8 +1104,7 @@
                   <div class="form-input__range-row d-flex">
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">с</span>
-                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from"
-                        value="11:00" />
+                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">
                         <img src="assets/img/icons/time.svg" alt="" />
@@ -1144,8 +1112,7 @@
                     </div>
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
-                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to"
-                        value="11:00" />
+                      <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">
                         <img src="assets/img/icons/time.svg" alt="" />
@@ -1310,8 +1277,7 @@
                   <label class="form-input__label">Фото документов</label>
                 </div>
                 <div class="col-lg-9">
-                  <div class="form-input__remark ml-auto" style="max-width: 100%">Загрузите фотографии документов.
-                    Размер одной фотографии не должен превышать 5 MB.</div>
+                  <div class="form-input__remark ml-auto" style="max-width: 100%">Загрузите фотографии документов. Размер одной фотографии не должен превышать 5 MB.</div>
                 </div>
               </div>
               <div class="form-group row align-items-center mb-15">
@@ -1346,8 +1312,7 @@
                   <div class="form-input__range-row d-flex">
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">от</span>
-                      <input class="form-input form-input__range-body" required type="number" value="0.1"
-                        maxlength="3" />
+                      <input class="form-input form-input__range-body" required type="number" value="0.1" maxlength="3" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">кг</div>
                     </div>
@@ -1396,8 +1361,7 @@
                   <div class="form-input__range-row d-flex">
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">от</span>
-                      <input class="form-input form-input__range-body" required type="number" value="0.1"
-                        maxlength="3" />
+                      <input class="form-input form-input__range-body" required type="number" value="0.1" maxlength="3" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">кг</div>
                     </div>
@@ -1451,15 +1415,13 @@
                   <div class="form-input__range-row d-flex">
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">от</span>
-                      <input class="form-input form-input__range-body" required type="number" value="100"
-                        maxlength="4" />
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">₽</div>
                     </div>
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
-                      <input class="form-input form-input__range-body" required type="number" value="100"
-                        maxlength="4" />
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">₽</div>
                     </div>
@@ -1479,15 +1441,13 @@
                   <div class="form-input__range-row d-flex">
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">от</span>
-                      <input class="form-input form-input__range-body" required type="number" value="100"
-                        maxlength="4" />
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">₽</div>
                     </div>
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
-                      <input class="form-input form-input__range-body" required type="number" value="100"
-                        maxlength="4" />
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">₽</div>
                     </div>
@@ -1535,15 +1495,13 @@
                   <div class="form-input__range-row d-flex">
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">от</span>
-                      <input class="form-input form-input__range-body" required type="number" value="100"
-                        maxlength="4" />
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">₽</div>
                     </div>
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
-                      <input class="form-input form-input__range-body" required type="number" value="100"
-                        maxlength="4" />
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">₽</div>
                     </div>
@@ -1574,15 +1532,13 @@
                   <div class="form-input__range-row d-flex">
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">от</span>
-                      <input class="form-input form-input__range-body" required type="number" value="100"
-                        maxlength="4" />
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">₽</div>
                     </div>
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
-                      <input class="form-input form-input__range-body" required type="number" value="100"
-                        maxlength="4" />
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">₽</div>
                     </div>
@@ -1613,15 +1569,13 @@
                   <div class="form-input__range-row d-flex">
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">от</span>
-                      <input class="form-input form-input__range-body" required type="number" value="100"
-                        maxlength="4" />
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">₽</div>
                     </div>
                     <div class="form-input__wrapp form-input__range">
                       <span class="form-input__label-text">до</span>
-                      <input class="form-input form-input__range-body" required type="number" value="100"
-                        maxlength="4" />
+                      <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
                       <div class="form-input__line"></div>
                       <div class="form-input__range-value">₽</div>
                     </div>
@@ -1643,6 +1597,23 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- popup  Delete branch -->
+    <div id="delete-branch-popup" class="delete-branch-popup popup-custom mfp-hide">
+      <div class="popup-body">
+        <div class="popup-title">Удалить филиал?</div>
+        <div class="popup-text">После удаления, вы не сможете восстановить филлиал.</div>
+        <div class="popup-btns d-flex justify-content-between">
+          <button class="btn btn_red popup-close-js notice-show-js">Удалить</button>
+          <button class="btn btn_reset-param popup-close-js">Отменить</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="notice-popup notice-popup-js hidden">
+      Филиал удален
+      <div class="notice-popup__close notice-close-js"></div>
     </div>
   </div>
 </section>
