@@ -469,51 +469,28 @@
             <!------- address ------->
             <div id="address-tab-content" class="tab__content tab-content-js" data-tab="3">
               <div class="card-company__section map">
-                <div class="map-body"></div>
+                <div id="yandex-map" class="map-body" style="width: 100%; height: 440px"></div>
               </div>
               <div class="card-company__section">
                 <h4 class="card-company__section-title _mob">Адреса</h4>
-                <ul class="map-address__list">
-                  <li class="map-address__item">
+                <ul class="map-address__list" id="map-address">
+                  <li class="map-address__item" data-coord-x="55.191700569517366" data-coord-y="61.430302499999904">
                     <div class="map-address__item-num">1</div>
                     <div class="map-address__item-text">
                       <div class="map-address__item-title">Комсомольск-на-Амуре</div>
                       <div class="map-address__item-sub-title">ул. Сталеваров-Строителей, 27б, к1, с3</div>
                     </div>
-                    <a href="#" class="map-address__item-link link link-location">Показать на карте</a>
+                    <a href="https://yandex.ru/maps/?text=г. Челябинск, ул. Механическая 101/2&amp;roistat_visit=115264" class="map-address__item-link link link-location">Показать на карте</a>
                   </li>
-                  <li class="map-address__item">
+                  <li class="map-address__item" data-coord-x="55.17811556954169" data-coord-y="61.344208">
                     <div class="map-address__item-num">2</div>
                     <div class="map-address__item-text">
-                      <div class="map-address__item-title">Комсомольск-на-Амуре</div>
+                      <div class="map-address__item-title">Комсомольск-на-Амуре #2</div>
                       <div class="map-address__item-sub-title">ул. Сталеваров-Строителей, 27б, к1, с3</div>
                     </div>
-                    <a href="#" class="map-address__item-link link link-location">Показать на карте</a>
+                    <a href="https://yandex.ru/maps/?text=г. Челябинск, ул. Механическая 101/2&amp;roistat_visit=115264" class="map-address__item-link link link-location">Показать на карте</a>
                   </li>
-                  <li class="map-address__item">
-                    <div class="map-address__item-num">3</div>
-                    <div class="map-address__item-text">
-                      <div class="map-address__item-title">Комсомольск-на-Амуре</div>
-                      <div class="map-address__item-sub-title">ул. Сталеваров-Строителей, 27б, к1, с3</div>
-                    </div>
-                    <a href="#" class="map-address__item-link link link-location">Показать на карте</a>
-                  </li>
-                  <li class="map-address__item">
-                    <div class="map-address__item-num">4</div>
-                    <div class="map-address__item-text">
-                      <div class="map-address__item-title">Комсомольск-на-Амуре</div>
-                      <div class="map-address__item-sub-title">ул. Сталеваров-Строителей, 27б, к1, с3</div>
-                    </div>
-                    <a href="#" class="map-address__item-link link link-location">Показать на карте</a>
-                  </li>
-                  <li class="map-address__item">
-                    <div class="map-address__item-num">5</div>
-                    <div class="map-address__item-text">
-                      <div class="map-address__item-title">Комсомольск-на-Амуре</div>
-                      <div class="map-address__item-sub-title">ул. Сталеваров-Строителей, 27б, к1, с3</div>
-                    </div>
-                    <a href="#" class="map-address__item-link link link-location">Показать на карте</a>
-                  </li>
+                  
                 </ul>
               </div>
             </div>
@@ -523,14 +500,14 @@
             <button class="btn-come__back come-back-js">Назад</button>
             <div class="new-reviews">
               <h4 class="card-company__section-title">Новый отзыв</h4>
-              <form action="#" class="new-reviews__form form">
+              <form action="#" class="new-reviews__form form" id="review-form">
                 <div class="form-group row">
                   <div class="col-lg-3">
                     <label class="form-input__label">Как вас зовут?</label>
                   </div>
                   <div class="col-lg-9">
                     <div class="form-input__wrapp">
-                      <input class="form-input" placeholder="Укажите ваше имя" />
+                      <input class="form-input mask-string" name="name" type="text" placeholder="Укажите ваше имя" required/>
                       <div class="form-input__line"></div>
                       <span class="form-input__error">Не верно указано имя</span>
                     </div>
@@ -544,8 +521,8 @@
                     >
                   </div>
                   <div class="col-lg-9">
-                    <div class="form-input__wrapp form-input-phone done">
-                      <input class="form-input mask-phone" placeholder="+7 999 999-99-99" maxlength="16" />
+                    <div class="form-input__wrapp form-input-phone">
+                      <input class="form-input mask-phone" name="phone" type="text"  placeholder="+7 999 999-99-99" maxlength="16" required/>
                       <div class="form-input__line"></div>
                       <span class="form-input__error">Не верно указан номер</span>
                     </div>
@@ -578,12 +555,14 @@
                   </div>
                   <div class="col-lg-9">
                     <div class="form-input__wrapp">
-                      <textarea name="" class="form-input" cols="30" rows="5"> </textarea>
+                      <textarea name="comment" class="form-input" cols="30" rows="5"> </textarea>
                     </div>
                   </div>
                 </div>
-                <div class="network-error">Не удалось отправить отзыв. Произошла ошибка на сервере. Обновите страницу или попробуйте отправить отзыв позже.</div>
-                <a href="#card-company-content" class="form-submit btn btn_yellow reviews-finish-js scrollto">оставить отзыв</a>
+                <!-- Сообщение об ошибке сервера -->
+                <div class="network-error" style="display: none;">Не удалось отправить отзыв. Произошла ошибка на сервере. Обновите страницу или попробуйте отправить отзыв позже.</div>
+                
+                <button type="submit" class="form-submit btn btn_yellow reviews-finish-js">оставить отзыв</button>
                 <label class="custom-checkbox">
                   <input checked="" class="d-none" type="checkbox" />
                   <span class="custom-checkbox__point"></span>Я согласен с
@@ -605,5 +584,10 @@
     </div>
   </div>
 </section>
+
+
+<!-- Maps -->
+<script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+<script defer src="assets/js/map.js"></script>
 
 <?php include("footer.php"); ?>

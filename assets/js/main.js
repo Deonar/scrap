@@ -96,9 +96,14 @@ jQuery(document).ready(function ($) {
     $('.thanks__for-reviews__wrapper').removeClass('active');
     $('.edit-company__wrapp').addClass('hidden');
   });
-  //=============== reviews-finish
-  $('.reviews-finish-js').on('click', function (e) {
+
+  //=============== Reviews-submit
+  $('#review-form').on('submit', function (e) {
+    e.preventDefault();
     $('.new-reviews__wrapper').removeClass('active');
+    $('html, body').animate({
+      scrollTop: $('#card-company-content').offset().top - 50,
+    });
     $('.thanks__for-reviews__wrapper').addClass('active');
   });
 
@@ -147,12 +152,14 @@ jQuery(document).ready(function ($) {
     $('.tab-content-js').hide();
     $('#reviews-tab-content').show();
   }
+
   function showAddressContent() {
     $('.tab-item-js').removeClass('active');
     $('#address-tab').addClass('active');
     $('.tab-content-js').hide();
     $('#address-tab-content').show();
   }
+
   function showPricesContent() {
     $('.tab-item-js').removeClass('active');
     $('#prices-tab').addClass('active');
@@ -194,8 +201,8 @@ jQuery(document).ready(function ($) {
 
   $('.mask-car-region').mask('999');
 
-  $('.mask-phone').on('blur input', function () {
-    console.log($(this).val());
+  $('.mask-phone').on('blur', function () {
+
     if ($(this).val() == '+7 8') {
       $(this).val('+7 ');
     }
@@ -206,19 +213,29 @@ jQuery(document).ready(function ($) {
       $(this).closest('.form-input__wrapp').addClass('error').removeClass('done');
     }
   });
+
+  $('.mask-string').on('input', function (e) {
+    withoutCyr($(this));
+  });
+
+  function withoutCyr(input) {
+    var value = input.val();
+    var re = /1|2|3|4|5|6|7|8|9|0/gi;
+    if (re.test(value)) {
+      value = value.replace(re, '');
+      input.val(value);
+    }
+  }
   //=================== scroll to page
   $('.scrollto').on('click', function () {
     let href = $(this).attr('href');
 
-    $('html, body').animate(
-      {
-        scrollTop: $(href).offset().top - 100,
-      },
-      {
-        duration: 600, // по умолчанию «400»
-        easing: 'linear', // по умолчанию «swing»
-      }
-    );
+    $('html, body').animate({
+      scrollTop: $(href).offset().top - 100,
+    }, {
+      duration: 600, // по умолчанию «400»
+      easing: 'linear', // по умолчанию «swing»
+    });
     if ($(window).width() < 768) {
       $('html, body').animate({
         scrollTop: $(href).offset().top - 50,
@@ -349,13 +366,15 @@ jQuery(document).ready(function ($) {
     theme: 'custom',
   });
 
+
+
+
   //Demonstration js
   $('#param-reset').on('click', function () {
     $('#param-form input:checkbox').removeAttr('checked');
   });
 
   $('#param-add').on('click', function () {
-    // $('#param-form').serializeArray();
 
     $('.tag-list').show();
     $('.search-result').show();

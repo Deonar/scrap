@@ -769,7 +769,7 @@
   .map {
     margin: 0;
     &-body {
-      height: 0;
+      display: none;
     }
     &-address__item {
       flex-direction: column;
