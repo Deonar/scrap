@@ -18,6 +18,10 @@ jQuery(document).ready(function ($) {
   //======================== POPUPS
   $('.popup').magnificPopup({});
 
+  $('.popup-close-js').on('click', function () {
+    $.magnificPopup.close();
+  });
+
   $('.popup-param').magnificPopup({
     removalDelay: 500, //delay removal by X to allow out-animation
     callbacks: {
@@ -36,6 +40,14 @@ jQuery(document).ready(function ($) {
       navigateByImgClick: true,
       preload: [0, 1], // Will preload 0 - before current, and 1 after the current image
     },
+  });
+
+  // notice-popup-hide and show
+  $('.notice-show-js').on('click', function () {
+    $('.notice-popup-js').removeClass('hidden');
+  });
+  $('.notice-close-js').on('click', function () {
+    $('.notice-popup-js').addClass('hidden');
   });
 
   //====== registration show stage

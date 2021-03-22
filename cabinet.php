@@ -37,11 +37,10 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-8 page-content">
-        <div id="card-company-content" class=" cabinet__content">
+        <div id="card-company-content" class="cabinet__content">
           <div class="rating-top">
             <h2 class="rating-top__title page-title">Выведи компанию в ТОП!</h2>
-            <div class="rating-top__text">Выделение одной компании и всех филиалов в одной категории агрегатора для
-              увеличения количества клиентов!</div>
+            <div class="rating-top__text">Выделение одной компании и всех филиалов в одной категории агрегатора для увеличения количества клиентов!</div>
             <a href="#" class="rating-top__btn btn btn_blue">Вывести в топ за 990 ₽/мес</a>
           </div>
           <div class="main-tab tab tab-js">
@@ -231,7 +230,7 @@
                   <div class="edit-company__btns d-flex justify-content-between mt-10">
                     <a href="#edit-info-allcompany" id="btn-edit-info-allcompany" class="btn btn_reset-param edit-info-company-js scrollto">Редактировать информацию</a>
                     <a href="#edit-info-material" id="btn-edit-info-material" class="btn btn_reset-param ml-10 mr-auto scrollto">Редактирование цен</a>
-                    <a href="#" id="" class="btn btn_black btn_red scrollto">Удалить</a>
+                    <a href="#delete-branch-popup" class="btn btn_black btn_red scrollto popup">Удалить</a>
                   </div>
                 </div>
                 <button class="company__btn-more btn btn_add-param button-more-js">Подробнее</button>
@@ -390,7 +389,7 @@
                   <div class="edit-company__btns d-flex justify-content-between mt-10">
                     <a href="#edit-info-filialcompany" id="btn-edit-info-filialcompany" class="btn btn_reset-param scrollto">Редактировать информацию</a>
                     <a href="#edit-info-appliances" id="btn-edit-info-appliances" class="btn btn_reset-param ml-10 mr-auto scrollto">Редактирование цен</a>
-                    <a href="#" id="" class="btn btn_black btn_red scrollto">Удалить</a>
+                    <a href="#delete-branch-popup" class="btn btn_black btn_red scrollto popup">Удалить</a>
                   </div>
                 </div>
                 <button class="company__btn-more btn btn_add-param button-more-js">Подробнее</button>
@@ -401,7 +400,6 @@
               <div class="card-company__section">
                 <h4 class="primary-title mb-20">Отзывы</h4>
                 <ul class="card-company__reviews-list reviews-list more-list-js">
-
                   <li class="reviews-item more-item-js">
                     <div class="reviews-item__top">
                       <div class="reviews-name">Игорь Тальков</div>
@@ -427,8 +425,7 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
-                        прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -456,8 +453,7 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
-                        прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -485,8 +481,7 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
-                        прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -514,8 +509,7 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
-                        прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -543,8 +537,7 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
-                        прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -572,8 +565,7 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
-                        прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <button id="btn-more" class="reviews__btn-more btn btn_gray">Показать ещё 5 отзывов</button>
@@ -637,8 +629,7 @@
             <!------- photo ------->
             <div class="tab__content tab-content-js" data-tab="4">
               <h4 class="primary-title mb-20">Фотографии</h4>
-              <div class="card-company__section-sub-title">Загрузите не более 10 фотографии вашей компании. Размер одной
-                фотографии не должен превышать 5 MB.</div>
+              <div class="card-company__section-sub-title">Загрузите не более 10 фотографии вашей компании. Размер одной фотографии не должен превышать 5 MB.</div>
               <ul class="card-company__gallery-list card-company__gallery-download">
                 <li class="card-company__gallery-item">
                   <span class="delete-btn"></span>
@@ -1149,8 +1140,7 @@
                   <label class="form-input__label">Фото документов</label>
                 </div>
                 <div class="col-lg-9">
-                  <div class="form-input__remark ml-auto" style="max-width: 100%">Загрузите фотографии документов.
-                    Размер одной фотографии не должен превышать 5 MB.</div>
+                  <div class="form-input__remark ml-auto" style="max-width: 100%">Загрузите фотографии документов. Размер одной фотографии не должен превышать 5 MB.</div>
                 </div>
               </div>
               <div class="form-group row align-items-center mb-15">
@@ -1474,6 +1464,23 @@
         </div>
 
       </div>
+    </div>
+
+    <!-- popup  Delete branch -->
+    <div id="delete-branch-popup" class="delete-branch-popup popup-custom mfp-hide">
+      <div class="popup-body">
+        <div class="popup-title">Удалить филиал?</div>
+        <div class="popup-text">После удаления, вы не сможете восстановить филлиал.</div>
+        <div class="popup-btns d-flex justify-content-between">
+          <button class="btn btn_red popup-close-js notice-show-js">Удалить</button>
+          <button class="btn btn_reset-param popup-close-js">Отменить</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="notice-popup notice-popup-js hidden">
+      Филиал удален
+      <div class="notice-popup__close notice-close-js"></div>
     </div>
   </div>
 </section>
