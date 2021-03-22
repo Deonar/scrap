@@ -20,6 +20,12 @@
     </div>
 </footer>
 
+<!-- Notice-popup -->
+<div class="notice-popup notice-popup-js hidden">
+  Филиал удален
+  <div class="notice-popup__close notice-close-js"></div>
+</div>
+
 <!-- Popup show nubmer -->
 <div id="popup-telephone" class="popup-telephone white-popup mfp-hide">
     <div class="popup__body">
@@ -77,7 +83,7 @@
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 
-<script src="assets/js/main.js?v3"></script>
+<script src="assets/js/main.js?v5"></script>
 </body>
 
 </html>

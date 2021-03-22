@@ -1477,11 +1477,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </section>
-
-<div class="notice-popup notice-popup-js hidden">
-  Филиал удален
-  <div class="notice-popup__close notice-close-js"></div>
-</div>
 <?php include("footer.php"); ?>
