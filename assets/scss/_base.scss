@@ -31,6 +31,9 @@ body {
   color: $text-green;
   text-decoration: underline;
 }
+.hidden{
+  display: none;
+}
 .h-100p {
   height: 100%;
 }
@@ -837,6 +840,7 @@ body {
 
 .passport-download {
   cursor: pointer;
+  display: inline-block;
   width: 180px;
   height: 110px;
   min-width: 180px;
@@ -858,6 +862,9 @@ body {
     transform: translate(-50%, -50%);
     object-fit: cover;
     z-index: 6;
+  }
+  input[type='file']{
+    display: none;
   }
 }
 .network-error {
@@ -949,6 +956,9 @@ body {
     .option {
       padding: 12px;
     }
+  }
+  &.multi .selectize-input.has-items{
+    padding: 18px 12px;
   }
 }
 .custom-select-search.selectize-control {

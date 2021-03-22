@@ -7,8 +7,8 @@
     <div class="row">
       <div class="col-sm-12 col-md-8">
         <div class="page-content registration__content">
-          <ul class="registration__stage-list">
-            <li id="stage-1" class="registration__stage-item">
+          <div class="registration__stage-list" id="forms-wrapper">
+            <form action="#" id="stage-1" class="registration__stage-item hidden">
               <h4 class="primary-title mb-20">Основная информация</h4>
               <div class="company-section edit-company__section">
                 <div class="company-section__title mb-15">Личная информация <span>Заполните все поля</span></div>
@@ -20,7 +20,7 @@
                     </div>
                     <div class="col-sm-9 col-lg-8">
                       <div class="form-input__wrapp">
-                        <input class="form-input" placeholder="Укажите ваши ФИО" />
+                        <input class="form-input mask-string" name="name" type="text" placeholder="Укажите ваши ФИО" required />
                         <div class="form-input__line"></div>
                       </div>
                     </div>
@@ -31,7 +31,7 @@
                     </div>
                     <div class="col-sm-9 col-lg-8">
                       <div class="form-input__wrapp form-input-phone">
-                        <input class="form-input mask-phone" placeholder="+7 999 999-99-99" maxlength="16" />
+                        <input class="form-input mask-phone" name="phone" placeholder="+7 999 999-99-99" maxlength="16" required />
                         <div class="form-input__line"></div>
                         <span class="form-input__error">Некорректный номер</span>
                       </div>
@@ -49,7 +49,7 @@
                     </div>
                     <div class="col-sm-9 col-lg-9">
                       <div class="form-input__wrapp">
-                        <input class="form-input" placeholder="Например, ООО АвтоМет" />
+                        <input class="form-input" placeholder="Например, ООО АвтоМет" name="name-company" />
                         <div class="form-input__line"></div>
                       </div>
                     </div>
@@ -73,7 +73,7 @@
                     </div>
                     <div class="col-lg-9">
                       <div class="form-input__wrapp">
-                        <input class="form-input" placeholder="1234422144" />
+                        <input class="form-input mask-number" placeholder="1234422144" />
                         <div class="form-input__line"></div>
                       </div>
                     </div>
@@ -84,7 +84,7 @@
                     </div>
                     <div class="col-lg-9">
                       <div class="form-input__wrapp">
-                        <input class="form-input" placeholder="1234422144" />
+                        <input class="form-input mask-number" placeholder="1234422144" />
                         <div class="form-input__line"></div>
                       </div>
                     </div>
@@ -95,7 +95,7 @@
                     </div>
                     <div class="col-lg-9">
                       <div class="form-input__wrapp">
-                        <input class="form-input" placeholder="1234422144" />
+                        <input class="form-input mask-number" placeholder="1234422144" />
                         <div class="form-input__line"></div>
                       </div>
                     </div>
@@ -113,27 +113,29 @@
                       <label class="form-input__label">Паспорт</label>
                     </div>
                     <div class="col-lg-9">
-                      <div class="passport-download">
+                      <label class="passport-download download-file">
+                        <input type="file" class="hidden" multiple="">
                         <!-- <img src="assets/img/passport.jpg" alt=""> -->
-                      </div>
+                      </label>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="edit-company__btns d-flex justify-content-between">
-                <a href="#stage-2" id="to-stage-2" class="btn btn_black ml-auto scrollto">Сохранить и продолжить</a>
+                <button type="submit" class="btn btn_black ml-auto">Сохранить и продолжить</button>
               </div>
-            </li>
-            <li id="stage-2" class="registration__stage-item hidden">
+            </form>
+            <form action="#" id="stage-2" class="registration__stage-item ">
               <h4 class="primary-title mb-20">Компания</h4>
               <div class="company-section edit-company__section">
                 <div class="company-section__title mb-25">Информация о компании <span>Заполните все поля</span></div>
                 <div class="edit-company__form">
                   <div class="edit-company__logo row align-items-center mb-20">
                     <div class="col-4 col-lg-3">
-                      <div class="card-company__logo _img-edit">
+                      <label class="card-company__logo _img-edit">
+                        <input type="file" class="hidden" multiple="">
                         <!-- <img src="assets/img/icons/arrow-round.svg" class="img-plug" alt="" /> -->
-                      </div>
+                      </label>
                     </div>
                     <div class="col-8 col-lg-9">
                       <div class="edit-company__logo-text">Загрузите логотип вашей компании или фотографию цеха снаружи. Размер изображение не должен превышать 2 MB.</div>
@@ -141,14 +143,35 @@
                   </div>
                   <div class="form-group row align-items-center mb-15">
                     <div class="col-lg-3">
+                      <label class="form-input__label">Категории<br> сбыта</label>
+                    </div>
+                    <div class="col-lg-9">
+                      <select class="custom-select custom-select-tag_js" multiple>
+                        <option value="">Выберите из списка</option>
+                        <option value="metal">Каталитическое сырьё</option>
+                        <option value="appliances">Бытовая техника</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row align-items-center mb-15">
+                    <div class="col-lg-3">
                       <label class="form-input__label">Город</label>
                     </div>
                     <div class="col-lg-9">
-                      <div class="form-input__wrapp">
-                        <input class="form-input" placeholder="Укажите или выберите из списка" />
-                        <div class="form-input__line"></div>
-                        <span class="form-input__error">Неверный город</span>
-                      </div>
+                      <select class="custom-select custom-select-search custom-search-select_js input_no-line" name="city">
+                        <option value="" disabled selected hidden>Укажите или выберите из списка</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                        <option value="Челябинск">Челябинск</option>
+                        <option value="Екатеринбург">Екатеринбург</option>
+                        <option value="Краснодар">Краснодар</option>
+                        <option value="Новосибирск">Новосибирск</option>
+                        <option value="Белгород">Белгород</option>
+                        <option value="Казань">Казань</option>
+                        <option value="Татарстан">Татарстан</option>
+                        <option value="Самара">Самара</option>
+                        <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+                      </select>
                     </div>
                   </div>
                   <div class="form-group row align-items-center mb-15">
@@ -182,7 +205,7 @@
                     <div class="col-lg-9">
                       <div class="form-input__remark-row">
                         <div class="form-input__wrapp form-input-phone">
-                          <input class="form-input mask-phone" placeholder="+7 999 999-99-99" maxlength="16" />
+                          <input class="form-input mask-phone" placeholder="+7 999 999-99-99" maxlength="16" required/>
                           <div class="form-input__line"></div>
                           <span class="form-input__error">Неверная улица</span>
                         </div>
@@ -190,6 +213,7 @@
                       </div>
                     </div>
                   </div>
+                  
                   <div class="form-group row align-items-center mb-15">
                     <div class="col-lg-3">
                       <label class="form-input__label">Режим работы</label>
@@ -197,12 +221,12 @@
                     <div class="col-lg-9">
                       <div class="form-input__wrapp">
                         <ul id="working-btns" class="working-btns">
-                          <li class="working-btn"><span>пн</span></li>
+                          <li class="working-btn active"><span>пн</span></li>
                           <li class="working-btn active"><span>вт</span></li>
                           <li class="working-btn active"><span>ср</span></li>
                           <li class="working-btn active"><span>чт</span></li>
                           <li class="working-btn active"><span>пт</span></li>
-                          <li class="working-btn active"><span>сб</span></li>
+                          <li class="working-btn"><span>сб</span></li>
                           <li class="working-btn"><span>вс</span></li>
                         </ul>
                       </div>
@@ -213,118 +237,222 @@
                     <div class="col-lg-9">
                       <div class="custom-checkbox__wrapp d-flex">
                         <label class="custom-checkbox">
-                          <input checked="" class="d-none" type="checkbox" />
+                          <input class="d-none" type="checkbox" id="working-everyday-checkbox" />
                           <span class="custom-checkbox__point"></span>
                           Ежедневно
                         </label>
                         <label class="custom-checkbox">
-                          <input checked="" class="d-none" type="checkbox" />
+                          <input class="d-none" type="checkbox" id="working-sametime-checkbox"/>
                           <span class="custom-checkbox__point"></span>
                           В одно и то же время
                         </label>
                       </div>
                     </div>
                   </div>
-                  <div class="form-group form-group__range row align-items-center mb-15">
-                    <div class="col-2 col-lg-3">
-                      <label class="form-input__label">ПН</label>
-                    </div>
-                    <div class="col-10 col-lg-9">
-                      <div class="form-input__range-row d-flex">
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">с</span>
-                          <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">
-                            <img src="assets/img/icons/time.svg" alt="" />
+                  <div id="working-day" class="working-day">
+                    <div class="working-day__item form-group form-group__range row align-items-center mb-15">
+                      <div class="col-2 col-lg-3">
+                        <label class="form-input__label">ПН</label>
+                      </div>
+                      <div class="col-10 col-lg-9">
+                        <div class="form-input__range-row d-flex">
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">с</span>
+                            <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">
+                              <img src="assets/img/icons/time.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">до</span>
+                            <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">
+                              <img src="assets/img/icons/time.svg" alt="" />
+                            </div>
                           </div>
                         </div>
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">до</span>
-                          <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">
-                            <img src="assets/img/icons/time.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="working-day__item form-group form-group__range row align-items-center mb-15">
+                      <div class="col-2 col-lg-3">
+                        <label class="form-input__label">ВТ</label>
+                      </div>
+                      <div class="col-10 col-lg-9">
+                        <div class="form-input__range-row d-flex">
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">с</span>
+                            <input class="form-input" required type="time" min="00:00" max="24:00" name="tuesday_from" value="11:00" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">
+                              <img src="assets/img/icons/time.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">до</span>
+                            <input class="form-input" required type="time" min="00:00" max="24:00" name="tuesday_to" value="11:00" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">
+                              <img src="assets/img/icons/time.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="working-day__item form-group form-group__range row align-items-center mb-15">
+                      <div class="col-2 col-lg-3">
+                        <label class="form-input__label">СР</label>
+                      </div>
+                      <div class="col-10 col-lg-9">
+                        <div class="form-input__range-row d-flex">
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">с</span>
+                            <input class="form-input" required type="time" min="00:00" max="24:00" name="wednesday_from" value="11:00" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">
+                              <img src="assets/img/icons/time.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">до</span>
+                            <input class="form-input" required type="time" min="00:00" max="24:00" name="wednesday_to" value="11:00" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">
+                              <img src="assets/img/icons/time.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="working-day__item form-group form-group__range row align-items-center mb-15">
+                      <div class="col-2 col-lg-3">
+                        <label class="form-input__label">ЧТ</label>
+                      </div>
+                      <div class="col-10 col-lg-9">
+                        <div class="form-input__range-row d-flex">
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">с</span>
+                            <input class="form-input" required type="time" min="00:00" max="24:00" name="thursday_from" value="11:00" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">
+                              <img src="assets/img/icons/time.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">до</span>
+                            <input class="form-input" required type="time" min="00:00" max="24:00" name="thursday_to" value="11:00" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">
+                              <img src="assets/img/icons/time.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="working-day__item form-group form-group__range row align-items-center mb-15">
+                      <div class="col-2 col-lg-3">
+                        <label class="form-input__label">ПТ</label>
+                      </div>
+                      <div class="col-10 col-lg-9">
+                        <div class="form-input__range-row d-flex">
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">с</span>
+                            <input class="form-input" required type="time" min="00:00" max="24:00" name="friday_from" value="11:00" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">
+                              <img src="assets/img/icons/time.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">до</span>
+                            <input class="form-input" required type="time" min="00:00" max="24:00" name="friday_to" value="11:00" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">
+                              <img src="assets/img/icons/time.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="working-day__item form-group form-group__range row align-items-center mb-15 hidden">
+                      <div class="col-2 col-lg-3">
+                        <label class="form-input__label">СБ</label>
+                      </div>
+                      <div class="col-10 col-lg-9">
+                        <div class="form-input__range-row d-flex">
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">с</span>
+                            <input class="form-input" required type="time" min="00:00" max="24:00" name="saturday_from" value="11:00" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">
+                              <img src="assets/img/icons/time.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">до</span>
+                            <input class="form-input" required type="time" min="00:00" max="24:00" name="saturday_to" value="11:00" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">
+                              <img src="assets/img/icons/time.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="working-day__item form-group form-group__range row align-items-center mb-15 hidden">
+                      <div class="col-2 col-lg-3">
+                        <label class="form-input__label">ВС</label>
+                      </div>
+                      <div class="col-10 col-lg-9">
+                        <div class="form-input__range-row d-flex">
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">с</span>
+                            <input class="form-input" required type="time" min="00:00" max="24:00" name="sunday_from" value="11:00" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">
+                              <img src="assets/img/icons/time.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">до</span>
+                            <input class="form-input" required type="time" min="00:00" max="24:00" name="sunday_to" value="11:00" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">
+                              <img src="assets/img/icons/time.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Everyday -->
+                    <div class="form-group form-group__range row align-items-center mb-15 hidden" id="working-sametime">
+                      <div class="col-2 col-lg-3">
+                        <label class="form-input__label">ПН-ВС</label>
+                      </div>
+                      <div class="col-10 col-lg-9">
+                        <div class="form-input__range-row d-flex">
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">с</span>
+                            <input class="form-input" required type="time" min="00:00" max="24:00" name="allday_from" value="11:00" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">
+                              <img src="assets/img/icons/time.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">до</span>
+                            <input class="form-input" required type="time" min="00:00" max="24:00" name="allday_to" value="11:00" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">
+                              <img src="assets/img/icons/time.svg" alt="" />
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form-group form-group__range row align-items-center mb-15">
-                    <div class="col-2 col-lg-3">
-                      <label class="form-input__label">ВТ</label>
-                    </div>
-                    <div class="col-10 col-lg-9">
-                      <div class="form-input__range-row d-flex">
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">с</span>
-                          <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">
-                            <img src="assets/img/icons/time.svg" alt="" />
-                          </div>
-                        </div>
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">до</span>
-                          <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">
-                            <img src="assets/img/icons/time.svg" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group form-group__range row align-items-center mb-15">
-                    <div class="col-2 col-lg-3">
-                      <label class="form-input__label">СР</label>
-                    </div>
-                    <div class="col-10 col-lg-9">
-                      <div class="form-input__range-row d-flex">
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">с</span>
-                          <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">
-                            <img src="assets/img/icons/time.svg" alt="" />
-                          </div>
-                        </div>
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">до</span>
-                          <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">
-                            <img src="assets/img/icons/time.svg" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group form-group__range row align-items-center mb-15">
-                    <div class="col-2 col-lg-3">
-                      <label class="form-input__label">ЧТ</label>
-                    </div>
-                    <div class="col-10 col-lg-9">
-                      <div class="form-input__range-row d-flex">
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">с</span>
-                          <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_from" value="11:00" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">
-                            <img src="assets/img/icons/time.svg" alt="" />
-                          </div>
-                        </div>
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">до</span>
-                          <input class="form-input" required type="time" min="00:00" max="24:00" name="monday_to" value="11:00" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">
-                            <img src="assets/img/icons/time.svg" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+
                   <div class="form-group row mb-15">
                     <div class="col-lg-3">
                       <label class="form-input__label">Дополнительный сервис</label>
@@ -373,10 +501,11 @@
               </div>
               <div class="edit-company__btns d-flex justify-content-between">
                 <a href="#stage-1" id="back-stage-1" class="btn btn_reset-param scrollto">Назад</a>
-                <a href="#stage-3" id="to-stage-3" class="btn btn_black scrollto">Сохранить и продолжить</a>
+                <button type="submit" id="to-stage-3" class="btn btn_black">Сохранить и продолжить</button>
               </div>
-            </li>
-            <li id="stage-3" class="registration__stage-item hidden">
+            </form>
+
+            <form action="#" id="stage-3" class="registration__stage-item hidden">
               <h4 class="primary-title mb-10">Виды и цены каталитического сырья</h4>
               <div class="page-sub-title mb-25">Заполните данные профиля, чтобы воспользоваться всеми возможностями площадки.</div>
               <div class="company-section edit-company__section">
@@ -391,13 +520,13 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body" required type="number" value="0.1" maxlength="3" />
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="0.1"  min="0" step="0.1" max="1000" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">кг</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body" required type="number" value="1" maxlength="3" />
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1"  min="0"  step="0.1"  max="1000"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">кг</div>
                         </div>
@@ -412,19 +541,19 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Pt</span>
-                          <input class="form-input form-input__range-body" required type="number" value="1" maxlength="3" />
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1"  min="0"  step="0.1"  max="100"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Pd</span>
-                          <input class="form-input form-input__range-body" required type="number" value="1" maxlength="3" />
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1"  min="0"  step="0.1"  max="100"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Rh</span>
-                          <input class="form-input form-input__range-body" required type="number" value="1" maxlength="3" />
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1"  min="0"  step="0.1"  max="100"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
@@ -440,13 +569,13 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body" required type="number" value="0.1" maxlength="3" />
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="0.1"  min="0"  step="0.1"  max="100"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">кг</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">до</span>
-                          <input class="form-input form-input__range-body" required type="number" value="1" maxlength="3" />
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1"  min="0"  step="0.1"  max="100"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">кг</div>
                         </div>
@@ -461,19 +590,19 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Pt</span>
-                          <input class="form-input form-input__range-body" required type="number" value="1" maxlength="3" />
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1"  min="0"  step="0.1"  max="100"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Pd</span>
-                          <input class="form-input form-input__range-body" required type="number" value="1" maxlength="3" />
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1"  min="0"  step="0.1"  max="100"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Rh</span>
-                          <input class="form-input form-input__range-body" required type="number" value="1" maxlength="3" />
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1"  min="0"  step="0.1"  max="100"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
@@ -494,13 +623,13 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="100" min="0"  step="0.1"  max="100000"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="100"  min="0"  step="0.1"  max="1000000"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
@@ -520,13 +649,13 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="100"  min="0"  step="0.1"  max="1000000"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="100"  min="0"  step="0.1"  max="1000000"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
@@ -542,10 +671,11 @@
                   <span class="custom-checkbox__point"></span>
                   Применить цены ко всем филиалам
                 </label>
-                <a href="#stage-finish" id="to-stage-finish" class="btn btn_black ml-auto scrollto">Сохранить и продолжить</a>
+                <button type="submit" id="to-stage-finish" class="btn btn_black ml-auto">Сохранить и продолжить</button>
               </div>
-            </li>
-            <li id="stage-finish" class="registration__stage-item hidden">
+            </form>
+
+            <form action="#" id="stage-finish" class="registration__stage-item hidden">
               <h4 class="primary-title mb-10">Виды и цены сырья бытовой техники</h4>
               <div class="page-sub-title mb-25">Необходимо указать расценки хотя бы для одного вида сырья</div>
               <div class="company-section edit-company__section">
@@ -573,13 +703,13 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                          <input class="form-input form-input__range-body" type="number" placeholder="100" min="0"  step="0.1"  max="1000000"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                          <input class="form-input form-input__range-body" type="number" placeholder="100" min="0"  step="0.1"  max="1000000"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
@@ -610,13 +740,13 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                          <input class="form-input form-input__range-body" type="number" placeholder="100" min="0"  step="0.1"  max="1000000"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                          <input class="form-input form-input__range-body" type="number" placeholder="100" min="0"  step="0.1"  max="1000000"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
@@ -647,13 +777,13 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                          <input class="form-input form-input__range-body" type="number" value="100" placeholder="100" min="0"  step="0.1"  max="1000000"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body" required type="number" value="100" maxlength="4" />
+                          <input class="form-input form-input__range-body" type="number" placeholder="100" min="0"  step="0.1"  max="10000000"/>
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
@@ -670,10 +800,11 @@
                   <span class="custom-checkbox__point"></span>
                   Применить цены ко всем филиалам
                 </label>
-                <a href="#" id="finish-registration" class="btn btn_green ml-auto">Завершить регистрацию</a>
+                <button type="submit" id="finish-registration" class="btn btn_green ml-auto">Завершить регистрацию</button>
               </div>
-            </li>
-          </ul>
+            </form>
+
+          </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-4 sidebar__registration">

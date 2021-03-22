@@ -49,7 +49,6 @@
                                 <option value="Land Rover">Land Rover</option>
                                 <option value="Lada">Lada</option>
                                 <option value="Audi">Audi</option>
-
                             </select>
                         </div>
                         <div class="search-input__item">
@@ -1122,7 +1121,7 @@
                 <div class="search-wrapper">
                     <div class="search-input__item">
                         <div class="search-input__label">
-                            Тип поиска
+                            Тип сырья
                         </div>
                         <select class="custom-select custom-select_js" id="select-metal_search">
                             <option value="metal">Металлический материал</option>

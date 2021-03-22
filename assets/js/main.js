@@ -43,25 +43,39 @@ jQuery(document).ready(function ($) {
   function showStage(hiddenId, activeId) {
     $(hiddenId).addClass('hidden');
     $(activeId).removeClass('hidden');
+    $('html, body').animate({
+      scrollTop: $(activeId).offset().top - 50,
+    });
   }
 
-  $('#to-stage-2').on('click', function () {
+  $('#stage-1').on('submit', function (e) {
+    e.preventDefault();
     showStage('#stage-1', '#stage-2');
     let progressPercent = '15';
     $('#progress-circle').attr('data-progress', progressPercent);
     $('#progress-percent').text(progressPercent);
   });
-  $('#to-stage-3').on('click', function () {
+
+  $('#stage-2').on('submit', function (e) {
+    e.preventDefault();
     showStage('#stage-2', '#stage-3');
     let progressPercent = '70';
     $('#progress-circle').attr('data-progress', progressPercent);
     $('#progress-percent').text(progressPercent);
   });
-  $('#to-stage-finish').on('click', function () {
+
+
+  $('#stage-3').on('submit', function (e) {
+    e.preventDefault();
     showStage('#stage-3', '#stage-finish');
     let progressPercent = '85';
     $('#progress-circle').attr('data-progress', progressPercent);
     $('#progress-percent').text(progressPercent);
+  });
+
+  $('#stage-finish').on('submit', function (e) {
+    e.preventDefault();
+    window.location.href = "/cabinet.php";
   });
 
   $('#back-stage-1').on('click', function () {
@@ -112,17 +126,30 @@ jQuery(document).ready(function ($) {
   $('#btn-edit-info-allcompany').on('click', function (e) {
     $('#card-company-content .main-tab').addClass('hidden');
     $('#edit-info-allcompany').removeClass('hidden');
+    $('#edit-company-logo').show();
+    $('#edit-company-title').html("Информация о компании <span>Заполните все поля</span>");
   });
+
+  $('#btn-edit-info-filialcompany').on('click', function (e) {
+    $('#card-company-content .main-tab').addClass('hidden');
+    $('#edit-info-allcompany').removeClass('hidden');
+    $('#edit-company-logo').hide();
+    $('#edit-company-title').html("Информация о филиале <span>Заполните все поля</span>");
+  });
+
+  $('#btn-add-filialcompany').on('click', function (e) {
+    $('#card-company-content .main-tab').addClass('hidden');
+    $('#edit-info-allcompany').removeClass('hidden');
+    $('#edit-company-logo').hide();
+    $('#edit-company-title').html("Информация о филиале <span>Заполните все поля</span>");
+  });
+
 
   $('#btn-edit-info-material').on('click', function (e) {
     $('#card-company-content .main-tab').addClass('hidden');
     $('#edit-info-material').removeClass('hidden');
   });
 
-  $('#btn-edit-info-filialcompany').on('click', function (e) {
-    $('#card-company-content .main-tab').addClass('hidden');
-    $('#edit-info-filialcompany').removeClass('hidden');
-  });
 
   $('#btn-edit-info-appliances').on('click', function (e) {
     $('#card-company-content .main-tab').addClass('hidden');
@@ -139,10 +166,7 @@ jQuery(document).ready(function ($) {
     $('#edit-info-legal').removeClass('hidden');
   });
 
-  $('#btn-add-filialcompany').on('click', function (e) {
-    $('#card-company-content .main-tab').addClass('hidden');
-    $('#edit-info-filialcompany').removeClass('hidden');
-  });
+ 
 
   //=========== open tab from hash
 
@@ -214,18 +238,26 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  $('.mask-string').on('input', function (e) {
-    withoutCyr($(this));
+  $('.mask-phone').on('input', function () {
+
+    if ($(this).val().length >= 16) {
+      $(this).closest('.form-input__wrapp').removeClass('error').addClass('done');
+    }
   });
 
-  function withoutCyr(input) {
-    var value = input.val();
-    var re = /1|2|3|4|5|6|7|8|9|0/gi;
-    if (re.test(value)) {
-      value = value.replace(re, '');
-      input.val(value);
+  $('.mask-string').bind("change keyup input click", function () {
+    if (this.value.match(/[^а-яА-Яa-zA-Z\s]/g)) {
+      this.value = this.value.replace(/[^а-яА-Яa-zA-Z\s]/g, '');
     }
-  }
+  });
+
+  $('.mask-number').bind("change keyup input click", function () {
+    if (this.value.match(/[^0-9,.]/g)) {
+      this.value = this.value.replace(/[^0-9,.]/g, '');
+    }
+  });
+
+
   //=================== scroll to page
   $('.scrollto').on('click', function () {
     let href = $(this).attr('href');
@@ -271,6 +303,16 @@ jQuery(document).ready(function ($) {
 
   //======================== Custom select
   $('.custom-select_js').selectize();
+
+  $('.custom-select-tag_js').selectize({
+    plugins: ["remove_button"],
+    create: true,
+    sortField: {
+      field: "text",
+      direction: "asc"
+    },
+    dropdownParent: "body"
+  });
 
   $('.custom-search-select_js').selectize({
     persist: false,
@@ -329,14 +371,50 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  // working-btns
-  $('#working-btns .working-btn').on('click', function () {
-    $(this).toggleClass('active');
+
+
+
+  // Working hours
+  for (var i = 0; i < $('.working-btns li').length; i++) {
+    $('.working-btns li').eq(i).click(function (i) {
+      return function () {
+        if ($("#working-sametime-checkbox").is(":checked")) {
+          $("#working-sametime-checkbox").prop('checked', false); 
+          $('#working-sametime').addClass('hidden');
+
+          this.classList.remove('active');
+          $('.working-day .working-day__item').removeClass('hidden');
+          $('.working-day .working-day__item').eq(i).addClass('hidden');
+        }else{
+          this.classList.toggle('active');
+          $('.working-day .working-day__item').eq(i).toggleClass('hidden');
+        }
+        $("#working-everyday-checkbox").prop('checked', false);
+      }
+    }(i))
+  }
+
+  $("#working-everyday-checkbox").click(function () {
+    if ($(this).is(":checked")) {
+      $('.working-day .working-day__item').removeClass('hidden');
+      $('.working-btns li').addClass('active');
+
+      $("#working-sametime-checkbox").prop('checked', false);
+      $('#working-sametime').addClass('hidden'); 
+    }
   });
 
-  // ============
-  // ====end=====
-  // ============
+  $("#working-sametime-checkbox").click(function () {
+    if ($(this).is(":checked")) {
+      $('.working-day .working-day__item').addClass('hidden');
+      $('.working-btns li').addClass('active');
+      $("#working-everyday-checkbox").prop('checked', true); 
+      $('#working-sametime').toggleClass('hidden');
+    } else {
+      $('#working-sametime').addClass('hidden');
+      $('.working-day .working-day__item').removeClass('hidden');
+    }
+  });
 
   //========= Displaying
   $('.displaying-row-js').on('click', function () {

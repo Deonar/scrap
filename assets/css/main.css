@@ -494,6 +494,10 @@ body {
   text-decoration: underline;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-100p {
   height: 100%;
 }
@@ -1463,6 +1467,7 @@ body {
 
 .passport-download {
   cursor: pointer;
+  display: inline-block;
   width: 180px;
   height: 110px;
   min-width: 180px;
@@ -1488,6 +1493,10 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 6;
+}
+
+.passport-download input[type='file'] {
+  display: none;
 }
 
 .network-error {
@@ -1588,6 +1597,10 @@ body {
 
 .custom-select.selectize-control .selectize-dropdown-content .option {
   padding: 12px;
+}
+
+.custom-select.selectize-control.multi .selectize-input.has-items {
+  padding: 18px 12px;
 }
 
 .custom-select-search.selectize-control .selectize-input.dropdown-active:after {
