@@ -8,7 +8,7 @@
       <div class="col-sm-12 col-md-8">
         <div class="page-content registration__content">
           <div class="registration__stage-list" id="forms-wrapper">
-            <form action="#" id="stage-1" class="registration__stage-item hidden">
+            <form action="#" id="stage-1" class="registration__stage-item">
               <h4 class="primary-title mb-20">Основная информация</h4>
               <div class="company-section edit-company__section">
                 <div class="company-section__title mb-15">Личная информация <span>Заполните все поля</span></div>
@@ -125,7 +125,7 @@
                 <button type="submit" class="btn btn_black ml-auto">Сохранить и продолжить</button>
               </div>
             </form>
-            <form action="#" id="stage-2" class="registration__stage-item ">
+            <form action="#" id="stage-2" class="registration__stage-item hidden">
               <h4 class="primary-title mb-20">Компания</h4>
               <div class="company-section edit-company__section">
                 <div class="company-section__title mb-25">Информация о компании <span>Заполните все поля</span></div>
