@@ -3276,7 +3276,132 @@ body {
   padding: 40px 0;
 }
 
+.notice-popup {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  opacity: 0.95;
+  visibility: visible;
+  z-index: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+  background: #131e29;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.notice-popup__close {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  margin-left: 80px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.notice-popup__close:after, .notice-popup__close:before {
+  content: '';
+  display: block;
+  background: #fff;
+  position: absolute;
+}
+
+.notice-popup__close:after {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.notice-popup__close:before {
+  width: 2px;
+  height: 100%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+}
+
+.notice-popup.hidden {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.popup-custom {
+  position: relative;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.popup-custom .mfp-close {
+  color: #959da4;
+}
+
+.popup-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.popup-text {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #959da4;
+}
+
+.popup-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 210px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.popup-btns .btn {
+  padding: 16px 0;
+  width: 100%;
+  max-width: 100px;
+  margin-left: 6px;
+}
+
+.popup-btns .btn:last-child {
+  margin-left: 0;
+}
+
 @media (max-width: 767px) {
+  .notice-popup {
+    left: 20px;
+  }
   .popup-cities__body {
     padding: 15px;
     padding-top: 50px;
