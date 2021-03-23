@@ -31,7 +31,7 @@ body {
   color: $text-green;
   text-decoration: underline;
 }
-.hidden{
+.hidden {
   display: none;
 }
 .h-100p {
@@ -748,7 +748,7 @@ body {
       .form-input {
         padding: 17px 12px 17px 45px;
         line-height: 22px;
-        color: $text-gray-2;
+        color: $text;
         &::placeholder {
           color: $text-gray-2;
         }
@@ -863,7 +863,7 @@ body {
     object-fit: cover;
     z-index: 6;
   }
-  input[type='file']{
+  input[type='file'] {
     display: none;
   }
 }
@@ -957,7 +957,7 @@ body {
       padding: 12px;
     }
   }
-  &.multi .selectize-input.has-items{
+  &.multi .selectize-input.has-items {
     padding: 18px 12px;
   }
 }

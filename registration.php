@@ -8,7 +8,7 @@
       <div class="col-sm-12 col-md-8">
         <div class="page-content registration__content">
           <div class="registration__stage-list" id="forms-wrapper">
-            <form action="#" id="stage-1" class="registration__stage-item">
+            <form action="#" id="stage-1" class="registration__stage-item hidden">
               <h4 class="primary-title mb-20">Основная информация</h4>
               <div class="company-section edit-company__section">
                 <div class="company-section__title mb-15">Личная информация <span>Заполните все поля</span></div>
@@ -114,7 +114,7 @@
                     </div>
                     <div class="col-lg-9">
                       <label class="passport-download download-file">
-                        <input type="file" class="hidden" multiple="">
+                        <input type="file" class="hidden" multiple="" />
                         <!-- <img src="assets/img/passport.jpg" alt=""> -->
                       </label>
                     </div>
@@ -133,7 +133,7 @@
                   <div class="edit-company__logo row align-items-center mb-20">
                     <div class="col-4 col-lg-3">
                       <label class="card-company__logo _img-edit">
-                        <input type="file" class="hidden" multiple="">
+                        <input type="file" class="hidden" multiple="" />
                         <!-- <img src="assets/img/icons/arrow-round.svg" class="img-plug" alt="" /> -->
                       </label>
                     </div>
@@ -143,7 +143,10 @@
                   </div>
                   <div class="form-group row align-items-center mb-15">
                     <div class="col-lg-3">
-                      <label class="form-input__label">Категории<br> сбыта</label>
+                      <label class="form-input__label"
+                        >Категории<br />
+                        сбыта</label
+                      >
                     </div>
                     <div class="col-lg-9">
                       <select class="custom-select custom-select-tag_js" multiple>
@@ -205,15 +208,15 @@
                     <div class="col-lg-9">
                       <div class="form-input__remark-row">
                         <div class="form-input__wrapp form-input-phone">
-                          <input class="form-input mask-phone" placeholder="+7 999 999-99-99" maxlength="16" required/>
+                          <input class="form-input mask-phone" placeholder="+7 999 999-99-99" maxlength="16" required />
                           <div class="form-input__line"></div>
-                          <span class="form-input__error">Неверная улица</span>
+                          <span class="form-input__error">Не верно указан номер</span>
                         </div>
                         <div class="form-input__remark">Укажите номер, на который будут звонить ваши клиенты</div>
                       </div>
                     </div>
                   </div>
-                  
+
                   <div class="form-group row align-items-center mb-15">
                     <div class="col-lg-3">
                       <label class="form-input__label">Режим работы</label>
@@ -242,7 +245,7 @@
                           Ежедневно
                         </label>
                         <label class="custom-checkbox">
-                          <input class="d-none" type="checkbox" id="working-sametime-checkbox"/>
+                          <input class="d-none" type="checkbox" id="working-sametime-checkbox" />
                           <span class="custom-checkbox__point"></span>
                           В одно и то же время
                         </label>
@@ -520,13 +523,13 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="0.1"  min="0" step="0.1" max="1000" />
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="0.1" min="0" step="0.1" max="1000" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">кг</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1"  min="0"  step="0.1"  max="1000"/>
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" max="1000" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">кг</div>
                         </div>
@@ -541,19 +544,19 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Pt</span>
-                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1"  min="0"  step="0.1"  max="100"/>
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" max="100" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Pd</span>
-                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1"  min="0"  step="0.1"  max="100"/>
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" max="100" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Rh</span>
-                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1"  min="0"  step="0.1"  max="100"/>
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" max="100" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
@@ -569,13 +572,13 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="0.1"  min="0"  step="0.1"  max="100"/>
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="0.1" min="0" step="0.1" max="100" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">кг</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">до</span>
-                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1"  min="0"  step="0.1"  max="100"/>
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" max="100" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">кг</div>
                         </div>
@@ -590,19 +593,19 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Pt</span>
-                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1"  min="0"  step="0.1"  max="100"/>
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" max="100" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Pd</span>
-                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1"  min="0"  step="0.1"  max="100"/>
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" max="100" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Rh</span>
-                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1"  min="0"  step="0.1"  max="100"/>
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" max="100" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
@@ -623,13 +626,13 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="100" min="0"  step="0.1"  max="100000"/>
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="100" min="0" step="0.1" max="100000" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="100"  min="0"  step="0.1"  max="1000000"/>
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="100" min="0" step="0.1" max="1000000" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
@@ -649,13 +652,13 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="100"  min="0"  step="0.1"  max="1000000"/>
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="100" min="0" step="0.1" max="1000000" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="100"  min="0"  step="0.1"  max="1000000"/>
+                          <input class="form-input form-input__range-body mask-number" type="number" placeholder="100" min="0" step="0.1" max="1000000" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
@@ -675,7 +678,7 @@
               </div>
             </form>
 
-            <form action="#" id="stage-finish" class="registration__stage-item hidden">
+            <form action="#" id="stage-finish" class="registration__stage-item">
               <h4 class="primary-title mb-10">Виды и цены сырья бытовой техники</h4>
               <div class="page-sub-title mb-25">Необходимо указать расценки хотя бы для одного вида сырья</div>
               <div class="company-section edit-company__section">
@@ -703,13 +706,13 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body" type="number" placeholder="100" min="0"  step="0.1"  max="1000000"/>
+                          <input class="form-input form-input__range-body" type="number" placeholder="100" min="0" step="0.1" max="1000000" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body" type="number" placeholder="100" min="0"  step="0.1"  max="1000000"/>
+                          <input class="form-input form-input__range-body" type="number" placeholder="100" min="0" step="0.1" max="1000000" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
@@ -740,13 +743,13 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body" type="number" placeholder="100" min="0"  step="0.1"  max="1000000"/>
+                          <input class="form-input form-input__range-body" type="number" placeholder="100" min="0" step="0.1" max="1000000" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body" type="number" placeholder="100" min="0"  step="0.1"  max="1000000"/>
+                          <input class="form-input form-input__range-body" type="number" placeholder="100" min="0" step="0.1" max="1000000" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
@@ -777,13 +780,13 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body" type="number" value="100" placeholder="100" min="0"  step="0.1"  max="1000000"/>
+                          <input class="form-input form-input__range-body" type="number" value="100" placeholder="100" min="0" step="0.1" max="1000000" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body" type="number" placeholder="100" min="0"  step="0.1"  max="10000000"/>
+                          <input class="form-input form-input__range-body" type="number" placeholder="100" min="0" step="0.1" max="10000000" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">₽</div>
                         </div>
@@ -800,10 +803,9 @@
                   <span class="custom-checkbox__point"></span>
                   Применить цены ко всем филиалам
                 </label>
-                <button type="submit" id="finish-registration" class="btn btn_green ml-auto">Завершить регистрацию</button>
+                <a href="#reg-finish-popup" type="submit" id="finish-registration" class="btn btn_green ml-auto popup">Завершить регистрацию</a>
               </div>
             </form>
-
           </div>
         </div>
       </div>
@@ -838,5 +840,38 @@
     </div>
   </div>
 </section>
+
+<div id="reg-finish-popup" class="reg-finish-popup popup-custom mfp-hide">
+  <div class="popup-body">
+    <div class="ko-progress-circle" data-progress="100">
+      <div class="ko-circle">
+        <div class="full ko-progress-circle__slice">
+          <div class="ko-progress-circle__fill"></div>
+        </div>
+        <div class="ko-progress-circle__slice">
+          <div class="ko-progress-circle__fill"></div>
+          <div class="ko-progress-circle__fill ko-progress-circle__bar"></div>
+        </div>
+      </div>
+      <div class="ko-progress-circle__overlay"></div>
+      <div class="ko-progress-content">
+        <div class="ko-progress-percent-wrapp">
+          <div id="progress-percent" class="ko-progress-percent">100</div>
+          <div class="ko-progress-percent-val">%</div>
+        </div>
+        <div class="ko-progress-text">
+          процент заполнения <br />
+          профиля
+        </div>
+      </div>
+    </div>
+    <div class="popup-title">
+      Регистрация компании <br />
+      прошла успешно!
+    </div>
+    <a href="/cabinet.php" class="link text-center">Перейти в личный кабинет</a>
+    <a href="/cabinet.php" class="popup-custom-close mfp-close">×</a>
+  </div>
+</div>
 
 <?php include("footer.php"); ?>

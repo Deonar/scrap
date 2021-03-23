@@ -978,34 +978,93 @@
   }
   &__gallery-download {
     .card-company__gallery-item {
-      cursor: pointer;
       background: url(../img/download.png) center center no-repeat;
       background-size: contain;
+      cursor: pointer;
       img {
         z-index: 4;
       }
+      .open-full {
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+        display: block;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        left: 25px;
+        top: 25px;
+        transition: all 0.3s ease-in-out;
+        background: url(../img/icons/gallary-arrow.svg) center center no-repeat;
+        background-size: contain;
+        z-index: 5;
+        &::before,
+        &::after {
+          display: none;
+          background: inherit;
+        }
+      }
       .delete-btn {
         cursor: pointer;
-        width: 42px;
-        height: 42px;
-        border-radius: 50%;
-        border: 1px solid #e9eef2;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 10px;
+        padding: 7px 12px 7px 12px;
+        color: #fff;
+        border-radius: 20px;
         display: block;
         position: absolute;
         opacity: 0;
         visibility: hidden;
         left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        bottom: 20px;
+        transform: translateX(-50%);
         transition: all 0.3s ease-in-out;
-        background: url(../img/icons/basket.svg) center center no-repeat;
-        background-color: #fff;
+        background: rgba(0, 0, 0, 0.5);
         z-index: 5;
+        display: flex;
+        align-items: center;
+        span {
+          position: relative;
+          display: block;
+          margin-right: 10px;
+          width: 12px;
+          height: 12px;
+          transform: rotate(45deg);
+        }
+        span:before,
+        span:after {
+          content: '';
+          display: block;
+          position: absolute;
+          background: #fff;
+        }
+        span:after {
+          top: 0px;
+          left: 50%;
+          width: 1px;
+          height: 100%;
+          transform: translateX(-50%);
+        }
+        span:before {
+          top: 50%;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          transform: translateY(-50%);
+        }
       }
-      &:hover .delete-btn {
-        transition: all 0.3s ease-in-out;
-        opacity: 1;
-        visibility: visible;
+      &:hover {
+        .delete-btn {
+          transition: all 0.3s ease-in-out;
+          opacity: 1;
+          visibility: visible;
+        }
+        .open-full {
+          transition: all 0.3s ease-in-out;
+          opacity: 1;
+          visibility: visible;
+        }
       }
       .loading-level {
         display: block;
@@ -1028,10 +1087,13 @@
           border-radius: 10px;
         }
       }
-      &._loading .loading-level {
-        opacity: 1;
-        visibility: visible;
-        transition: all 0.3s ease-in-out;
+      &._loading {
+        cursor: default;
+        .loading-level {
+          opacity: 1;
+          visibility: visible;
+          transition: all 0.3s ease-in-out;
+        }
       }
     }
   }
@@ -1341,6 +1403,7 @@
   &-address__list {
   }
   &-address__item {
+    cursor: pointer;
     padding: 20px;
     border-radius: 3px;
     display: flex;
@@ -1551,7 +1614,6 @@
   }
   &__btn-more {
     display: none;
-    margin-top: 25px;
   }
   &__edit-btn {
     width: auto;

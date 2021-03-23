@@ -312,7 +312,28 @@
   }
 }
 
+.reg-finish-popup {
+  max-width: 500px;
+  .ko-progress-circle {
+    margin-bottom: 50px;
+  }
+  .link {
+    display: block;
+  }
+  .mfp-close {
+    display: none;
+    width: 30px;
+  }
+  .popup-custom-close.mfp-close {
+    display: block;
+  }
+}
+
 @media (max-width: 767px) {
+  .popup-custom {
+    max-width: 100%;
+    min-height: 100vh;
+  }
   .notice-popup {
     left: 20px;
   }

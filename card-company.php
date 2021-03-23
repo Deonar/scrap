@@ -26,13 +26,14 @@
                   <li class="stars-rating__item stars-rating_on"></li>
                   <li class="stars-rating__item stars-rating_off"></li>
                 </ul>
-                <div class="card-company__review-num">26 отзывов</div>
+                <a href="#reviews-tab-content" class="card-company__review-num show-reviews-js link scrollto">26
+                  отзывов</a>
               </div>
             </div>
           </div>
           <div class="card-company__buttons">
             <a href="tel:7888888888" class="btn btn_phone"> Позвонить </a>
-            <a href="#card-company-content" class="btn btn_yellow add-reviews-js scrollto">Оставить отзыв</a>
+            <a href="#card-company-content" class="btn btn_yellow add-reviews-js  scrollto">Оставить отзыв</a>
           </div>
           <div class="card-company__block">
             <div class="card-company__block-head">
@@ -42,7 +43,8 @@
               Комсомольск-на-Амуре<br />
               <span>ул. Сталеваров-Строителей, 27б, к1, с3</span>
             </div>
-            <a href="#" class="card-company__street-link link link-location">Ещё 4 адреса</a>
+            <a href="#address-tab-content"
+              class="card-company__street-link link link-location show-address-js scrollto">Ещё 4 адреса</a>
           </div>
           <div class="card-company__block">
             <div class="card-company__block-head">
@@ -63,19 +65,19 @@
         <div id="card-company-content" class="page-content card-company__content">
           <div class="main-tab tab tab-js">
             <div class="tab__wrapper">
-              <div id="prices-tab" class="tab__item tab-item-js active" data-tab="1">
+              <div id="prices-tab" class="tab__item tab-item-js active scrollto" data-tab="1">
                 <svg class="tab__item-icon">
                   <use xlink:href="assets/img/icons/info.svg#tab-info"></use>
                 </svg>
                 <span>Основная</span> информация
               </div>
-              <div id="reviews-tab" class="tab__item tab-item-js" data-tab="2">
+              <div id="reviews-tab" class="tab__item tab-item-js scrollto" data-tab="2">
                 <svg class="tab__item-icon">
                   <use xlink:href="assets/img/icons/star.svg#tab-star"></use>
                 </svg>
                 Отзывы
               </div>
-              <div id="address-tab" class="tab__item tab-item-js" data-tab="3">
+              <div id="address-tab" class="tab__item tab-item-js scrollto" data-tab="3">
                 <svg class="tab__item-icon">
                   <use xlink:href="assets/img/icons/icon-location-3.svg#tab-location"></use>
                 </svg>
@@ -144,7 +146,8 @@
                     </div>
                   </li>
                   <li class="accordeon-wrapper accordeon-wrapper-js">
-                    <div class="card-company__table-title accordeon-tab accordeon-tab-js _mob">Металлически материал</div>
+                    <div class="card-company__table-title accordeon-tab accordeon-tab-js _mob">Металлически материал
+                    </div>
                     <ul class="card-company__material-cards accordeon-content accordeon-content-js">
                       <li class="card-company__material-card">
                         <div class="card-company__material-title">Металлический материал</div>
@@ -284,7 +287,8 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
+                        прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -312,7 +316,8 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
+                        прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -340,7 +345,8 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
+                        прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -368,7 +374,8 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
+                        прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -396,7 +403,8 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
+                        прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -424,7 +432,8 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
+                        прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <li class="reviews-item more-item-js">
@@ -452,7 +461,8 @@
                     </div>
                     <div class="reviews-item__text">
                       <div class="reviews-item__title">отзыв</div>
-                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами прибора. Рекомендую всем обращаться к этой компании.</p>
+                      <p>Сделка произошла очень быстро, минут 15, наверное. Оплату произвели в точности с расчетами
+                        прибора. Рекомендую всем обращаться к этой компании.</p>
                     </div>
                   </li>
                   <button id="btn-more" class="reviews__btn-more btn btn_gray">Показать ещё 5 отзывов</button>
@@ -461,8 +471,10 @@
               <div class="card-company__section reviews__no-reviews">
                 <div class="reviews__no-reviews-content">
                   <div class="reviews__no-reviews-title">У этой компании пока нет отзывов</div>
-                  <div class="reviews__no-reviews-sub-title">Будьте первым! Оставьте свой отзыв, если уже сотрудничали с этой компанией.</div>
-                  <a href="#card-company-content" class="reviews__no-reviews-btn btn btn_yellow add-reviews-js scrollto">Оставить отзыв</a>
+                  <div class="reviews__no-reviews-sub-title">Будьте первым! Оставьте свой отзыв, если уже сотрудничали с
+                    этой компанией.</div>
+                  <a href="#card-company-content"
+                    class="reviews__no-reviews-btn btn btn_yellow add-reviews-js scrollto">Оставить отзыв</a>
                 </div>
               </div>
             </div>
@@ -480,7 +492,8 @@
                       <div class="map-address__item-title">Комсомольск-на-Амуре</div>
                       <div class="map-address__item-sub-title">ул. Сталеваров-Строителей, 27б, к1, с3</div>
                     </div>
-                    <a href="https://yandex.ru/maps/?text=г. Челябинск, ул. Механическая 101/2&amp;roistat_visit=115264" class="map-address__item-link link link-location">Показать на карте</a>
+                    <a href="https://yandex.ru/maps/?text=г. Челябинск, ул. Механическая 101/2&amp;roistat_visit=115264"
+                      class="map-address__item-link link link-location">Показать на карте</a>
                   </li>
                   <li class="map-address__item" data-coord-x="55.17811556954169" data-coord-y="61.344208">
                     <div class="map-address__item-num">2</div>
@@ -488,9 +501,10 @@
                       <div class="map-address__item-title">Комсомольск-на-Амуре #2</div>
                       <div class="map-address__item-sub-title">ул. Сталеваров-Строителей, 27б, к1, с3</div>
                     </div>
-                    <a href="https://yandex.ru/maps/?text=г. Челябинск, ул. Механическая 101/2&amp;roistat_visit=115264" class="map-address__item-link link link-location">Показать на карте</a>
+                    <a href="https://yandex.ru/maps/?text=г. Челябинск, ул. Механическая 101/2&amp;roistat_visit=115264"
+                      class="map-address__item-link link link-location">Показать на карте</a>
                   </li>
-                  
+
                 </ul>
               </div>
             </div>
@@ -507,7 +521,8 @@
                   </div>
                   <div class="col-lg-9">
                     <div class="form-input__wrapp">
-                      <input class="form-input mask-string" name="name" type="text" placeholder="Укажите ваше имя" required/>
+                      <input class="form-input mask-string" name="name" type="text" placeholder="Укажите ваше имя"
+                        required />
                       <div class="form-input__line"></div>
                       <span class="form-input__error">Не верно указано имя</span>
                     </div>
@@ -515,14 +530,13 @@
                 </div>
                 <div class="form-group row">
                   <div class="col-lg-3">
-                    <label class="form-input__label"
-                      >Укажите<br />
-                      телефон</label
-                    >
+                    <label class="form-input__label">Укажите<br />
+                      телефон</label>
                   </div>
                   <div class="col-lg-9">
                     <div class="form-input__wrapp form-input-phone">
-                      <input class="form-input mask-phone" name="phone" type="text"  placeholder="+7 999 999-99-99" maxlength="16" required/>
+                      <input class="form-input mask-phone" name="phone" type="text" placeholder="+7 999 999-99-99"
+                        maxlength="16" required />
                       <div class="form-input__line"></div>
                       <span class="form-input__error">Не верно указан номер</span>
                     </div>
@@ -560,8 +574,9 @@
                   </div>
                 </div>
                 <!-- Сообщение об ошибке сервера -->
-                <div class="network-error" style="display: none;">Не удалось отправить отзыв. Произошла ошибка на сервере. Обновите страницу или попробуйте отправить отзыв позже.</div>
-                
+                <div class="network-error" style="display: none;">Не удалось отправить отзыв. Произошла ошибка на
+                  сервере. Обновите страницу или попробуйте отправить отзыв позже.</div>
+
                 <button type="submit" class="form-submit btn btn_yellow reviews-finish-js">оставить отзыв</button>
                 <label class="custom-checkbox">
                   <input checked="" class="d-none" type="checkbox" />
@@ -576,7 +591,8 @@
             <div class="thanks__for-reviews">
               <img src="assets/img/icons/hand-star.svg" alt="" class="thanks__for-reviews-icon" />
               <div class="thanks__for-reviews-title">Спасибо за обратную связь!</div>
-              <div class="thanks__for-reviews-text">Ваш отзыв отправлен на модерацию. В течение 24 часов ваш отзыв будет опубликован в случае успешно пройденной модерации.</div>
+              <div class="thanks__for-reviews-text">Ваш отзыв отправлен на модерацию. В течение 24 часов ваш отзыв будет
+                опубликован в случае успешно пройденной модерации.</div>
             </div>
           </div>
         </div>
@@ -587,7 +603,8 @@
 
 
 <!-- Maps -->
-<script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+<script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript">
+</script>
 <script defer src="assets/js/map.js"></script>
 
 <?php include("footer.php"); ?>

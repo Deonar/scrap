@@ -74,7 +74,7 @@
             <!------- company ------->
             <div class="tab__content all-company tab-content-js active" data-tab="1">
               <div class="card-company__section-row mb-20">
-                <h4 class="primary-title mb-20">Компании</h4>
+                <h4 class="primary-title">Компании</h4>
                 <a href="#edit-info-filialcompany" id="btn-add-filialcompany" class="btn btn_add-filial scrollto">Добавить филиал</a>
               </div>
 
@@ -630,19 +630,19 @@
             <div class="tab__content tab-content-js" data-tab="4">
               <h4 class="primary-title mb-20">Фотографии</h4>
               <div class="card-company__section-sub-title">Загрузите не более 10 фотографии вашей компании. Размер одной фотографии не должен превышать 5 MB.</div>
-              <ul class="card-company__gallery-list card-company__gallery-download">
-                <li class="card-company__gallery-item">
-                  <span class="delete-btn"></span>
-                  <img src="assets/img/gallery-company/gallery-company-1.jpg" alt="" />
-                </li>
+              <ul class="card-company__gallery-list card-company__gallery-download popup-gallery">
+                <li class="card-company__gallery-item"></li>
+
                 <li class="card-company__gallery-item _loading">
                   <img src="assets/img/gallery-company/gallery-company-1.jpg" alt="" />
                   <div class="loading-level"><span style="width: 60%"></span></div>
                 </li>
-                <li class="card-company__gallery-item"></li>
-                <li class="card-company__gallery-item"></li>
-                <li class="card-company__gallery-item"></li>
-                <li class="card-company__gallery-item"></li>
+
+                <li class="card-company__gallery-item">
+                  <div class="delete-btn"><span></span> удалить</div>
+                  <a href="assets/img/gallery-company/gallery-company-1.jpg" class="open-full" rel="alternate"></a>
+                  <img src="assets/img/gallery-company/gallery-company-1.jpg" alt="" />
+                </li>
               </ul>
             </div>
           </div>
@@ -655,11 +655,10 @@
             <div class="company-section edit-company__section">
               <div class="company-section__title mb-25" id="edit-company-title">Информация о компании <span>Заполните все поля</span></div>
               <div class="edit-company__form">
-
                 <div class="edit-company__logo row align-items-center mb-20" id="edit-company-logo">
                   <div class="col-4 col-lg-3">
                     <label class="card-company__logo _img-edit">
-                      <input type="file" class="hidden" multiple="">
+                      <input type="file" class="hidden" multiple="" />
                       <!-- <img src="assets/img/icons/arrow-round.svg" class="img-plug" alt="" /> -->
                     </label>
                   </div>
@@ -670,7 +669,10 @@
 
                 <div class="form-group row align-items-center mb-15">
                   <div class="col-lg-3">
-                    <label class="form-input__label">Категории<br> сбыта</label>
+                    <label class="form-input__label"
+                      >Категории<br />
+                      сбыта</label
+                    >
                   </div>
                   <div class="col-lg-9">
                     <select class="custom-select custom-select-tag_js" multiple>
@@ -728,7 +730,7 @@
                 </div>
                 <div class="form-group row align-items-center mb-15">
                   <div class="col-lg-3">
-                    <label class="form-input__label">Телефон для связи</label>
+                    <label class="form-input__label">Не верно указан номер</label>
                   </div>
                   <div class="col-lg-9">
                     <div class="form-input__remark-row">
@@ -1149,7 +1151,7 @@
                 </div>
                 <div class="col-lg-9">
                   <label class="passport-download download-file">
-                    <input type="file" class="hidden" multiple="">
+                    <input type="file" class="hidden" multiple="" />
                     <!-- <img src="assets/img/passport.jpg" alt=""> -->
                   </label>
                 </div>
@@ -1462,7 +1464,6 @@
             <a href="#card-company-content" class="btn btn_black come-back-js scrollto">Сохранить изменения</a>
           </div>
         </div>
-
       </div>
     </div>
 
@@ -1477,7 +1478,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 <?php include("footer.php"); ?>

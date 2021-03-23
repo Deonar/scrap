@@ -16,7 +16,47 @@ jQuery(document).ready(function ($) {
     $('.burger-js').removeClass('active');
   });
   //======================== POPUPS
-  $('.popup').magnificPopup({});
+  window.Utils = {
+    magnificPopupConfiguration: function () {
+      var startWindowScroll = 0;
+
+      return {
+        beforeOpen: function () {
+          startWindowScroll = $(window).scrollTop();
+          $('html').addClass('mfp-helper');
+        },
+        close: function () {
+          $('html').removeClass('mfp-helper');
+          setTimeout(function () {
+            $('body').animate(
+              {
+                scrollTop: startWindowScroll,
+              },
+              0
+            );
+          }, 0);
+        },
+      };
+    },
+  };
+  startWindowScroll = 0;
+  $('.popup').magnificPopup({
+    mainClass: 'mfp-fade',
+    type: 'inline',
+    fixedContentPos: false,
+    fixedBgPos: true,
+    midClick: true,
+    fixedContentPos: true,
+    callbacks: Utils.magnificPopupConfiguration(),
+    callbacks: {
+      open: function () {
+        $('body').addClass('overflow-h');
+      },
+      close: function () {
+        $('body').removeClass('overflow-h');
+      },
+    },
+  });
 
   $('.popup-close-js').on('click', function () {
     $.magnificPopup.close();
@@ -76,7 +116,6 @@ jQuery(document).ready(function ($) {
     $('#progress-percent').text(progressPercent);
   });
 
-
   $('#stage-3').on('submit', function (e) {
     e.preventDefault();
     showStage('#stage-3', '#stage-finish');
@@ -87,7 +126,7 @@ jQuery(document).ready(function ($) {
 
   $('#stage-finish').on('submit', function (e) {
     e.preventDefault();
-    window.location.href = "/cabinet.php";
+    window.location.href = '/cabinet.php';
   });
 
   $('#back-stage-1').on('click', function () {
@@ -139,29 +178,27 @@ jQuery(document).ready(function ($) {
     $('#card-company-content .main-tab').addClass('hidden');
     $('#edit-info-allcompany').removeClass('hidden');
     $('#edit-company-logo').show();
-    $('#edit-company-title').html("Информация о компании <span>Заполните все поля</span>");
+    $('#edit-company-title').html('Информация о компании <span>Заполните все поля</span>');
   });
 
   $('#btn-edit-info-filialcompany').on('click', function (e) {
     $('#card-company-content .main-tab').addClass('hidden');
     $('#edit-info-allcompany').removeClass('hidden');
     $('#edit-company-logo').hide();
-    $('#edit-company-title').html("Информация о филиале <span>Заполните все поля</span>");
+    $('#edit-company-title').html('Информация о филиале <span>Заполните все поля</span>');
   });
 
   $('#btn-add-filialcompany').on('click', function (e) {
     $('#card-company-content .main-tab').addClass('hidden');
     $('#edit-info-allcompany').removeClass('hidden');
     $('#edit-company-logo').hide();
-    $('#edit-company-title').html("Информация о филиале <span>Заполните все поля</span>");
+    $('#edit-company-title').html('Информация о филиале <span>Заполните все поля</span>');
   });
-
 
   $('#btn-edit-info-material').on('click', function (e) {
     $('#card-company-content .main-tab').addClass('hidden');
     $('#edit-info-material').removeClass('hidden');
   });
-
 
   $('#btn-edit-info-appliances').on('click', function (e) {
     $('#card-company-content .main-tab').addClass('hidden');
@@ -177,8 +214,6 @@ jQuery(document).ready(function ($) {
     $('#card-company-content .main-tab').addClass('hidden');
     $('#edit-info-legal').removeClass('hidden');
   });
-
- 
 
   //=========== open tab from hash
 
@@ -215,6 +250,14 @@ jQuery(document).ready(function ($) {
   }
   openTabsProfile();
 
+  //=========== open tab from link
+  $('.show-address-js').on('click', function (e) {
+    showAddressContent();
+  });
+  $('.show-reviews-js').on('click', function (e) {
+    showReviewsContent();
+  });
+
   // ======================== MASK
   $('.mask-phone').mask('+7 ZZZ ZZZ-ZZ-ZZ', {
     translation: {
@@ -238,7 +281,6 @@ jQuery(document).ready(function ($) {
   $('.mask-car-region').mask('999');
 
   $('.mask-phone').on('blur', function () {
-
     if ($(this).val() == '+7 8') {
       $(this).val('+7 ');
     }
@@ -251,35 +293,36 @@ jQuery(document).ready(function ($) {
   });
 
   $('.mask-phone').on('input', function () {
-
     if ($(this).val().length >= 16) {
       $(this).closest('.form-input__wrapp').removeClass('error').addClass('done');
     }
   });
 
-  $('.mask-string').bind("change keyup input click", function () {
+  $('.mask-string').bind('change keyup input click', function () {
     if (this.value.match(/[^а-яА-Яa-zA-Z\s]/g)) {
       this.value = this.value.replace(/[^а-яА-Яa-zA-Z\s]/g, '');
     }
   });
 
-  $('.mask-number').bind("change keyup input click", function () {
+  $('.mask-number').bind('change keyup input click', function () {
     if (this.value.match(/[^0-9,.]/g)) {
       this.value = this.value.replace(/[^0-9,.]/g, '');
     }
   });
 
-
   //=================== scroll to page
   $('.scrollto').on('click', function () {
     let href = $(this).attr('href');
 
-    $('html, body').animate({
-      scrollTop: $(href).offset().top - 100,
-    }, {
-      duration: 600, // по умолчанию «400»
-      easing: 'linear', // по умолчанию «swing»
-    });
+    $('html, body').animate(
+      {
+        scrollTop: $(href).offset().top - 100,
+      },
+      {
+        duration: 600, // по умолчанию «400»
+        easing: 'linear', // по умолчанию «swing»
+      }
+    );
     if ($(window).width() < 768) {
       $('html, body').animate({
         scrollTop: $(href).offset().top - 50,
@@ -317,13 +360,13 @@ jQuery(document).ready(function ($) {
   $('.custom-select_js').selectize();
 
   $('.custom-select-tag_js').selectize({
-    plugins: ["remove_button"],
+    plugins: ['remove_button'],
     create: true,
     sortField: {
-      field: "text",
-      direction: "asc"
+      field: 'text',
+      direction: 'asc',
     },
-    dropdownParent: "body"
+    dropdownParent: 'body',
   });
 
   $('.custom-search-select_js').selectize({
@@ -383,44 +426,45 @@ jQuery(document).ready(function ($) {
     }
   });
 
-
-
-
   // Working hours
   for (var i = 0; i < $('.working-btns li').length; i++) {
-    $('.working-btns li').eq(i).click(function (i) {
-      return function () {
-        if ($("#working-sametime-checkbox").is(":checked")) {
-          $("#working-sametime-checkbox").prop('checked', false); 
-          $('#working-sametime').addClass('hidden');
+    $('.working-btns li')
+      .eq(i)
+      .click(
+        (function (i) {
+          return function () {
+            if ($('#working-sametime-checkbox').is(':checked')) {
+              $('#working-sametime-checkbox').prop('checked', false);
+              $('#working-sametime').addClass('hidden');
 
-          this.classList.remove('active');
-          $('.working-day .working-day__item').removeClass('hidden');
-          $('.working-day .working-day__item').eq(i).addClass('hidden');
-        }else{
-          this.classList.toggle('active');
-          $('.working-day .working-day__item').eq(i).toggleClass('hidden');
-        }
-        $("#working-everyday-checkbox").prop('checked', false);
-      }
-    }(i))
+              this.classList.remove('active');
+              $('.working-day .working-day__item').removeClass('hidden');
+              $('.working-day .working-day__item').eq(i).addClass('hidden');
+            } else {
+              this.classList.toggle('active');
+              $('.working-day .working-day__item').eq(i).toggleClass('hidden');
+            }
+            $('#working-everyday-checkbox').prop('checked', false);
+          };
+        })(i)
+      );
   }
 
-  $("#working-everyday-checkbox").click(function () {
-    if ($(this).is(":checked")) {
+  $('#working-everyday-checkbox').click(function () {
+    if ($(this).is(':checked')) {
       $('.working-day .working-day__item').removeClass('hidden');
       $('.working-btns li').addClass('active');
 
-      $("#working-sametime-checkbox").prop('checked', false);
-      $('#working-sametime').addClass('hidden'); 
+      $('#working-sametime-checkbox').prop('checked', false);
+      $('#working-sametime').addClass('hidden');
     }
   });
 
-  $("#working-sametime-checkbox").click(function () {
-    if ($(this).is(":checked")) {
+  $('#working-sametime-checkbox').click(function () {
+    if ($(this).is(':checked')) {
       $('.working-day .working-day__item').addClass('hidden');
       $('.working-btns li').addClass('active');
-      $("#working-everyday-checkbox").prop('checked', true); 
+      $('#working-everyday-checkbox').prop('checked', true);
       $('#working-sametime').toggleClass('hidden');
     } else {
       $('#working-sametime').addClass('hidden');
@@ -456,16 +500,12 @@ jQuery(document).ready(function ($) {
     theme: 'custom',
   });
 
-
-
-
   //Demonstration js
   $('#param-reset').on('click', function () {
     $('#param-form input:checkbox').removeAttr('checked');
   });
 
   $('#param-add').on('click', function () {
-
     $('.tag-list').show();
     $('.search-result').show();
     $.magnificPopup.close();
