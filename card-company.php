@@ -65,19 +65,19 @@
         <div id="card-company-content" class="page-content card-company__content">
           <div class="main-tab tab tab-js">
             <div class="tab__wrapper">
-              <div id="prices-tab" class="tab__item tab-item-js active scrollto" data-tab="1">
+              <div id="prices-tab" class="tab__item tab-item-js active " data-tab="1">
                 <svg class="tab__item-icon">
                   <use xlink:href="assets/img/icons/info.svg#tab-info"></use>
                 </svg>
                 <span>Основная</span> информация
               </div>
-              <div id="reviews-tab" class="tab__item tab-item-js scrollto" data-tab="2">
+              <div id="reviews-tab" class="tab__item tab-item-js " data-tab="2">
                 <svg class="tab__item-icon">
                   <use xlink:href="assets/img/icons/star.svg#tab-star"></use>
                 </svg>
                 Отзывы
               </div>
-              <div id="address-tab" class="tab__item tab-item-js scrollto" data-tab="3">
+              <div id="address-tab" class="tab__item tab-item-js " data-tab="3">
                 <svg class="tab__item-icon">
                   <use xlink:href="assets/img/icons/icon-location-3.svg#tab-location"></use>
                 </svg>
