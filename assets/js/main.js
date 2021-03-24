@@ -63,9 +63,22 @@ jQuery(document).ready(function ($) {
 
   $('.popup-param').magnificPopup({
     removalDelay: 500, //delay removal by X to allow out-animation
+    mainClass: 'mfp-fade',
+    type: 'inline',
+    fixedContentPos: false,
+    fixedBgPos: true,
+    midClick: true,
+    fixedContentPos: true,
+    callbacks: Utils.magnificPopupConfiguration(),
     callbacks: {
       beforeOpen: function () {
         this.st.mainClass = 'mfp-move-from-top';
+      },
+      open: function () {
+        $('body').addClass('overflow-h');
+      },
+      close: function () {
+        $('body').removeClass('overflow-h');
       },
     },
   });
@@ -355,8 +368,13 @@ jQuery(document).ready(function ($) {
   });
 
   //======================== Custom select
-  $('.custom-select_js').selectize();
+  $('.custom-select_js').selectize({
+    readOnly: true, 
+    onDelete: function() { return false }
+  });
 
+  $('.custom-select_js input').prop('disabled', true);
+  
   $('.custom-select-tag_js').selectize({
     plugins: ['remove_button'],
     create: true,
