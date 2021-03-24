@@ -22,7 +22,7 @@
 
 <!-- Notice-popup -->
 <div class="notice-popup notice-popup-js hidden">
-  Филиал удален
+  <span>Филиал удален</span>
   <div class="notice-popup__close notice-close-js"></div>
 </div>
 
@@ -83,7 +83,7 @@
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 
-<script src="assets/js/main.js?v5"></script>
+<script src="assets/js/main.js?v4"></script>
 </body>
 
 </html>

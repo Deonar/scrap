@@ -1408,7 +1408,7 @@
     border-radius: 3px;
     display: flex;
     align-items: center;
-    &:nth-child(odd) {
+    &.active {
       background: #f7f9fc;
     }
   }

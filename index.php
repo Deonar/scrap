@@ -738,7 +738,7 @@
                                     <div>
                                         <div class="offer__name">Sdaykat</div>
                                         <div class="offer-reviews">
-                                            <div class="offer-reviews__text">
+                                            <div class="offer-reviews__text text-muted">
                                                 нет отзывов
                                             </div>
                                         </div>
@@ -1841,7 +1841,7 @@
                                     <div>
                                         <div class="offer__name">Sdaykat</div>
                                         <div class="offer-reviews">
-                                            <div class="offer-reviews__text">
+                                            <div class="offer-reviews__text text-muted">
                                                 нет отзывов
                                             </div>
                                         </div>

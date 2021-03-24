@@ -28,8 +28,7 @@ jQuery(document).ready(function ($) {
         close: function () {
           $('html').removeClass('mfp-helper');
           setTimeout(function () {
-            $('body').animate(
-              {
+            $('body').animate({
                 scrollTop: startWindowScroll,
               },
               0
@@ -84,6 +83,7 @@ jQuery(document).ready(function ($) {
 
   // notice-popup-hide and show
   $('.notice-show-js').on('click', function () {
+    $('.notice-popup-js span').text('Филиал удален');
     $('.notice-popup-js').removeClass('hidden');
   });
   $('.notice-close-js').on('click', function () {
@@ -95,6 +95,7 @@ jQuery(document).ready(function ($) {
   function showStage(hiddenId, activeId) {
     $(hiddenId).addClass('hidden');
     $(activeId).removeClass('hidden');
+    $(activeId).find('input').eq(0).focus();
     $('html, body').animate({
       scrollTop: $(activeId).offset().top - 50,
     });
@@ -314,15 +315,12 @@ jQuery(document).ready(function ($) {
   $('.scrollto').on('click', function () {
     let href = $(this).attr('href');
 
-    $('html, body').animate(
-      {
-        scrollTop: $(href).offset().top - 100,
-      },
-      {
-        duration: 600, // по умолчанию «400»
-        easing: 'linear', // по умолчанию «swing»
-      }
-    );
+    $('html, body').animate({
+      scrollTop: $(href).offset().top - 100,
+    }, {
+      duration: 600, // по умолчанию «400»
+      easing: 'linear', // по умолчанию «swing»
+    });
     if ($(window).width() < 768) {
       $('html, body').animate({
         scrollTop: $(href).offset().top - 50,
@@ -427,28 +425,22 @@ jQuery(document).ready(function ($) {
   });
 
   // Working hours
-  for (var i = 0; i < $('.working-btns li').length; i++) {
-    $('.working-btns li')
-      .eq(i)
-      .click(
-        (function (i) {
-          return function () {
-            if ($('#working-sametime-checkbox').is(':checked')) {
-              $('#working-sametime-checkbox').prop('checked', false);
-              $('#working-sametime').addClass('hidden');
+  $('.working-btns li').on('click', function () {
+    $(this).toggleClass('active');
+    var day = $(this).attr('data-day');
 
-              this.classList.remove('active');
-              $('.working-day .working-day__item').removeClass('hidden');
-              $('.working-day .working-day__item').eq(i).addClass('hidden');
-            } else {
-              this.classList.toggle('active');
-              $('.working-day .working-day__item').eq(i).toggleClass('hidden');
-            }
-            $('#working-everyday-checkbox').prop('checked', false);
-          };
-        })(i)
-      );
-  }
+    if ($('#working-sametime-checkbox').is(':checked')) {
+
+    } else {
+      $('.working-day .working-day__item[data-day = ' + day + ']').toggleClass('hidden');
+    }
+
+    if ($('.working-btns li.active').length == 7) {
+      $('#working-everyday-checkbox').prop('checked', true);
+    } else {
+      $('#working-everyday-checkbox').prop('checked', false);
+    }
+  });
 
   $('#working-everyday-checkbox').click(function () {
     if ($(this).is(':checked')) {
@@ -463,12 +455,15 @@ jQuery(document).ready(function ($) {
   $('#working-sametime-checkbox').click(function () {
     if ($(this).is(':checked')) {
       $('.working-day .working-day__item').addClass('hidden');
-      $('.working-btns li').addClass('active');
-      $('#working-everyday-checkbox').prop('checked', true);
       $('#working-sametime').toggleClass('hidden');
     } else {
       $('#working-sametime').addClass('hidden');
-      $('.working-day .working-day__item').removeClass('hidden');
+
+      for (var i = 0; i < $('.working-btns li.active').length; i++) {
+
+        var day = $('.working-btns li.active').eq(i).attr('data-day');
+        $('.working-day .working-day__item[data-day = ' + day + ']').toggleClass('hidden');
+      }
     }
   });
 
@@ -516,4 +511,127 @@ jQuery(document).ready(function ($) {
     $('.tag-list').show();
     $('.search-result').show();
   });
+
+  $('.edit-company__wrapp form').on('submit', function (e) {
+    e.preventDefault();
+    $('.notice-popup-js span').text('Изменения сохранены');
+    $('#card-company-content .main-tab').removeClass('hidden');
+    $('.new-reviews__wrapper').removeClass('active');
+    $('.thanks__for-reviews__wrapper').removeClass('active');
+    $('.edit-company__wrapp').addClass('hidden');
+    $('.notice-popup-js').removeClass('hidden');
+  });
+
+  $('.repeater-btn_cat').click(function () {
+    repeaterList = $(this).closest('.repeater-js').find('.repeater-list-js');
+    let repeaterNum = ($(this).closest('.repeater-js').find(".repeater-item-js").length) + 1;
+    addCategory(repeaterList, repeaterNum);
+    $(this).hide();
+  })
+
+  $('.repeater-btn_appliances').click(function () {
+    repeaterList = $(this).closest('.repeater-js').find('.repeater-list-js');
+    addAppliances(repeaterList);
+    repeaterList.find('.custom-select_js').last().selectize();
+  })
+
+  function addCategory(repeaterList, repeaterNum) {
+    repeaterList.append(
+      `<div class="repeater-item-js">
+  <div class="form-group__title mb-20">Весовая категория #` + repeaterNum + `</div>
+  <div class="form-group form-group__range row align-items-center mb-15">
+    <div class="col-12 col-lg-3">
+      <label class="form-input__label">Весовая категория</label>
+    </div>
+    <div class="col-12 col-lg-9">
+      <div class="form-input__range-row d-flex">
+        <div class="form-input__wrapp form-input__range">
+          <span class="form-input__label-text">от</span>
+          <input class="form-input form-input__range-body mask-number" type="text" placeholder="0.1" min="0" step="0.1" maxlength="3" />
+          <div class="form-input__line"></div>
+          <div class="form-input__range-value">кг</div>
+        </div>
+        <div class="form-input__wrapp form-input__range">
+          <span class="form-input__label-text">до</span>
+          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+          <div class="form-input__line"></div>
+          <div class="form-input__range-value">кг</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group form-group__range row align-items-center mb-15">
+    <div class="col-12 col-lg-3">
+      <label class="form-input__label">% выплат по LME</label>
+    </div>
+    <div class="col-12 col-lg-9">
+      <div class="form-input__range-row d-flex">
+        <div class="form-input__wrapp form-input__range">
+          <span class="form-input__label-text _bold">Pt</span>
+          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+          <div class="form-input__line"></div>
+          <div class="form-input__range-value">%</div>
+        </div>
+        <div class="form-input__wrapp form-input__range">
+          <span class="form-input__label-text _bold">Pd</span>
+          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+          <div class="form-input__line"></div>
+          <div class="form-input__range-value">%</div>
+        </div>
+        <div class="form-input__wrapp form-input__range">
+          <span class="form-input__label-text _bold">Rh</span>
+          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+          <div class="form-input__line"></div>
+          <div class="form-input__range-value">%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`
+    )
+  }
+
+
+  function addAppliances(repeaterList) {
+    repeaterList.append(
+      `<div class="edit-company__form mb-30 repeater-item-js">
+      <div class="form-group row align-items-center mb-20">
+        <div class="col-lg-3">
+          <label class="form-input__label">Вид техники</label>
+        </div>
+        <div class="col-lg-9">
+          <div class="form-input__wrapp">
+            <select class="custom-select custom-select_js">
+              <option value="" disabled selected hidden>Выберите из списка</option>
+              <option value="1">Холодильники</option>
+              <option value="0">СВЧ печи</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-group form-group__range row align-items-center">
+        <div class="col-12 col-lg-3">
+          <label class="form-input__label">Цена за кг</label>
+        </div>
+        <div class="col-12 col-lg-9">
+          <div class="form-input__range-row d-flex">
+            <div class="form-input__wrapp form-input__range">
+              <span class="form-input__label-text">от</span>
+              <input class="form-input form-input__range-body mask-number" type="text" value="100" maxlength="4" />
+              <div class="form-input__line"></div>
+              <div class="form-input__range-value">₽</div>
+            </div>
+            <div class="form-input__wrapp form-input__range">
+              <span class="form-input__label-text">до</span>
+              <input class="form-input form-input__range-body mask-number" type="text" value="100" maxlength="4" />
+              <div class="form-input__line"></div>
+              <div class="form-input__range-value">₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>`
+    )
+  }
+
 });

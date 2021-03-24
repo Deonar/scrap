@@ -468,7 +468,10 @@
                   <button id="btn-more" class="reviews__btn-more btn btn_gray">Показать ещё 5 отзывов</button>
                 </ul>
               </div>
-              <div class="card-company__section reviews__no-reviews">
+
+
+              <!------- Если нет отзывов ------->
+              <!-- <div class="card-company__section reviews__no-reviews">
                 <div class="reviews__no-reviews-content">
                   <div class="reviews__no-reviews-title">У этой компании пока нет отзывов</div>
                   <div class="reviews__no-reviews-sub-title">Будьте первым! Оставьте свой отзыв, если уже сотрудничали с
@@ -476,7 +479,9 @@
                   <a href="#card-company-content"
                     class="reviews__no-reviews-btn btn btn_yellow add-reviews-js scrollto">Оставить отзыв</a>
                 </div>
-              </div>
+              </div> -->
+
+
             </div>
             <!------- address ------->
             <div id="address-tab-content" class="tab__content tab-content-js" data-tab="3">

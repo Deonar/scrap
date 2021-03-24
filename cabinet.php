@@ -25,7 +25,7 @@
                   <li class="stars-rating__item stars-rating_on"></li>
                   <li class="stars-rating__item stars-rating_off"></li>
                 </ul>
-                <div class="card-company__review-num">26 отзывов</div>
+                <a href="#reviews-tab-content" class="card-company__review-num show-reviews-js link scrollto">26 отзывов</a>
               </div>
             </div>
           </div>
@@ -51,7 +51,7 @@
                 </svg>
                 Компании
               </div>
-              <div class="tab__item tab-item-js" data-tab="2">
+              <div id="reviews-tab" class="tab__item tab-item-js" data-tab="2">
                 <svg class="tab__item-icon">
                   <use xlink:href="assets/img/icons/star.svg#tab-star"></use>
                 </svg>
@@ -396,7 +396,7 @@
               </div>
             </div>
             <!------- reviews ------->
-            <div class="tab__content tab-content-js" data-tab="2">
+            <div id="reviews-tab-content" class="tab__content tab-content-js" data-tab="2">
               <div class="card-company__section">
                 <h4 class="primary-title mb-20">Отзывы</h4>
                 <ul class="card-company__reviews-list reviews-list more-list-js">
@@ -669,10 +669,8 @@
 
                 <div class="form-group row align-items-center mb-15">
                   <div class="col-lg-3">
-                    <label class="form-input__label"
-                      >Категории<br />
-                      сбыта</label
-                    >
+                    <label class="form-input__label">Категории<br />
+                      сбыта</label>
                   </div>
                   <div class="col-lg-9">
                     <select class="custom-select custom-select-tag_js" multiple>
@@ -722,7 +720,7 @@
                   </div>
                   <div class="col-lg-9">
                     <div class="form-input__wrapp form-input-phone">
-                      <input class="form-input" placeholder="Например, 27б, к1, с3" />
+                      <input class="form-input" type="text" placeholder="Например, 27б, к1, с3" maxlength="7" />
                       <div class="form-input__line"></div>
                       <span class="form-input__error">Неверный дом</span>
                     </div>
@@ -751,13 +749,13 @@
                   <div class="col-lg-9">
                     <div class="form-input__wrapp">
                       <ul id="working-btns" class="working-btns">
-                        <li class="working-btn active"><span>пн</span></li>
-                        <li class="working-btn active"><span>вт</span></li>
-                        <li class="working-btn active"><span>ср</span></li>
-                        <li class="working-btn active"><span>чт</span></li>
-                        <li class="working-btn active"><span>пт</span></li>
-                        <li class="working-btn"><span>сб</span></li>
-                        <li class="working-btn"><span>вс</span></li>
+                        <li class="working-btn active" data-day="1"><span>пн</span></li>
+                        <li class="working-btn active" data-day="2"><span>вт</span></li>
+                        <li class="working-btn active" data-day="3"><span>ср</span></li>
+                        <li class="working-btn active" data-day="4"><span>чт</span></li>
+                        <li class="working-btn active" data-day="5"><span>пт</span></li>
+                        <li class="working-btn" data-day="6"><span>сб</span></li>
+                        <li class="working-btn" data-day="7"><span>вс</span></li>
                       </ul>
                     </div>
                   </div>
@@ -780,7 +778,7 @@
                   </div>
                 </div>
                 <div id="working-day" class="working-day">
-                  <div class="working-day__item form-group form-group__range row align-items-center mb-15">
+                  <div class="working-day__item form-group form-group__range row align-items-center mb-15" data-day="1">
                     <div class="col-2 col-lg-3">
                       <label class="form-input__label">ПН</label>
                     </div>
@@ -805,7 +803,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="working-day__item form-group form-group__range row align-items-center mb-15">
+                  <div class="working-day__item form-group form-group__range row align-items-center mb-15" data-day="2">
                     <div class="col-2 col-lg-3">
                       <label class="form-input__label">ВТ</label>
                     </div>
@@ -830,7 +828,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="working-day__item form-group form-group__range row align-items-center mb-15">
+                  <div class="working-day__item form-group form-group__range row align-items-center mb-15" data-day="3">
                     <div class="col-2 col-lg-3">
                       <label class="form-input__label">СР</label>
                     </div>
@@ -855,7 +853,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="working-day__item form-group form-group__range row align-items-center mb-15">
+                  <div class="working-day__item form-group form-group__range row align-items-center mb-15" data-day="4">
                     <div class="col-2 col-lg-3">
                       <label class="form-input__label">ЧТ</label>
                     </div>
@@ -880,7 +878,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="working-day__item form-group form-group__range row align-items-center mb-15">
+                  <div class="working-day__item form-group form-group__range row align-items-center mb-15" data-day="5">
                     <div class="col-2 col-lg-3">
                       <label class="form-input__label">ПТ</label>
                     </div>
@@ -905,7 +903,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="working-day__item form-group form-group__range row align-items-center mb-15 hidden">
+                  <div class="working-day__item form-group form-group__range row align-items-center mb-15 hidden" data-day="6">
                     <div class="col-2 col-lg-3">
                       <label class="form-input__label">СБ</label>
                     </div>
@@ -930,7 +928,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="working-day__item form-group form-group__range row align-items-center mb-15 hidden">
+                  <div class="working-day__item form-group form-group__range row align-items-center mb-15 hidden" data-day="7">
                     <div class="col-2 col-lg-3">
                       <label class="form-input__label">ВС</label>
                     </div>
@@ -958,7 +956,7 @@
                   <!-- Everyday -->
                   <div class="form-group form-group__range row align-items-center mb-15 hidden" id="working-sametime">
                     <div class="col-2 col-lg-3">
-                      <label class="form-input__label">ПН-ВС</label>
+                      <!-- <label class="form-input__label">ПН-ВС</label> -->
                     </div>
                     <div class="col-10 col-lg-9">
                       <div class="form-input__range-row d-flex">
@@ -1031,7 +1029,7 @@
             </div>
             <div class="edit-company__btns d-flex justify-content-between">
               <a href="#card-company-content" class="btn btn_reset-param come-back-js scrollto">Отменить</a>
-              <a href="#card-company-content" class="btn btn_black come-back-js scrollto">Сохранить изменения</a>
+              <button type="submit" class="btn btn_black">Сохранить изменения</button>
             </div>
           </form>
         </div>
@@ -1039,430 +1037,447 @@
         <!-- ======= Edit info of personal information ======== -->
         <div id="edit-info-personal" class="edit-company__wrapp hidden">
           <button class="btn-come__back come-back-js">Назад</button>
-          <div class="company-section edit-company__section">
-            <div class="company-section__title mb-25">Личная информация</div>
-            <div class="edit-company__form mb-30">
-              <div class="form-group row align-items-center mb-15">
-                <div class="col-sm-3 col-lg-4">
-                  <label class="form-input__label">Ваши ФИО</label>
+          <form action="#">
+            <div class="company-section edit-company__section">
+              <div class="company-section__title mb-25">Личная информация</div>
+              <div class="edit-company__form mb-30">
+                <div class="form-group row align-items-center mb-15">
+                  <div class="col-sm-3 col-lg-4">
+                    <label class="form-input__label">Ваши ФИО</label>
+                  </div>
+                  <div class="col-sm-9 col-lg-8">
+                    <div class="form-input__wrapp">
+                      <input class="form-input mask-string" type="text" placeholder="Тальков Игорь Николаевич" />
+                      <div class="form-input__line"></div>
+                      <span class="form-input__error">Некорректное имя</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-sm-9 col-lg-8">
-                  <div class="form-input__wrapp">
-                    <input class="form-input mask-string" type="text" placeholder="Тальков Игорь Николаевич" />
-                    <div class="form-input__line"></div>
-                    <span class="form-input__error">Некорректное имя</span>
+                <div class="form-group row align-items-center mb-15">
+                  <div class="col-sm-3 col-lg-4">
+                    <label class="form-input__label">Личный телефон</label>
+                  </div>
+                  <div class="col-sm-9 col-lg-8">
+                    <div class="form-input__wrapp form-input-phone">
+                      <input class="form-input mask-phone" placeholder="+7 999 999-99-99" maxlength="16" />
+                      <div class="form-input__line"></div>
+                      <span class="form-input__error">Некорректный номер</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="form-group row align-items-center mb-15">
-                <div class="col-sm-3 col-lg-4">
-                  <label class="form-input__label">Личный телефон</label>
-                </div>
-                <div class="col-sm-9 col-lg-8">
-                  <div class="form-input__wrapp form-input-phone">
-                    <input class="form-input mask-phone" placeholder="+7 999 999-99-99" maxlength="16" />
-                    <div class="form-input__line"></div>
-                    <span class="form-input__error">Некорректный номер</span>
-                  </div>
-                </div>
+              <div class="edit-company__btns d-flex justify-content-between">
+                <a href="#card-company-content" class="btn btn_reset-param come-back-js scrollto">Отменить</a>
+                <button type="submit" class="btn btn_black">Сохранить изменения</button>
               </div>
             </div>
-            <div class="edit-company__btns d-flex justify-content-between">
-              <a href="#card-company-content" class="btn btn_reset-param come-back-js scrollto">Отменить</a>
-              <a href="#card-company-content" class="btn btn_black come-back-js scrollto">Сохранить изменения</a>
-            </div>
-          </div>
+          </form>
         </div>
 
         <!-- ======= Edit info of Legal information ======== -->
         <div id="edit-info-legal" class="edit-company__wrapp hidden">
           <button class="btn-come__back come-back-js">Назад</button>
-          <div class="company-section edit-company__section">
-            <div class="company-section__title mb-25">Юридическая информация</div>
-            <div class="edit-company__form mb-30">
-              <div class="form-group row align-items-center mb-15">
-                <div class="col-lg-3">
-                  <label class="form-input__label">Название организации</label>
+          <form action="#">
+            <div class="company-section edit-company__section">
+              <div class="company-section__title mb-25">Юридическая информация</div>
+              <div class="edit-company__form mb-30">
+                <div class="form-group row align-items-center mb-15">
+                  <div class="col-lg-3">
+                    <label class="form-input__label">Название организации</label>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="form-input__wrapp">
+                      <input class="form-input" placeholder="ООО Выкуп катализаторов" />
+                      <div class="form-input__line"></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-9">
-                  <div class="form-input__wrapp">
-                    <input class="form-input" placeholder="ООО Выкуп катализаторов" />
-                    <div class="form-input__line"></div>
+                <div class="form-group row mb-15">
+                  <div class="col-lg-3">
+                    <label class="form-input__label">Форма работы</label>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="form-radio__group">
+                      <input class="form-radio__input" type="radio" id="form-yp" name="forms-of-work" checked />
+                      <label class="form-radio__label" for="form-yp">ИП</label>
+                      <input class="form-radio__input" type="radio" id="form-ooo" name="forms-of-work" />
+                      <label class="form-radio__label" for="form-ooo">ООО</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row align-items-center mb-15">
+                  <div class="col-lg-3">
+                    <label class="form-input__label">ИНН</label>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="form-input__wrapp">
+                      <input class="form-input mask-number" placeholder="1234422144" />
+                      <div class="form-input__line"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row align-items-center mb-15">
+                  <div class="col-lg-3">
+                    <label class="form-input__label">КПП</label>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="form-input__wrapp">
+                      <input class="form-input mask-number" placeholder="1234422144" />
+                      <div class="form-input__line"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row align-items-center mb-15">
+                  <div class="col-lg-3">
+                    <label class="form-input__label">ОГРН</label>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="form-input__wrapp">
+                      <input class="form-input mask-number" placeholder="1234422144" />
+                      <div class="form-input__line"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row align-items-center mb-15">
+                  <div class="col-lg-3">
+                    <label class="form-input__label">Фото документов</label>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="form-input__remark ml-auto" style="max-width: 100%">Загрузите фотографии документов. Размер одной фотографии не должен превышать 5 MB.</div>
+                  </div>
+                </div>
+                <div class="form-group row align-items-center mb-15">
+                  <div class="col-lg-3">
+                    <label class="form-input__label">Паспорт</label>
+                  </div>
+                  <div class="col-lg-9">
+                    <label class="passport-download download-file">
+                      <input type="file" class="hidden" multiple="" />
+                      <!-- <img src="assets/img/passport.jpg" alt=""> -->
+                    </label>
                   </div>
                 </div>
               </div>
-              <div class="form-group row mb-15">
-                <div class="col-lg-3">
-                  <label class="form-input__label">Форма работы</label>
-                </div>
-                <div class="col-lg-9">
-                  <div class="form-radio__group">
-                    <input class="form-radio__input" type="radio" id="form-yp" name="forms-of-work" checked />
-                    <label class="form-radio__label" for="form-yp">ИП</label>
-                    <input class="form-radio__input" type="radio" id="form-ooo" name="forms-of-work" />
-                    <label class="form-radio__label" for="form-ooo">ООО</label>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row align-items-center mb-15">
-                <div class="col-lg-3">
-                  <label class="form-input__label">ИНН</label>
-                </div>
-                <div class="col-lg-9">
-                  <div class="form-input__wrapp">
-                    <input class="form-input mask-number" placeholder="1234422144" />
-                    <div class="form-input__line"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row align-items-center mb-15">
-                <div class="col-lg-3">
-                  <label class="form-input__label">КПП</label>
-                </div>
-                <div class="col-lg-9">
-                  <div class="form-input__wrapp">
-                    <input class="form-input mask-number" placeholder="1234422144" />
-                    <div class="form-input__line"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row align-items-center mb-15">
-                <div class="col-lg-3">
-                  <label class="form-input__label">ОГРН</label>
-                </div>
-                <div class="col-lg-9">
-                  <div class="form-input__wrapp">
-                    <input class="form-input mask-number" placeholder="1234422144" />
-                    <div class="form-input__line"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row align-items-center mb-15">
-                <div class="col-lg-3">
-                  <label class="form-input__label">Фото документов</label>
-                </div>
-                <div class="col-lg-9">
-                  <div class="form-input__remark ml-auto" style="max-width: 100%">Загрузите фотографии документов. Размер одной фотографии не должен превышать 5 MB.</div>
-                </div>
-              </div>
-              <div class="form-group row align-items-center mb-15">
-                <div class="col-lg-3">
-                  <label class="form-input__label">Паспорт</label>
-                </div>
-                <div class="col-lg-9">
-                  <label class="passport-download download-file">
-                    <input type="file" class="hidden" multiple="" />
-                    <!-- <img src="assets/img/passport.jpg" alt=""> -->
-                  </label>
-                </div>
+              <div class="edit-company__btns d-flex justify-content-between">
+                <a href="#card-company-content" class="btn btn_reset-param come-back-js scrollto">Отменить</a>
+                <button type="submit" class="btn btn_black">Сохранить изменения</button>
               </div>
             </div>
-            <div class="edit-company__btns d-flex justify-content-between">
-              <a href="#card-company-content" class="btn btn_reset-param come-back-js scrollto">Отменить</a>
-              <a href="#card-company-content" class="btn btn_black come-back-js scrollto">Сохранить изменения</a>
-            </div>
-          </div>
+          </form>
         </div>
 
         <!-- ======= Edit info of material price ======== -->
         <div id="edit-info-material" class="edit-company__wrapp hidden">
           <button class="btn-come__back come-back-js">Назад</button>
-          <div class="company-section edit-company__section">
-            <div class="company-section__title mb-25">Керамический материал</div>
-            <div class="edit-company__form mb-30">
-              <div class="form-group__title mb-20">Весовая категория #1</div>
-              <div class="form-group form-group__range row align-items-center mb-15">
-                <div class="col-12 col-lg-3">
-                  <label class="form-input__label">Весовая категория</label>
-                </div>
-                <div class="col-12 col-lg-9">
-                  <div class="form-input__range-row d-flex">
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text">от</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">кг</div>
-                    </div>
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text">до</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">кг</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group form-group__range row align-items-center mb-15">
-                <div class="col-12 col-lg-3">
-                  <label class="form-input__label">% выплат по LME</label>
-                </div>
-                <div class="col-12 col-lg-9">
-                  <div class="form-input__range-row d-flex">
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text _bold">Pt</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">%</div>
-                    </div>
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text _bold">Pd</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">%</div>
-                    </div>
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text _bold">Rh</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group__title mb-20">Весовая категория #2</div>
-              <div class="form-group form-group__range row align-items-center mb-15">
-                <div class="col-12 col-lg-3">
-                  <label class="form-input__label">Весовая категория</label>
-                </div>
-                <div class="col-12 col-lg-9">
-                  <div class="form-input__range-row d-flex">
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text">от</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" placeholder="0.1" min="0" step="0.1" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">кг</div>
-                    </div>
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text _bold">до</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">кг</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group form-group__range row align-items-center mb-15">
-                <div class="col-12 col-lg-3">
-                  <label class="form-input__label">% выплат по LME</label>
-                </div>
-                <div class="col-12 col-lg-9">
-                  <div class="form-input__range-row d-flex">
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text _bold">Pt</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">%</div>
-                    </div>
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text _bold">Pd</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">%</div>
-                    </div>
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text _bold">Rh</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" placeholder="1" min="0" step="0.1" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="link">Добавить весовую категорию</button>
-          </div>
-          <div class="company-section edit-company__section">
-            <div class="company-section__title mb-25">Металлический материал (импорт)</div>
-            <div class="edit-company__form">
-              <div class="form-group form-group__range row align-items-center">
-                <div class="col-12 col-lg-3">
-                  <label class="form-input__label">Цена за кг</label>
-                </div>
-                <div class="col-12 col-lg-9">
-                  <div class="form-input__range-row d-flex">
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text">от</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" placeholder="100" min="0" step="0.1" max="100000" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">₽</div>
-                    </div>
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text">до</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" placeholder="100" min="0" step="0.1" max="100000" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">₽</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="company-section edit-company__section">
-            <div class="company-section__title mb-25">Металлический материал (отеч.)</div>
-            <div class="edit-company__form">
-              <div class="form-group form-group__range row align-items-center">
-                <div class="col-12 col-lg-3">
-                  <label class="form-input__label">Цена за кг</label>
-                </div>
-                <div class="col-12 col-lg-9">
-                  <div class="form-input__range-row d-flex">
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text">от</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" placeholder="100" min="0" step="0.1" max="100000" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">₽</div>
-                    </div>
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text">до</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" placeholder="100" min="0" step="0.1" max="100000" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">₽</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="edit-company__btns d-flex justify-content-between">
-            <a href="#card-company-content" class="btn btn_reset-param come-back-js scrollto">Отменить</a>
+          <form action="#">
+            <div class="company-section edit-company__section repeater-js">
+              <div class="company-section__title mb-25">Керамический материал</div>
+              <div class="edit-company__form mb-30 repeater-list-js">
 
-            <label class="custom-checkbox">
-              <input checked="" class="d-none" type="checkbox" />
-              <span class="custom-checkbox__point"></span>
-              Применить цены ко всем филиалам
-            </label>
-            <a href="#card-company-content" class="btn btn_black come-back-js scrollto">Сохранить изменения</a>
-          </div>
+                <div class="repeater-item-js">
+                  <div class="form-group__title mb-20">Весовая категория #1</div>
+                  <div class="form-group form-group__range row align-items-center mb-15">
+                    <div class="col-12 col-lg-3">
+                      <label class="form-input__label">Весовая категория</label>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                      <div class="form-input__range-row d-flex">
+                        <div class="form-input__wrapp form-input__range">
+                          <span class="form-input__label-text">от</span>
+                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                          <div class="form-input__line"></div>
+                          <div class="form-input__range-value">кг</div>
+                        </div>
+                        <div class="form-input__wrapp form-input__range">
+                          <span class="form-input__label-text">до</span>
+                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                          <div class="form-input__line"></div>
+                          <div class="form-input__range-value">кг</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group form-group__range row align-items-center mb-15">
+                    <div class="col-12 col-lg-3">
+                      <label class="form-input__label">% выплат по LME</label>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                      <div class="form-input__range-row d-flex">
+                        <div class="form-input__wrapp form-input__range">
+                          <span class="form-input__label-text _bold">Pt</span>
+                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                          <div class="form-input__line"></div>
+                          <div class="form-input__range-value">%</div>
+                        </div>
+                        <div class="form-input__wrapp form-input__range">
+                          <span class="form-input__label-text _bold">Pd</span>
+                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                          <div class="form-input__line"></div>
+                          <div class="form-input__range-value">%</div>
+                        </div>
+                        <div class="form-input__wrapp form-input__range">
+                          <span class="form-input__label-text _bold">Rh</span>
+                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                          <div class="form-input__line"></div>
+                          <div class="form-input__range-value">%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="repeater-item-js">
+                  <div class="form-group__title mb-20">Весовая категория #2</div>
+                  <div class="form-group form-group__range row align-items-center mb-15">
+                    <div class="col-12 col-lg-3">
+                      <label class="form-input__label">Весовая категория</label>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                      <div class="form-input__range-row d-flex">
+                        <div class="form-input__wrapp form-input__range">
+                          <span class="form-input__label-text">от</span>
+                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="0.1" min="0" step="0.1" maxlength="3" />
+                          <div class="form-input__line"></div>
+                          <div class="form-input__range-value">кг</div>
+                        </div>
+                        <div class="form-input__wrapp form-input__range">
+                          <span class="form-input__label-text">до</span>
+                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                          <div class="form-input__line"></div>
+                          <div class="form-input__range-value">кг</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group form-group__range row align-items-center mb-15">
+                    <div class="col-12 col-lg-3">
+                      <label class="form-input__label">% выплат по LME</label>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                      <div class="form-input__range-row d-flex">
+                        <div class="form-input__wrapp form-input__range">
+                          <span class="form-input__label-text _bold">Pt</span>
+                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                          <div class="form-input__line"></div>
+                          <div class="form-input__range-value">%</div>
+                        </div>
+                        <div class="form-input__wrapp form-input__range">
+                          <span class="form-input__label-text _bold">Pd</span>
+                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                          <div class="form-input__line"></div>
+                          <div class="form-input__range-value">%</div>
+                        </div>
+                        <div class="form-input__wrapp form-input__range">
+                          <span class="form-input__label-text _bold">Rh</span>
+                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                          <div class="form-input__line"></div>
+                          <div class="form-input__range-value">%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <button class="link repeater-btn_cat">Добавить весовую категорию</button>
+            </div>
+            <div class="company-section edit-company__section">
+              <div class="company-section__title mb-25">Металлический материал (импорт)</div>
+              <div class="edit-company__form">
+                <div class="form-group form-group__range row align-items-center">
+                  <div class="col-12 col-lg-3">
+                    <label class="form-input__label">Цена за кг</label>
+                  </div>
+                  <div class="col-12 col-lg-9">
+                    <div class="form-input__range-row d-flex">
+                      <div class="form-input__wrapp form-input__range">
+                        <span class="form-input__label-text">от</span>
+                        <input class="form-input form-input__range-body mask-number" type="text" placeholder="100" min="0" step="0.1" maxlength="7" />
+                        <div class="form-input__line"></div>
+                        <div class="form-input__range-value">₽</div>
+                      </div>
+                      <div class="form-input__wrapp form-input__range">
+                        <span class="form-input__label-text">до</span>
+                        <input class="form-input form-input__range-body mask-number" type="text" placeholder="100" min="0" step="0.1" maxlength="7" />
+                        <div class="form-input__line"></div>
+                        <div class="form-input__range-value">₽</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="company-section edit-company__section">
+              <div class="company-section__title mb-25">Металлический материал (отеч.)</div>
+              <div class="edit-company__form">
+                <div class="form-group form-group__range row align-items-center">
+                  <div class="col-12 col-lg-3">
+                    <label class="form-input__label">Цена за кг</label>
+                  </div>
+                  <div class="col-12 col-lg-9">
+                    <div class="form-input__range-row d-flex">
+                      <div class="form-input__wrapp form-input__range">
+                        <span class="form-input__label-text">от</span>
+                        <input class="form-input form-input__range-body mask-number" type="text" placeholder="100" min="0" step="0.1" maxlength="7" />
+                        <div class="form-input__line"></div>
+                        <div class="form-input__range-value">₽</div>
+                      </div>
+                      <div class="form-input__wrapp form-input__range">
+                        <span class="form-input__label-text">до</span>
+                        <input class="form-input form-input__range-body mask-number" type="text" placeholder="100" min="0" step="0.1" maxlength="7" />
+                        <div class="form-input__line"></div>
+                        <div class="form-input__range-value">₽</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edit-company__btns d-flex justify-content-between">
+              <a href="#card-company-content" class="btn btn_reset-param come-back-js scrollto">Отменить</a>
+
+              <label class="custom-checkbox">
+                <input checked="" class="d-none" type="checkbox" />
+                <span class="custom-checkbox__point"></span>
+                Применить цены ко всем филиалам
+              </label>
+              <button type="submit" class="btn btn_black">Сохранить изменения</button>
+            </div>
+          </form>
         </div>
 
         <!-- ======= Edit info of appliances price ======== -->
         <div id="edit-info-appliances" class="edit-company__wrapp hidden">
           <button class="btn-come__back come-back-js">Назад</button>
-          <div class="company-section edit-company__section">
-            <div class="company-section__title mb-25">Бытовая техника</div>
-            <div class="edit-company__form mb-30">
-              <div class="form-group row align-items-center mb-20">
-                <div class="col-lg-3">
-                  <label class="form-input__label">Вид техники</label>
+          <form action="#">
+            <div class="company-section edit-company__section repeater-js">
+              <div class="company-section__title mb-25">Бытовая техника</div>
+              <div class="repeater-list-js">
+                <div class="edit-company__form mb-30 repeater-item-js">
+                  <div class="form-group row align-items-center mb-20">
+                    <div class="col-lg-3">
+                      <label class="form-input__label">Вид техники</label>
+                    </div>
+                    <div class="col-lg-9">
+                      <div class="form-input__wrapp">
+                        <select class="custom-select custom-select_js">
+                          <option value="" disabled selected hidden>Выберите из списка</option>
+                          <option value="1">Холодильники</option>
+                          <option value="0">СВЧ печи</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group form-group__range row align-items-center">
+                    <div class="col-12 col-lg-3">
+                      <label class="form-input__label">Цена за кг</label>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                      <div class="form-input__range-row d-flex">
+                        <div class="form-input__wrapp form-input__range">
+                          <span class="form-input__label-text">от</span>
+                          <input class="form-input form-input__range-body mask-number" type="text" value="100" maxlength="4" />
+                          <div class="form-input__line"></div>
+                          <div class="form-input__range-value">₽</div>
+                        </div>
+                        <div class="form-input__wrapp form-input__range">
+                          <span class="form-input__label-text">до</span>
+                          <input class="form-input form-input__range-body mask-number" type="text" value="100" maxlength="4" />
+                          <div class="form-input__line"></div>
+                          <div class="form-input__range-value">₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-9">
-                  <div class="form-input__wrapp">
-                    <select class="custom-select custom-select_js">
-                      <option value="" disabled selected hidden>Выберите из списка</option>
-                      <option value="1">Холодильники</option>
-                      <option value="0">СВЧ печи</option>
-                    </select>
+                <div class="edit-company__form mb-30 repeater-item-js">
+                  <div class="form-group row align-items-center mb-20">
+                    <div class="col-lg-3">
+                      <label class="form-input__label">Вид техники</label>
+                    </div>
+                    <div class="col-lg-9">
+                      <div class="form-input__wrapp">
+                        <select class="custom-select custom-select_js">
+                          <option value="" disabled selected hidden>Выберите из списка</option>
+                          <option value="1">Холодильники</option>
+                          <option value="0">СВЧ печи</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group form-group__range row align-items-center">
+                    <div class="col-12 col-lg-3">
+                      <label class="form-input__label">Цена за кг</label>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                      <div class="form-input__range-row d-flex">
+                        <div class="form-input__wrapp form-input__range">
+                          <span class="form-input__label-text">от</span>
+                          <input class="form-input form-input__range-body mask-number" type="text" value="100" maxlength="4" />
+                          <div class="form-input__line"></div>
+                          <div class="form-input__range-value">₽</div>
+                        </div>
+                        <div class="form-input__wrapp form-input__range">
+                          <span class="form-input__label-text">до</span>
+                          <input class="form-input form-input__range-body mask-number" type="text" value="100" maxlength="4" />
+                          <div class="form-input__line"></div>
+                          <div class="form-input__range-value">₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="edit-company__form mb-30 repeater-item-js">
+                  <div class="form-group row align-items-center mb-20">
+                    <div class="col-lg-3">
+                      <label class="form-input__label">Вид техники</label>
+                    </div>
+                    <div class="col-lg-9">
+                      <div class="form-input__wrapp">
+                        <select class="custom-select custom-select_js">
+                          <option value="" disabled selected hidden>Выберите из списка</option>
+                          <option value="1">Холодильники</option>
+                          <option value="0">СВЧ печи</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group form-group__range row align-items-center">
+                    <div class="col-12 col-lg-3">
+                      <label class="form-input__label">Цена за кг</label>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                      <div class="form-input__range-row d-flex">
+                        <div class="form-input__wrapp form-input__range">
+                          <span class="form-input__label-text">от</span>
+                          <input class="form-input form-input__range-body mask-number" type="text" value="100" maxlength="4" />
+                          <div class="form-input__line"></div>
+                          <div class="form-input__range-value">₽</div>
+                        </div>
+                        <div class="form-input__wrapp form-input__range">
+                          <span class="form-input__label-text">до</span>
+                          <input class="form-input form-input__range-body mask-number" type="text" value="100" maxlength="4" />
+                          <div class="form-input__line"></div>
+                          <div class="form-input__range-value">₽</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="form-group form-group__range row align-items-center">
-                <div class="col-12 col-lg-3">
-                  <label class="form-input__label">Цена за кг</label>
-                </div>
-                <div class="col-12 col-lg-9">
-                  <div class="form-input__range-row d-flex">
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text">от</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" value="100" maxlength="4" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">₽</div>
-                    </div>
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text">до</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" value="100" maxlength="4" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">₽</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <button class="link repeater-btn_appliances">Добавить вид техники</button>
             </div>
-            <div class="edit-company__form mb-30">
-              <div class="form-group row align-items-center mb-20">
-                <div class="col-lg-3">
-                  <label class="form-input__label">Вид техники</label>
-                </div>
-                <div class="col-lg-9">
-                  <div class="form-input__wrapp">
-                    <select class="custom-select custom-select_js">
-                      <option value="" disabled selected hidden>Выберите из списка</option>
-                      <option value="1">Холодильники</option>
-                      <option value="0">СВЧ печи</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group form-group__range row align-items-center">
-                <div class="col-12 col-lg-3">
-                  <label class="form-input__label">Цена за кг</label>
-                </div>
-                <div class="col-12 col-lg-9">
-                  <div class="form-input__range-row d-flex">
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text">от</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" value="100" maxlength="4" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">₽</div>
-                    </div>
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text">до</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" value="100" maxlength="4" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">₽</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="edit-company__form mb-30">
-              <div class="form-group row align-items-center mb-20">
-                <div class="col-lg-3">
-                  <label class="form-input__label">Вид техники</label>
-                </div>
-                <div class="col-lg-9">
-                  <div class="form-input__wrapp">
-                    <select class="custom-select custom-select_js">
-                      <option value="" disabled selected hidden>Выберите из списка</option>
-                      <option value="1">Холодильники</option>
-                      <option value="0">СВЧ печи</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group form-group__range row align-items-center">
-                <div class="col-12 col-lg-3">
-                  <label class="form-input__label">Цена за кг</label>
-                </div>
-                <div class="col-12 col-lg-9">
-                  <div class="form-input__range-row d-flex">
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text">от</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" value="100" maxlength="4" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">₽</div>
-                    </div>
-                    <div class="form-input__wrapp form-input__range">
-                      <span class="form-input__label-text">до</span>
-                      <input class="form-input form-input__range-body mask-number" type="number" value="100" maxlength="4" />
-                      <div class="form-input__line"></div>
-                      <div class="form-input__range-value">₽</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="link">Добавить вид техники</button>
-          </div>
 
-          <div class="edit-company__btns d-flex justify-content-between">
-            <a href="#card-company-content" class="btn btn_reset-param come-back-js scrollto">Отменить</a>
-            <label class="custom-checkbox">
-              <input checked="" class="d-none" type="checkbox" />
-              <span class="custom-checkbox__point"></span>
-              Применить цены ко всем филиалам
-            </label>
-            <a href="#card-company-content" class="btn btn_black come-back-js scrollto">Сохранить изменения</a>
-          </div>
+            <div class="edit-company__btns d-flex justify-content-between">
+              <a href="#card-company-content" class="btn btn_reset-param come-back-js scrollto">Отменить</a>
+              <label class="custom-checkbox">
+                <input checked="" class="d-none" type="checkbox" />
+                <span class="custom-checkbox__point"></span>
+                Применить цены ко всем филиалам
+              </label>
+              <button type="submit" class="btn btn_black">Сохранить изменения</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -1478,6 +1493,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </section>
 <?php include("footer.php"); ?>
