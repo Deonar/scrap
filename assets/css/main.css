@@ -3066,9 +3066,15 @@ body {
 }
 
 @media (max-width: 767px) {
-  .popup-custom {
+  .popup-custom,
+  .popup-full-screen {
     max-width: 100%;
     min-height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .notice-popup {
     left: 20px;
@@ -5713,12 +5719,6 @@ body {
   }
   .navbar-socials .socials__icon svg {
     stroke: #5f5d5d;
-  }
-  .popup-custom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .h2 {
     font-size: 24px;

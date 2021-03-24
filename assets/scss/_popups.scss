@@ -330,14 +330,17 @@
 }
 
 @media (max-width: 767px) {
-  .popup-custom {
-    max-width: 100%;
-    min-height: 100vh;
-  }
+  .popup-custom,
   .popup-full-screen {
     max-width: 100%;
     min-height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
   .notice-popup {
     left: 20px;
   }
