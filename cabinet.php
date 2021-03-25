@@ -1279,7 +1279,7 @@
                 </div>
 
               </div>
-              <button class="link repeater-btn_cat">Добавить весовую категорию</button>
+              <div class="link repeater-btn_cat">Добавить весовую категорию</div>
             </div>
             <div class="company-section edit-company__section">
               <div class="company-section__title mb-25">Металлический материал (импорт)</div>
@@ -1465,7 +1465,7 @@
                   </div>
                 </div>
               </div>
-              <button class="link repeater-btn_appliances">Добавить вид техники</button>
+              <div class="link repeater-btn_appliances">Добавить вид техники</div>
             </div>
 
             <div class="edit-company__btns d-flex justify-content-between">

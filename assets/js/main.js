@@ -365,16 +365,21 @@ jQuery(document).ready(function ($) {
     $(this).addClass('active');
     wrapper.find('.tab-content-js').hide();
     wrapper.find('.tab-content-js[data-tab = ' + tab + ']').show();
+    $('html, body').animate({
+      scrollTop: $('.tab-js').offset().top - 50,
+    });
   });
 
   //======================== Custom select
   $('.custom-select_js').selectize({
-    readOnly: true, 
-    onDelete: function() { return false }
+    readOnly: true,
+    onDelete: function () {
+      return false
+    }
   });
 
   $('.custom-select_js input').prop('disabled', true);
-  
+
   $('.custom-select-tag_js').selectize({
     plugins: ['remove_button'],
     create: true,
@@ -544,7 +549,6 @@ jQuery(document).ready(function ($) {
     repeaterList = $(this).closest('.repeater-js').find('.repeater-list-js');
     let repeaterNum = ($(this).closest('.repeater-js').find(".repeater-item-js").length) + 1;
     addCategory(repeaterList, repeaterNum);
-    $(this).hide();
   })
 
   $('.repeater-btn_appliances').click(function () {
@@ -552,11 +556,17 @@ jQuery(document).ready(function ($) {
     addAppliances(repeaterList);
     repeaterList.find('.custom-select_js').last().selectize();
   })
+  
+  $('.repeater-js').on('click', '.cross-js', function(){
+    $(this).closest('.repeater-item-js').remove();
+  })
 
   function addCategory(repeaterList, repeaterNum) {
     repeaterList.append(
       `<div class="repeater-item-js">
-  <div class="form-group__title mb-20">Весовая категория #` + repeaterNum + `</div>
+      <div class="mb-20 d-flex">
+      <div class="form-group__title">Весовая категория #` + repeaterNum + `</div><div class="ml-auto cross cross-js"></div>
+      </div>
   <div class="form-group form-group__range row align-items-center mb-15">
     <div class="col-12 col-lg-3">
       <label class="form-input__label">Весовая категория</label>
@@ -613,11 +623,15 @@ jQuery(document).ready(function ($) {
   function addAppliances(repeaterList) {
     repeaterList.append(
       `<div class="edit-company__form mb-30 repeater-item-js">
+      
       <div class="form-group row align-items-center mb-20">
-        <div class="col-lg-3">
+        <div class="col-9 col-lg-3 order-lg-0">
           <label class="form-input__label">Вид техники</label>
         </div>
-        <div class="col-lg-9">
+        <div class="col-3 col-lg-1 order-lg-1 d-flex">
+          <div class="ml-auto cross cross-js"></div>
+      </div>
+        <div class="col-lg-8 order-lg-0">
           <div class="form-input__wrapp">
             <select class="custom-select custom-select_js">
               <option value="" disabled selected hidden>Выберите из списка</option>
@@ -626,6 +640,7 @@ jQuery(document).ready(function ($) {
             </select>
           </div>
         </div>
+        
       </div>
       <div class="form-group form-group__range row align-items-center">
         <div class="col-12 col-lg-3">

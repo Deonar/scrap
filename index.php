@@ -2260,8 +2260,8 @@
 </div>
 
 <!-- Popup offer-retail-->
-<div id="popup-offer-retail" class="offer-popup offer-popup_retail popup-full-screen mfp-hide">
-  <div class="offer-popup__body">
+<div id="popup-offer-retail" class="offer-popup offer-popup_retail mfp-hide">
+  <div class="offer-popup__body popup-full-screen">
     <div class="d-flex align-items-center offer__profil mb-30">
       <div class="offer__avatar mr-10 _premium">
         <img src="assets/img/avatar.jpg" alt="">
@@ -2321,8 +2321,8 @@
 <!-- Popup offer-retail end-->
 
 <!-- Popup offer-opt-->
-<div id="popup-offer-opt" class="offer-popup offer-popup_opt popup-full-screen mfp-hide">
-  <div class="offer-popup__body">
+<div id="popup-offer-opt" class="offer-popup offer-popup_opt mfp-hide">
+  <div class="offer-popup__body popup-full-screen">
     <div class="d-flex align-items-center offer__profil mb-30">
       <div class="offer__avatar mr-10 _premium">
         <img src="assets/img/avatar.jpg" alt="">

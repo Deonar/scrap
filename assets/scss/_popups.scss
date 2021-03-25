@@ -165,18 +165,32 @@
     background-color: #fff;
     padding: 40px;
   }
-  .card-company__table-body {
-    padding: 0;
-    tr {
-      border-radius: 3px;
-      overflow: hidden;
-      th:last-child,
-      td:last-child {
-        padding-right: 20px;
-        text-align: right;
+  .card-company{
+    &__table-body {
+      padding: 0;
+      tr {
+        border-radius: 3px;
+        overflow: hidden;
+        th:last-child,
+        td:last-child {
+          padding-right: 20px;
+          text-align: right;
+        }
       }
     }
+    &__table-body{
+      width: 100%;
+    }
+    &__block{
+      width: 100%;
+    }
   }
+  
+  .offer__profil{
+    margin-right: inherit;
+    max-width: 100%;
+  }
+ 
   &_retail {
     max-width: 470px;
     margin: auto;

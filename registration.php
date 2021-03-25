@@ -143,10 +143,8 @@
                   </div>
                   <div class="form-group row align-items-center mb-15">
                     <div class="col-lg-3">
-                      <label class="form-input__label"
-                        >Категории<br />
-                        сбыта</label
-                      >
+                      <label class="form-input__label">Категории<br />
+                        сбыта</label>
                     </div>
                     <div class="col-lg-9">
                       <select class="custom-select custom-select-tag_js" multiple>
@@ -511,110 +509,117 @@
             <form action="#" id="stage-3" class="registration__stage-item hidden">
               <h4 class="primary-title mb-10">Виды и цены каталитического сырья</h4>
               <div class="page-sub-title mb-25">Заполните данные профиля, чтобы воспользоваться всеми возможностями площадки.</div>
-              <div class="company-section edit-company__section">
+
+              <div class="company-section edit-company__section repeater-js">
                 <div class="company-section__title mb-25">Керамический материал</div>
-                <div class="edit-company__form mb-30">
-                  <div class="form-group__title mb-20">Весовая категория #1</div>
-                  <div class="form-group form-group__range row align-items-center mb-15">
-                    <div class="col-12 col-lg-3">
-                      <label class="form-input__label">Весовая категория</label>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                      <div class="form-input__range-row d-flex">
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body mask-number" type="text" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="0.1" min="0" step="0.1"  maxlength="4" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">кг</div>
+                <div class="edit-company__form mb-30 repeater-list-js">
+                  <div class="repeater-item-js">
+                    <div class="form-group__title mb-20">Весовая категория #1</div>
+                    <div class="form-group form-group__range row align-items-center mb-15">
+                      <div class="col-12 col-lg-3">
+                        <label class="form-input__label">Весовая категория</label>
+                      </div>
+                      <div class="col-12 col-lg-9">
+                        <div class="form-input__range-row d-flex">
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">от</span>
+                            <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">кг</div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">до</span>
+                            <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">кг</div>
+                          </div>
                         </div>
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body mask-number" type="text" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="1" min="0" step="0.1"  maxlength="4" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">кг</div>
+                      </div>
+                    </div>
+                    <div class="form-group form-group__range row align-items-center mb-15">
+                      <div class="col-12 col-lg-3">
+                        <label class="form-input__label">% выплат по LME</label>
+                      </div>
+                      <div class="col-12 col-lg-9">
+                        <div class="form-input__range-row d-flex">
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text _bold">Pt</span>
+                            <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">%</div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text _bold">Pd</span>
+                            <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">%</div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text _bold">Rh</span>
+                            <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">%</div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form-group form-group__range row align-items-center mb-15">
-                    <div class="col-12 col-lg-3">
-                      <label class="form-input__label">% выплат по LME</label>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                      <div class="form-input__range-row d-flex">
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text _bold">Pt</span>
-                          <input class="form-input form-input__range-body mask-number" type="text" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="1" min="0" step="0.1" maxlength="3" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">%</div>
-                        </div>
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text _bold">Pd</span>
-                          <input class="form-input form-input__range-body mask-number" type="text" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="1" min="0" step="0.1" maxlength="3" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">%</div>
-                        </div>
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text _bold">Rh</span>
-                          <input class="form-input form-input__range-body mask-number" type="text" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="1" min="0" step="0.1" maxlength="3" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">%</div>
+
+                  <div class="repeater-item-js">
+                    <div class="form-group__title mb-20">Весовая категория #2</div>
+                    <div class="form-group form-group__range row align-items-center mb-15">
+                      <div class="col-12 col-lg-3">
+                        <label class="form-input__label">Весовая категория</label>
+                      </div>
+                      <div class="col-12 col-lg-9">
+                        <div class="form-input__range-row d-flex">
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">от</span>
+                            <input class="form-input form-input__range-body mask-number" type="text" placeholder="0.1" min="0" step="0.1" maxlength="3" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">кг</div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">до</span>
+                            <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">кг</div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="form-group__title mb-20">Весовая категория #2</div>
-                  <div class="form-group form-group__range row align-items-center mb-15">
-                    <div class="col-12 col-lg-3">
-                      <label class="form-input__label">Весовая категория</label>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                      <div class="form-input__range-row d-flex">
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body mask-number" type="text" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="0.1" min="0" step="0.1" maxlength="3" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">кг</div>
-                        </div>
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body mask-number" type="text" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="1" min="0" step="0.1" maxlength="3" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">кг</div>
-                        </div>
+                    <div class="form-group form-group__range row align-items-center mb-15">
+                      <div class="col-12 col-lg-3">
+                        <label class="form-input__label">% выплат по LME</label>
                       </div>
-                    </div>
-                  </div>
-                  <div class="form-group form-group__range row align-items-center mb-15">
-                    <div class="col-12 col-lg-3">
-                      <label class="form-input__label">% выплат по LME</label>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                      <div class="form-input__range-row d-flex">
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text _bold">Pt</span>
-                          <input class="form-input form-input__range-body mask-number" type="text" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="1" min="0" step="0.1" maxlength="3" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">%</div>
-                        </div>
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text _bold">Pd</span>
-                          <input class="form-input form-input__range-body mask-number" type="text" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="1" min="0" step="0.1" maxlength="3" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">%</div>
-                        </div>
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text _bold">Rh</span>
-                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">%</div>
+                      <div class="col-12 col-lg-9">
+                        <div class="form-input__range-row d-flex">
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text _bold">Pt</span>
+                            <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">%</div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text _bold">Pd</span>
+                            <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">%</div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text _bold">Rh</span>
+                            <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">%</div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <button class="link">Добавить весовую категорию</button>
+                <div class="link repeater-btn_cat">Добавить весовую категорию</div>
               </div>
+
               <div class="company-section edit-company__section">
                 <div class="company-section__title mb-25">Металлический материал (импорт)</div>
                 <div class="edit-company__form">
@@ -677,124 +682,126 @@
                 <button type="submit" id="to-stage-finish" class="btn btn_black ml-auto">Сохранить и продолжить</button>
               </div>
             </form>
-
+            
             <form action="#" id="stage-finish" class="registration__stage-item hidden">
               <h4 class="primary-title mb-10">Виды и цены сырья бытовой техники</h4>
               <div class="page-sub-title mb-25">Необходимо указать расценки хотя бы для одного вида сырья</div>
-              <div class="company-section edit-company__section">
+              <div class="company-section edit-company__section  repeater-js">
                 <div class="company-section__title mb-25">Бытовая техника</div>
-                <div class="edit-company__form mb-30">
-                  <div class="form-group row align-items-center mb-20">
-                    <div class="col-lg-3">
-                      <label class="form-input__label">Вид техники</label>
+                <div class="repeater-list-js">
+                  <div class="edit-company__form mb-30 repeater-item-js">
+                    <div class="form-group row align-items-center mb-20">
+                      <div class="col-lg-3">
+                        <label class="form-input__label">Вид техники</label>
+                      </div>
+                      <div class="col-lg-9">
+                        <div class="form-input__wrapp">
+                          <select class="custom-select custom-select_js">
+                            <option value="" disabled selected hidden>Выберите из списка</option>
+                            <option value="1">Холодильники</option>
+                            <option value="0">СВЧ печи</option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-lg-9">
-                      <div class="form-input__wrapp">
-                        <select class="custom-select custom-select_js">
-                          <option value="" disabled selected hidden>Выберите из списка</option>
-                          <option value="1">Холодильники</option>
-                          <option value="0">СВЧ печи</option>
-                        </select>
+                    <div class="form-group form-group__range row align-items-center">
+                      <div class="col-12 col-lg-3">
+                        <label class="form-input__label">Цена за кг</label>
+                      </div>
+                      <div class="col-12 col-lg-9">
+                        <div class="form-input__range-row d-flex">
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">от</span>
+                            <input class="form-input form-input__range-body mask-number" type="text" value="100" maxlength="4" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">₽</div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">до</span>
+                            <input class="form-input form-input__range-body mask-number" type="text" value="100" maxlength="4" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">₽</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form-group form-group__range row align-items-center">
-                    <div class="col-12 col-lg-3">
-                      <label class="form-input__label">Цена за кг</label>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                      <div class="form-input__range-row d-flex">
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body" type="text" placeholder="100" min="0" step="0.1" maxlength="7" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">₽</div>
+                  <div class="edit-company__form mb-30 repeater-item-js">
+                    <div class="form-group row align-items-center mb-20">
+                      <div class="col-lg-3">
+                        <label class="form-input__label">Вид техники</label>
+                      </div>
+                      <div class="col-lg-9">
+                        <div class="form-input__wrapp">
+                          <select class="custom-select custom-select_js">
+                            <option value="" disabled selected hidden>Выберите из списка</option>
+                            <option value="1">Холодильники</option>
+                            <option value="0">СВЧ печи</option>
+                          </select>
                         </div>
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body" type="text" placeholder="100" min="0" step="0.1" maxlength="7" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">₽</div>
+                      </div>
+                    </div>
+                    <div class="form-group form-group__range row align-items-center">
+                      <div class="col-12 col-lg-3">
+                        <label class="form-input__label">Цена за кг</label>
+                      </div>
+                      <div class="col-12 col-lg-9">
+                        <div class="form-input__range-row d-flex">
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">от</span>
+                            <input class="form-input form-input__range-body mask-number" type="text" value="100" maxlength="4" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">₽</div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">до</span>
+                            <input class="form-input form-input__range-body mask-number" type="text" value="100" maxlength="4" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edit-company__form mb-30 repeater-item-js">
+                    <div class="form-group row align-items-center mb-20">
+                      <div class="col-lg-3">
+                        <label class="form-input__label">Вид техники</label>
+                      </div>
+                      <div class="col-lg-9">
+                        <div class="form-input__wrapp">
+                          <select class="custom-select custom-select_js">
+                            <option value="" disabled selected hidden>Выберите из списка</option>
+                            <option value="1">Холодильники</option>
+                            <option value="0">СВЧ печи</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group form-group__range row align-items-center">
+                      <div class="col-12 col-lg-3">
+                        <label class="form-input__label">Цена за кг</label>
+                      </div>
+                      <div class="col-12 col-lg-9">
+                        <div class="form-input__range-row d-flex">
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">от</span>
+                            <input class="form-input form-input__range-body mask-number" type="text" value="100" maxlength="4" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">₽</div>
+                          </div>
+                          <div class="form-input__wrapp form-input__range">
+                            <span class="form-input__label-text">до</span>
+                            <input class="form-input form-input__range-body mask-number" type="text" value="100" maxlength="4" />
+                            <div class="form-input__line"></div>
+                            <div class="form-input__range-value">₽</div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="edit-company__form mb-30">
-                  <div class="form-group row align-items-center mb-20">
-                    <div class="col-lg-3">
-                      <label class="form-input__label">Вид техники</label>
-                    </div>
-                    <div class="col-lg-9">
-                      <div class="form-input__wrapp">
-                        <select class="custom-select custom-select_js">
-                          <option value="" disabled selected hidden>Выберите из списка</option>
-                          <option value="1">Холодильники</option>
-                          <option value="0">СВЧ печи</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group form-group__range row align-items-center">
-                    <div class="col-12 col-lg-3">
-                      <label class="form-input__label">Цена за кг</label>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                      <div class="form-input__range-row d-flex">
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body" type="text" placeholder="100" min="0" step="0.1" maxlength="7" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">₽</div>
-                        </div>
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body" type="text" placeholder="100" min="0" step="0.1" maxlength="7" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">₽</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="edit-company__form mb-30">
-                  <div class="form-group row align-items-center mb-20">
-                    <div class="col-lg-3">
-                      <label class="form-input__label">Вид техники</label>
-                    </div>
-                    <div class="col-lg-9">
-                      <div class="form-input__wrapp">
-                        <select class="custom-select custom-select_js">
-                          <option value="" disabled selected hidden>Выберите из списка</option>
-                          <option value="1">Холодильники</option>
-                          <option value="0">СВЧ печи</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group form-group__range row align-items-center">
-                    <div class="col-12 col-lg-3">
-                      <label class="form-input__label">Цена за кг</label>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                      <div class="form-input__range-row d-flex">
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">от</span>
-                          <input class="form-input form-input__range-body" type="text" value="100" placeholder="100" min="0" step="0.1" maxlength="7" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">₽</div>
-                        </div>
-                        <div class="form-input__wrapp form-input__range">
-                          <span class="form-input__label-text">до</span>
-                          <input class="form-input form-input__range-body" type="text" placeholder="100" min="0" step="0.1" max="10000000" />
-                          <div class="form-input__line"></div>
-                          <div class="form-input__range-value">₽</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <button class="link">Добавить вид техники</button>
+                <div class="link repeater-btn_appliances">Добавить вид техники</div>
               </div>
               <div class="edit-company__btns d-flex justify-content-between">
                 <a href="#stage-3" id="back-stage-3" class="btn btn_reset-param scrollto">Назад</a>
