@@ -478,7 +478,7 @@
   }
 
   .main-tab {
-    overflow: visible;
+    overflow: inherit;
     .tab__wrapper {
       position: fixed;
       bottom: 0;
@@ -568,7 +568,7 @@
     overflow: auto;
   }
   .page-content {
-    overflow: visible;
+    overflow: inherit;
   }
   .card-company {
     overflow: hidden;
@@ -826,7 +826,7 @@
     }
   }
   .registration__stage-list {
-    overflow: visible;
+    overflow: inherit;
   }
   //======================= footer
   .footer {
