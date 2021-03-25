@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
     
-    <link rel="stylesheet" href="assets/css/main.css?v22" />
+    <link rel="stylesheet" href="assets/css/main.css?v2s2" />
     <title>SCRAP</title>
 </head>
 

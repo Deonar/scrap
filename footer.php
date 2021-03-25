@@ -41,7 +41,7 @@
     <div class="popup-cities__body">
         <div class="select-city__wrapper">
             <div class="select-city__input">
-                <input type="text" placeholder="| Введите город" id="inputCity" />
+                <input type="text" placeholder="Введите город" id="inputCity" />
             </div>
             <ul class="select-city__list scrollbar" id="city-list">
                 <li class="select-region__item"><b>Московская область</b></li>
@@ -83,7 +83,7 @@
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 
-<script src="assets/js/main.js?v42"></script>
+<script src="assets/js/main.js?v422"></script>
 </body>
 
 </html>

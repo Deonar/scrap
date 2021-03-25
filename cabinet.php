@@ -1205,19 +1205,19 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Pt</span>
-                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                          <input class="form-input form-input__range-body mask-percent" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Pd</span>
-                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                          <input class="form-input form-input__range-body mask-percent" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Rh</span>
-                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                          <input class="form-input form-input__range-body mask-percent" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
@@ -1257,19 +1257,19 @@
                       <div class="form-input__range-row d-flex">
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Pt</span>
-                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                          <input class="form-input form-input__range-body mask-percent" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Pd</span>
-                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                          <input class="form-input form-input__range-body mask-percent" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>
                         <div class="form-input__wrapp form-input__range">
                           <span class="form-input__label-text _bold">Rh</span>
-                          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+                          <input class="form-input form-input__range-body mask-percent" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
                           <div class="form-input__line"></div>
                           <div class="form-input__range-value">%</div>
                         </div>

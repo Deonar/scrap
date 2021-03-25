@@ -98,6 +98,10 @@ jQuery(document).ready(function ($) {
   $('.notice-show-js').on('click', function () {
     $('.notice-popup-js span').text('Филиал удален');
     $('.notice-popup-js').removeClass('hidden');
+
+    setTimeout(function () {
+      $('.notice-popup-js').addClass('hidden');
+    }, 3000);
   });
   $('.notice-close-js').on('click', function () {
     $('.notice-popup-js').addClass('hidden');
@@ -312,18 +316,31 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  $('.mask-string').bind('change keyup input click', function () {
-    if (this.value.match(/[^а-яА-Яa-zA-Z\s]/g)) {
-      this.value = this.value.replace(/[^а-яА-Яa-zA-Z\s]/g, '');
-    }
-  });
+  function validation() {
+    $('.mask-string').bind('change keyup input click', function () {
+      if (this.value.match(/[^а-яА-Яa-zA-Z\s]/g)) {
+        this.value = this.value.replace(/[^а-яА-Яa-zA-Z\s]/g, '');
+      }
+    });
 
-  $('.mask-number').bind('change keyup input click', function () {
-    if (this.value.match(/[^0-9,.]/g)) {
-      this.value = this.value.replace(/[^0-9,.]/g, '');
-    }
-  });
+    $('.mask-number').bind('change keyup input click', function () {
+      if (this.value.match(/[^0-9,.]/g)) {
+        this.value = this.value.replace(/[^0-9,.]/g, '');
+      }
+    });
 
+    $('.mask-percent').bind('change keyup input click', function () {
+
+      if (this.value.match(/[^0-9,.]/g)) {
+        this.value = Number(this.value.replace(/[^0-9,.]/g, ''));
+      }
+      let percent = Number(this.value.replace(/[^0-9,.]/g, ''));
+      if (percent > 100) {
+        this.value = 100;
+      }
+    });
+  }
+  validation();
   //=================== scroll to page
   $('.scrollto').on('click', function () {
     let href = $(this).attr('href');
@@ -543,21 +560,27 @@ jQuery(document).ready(function ($) {
     $('.thanks__for-reviews__wrapper').removeClass('active');
     $('.edit-company__wrapp').addClass('hidden');
     $('.notice-popup-js').removeClass('hidden');
+
+    setTimeout(function () {
+      $('.notice-popup-js').addClass('hidden');
+    }, 3000);
   });
 
   $('.repeater-btn_cat').click(function () {
     repeaterList = $(this).closest('.repeater-js').find('.repeater-list-js');
     let repeaterNum = ($(this).closest('.repeater-js').find(".repeater-item-js").length) + 1;
     addCategory(repeaterList, repeaterNum);
+    validation();
   })
 
   $('.repeater-btn_appliances').click(function () {
     repeaterList = $(this).closest('.repeater-js').find('.repeater-list-js');
     addAppliances(repeaterList);
     repeaterList.find('.custom-select_js').last().selectize();
+    validation();
   })
-  
-  $('.repeater-js').on('click', '.cross-js', function(){
+
+  $('.repeater-js').on('click', '.cross-js', function () {
     $(this).closest('.repeater-item-js').remove();
   })
 
@@ -596,19 +619,19 @@ jQuery(document).ready(function ($) {
       <div class="form-input__range-row d-flex">
         <div class="form-input__wrapp form-input__range">
           <span class="form-input__label-text _bold">Pt</span>
-          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+          <input class="form-input form-input__range-body mask-percent" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
           <div class="form-input__line"></div>
           <div class="form-input__range-value">%</div>
         </div>
         <div class="form-input__wrapp form-input__range">
           <span class="form-input__label-text _bold">Pd</span>
-          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+          <input class="form-input form-input__range-body mask-percent" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
           <div class="form-input__line"></div>
           <div class="form-input__range-value">%</div>
         </div>
         <div class="form-input__wrapp form-input__range">
           <span class="form-input__label-text _bold">Rh</span>
-          <input class="form-input form-input__range-body mask-number" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
+          <input class="form-input form-input__range-body mask-percent" type="text" placeholder="1" min="0" step="0.1" maxlength="3" />
           <div class="form-input__line"></div>
           <div class="form-input__range-value">%</div>
         </div>
