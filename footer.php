@@ -83,7 +83,7 @@
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 
-<script src="assets/js/main.js?v4"></script>
+<script src="assets/js/main.js?v42"></script>
 </body>
 
 </html>
